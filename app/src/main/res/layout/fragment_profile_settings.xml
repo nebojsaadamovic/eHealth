@@ -1,0 +1,383 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white_bg"
+    tools:context="com.example.zdravlje.ui.profile.settings.ProfileSettings">
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/imageWrapper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="75dp"
+        android:backgroundTint="@color/transparent"
+        app:cardCornerRadius="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeColor="@color/base_blue_color"
+        app:strokeWidth="3dp">
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/ivUserPlaceholder"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_contact_avatar" />
+
+        <TextView
+            android:id="@+id/tvAvatarInitials"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/bg_circle_avatar_no_profile_img"
+            android:fontFamily="@font/roboto_bold_700"
+            android:gravity="center"
+            android:text="N1"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/size_40sp"
+            android:visibility="gone" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <ImageView
+        android:id="@+id/profilePasswordDots"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="20dp"
+        android:src="@drawable/ic_profile_password_dots"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvProfileText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/fragment_profile_settings_title"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/size_25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageWrapper" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvProfileDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/roboto_regular_400"
+        android:text="@string/fragment_profile_settings_description"
+        android:textColor="@color/text_color_3E5764"
+        android:textSize="@dimen/size_12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvProfileText" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clAddress"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvProfileDesc">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvAddress"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:fontFamily="@font/roboto_medium_500"
+            android:text="@string/fragment_profile_settings_address_label"
+            android:textColor="@color/black"
+            android:textSize="@dimen/size_14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/tvAddressValue"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvAddressValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:enabled="false"
+            android:text="@string/fragment_profile_settings_enter_address"
+            android:textAlignment="textEnd"
+            android:textColor="@color/text_color_8A8A8D"
+            android:textSize="@dimen/size_14sp"
+            android:textStyle="bold"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tvAddress"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_E9E9E9"
+            app:layout_constraintBottom_toBottomOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clPhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/clAddress">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvPhoneNumber"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:fontFamily="@font/roboto_medium_500"
+            android:text="@string/fragment_profile_settings_phone_number_label"
+            android:textColor="@color/black"
+            android:textSize="@dimen/size_14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/tvPhoneNumberValue"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvPhoneNumberValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:enabled="false"
+            android:text="@string/fragment_profile_settings_enter_phone_number_btn"
+            android:textAlignment="textEnd"
+            android:textColor="@color/text_color_8A8A8D"
+            android:textSize="@dimen/size_14sp"
+            android:textStyle="bold"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tvPhoneNumber"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etPhoneNumberInput"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="@string/fragment_profile_settings_phone_number_hint"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:paddingLeft="5dp"
+            android:textSize="@dimen/size_14sp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/tvPhoneNumber"
+            app:layout_constraintStart_toEndOf="@id/tvPhoneNumber"
+            app:layout_constraintTop_toTopOf="@id/tvPhoneNumber" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_E9E9E9"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clEmail"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/clPhoneNumber">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvEmail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:fontFamily="@font/roboto_medium_500"
+            android:text="@string/fragment_profile_settings_email_label"
+            android:textColor="@color/black"
+            android:textSize="@dimen/size_14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/tvEmailValue"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvEmailValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:enabled="false"
+            android:text="@string/fragment_profile_settings_enter_email_btn"
+            android:textAlignment="textEnd"
+            android:textColor="@color/text_color_8A8A8D"
+            android:textSize="@dimen/size_14sp"
+            android:textStyle="bold"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tvEmail"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_E9E9E9"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clBloodType"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/clEmail">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvBloodType"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:fontFamily="@font/roboto_medium_500"
+            android:text="Krvna grupa"
+            android:textColor="@color/black"
+            android:textSize="@dimen/size_14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/mtvBloodGroupValue"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvBloodGroupValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:enabled="false"
+            android:text="@string/fragment_profile_settings_choose_language_btn"
+            android:textAlignment="textEnd"
+            android:textColor="@color/text_color_8A8A8D"
+            android:textSize="@dimen/size_14sp"
+            android:textStyle="bold"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tvBloodType"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_E9E9E9"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clLanguage"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/clBloodType">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvLanguage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:fontFamily="@font/roboto_medium_500"
+            android:text="@string/fragment_profile_settings_language_app_label"
+            android:textColor="@color/black"
+            android:textSize="@dimen/size_14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/tvLanguageValue"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvLanguageValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:text="@string/fragment_profile_settings_choose_language_btn"
+            android:textAlignment="textEnd"
+            android:textColor="@color/base_blue_color"
+            android:textSize="@dimen/size_14sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tvLanguage"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_E9E9E9"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/clLanguage">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/mbSave"
+            style="@style/blueButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="@string/fragment_profile_settings_save_btn"
+            app:iconTint="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/mbClose"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/mbClose"
+            style="@style/whiteButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:background="@color/transparent"
+            android:text="@string/fragment_profile_settings_close_btn"
+            android:textColor="@color/base_blue_color"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/mbSave"
+            app:layout_constraintStart_toStartOf="@+id/mbSave"
+            app:strokeColor="@color/base_blue_color"
+            app:strokeWidth="1dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:indeterminateTint="@color/base_blue_color"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

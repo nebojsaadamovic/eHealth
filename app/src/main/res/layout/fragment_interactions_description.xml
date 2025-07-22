@@ -1,0 +1,194 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_bg"
+    tools:context="com.example.zdravlje.ui.healthcare.prevention.interactions.InteractionsDescriptionFragment">
+
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:paddingVertical="10dp"
+        android:paddingRight="15dp"
+        android:src="@drawable/ic_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/mtvHeaderTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_medium_500"
+        android:paddingHorizontal="5dp"
+        android:text="@string/fragment_interactions_description_header"
+        android:textColor="@color/text_color_3E5764"
+        android:textSize="@dimen/size_18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivBack"
+        app:layout_constraintStart_toEndOf="@+id/ivBack"
+        app:layout_constraintTop_toTopOf="@+id/ivBack" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/mtvSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:fontFamily="@font/roboto_bold_700"
+        android:padding="10dp"
+        android:text="@string/save"
+        android:textColor="@color/base_blue_color"
+        android:textSize="@dimen/size_18sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/ivCompareMedicamente"
+        app:layout_constraintEnd_toStartOf="@+id/ivCompareMedicamente"
+        app:layout_constraintTop_toTopOf="@+id/ivCompareMedicamente" />
+
+    <ImageView
+        android:id="@+id/ivCompareMedicamente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:padding="10dp"
+        android:paddingStart="30dp"
+        android:src="@drawable/ic_atachment"
+        app:layout_constraintBottom_toBottomOf="@id/ivBack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/ivBack" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/mtvCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="6dp"
+        android:fontFamily="@font/roboto_bold_700"
+        android:textColor="@color/white"
+        android:textSize="@dimen/size_8sp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@+id/ivCompareMedicamente"
+        app:layout_constraintTop_toTopOf="@+id/ivCompareMedicamente" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:paddingHorizontal="15dp"
+        android:paddingVertical="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivBack">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/mcvInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:visibility="visible"
+            app:cardCornerRadius="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:strokeColor="@color/gray_C4C4C4">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/mtvInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_medium_500"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    app:layout_constraintBottom_toTopOf="@+id/mtvEditInfo"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/mcvColor"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    app:cardBackgroundColor="@color/green_light_C6E0B4"
+                    app:cardCornerRadius="5dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/mtvInfo"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/mtvInfo"
+                    app:strokeColor="@color/transparent" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/mtvEditInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/roboto_medium_500"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/mtvInfo"
+                    app:layout_constraintTop_toBottomOf="@+id/mtvInfo" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/mbEdit"
+                    style="@style/blueButton"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="0dp"
+                    android:fontFamily="@font/roboto_medium_500"
+                    android:text="@string/edit"
+                    android:textSize="@dimen/size_15sp"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="@+id/mtvEditInfo"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/mtvEditInfo" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_header_white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mcvInfo">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:enabled="false"
+                    android:fontFamily="@font/roboto_regular_400"
+                    android:gravity="start"
+                    android:inputType="textMultiLine"
+                    android:lines="30"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/size_18sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,59 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:background="@drawable/bg_white_top_radius"
+    tools:context="com.example.zdravlje.ui.chat.singleAndGroupMessages.BottomSheetAddFileFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clHeader"
+        android:layout_width="409dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/rounded_header_white"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/tvLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_line"
+        app:layout_constraintBottom_toBottomOf="@+id/clHeader"
+        app:layout_constraintEnd_toEndOf="@+id/clHeader"
+        app:layout_constraintStart_toStartOf="@+id/clHeader"
+        app:layout_constraintTop_toTopOf="@+id/clHeader" />
+
+    <ImageView
+        android:id="@+id/ivAddFile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="80dp"
+        android:src="@drawable/ic_add_file"
+        app:layout_constraintEnd_toEndOf="@id/tvLine"
+        app:layout_constraintStart_toStartOf="@id/tvLine"
+        app:layout_constraintTop_toBottomOf="@+id/clHeader" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/mvAddFile"
+        style="@style/whiteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:fontFamily="@font/roboto_regular_400"
+        android:gravity="center"
+        android:text="@string/bottom_sheet_add_file_button"
+        android:textColor="@color/text_color_3E5764"
+        android:textSize="@dimen/size_24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/ivAddFile"
+        app:layout_constraintStart_toStartOf="@id/ivAddFile"
+        app:layout_constraintTop_toBottomOf="@id/ivAddFile" />
+</androidx.constraintlayout.widget.ConstraintLayout>

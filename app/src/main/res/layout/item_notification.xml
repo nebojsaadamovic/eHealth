@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/clUserInfoWrapper"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:backgroundTint="@color/white"
+    android:paddingBottom="10dp"
+    app:cardCornerRadius="10dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:strokeColor="@color/transparent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="15dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clHeaderWrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_notification_header"
+            android:paddingStart="15dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/notificationTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:text="@string/fragment_item_notification_available_therapy_title"
+                android:textColor="@color/black"
+                android:textSize="@dimen/size_17sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/ivWarning"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/notificationSupTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/fragment_item_notification_e_recept_subtitle"
+                android:textColor="@color/deepIndigo_3E4693"
+                android:textSize="@dimen/size_10sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/notificationTitle" />
+
+            <ImageView
+                android:id="@+id/ivWarning"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:src="@drawable/ic_warning"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/ivReadMsg"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/ivReadMsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:src="@drawable/ic_red_notifications"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/notificationDetailTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:paddingStart="15dp"
+            android:paddingEnd="10dp"
+            android:text="@string/fragment_item_notification_name_doctor_value"
+            android:textAlignment="textStart"
+            android:textColor="@color/text_color_3E5764"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/notificationDetailDate"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/clHeaderWrapper" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/notificationDetailDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:paddingEnd="15dp"
+            android:text="@string/fragment_item_notification_date_value"
+            android:textColor="@color/text_color_8A8A8D"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/clHeaderWrapper" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/notificationDetailText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:text="@string/fragment_item_notification_description_taking_period_value"
+            android:textColor="@color/text_color_3E5764"
+            android:textSize="@dimen/size_11sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/notificationDetailTitle" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</com.google.android.material.card.MaterialCardView>

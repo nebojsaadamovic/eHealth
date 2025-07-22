@@ -1,0 +1,254 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/white_bg"
+    android:paddingHorizontal="20dp"
+    tools:context="com.example.zdravlje.ui.login.parameters.ParametersFragment">
+
+    <ImageView
+        android:id="@+id/ivAvatar"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/ic_contact_avatar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="223dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="25dp"
+        android:text="@string/fragment_parameters_title"
+        android:fontFamily="@font/roboto_bold_700"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="@dimen/size_25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/ivAvatar"
+        app:layout_constraintStart_toStartOf="@+id/ivAvatar"
+        app:layout_constraintTop_toBottomOf="@+id/ivAvatar"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tvDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:fontFamily="@font/roboto_regular_400"
+        android:textSize="@dimen/size_12sp"
+        android:text="@string/fragment_parameters_description"
+        android:textAlignment="center"
+        android:textColor="@color/text_color_3E5764"
+        app:layout_constraintEnd_toEndOf="@+id/tvTitle"
+        app:layout_constraintStart_toStartOf="@+id/tvTitle"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+
+    <TextView
+        android:id="@+id/tvBloodType"
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:layout_marginTop="60dp"
+        android:fontFamily="@font/roboto_medium_500"
+        android:textSize="@dimen/size_14sp"
+        android:text="@string/fragment_parameters_blood_type_label"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDescription" />
+
+    <TextView
+        android:id="@+id/tvBloodGroupValue"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/fragment_parameters_select"
+        android:textColor="@color/blue_0270BB"
+        android:textSize="@dimen/size_14sp"
+        android:fontFamily="@font/roboto_medium_500"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDescription" />
+
+    <View
+        android:id="@+id/vLine"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvBloodType" />
+
+    <TextView
+        android:id="@+id/tvHeight"
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/roboto_medium_500"
+        android:textSize="@dimen/size_14sp"
+        android:text="@string/fragment_parameters_height_label"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vLine" />
+
+    <TextView
+        android:id="@+id/tvHeightValue"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/fragment_parameters_select"
+        android:textColor="@color/blue_0270BB"
+        android:textSize="@dimen/size_14sp"
+        android:fontFamily="@font/roboto_medium_500"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vLine" />
+
+    <View
+        android:id="@+id/tvLine2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="12dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvHeight" />
+
+    <TextView
+        android:id="@+id/tvWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/roboto_medium_500"
+        android:textSize="@dimen/size_14sp"
+        android:text="@string/fragment_parameters_weight_label"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvLine2" />
+
+    <TextView
+        android:id="@+id/tvWeightValue"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/fragment_parameters_select"
+        android:textColor="@color/blue_0270BB"
+        android:textSize="@dimen/size_14sp"
+        android:fontFamily="@font/roboto_medium_500"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvLine2" />
+
+    <View
+        android:id="@+id/vLine3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="12dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvWeight" />
+
+    <TextView
+        android:id="@+id/tvChestCircumference"
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/roboto_medium_500"
+        android:textSize="@dimen/size_14sp"
+        android:text="@string/fragment_parameters_chest_circumference_label"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vLine3" />
+
+    <TextView
+        android:id="@+id/tvChestCircumferenceValue"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/fragment_parameters_select"
+        android:textColor="@color/blue_0270BB"
+        android:textSize="@dimen/size_14sp"
+        android:fontFamily="@font/roboto_medium_500"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vLine3" />
+
+    <View
+        android:id="@+id/vLine4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="12dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvChestCircumference" />
+
+    <TextView
+        android:id="@+id/tvWaistCircumference"
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/roboto_medium_500"
+        android:textSize="@dimen/size_14sp"
+        android:text="@string/fragment_parameters_waist_circumference_label"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vLine4" />
+
+    <TextView
+        android:id="@+id/tvWaistCircumferenceValue"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/fragment_parameters_select"
+        android:textColor="@color/blue_0270BB"
+        android:textSize="@dimen/size_14sp"
+        android:fontFamily="@font/roboto_medium_500"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vLine4" />
+
+    <View
+        android:id="@+id/vLine5"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="12dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvWaistCircumference" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/vLine5">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/mbNext"
+            style="@style/blueButton"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:text="@string/fragment_parameters_next_btn" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/mbSkip"
+            style="@style/whiteButton"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="@string/fragment_parameters_skip_btn" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

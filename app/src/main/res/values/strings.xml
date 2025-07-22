@@ -1,0 +1,2060 @@
+<resources>
+    <string name="app_name">E_Zdravlje</string>
+
+    <!--Default value for all empty fields-->
+    <string name="field_empty_value" translatable="false">""</string>
+
+    <!--    Global attribute -->
+    <string name="error">Greška</string>
+    <string name="health">Zdravlje</string>
+    <string name="unknown_error">Nepoznata greška</string>
+    <string name="toast_data_save">Podaci su sačuvani</string>
+    <string name="toast_error_answer">Greška u odgovoru</string>
+    <string name="exception">Izuzetak</string>
+    <string name="activity_executed">Aktivnost je oznacena kao zavrsena</string>
+    <string name="data_deleted_successfully">"Podaci su uspešno izbrisani."</string>
+    <string name="select">Izaberi</string>
+    <string name="save">Sačuvaj</string>
+    <string name="edit">Izmeni</string>
+    <string name="close">Zatvori</string>
+    <string name="cancel">Odustani</string>
+    <string name="unsuccessfully">Neuspešno.</string>
+    <string name="no">Ne</string>
+    <string name="yes">Da</string>
+    <string name="attention">Pažnja!</string>
+    <string name="error_upload_image">Greška pri učitavanju slike</string>
+    <string name="error_empty_email">Unešeni email je prazan</string>
+    <string name="error_pin_is_not_valid">Pin nije validan</string>
+    <string name="success_change_data">Uspešno ste promenili podatke</string>
+    <string name="unsuccessful_save_data">Podaci nisu sačuvani</string>
+    <string name="successful_save_data">Uspešno sačuvano</string>
+    <string name="enter_value">Unesite vrednost</string>
+
+
+    <!--Activity avaliable therapy in pharmacy-->
+    <string name="activity_avaliable_therapy_in_pharmacy_header">Info tabla</string>
+    <string name="activity_avaliable_therapy_in_pharmacy_title_date">Sreda 23.12.2023</string>
+    <string name="activity_avaliable_therapy_in_pharmacy_title">Dostupna terapija u apoteci</string>
+    <string name="activity_avaliable_therapy_in_pharmacy_therapy_label">Terapija:</string>
+    <string name="activity_avaliable_therapy_in_pharmacy_decsription_therapy">Beridual Inhalator pod pritiskom sa dozerom. Rastvor za inhalaciju ...</string>
+    <string name="activity_avaliable_therapy_in_pharmacy_info_label">Info:</string>
+    <string name="activity_avaliable_therapy_in_pharmacy_description_info">Beridual Inhalator pod pritiskom sa dozerom. Rastvor za inhalaciju ...</string>
+    <string name="activity_avaliable_therapy_in_pharmacy_appointment_label">Termin:</string>
+    <string name="activity_avaliable_therapy_in_pharmacy_description_appointment">Ceo dan</string>
+
+    <!--Activity call-->
+    <string name="activity_call_back_label">Nazad</string>
+    <string name="activity_call_connecting_text">Connecting...</string>
+    <string name="activity_call_timer_default_text">00:00</string>
+
+    <!--Activity demo call-->
+    <string name="activity_demo_call_connecting_text">Connecting...</string>
+    <string name="activity_demo_call_timer_default_text">00:00</string>
+
+    <!--Activity drug consumption-->
+    <string name="activity_drug_consumption_date_title">Sreda 23.12.2023</string>
+    <string name="activity_drug_consumption_title">Konzumacija leka</string>
+    <string name="activity_drug_consumption_medicament_name_label">Naziv leka:</string>
+    <string name="activity_drug_consumption_dosage_label">Doziranje:</string>
+    <string name="activity_drug_consumption_rx_info_label">Info o doziranju iz eRx:</string>
+    <string name="activity_drug_consumption_taking_time_title">Vreme uzimanja</string>
+    <string name="activity_drug_consumption_period_from_label">Datum od:</string>
+    <string name="activity_drug_consumption_period_to_label">Datum do:</string>
+    <string name="activity_drug_consumption_consumption_time_label">Termin konzumacije:</string>
+    <string name="activity_drug_consumption_consumption_time_decription_full_day">Ceo dan</string>
+    <string name="activity_drug_consumption_save_btn">Sačuvaj</string>
+    <string name="activity_drug_consumption_change_all_in_array_mb">Izmeni sve u nizu</string>
+    <string name="activity_drug_consumption_remittance">Doznaka:</string>
+
+    <!--Activity initial parameters-->
+    <string name="activity_initial_parameters_title">Upravljanje parametrima</string>
+    <string name="activity_initial_parameters_info_subtitle">Ove informacije omogućuju integraciju Vaših karakteristika u aplikaciju radi lakšeg praćenja ostvarivanja rezultata.</string>
+    <string name="activity_initial_parameters_gender_label">Pol</string>
+    <string name="activity_initial_parameters_gender_value">Unesite pol</string>
+    <string name="activity_initial_parameters_years_label">Vaše godine</string>
+    <string name="activity_initial_parameters_year_value">Unesite godine</string>
+    <string name="activity_initial_parameters_height_label">Visina</string>
+    <string name="activity_initial_parameters_height_value">Unesite visinu</string>
+    <string name="activity_initial_parameters_weight_label">Težina</string>
+    <string name="activity_initial_parameters_weight_value">Unesite težinu</string>
+    <string name="activity_initial_parameters_blood_type_label">Krvna grupa</string>
+    <string name="activity_initial_parameters_blood_type_value">Unesite krvnu grupu</string>
+    <string name="activity_initial_parameters_allergy_label">Alergije</string>
+    <string name="activity_initial_parameters_allergy_value">Unesite alergiju</string>
+    <string name="activity_initial_parameters_next_button">Dalje</string>
+    <string name="activity_initial_parameters_skip_button">Preskoči</string>
+
+    <!--Activity on boarding-->
+    <string name="activity_on_boarding_next_button">Sledeće</string>
+
+    <!--Activity personal-->
+    <string name="activity_personal_header_title">Info tabla</string>
+    <string name="activity_personal_activity_title_date">Sreda 23.12.2023</string>
+    <string name="activity_personal_title">Lična aktivnost</string>
+    <string name="activity_personal_personal_activity_label">Lična aktivnost:</string>
+    <string name="activity_personal_description_label">Opis:</string>
+    <string name="activity_personal_time_label">Vreme:</string>
+    <string name="activity_personal_date_period_from_label">Datum od:</string>
+    <string name="activity_personal_date_period_to_label">Datum do:</string>
+
+    <!--Activity realised therapy in pharmacy-->
+    <string name="activity_realised_therapy_in_pharmacy_header_title">Info tabla</string>
+    <string name="activity_realised_therapy_in_pharmacy_see_more_label">Vidi više</string>
+    <string name="activity_realised_therapy_in_pharmacy_activity_date_title">Sreda 23.12.2023</string>
+    <string name="activity_realised_therapy_in_pharmacy_title">Realizovan eRecept</string>
+    <string name="activity_realised_therapy_in_pharmacy_medicament_name_label">Naziv leka:</string>
+    <string name="activity_realised_therapy_in_pharmacy_medicament_value">Beridual Inhalator pod pritiskom sa dozerom. Rastvor za inhalaciju ...</string>
+    <string name="activity_realised_therapy_in_pharmacy_prescription_type_label">Tip recepta:</string>
+    <string name="activity_realised_therapy_in_pharmacy_prescription_value">eRecept</string>
+    <string name="activity_realised_therapy_in_pharmacy_realization_date_label">Datum realizacije:</string>
+    <string name="activity_realised_therapy_in_pharmacy_realization_time_value">Ceo dan</string>
+    <string name="activity_realised_therapy_in_pharmacy_pharmacy_realization_label">Apoteka realizacije:</string>
+    <string name="activity_realised_therapy_in_pharmacy_pharmacy_realization_value">Ceo dan</string>
+    <string name="activity_realised_therapy_in_pharmacy_e_recept_label">eRecept</string>
+
+    <!--Activity realised visited doctor-->
+    <string name="activity_realised_visited_doctor_header_title">Info tabla</string>
+    <string name="activity_realised_visited_doctor_date_title">Sreda 23.12.2023</string>
+    <string name="activity_realised_visited_doctor_title">Realizovana poseta lekaru</string>
+    <string name="activity_realised_visited_doctor_date_label">Datum:</string>
+    <string name="activity_realised_visited_doctor_date_value">Beridual Inhalator pod pritiskom sa dozerom. Rastvor za inhalaciju …</string>
+    <string name="activity_realised_visited_doctor_health_institution_label">Zdravstvena ustanova:</string>
+    <string name="activity_realised_visited_doctor_health_institution_value">Beridual Inhalator pod pritiskom sa dozerom. Rastvor za inhalaciju …</string>
+    <string name="activity_realised_visited_doctor_place_organizational_unit_label">Organizaciona jedinica:</string>
+    <string name="activity_realised_visited_doctor_place_organizational_unit_value">Ceo dan</string>
+    <string name="activity_realised_visited_doctor_visit_type_label">Tip uputa:</string>
+    <string name="activity_realised_visited_doctor_visit_type_value">Ceo dan</string>
+    <string name="activity_realised_visited_doctor_doctor_name_label">Ime i prezime lekara:</string>
+    <string name="activity_realised_visited_doctor_doctor_name_value">Ceo dan</string>
+    <string name="activity_realised_visited_doctor_laboratory_label">Laboratorija</string>
+    <string name="activity_realised_visited_doctor_type_examination">Vrsta pregleda:</string>
+
+
+    <!--Activity shared profil-->
+    <string name="activity_shared_profile_header_title">Info tabla</string>
+    <string name="activity_shared_profile_title">Podosiguranici i deljeni profili</string>
+    <string name="activity_shared_profile_add_permissions">Dodaj dozvole</string>
+
+    <!--Dialog chat list filter-->
+    <string name="dialog_chat_list_filter_show_doctors">Prikaži samo doktore</string>
+    <string name="dialog_chat_list_filter_show_pharmacists">Prikaži samo farmaceute</string>
+    <string name="dialog_chat_list_filter_show_my_contacts">Prikaži moje kontakte</string>
+    <string name="dialog_chat_list_filter_show_chat_groups">Prikaži samo Chat grupe</string>
+    <string name="dialog_chat_list_filter_requests_received">Primljeni/ Poslati zahtevi</string>
+    <string name="dialog_chat_list_filter_show_all">Prikaži sve</string>
+
+    <!--Fragment activities-->
+    <string name="fragment_activities_next_on_schedule_tv">Sledeće po rasporedu</string>
+    <string name="fragment_activities_term_more_activities_tv">Termin sa više aktivnosti</string>
+    <string name="fragment_activities_event_time_tv">12:00</string>
+    <string name="fragment_activities_add_activity_tv">Dodajte aktivnost</string>
+    <string name="fragment_activities_date_tv">Petak 09.02.2024</string>
+    <string name="fragment_activities_medicament_consumation">Konzumacija leka</string>
+    <string name="fragment_activities_medicine_add_medicament">Dodaj podsetnik za lek</string>
+    <string name="fragment_activities_doctors_appointment">Termin kod lekara</string>
+    <string name="fragment_activities_schedule_examination">Zakaži pregled</string>
+    <string name="fragment_activities_appointment_screening_examination">Termin skrining pregleda</string>
+    <string name="fragment_activities_make_appointment">Zakaži pregled</string>
+    <string name="fragment_activities_personal_activity">Lična aktivnost</string>
+    <string name="fragment_activities_add_activity">Dodaj aktivnost</string>
+    <string name="fragment_activities_multiple_activities_at_same_time">Termin sa više aktivnosti</string>
+
+    <!--    Fragment deatails activities-->
+    <string name="fragment_details_activities_date_title">Sreda 23.12.2023</string>
+    <string name="fragment_details_activity_title">Dostupna terapija u apoteci</string>
+    <string name="fragment_details_activity_therapy_label">Terapija:</string>
+    <string name="fragment_details_activity_therapy_value">Beridual Inhalator pod pritiskom sa dozerom. Rastvor za inhalaciju ...</string>
+    <string name="fragment_details_activity_info_label">Info:</string>
+    <string name="fragment_details_activity_info_value">Beridual Inhalator pod pritiskom sa dozerom. Rastvor za inhalaciju ...</string>
+    <string name="fragment_details_activity_term_label">Termin:</string>
+    <string name="fragment_details_activity_term_value">Ceo dan</string>
+
+    <!-- Fragment add medicament -->
+    <string name="fragment_add_medicament_header_title">Kalendar</string>
+    <string name="fragment_add_medicament_add_medicament_title">Dodaj lek</string>
+    <string name="fragment_add_medicament_choose_prescribed_medicament">Izaberi propisani lek (eRecept)</string>
+    <string name="fragment_add_medicament_choose_non_prescribed_medicament">Izaberi lek koji nije sa eRecepta</string>
+
+    <!--Fragment add memeber-->
+    <string name="fragment_add_member_search_hint">Traži</string>
+    <string name="fragment_add_member_description">Unesite ime i prezime, ili mejl adresu kao kriterijum pretrage(min 3 karaktera)</string>
+    <string name="fragment_add_member_search_button">Pretraži</string>
+
+    <!--Fragment audio video call-->
+    <string name="fragment_audio_video_call_back_label">Nazad</string>
+    <string name="fragment_audio_video_call_connecting_label">Connecting…</string>
+    <string name="fragment_audio_video_call_timer_label">00:00</string>
+
+    <!--Fragment blood group-->
+    <string name="fragment_blood_group_title_header">Krvna grupa</string>
+    <string name="fragment_blood_group_close_button">Zatvori</string>
+    <string name="fragment_blood_group_choose_button">Izaberi</string>
+
+    <!--Bottom_sheet add file-->
+    <string name="bottom_sheet_add_file_button">Dodaj fajl</string>
+
+    <!--Fragment bottom sheet add language-->
+    <string name="fragment_bottom_sheet_choose_header_title">Jezik aplikacije</string>
+    <string name="fragment_bottom_sheet_choose_language_srpski_latinica_radio_btn">Srpski - latinica</string>
+    <string name="fragment_bottom_sheet_choose_language_srpski_cirilica_radio_btn">Srpski - cirilica</string>
+    <string name="fragment_bottom_sheet_choose_language_engleski_radio_btn">Engleski</string>
+    <string name="fragment_bottom_sheet_choose_language_close_btn">Zatvori</string>
+    <string name="fragment_bottom_sheet_choose_language_save_btn">Sačuvaj</string>
+    <string name="fragment_bottom_sheet_choose_language_toast_choose_leng">Molimo odaberite jezik</string>
+
+    <!--Fragment bottom sheet contact information-->
+    <string name="fragment_bottom_sheet_contact_information_header_title">Informacije o kontaktu</string>
+    <string name="fragment_bottom_sheet_contact_information_name_label">Ime i prezime:</string>
+    <string name="fragment_bottom_sheet_contact_information_name">Ime i prezime</string>
+    <string name="fragment_bottom_sheet_contact_information_name_value">Petar Petrovic</string>
+    <string name="fragment_bottom_sheet_contact_information_email_label">Email:</string>
+    <string name="fragment_bottom_sheet_contact_information_email">Email</string>
+    <string name="fragment_bottom_sheet_contact_information_email_value">####@gmail.com</string>
+
+    <!--Fragment bottom sheet delete contact-->
+    <string name="fragment_bottom_sheet_delete_contact_header_title">Brisanje kontakta</string>
+    <string name="fragment_bottom_sheet_delete_contact_confirm_dialog_description">Da li ste sigurni da želite\n da obrišete kontakt?</string>
+    <string name="fragment_bottom_sheet_delete_contact_cancel">Odustani</string>
+    <string name="fragment_bottom_sheet_delete_contact_delete">Obriši</string>
+
+    <!--Fragment bottom sheet delete history-->
+    <string name="fragment_bottom_sheet_delete_history_header_title">Brisanje istorije</string>
+    <string name="fragment_bottom_sheet_delete_history_confirm_dialog_description">Da li ste sigurni da želite\n da obrišete istoriju?</string>
+    <string name="fragment_bottom_sheet_delete_history_cancel_btn">Odustani</string>
+    <string name="fragment_bottom_sheet_delete_history_delete_btn">Obriši</string>
+    <string name="fragment_bottom_sheet_filter_header_title">Filter</string>
+
+    <!--Fragment bottom sheet password settings-->
+    <string name="fragment_bottom_sheet_password_settings_header_title">Promena/postavka lozinke</string>
+    <string name="fragment_bottom_sheet_password_settings_new_password_label">Nova lozinka\nza pristup portalu:</string>
+    <string name="fragment_bottom_sheet_password_settings_change_tv">Izmeni</string>
+    <string name="fragment_bottom_sheet_password_settings_confirm_password_label">Potvrdi lozinku:</string>
+    <string name="fragment_bottom_sheet_password_settings_confirm_tv">Potvrdi</string>
+    <string name="fragment_bottom_sheet_password_settings_close_btn">Zatvori</string>
+    <string name="fragment_bottom_sheet_password_settings_save_btn">Sačuvaj</string>
+
+    <!--Fragment bottom sheet initial settings-->
+    <string name="fragment_bottom_sheet_profile_initial_shared_profile_label_btn">Deljeni profil</string>
+    <string name="fragment_bottom_sheet_profile_initial_user_profile_label_btn">Profil korisnika</string>
+    <string name="fragment_bottom_sheet_profile_settings_label_btn">Podešavanja</string>
+    <string name="fragment_bottom_sheet_profile_settings_sink">Osvežavanje podataka</string>
+
+    <!--Fragment bottom sheet initial settings-->
+    <string name="fragment_bottom_sheet_scheduling_title_header">Zakazivanje poziva</string>
+    <string name="fragment_bottom_sheet_scheduling_confirm_dialog">Da li želite da zakažete poziv?</string>
+    <string name="fragment_bottom_sheet_scheduling_cancel">Ne</string>
+    <string name="fragment_bottom_sheet_scheduling_yes">Da</string>
+
+    <!--Fragment bottom sheet tome from-->
+    <string name="fragment_bottom_sheet_time_from_title_header">Vreme</string>
+    <string name="fragment_bottom_sheet_time_from_close_btn">Zatvori</string>
+    <string name="fragment_bottom_sheet_time_from_choose_btn">Izaberi</string>
+
+    <!--Fragment bottom sheet tome to-->
+    <string name="fragment_bottom_sheet_time_to_title_header">Vreme</string>
+    <string name="fragment_bottom_sheet_time_to_close_btn">Zatvori</string>
+    <string name="fragment_bottom_sheet_time_to_choose_btn">Izaberi</string>
+
+    <!--Fragment calendar-->
+    <string name="fragment_calendar_title">Kalendar</string>
+    <string name="fragment_calendar_day_monday_label">Pon</string>
+    <string name="fragment_calendar_day_tuesday_label">Uto</string>
+    <string name="fragment_calendar_day_wednesday_label">Sre</string>
+    <string name="fragment_calendar_day_thursday_label">Cet</string>
+    <string name="fragment_calendar_day_friday">Pet</string>
+    <string name="fragment_calendar_day_saturday">Sub</string>
+    <string name="fragment_calendar_day_sunday">Ned</string>
+
+    <!--Fragment calendar appointment examination-->
+    <string name="fragment_calendar_appointment_examination_header_title">Kalendar</string>
+    <string name="fragment_calendar_appointment_examination_schedule_title">Zakaži termin kod lekara</string>
+    <string name="fragment_calendar_appointment_examination_choose_doctor_subtitle">Izaberi lekara:</string>
+    <string name="fragment_calendar_appointment_examination_doctor_name_tv">DR Milenko Milenković</string>
+    <string name="fragment_calendar_appointment_examination_doctor_name1_tv">DR Bojana Bojić</string>
+    <string name="fragment_calendar_appointment_examination_doctor_name2_tv">DR Petar Petrović</string>
+    <string name="fragment_calendar_appointment_examination_profess_place_work_doctor">Doktor Opšte medicine\nKlinički Centar Banovo Brdo</string>
+    <string name="fragment_calendar_appointment_examination_info_table">Info tabla</string>
+    <string name="fragment_calendar_appointment_examination_personal_activity">Lična aktivnost</string>
+    <string name="fragment_calendar_appointment_examination_content">Da li želite da ličnu aktivnost \noznačite kao završenu?</string>
+
+
+    <!--Fragment calendar options-->
+    <string name="fragment_calendar_options_add_medicament">Dodaj podsetnik za lek</string>
+    <string name="fragment_calendar_options_schedule_examination">Zakaži termin kod lekara</string>
+    <string name="fragment_calendar_options_application_for_screening">Prijava na skrining</string>
+    <string name="fragment_calendar_options_add_personaly_activity">Dodaj ličnu aktivnost</string>
+    <string name="fragment_calendar_options_add_medicamente_from_eprescription">Dodaj lek \iz sistema za \neRecept</string>
+
+    <!--Fragment calendar personal activity-->
+    <string name="fragment_calendar_personal_activity_header_title">Kalendar</string>
+    <string name="fragment_calendar_personal_activity_add_personal_activity_title">Dodaj ličnu aktivnost</string>
+    <string name="fragment_calendar_personal_activity_add_activity_subtitle">Dodaj aktivnost:</string>
+    <string name="fragment_calendar_personal_activity_name_activity">Unesi naziv aktivnosti:</string>
+    <string name="fragment_calendar_personal_activity_enter_activity_tv">Unesi</string>
+
+    <!--Fragment calendar screening-->
+    <string name="fragment_calendar_screening_calendar_header_title">Kalendar</string>
+    <string name="fragment_calendar_screening_schedule_examination_title">Zakaži pregled</string>
+    <string name="fragment_calendar_screening_choose_screening_program_subtitle">Odaberite skrining program :</string>
+    <string name="fragment_calendar_screening_mammography">Mamografija</string>
+    <string name="fragment_calendar_screening_description_mammography">Nacionalni preventivni program ranog otkrivanja raka dojke</string>
+    <string name="fragment_calendar_screening_rgm_screening">RGM skrining</string>
+    <string name="fragment_calendar_screening_description_rgm_screening">Nacionalni preventivni program ranog otkrivanja raka grlića materice</string>
+    <string name="fragment_chat_add_contact_search_hint">Traži</string>
+    <string name="fragment_chat_add_contact_search_description">Unesite ime i prezime, ili email adresu kao kriterijum pretrage (min 3 karaktera)</string>
+
+    <!--Fragment chat add contact details-->
+    <string name="fragment_chat_add_contact_details_profil_name">Petar petrovic</string>
+    <string name="fragment_chat_add_contact_details_subtitle_name">Novi kontakt</string>
+    <string name="fragment_chat_add_contact_details_send_contact_request">Poslat zahtev za kontakt</string>
+    <string name="fragment_chat_add_contact_details_cancel_contact_request">Da li želite da poništite poslat zahtev za kontakt?</string>
+    <string name="fragment_chat_add_contact_details_cancel">Ne</string>
+    <string name="fragment_chat_add_contact_details_confirm">Da</string>
+
+    <!--Fragment chat avatar actions-->
+    <string name="fragment_chat_avatar_actions_delete_contact">Obriši kontakt</string>
+    <string name="fragment_chat_avatar_actions_add_member">Dodaj člana</string>
+    <string name="fragment_chat_avatar_actions_information">Informacije</string>
+    <string name="fragment_chat_avatar_actions_delete_history">Obriši \nistoriju</string>
+
+    <!--Fragment chat avatar actions-->
+    <string name="fragment_chat_in_call_hint_message">Napisi poruku</string>
+    <string name="fragment_chat_inbox_network_header_title">Mreža</string>
+    <string name="fragment_chat_inbox_hint_search">Traži</string>
+    <string name="fragment_chat_inbox_fab_description">fab</string>
+
+    <!--Fragment chat link call-->
+    <string name="fragment_chat_link_call_network_header_title">Mreža</string>
+    <string name="fragment_chat_link_call_generate_link_title">Generiši link za poziv</string>
+    <string name="fragment_chat_link_call_hint_description">Opis texta</string>
+    <string name="fragment_chat_link_call_title_description">Opis</string>
+    <string name="fragment_chat_link_call_enter_text">Unesi</string>
+    <string name="fragment_chat_link_call_generate_link_button">Generiši link za poziv</string>
+
+    <!--Fragment chat options-->
+    <string name="fragment_chat_options_add_contact">Dodaj kontakt</string>
+    <string name="fragment_chat_options_create_chat_group">Kreiraj grupu</string>
+    <string name="fragment_chat_options_schedule_call">Zakaži poziv</string>
+    <string name="fragment_chat_options_link_call">Link za poziv</string>
+
+    <!--Fragment chest circumference-->
+    <string name="fragment_chest_circumference_header_title">Obim grudi</string>
+    <string name="fragment_chest_circumference_choose_btn">Izaberi</string>
+    <string name="fragment_chest_circumference_close_btn">Zatvori</string>
+
+    <!--Fragment chat group initial-->
+    <string name="fragment_chat_group_initial_title">Kreiranje grupe</string>
+    <string name="fragment_chat_group_initial_group_name">Naziv grupe:</string>
+    <string name="fragment_chat_group_initial_continue_btn">Nastavi</string>
+    <string name="fragment_chat_group_initial_red_warning">Naziv grupe mora imati najmanje 3 karaktera</string>
+
+    <!--Fragment create group my contact-->
+    <string name="fragment_create_group_my_contact_add_contact_title">Dodaj kontakt</string>
+    <string name="fragment_create_group_my_contact_add">Dodaj</string>
+    <string name="fragment_create_group_my_contact_contacts_label">Kontakti:</string>
+    <string name="fragment_create_group_my_contact_wraning_msg">Grupa mora da sadrži najmanje 3 člana.</string>
+    <string name="fragment_create_group_my_contact_decription">Unesite ime i prezime ili mejl kao kriterijum pretrage (min 3 karaktera).</string>
+
+
+    <!--Fragment drug consumption-->
+    <string name="fragment_drug_consumption_date_title">Sreda 23.12.2023</string>
+    <string name="fragment_drug_consumption_medicament_consumption_title">Konzumacija leka</string>
+    <string name="fragment_drug_consumption_medicament_name_label">Naziv leka:</string>
+    <string name="fragment_drug_consumption_dosage_label">Doziranje:</string>
+    <string name="fragment_drug_consumption_dosage_info_from_eRx_label">Info o doziranju iz eRx:</string>
+    <string name="fragment_drug_consumption_time_of_taking_title">Vreme uzimanja</string>
+    <string name="fragment_drug_consumption_time_from_label">Period od:</string>
+    <string name="fragment_drug_consumption_time_to_label">Period do:</string>
+    <string name="fragment_drug_consumption_term_of_consumption_label">Termin konzumacije:</string>
+    <string name="fragment_drug_consumption_term_of_consumption_value">Ceo dan</string>
+
+    <!--Fragment events-->
+    <string name="fragment_events_empty_error_text">U poslednjih 6 meseci nemate nijednu posetu lekaru evidentiranu u svom eKartonu niti realizovan eRecept.</string>
+
+    <!--Fragment health-->
+    <string name="fragment_health_title">Način života</string>
+    <string name="fragment_health_date">Petak 09.02.2024</string>
+    <string name="fragment_health_steps_label">Broj koraka</string>
+    <string name="fragment_health_steps_last_value">Poslednja vrednost</string>
+    <string name="fragment_health_steps_count_value">0</string>
+    <string name="fragment_health_calories_label">Broj kalorija</string>
+    <string name="fragment_health_calories_last_value">Poslednja vrednost</string>
+    <string name="fragment_health_calories_count_suffix">Kcal</string>
+    <string name="fragment_health_distance_label">Pređena distanca</string>
+    <string name="fragment_health_health_info">Na stranici Način života je moguće izabrati parametre za praćenje, uneti vrednosti, te postaviti ciljeve.</string>
+    <string name="fragment_health_distance_last_value">Poslednja vrednost</string>
+    <string name="fragment_health_distance_count_suffix">km</string>
+    <string name="fragment_health_calories_count">0</string>
+    <string name="fragment_health_progress_steps_count">0</string>
+    <string name="fragment_health_steps_count_suffix">koraka</string>
+    <string name="fragment_health_counting_steps_label">Broj koraka</string>
+    <string name="fragment_health_counting_calories_label">Broj kalorija</string>
+    <string name="fragment_health_spun_distance_label">Pređena distanca</string>
+    <string name="fragment_health_goal_today_label">Ciljevi za danas</string>
+    <string name="fragment_health_progress_steps_count_value">0</string>
+
+    <!--Fragment height-->
+    <string name="fragment_height_header_title">Visina</string>
+    <string name="fragment_height_close_btn">Zatvori</string>
+    <string name="fragment_height_choose_btn">Izaberi</string>
+
+    <!--Fragment incoming call dialog-->
+    <string name="fragment_incoming_call_dialog_incoming_call_tv">Dolazeći poziv</string>
+
+    <!--Fragment login email password-->
+    <string name="fragment_login_email_password_title">Prijava</string>
+    <string name="fragment_login_email_password_user_name_label">Korisničko ime</string>
+    <string name="fragment_login_email_password_password_label">Lozinka</string>
+    <string name="fragment_login_email_password_login">Prijavi se</string>
+    <string name="fragment_login_email_password_login_desc">Unesite Vaše korisničko ime i lozinкu</string>
+    <string name="fragment_login_email_password_health">Zdravlje</string>
+    <string name="fragment_login_email_password_rfzo_desc">Prijava preko podataka Republičkog fonda \nza zdravstveno osiguranje</string>
+    <string name="fragment_login_email_password_health_card_number">Broj zdravstvene knjižice:</string>
+
+    <!--Fragment login initial-->
+    <string name="fragment_login_initial_application_registration_tv">Prijava/Registracija</string>
+    <string name="fragment_login_initial_application_gov_eid_btn">eID Prijava</string>
+    <string name="fragment_login_initial_register_gov_eid">Registracija eID</string>
+    <string name="fragment_login_initial_application_portal_e_zdravlje_btn">eZdravlje prijava</string>
+    <string name="fragment_login_initial_application_qr_code_btn">Skeniraj QR kod</string>
+    <string name="fragment_login_initial_login_rfzo_card">RZFO prijava</string>
+    <string name="fragment_login_initial_help_support_btn">Pomoć i podrška</string>
+    <string name="fragment_login_initial_continue_a_guest">Nastavite kao gost</string>
+    <string name="fragment_login_initial_content">Prijavite se na eZdravlje portal putem aplikacije. Izaberite način prijave klikom na jednuod dve ponuđene opcije.</string>
+    <string name="fragment_login_initial_title">Prijavi se na eZdravlje</string>
+    <string name="fragment_login_initial_msg_wait">Molim sačekajte</string>
+
+    <!--Fragment login_qr_code-->
+    <string name="fragment_login_qr_code_next_btn">Dalje</string>
+
+    <!--Fragment messages-->
+    <string name="fragment_messages_hint_message_tv">Napisi poruku</string>
+
+    <!--Fragment next on schedule-->
+    <string name="fragment_next_on_schedule_title">Sledeće po rasporedu</string>
+    <string name="fragment_next_on_schedule_back_label">Nazad</string>
+
+    <!--Fragment notification-->
+    <string name="fragment_notification_title">Obaveštenja</string>
+
+    <!--Fragment notification filter-->
+    <string name="fragment_notification_filter_save_label">Sačuvaj</string>
+    <string name="fragment_notification_filter_title">Podešavanje dolazećih obaveštenja</string>
+    <string name="fragment_notification_filter_available_therapy">Dostupna terapija</string>
+    <string name="fragment_notification_filter_scheduled_checkup">Zakazani pregled</string>
+    <string name="fragment_notification_filter_contact_request">Zahtev za kontakt</string>
+    <string name="fragment_notification_filter_contact_request_response">Prihvaćen/Odbijen zahtev za kontakt</string>
+    <string name="fragment_notification_filter_new_message">Nova poruka</string>
+    <string name="fragment_notification_filter_new_group_message">Nova poruka - grupa</string>
+    <string name="fragment_notification_filter_recommendation">Preporuka</string>
+    <string name="fragment_notification_filter_data_sharing">Deljenje podataka/profila</string>
+
+    <!--Fragment notification settings-->
+    <string name="fragment_notification_settings_save">Sačuvaj</string>
+    <string name="fragment_notification_settings_filter_title">Filter</string>
+    <string name="fragment_notification_settings_email_notifications_enabled">Uključene su Email notifikacije</string>
+    <string name="fragment_notification_settings_email_notifications_disabled">Isključene su Email notifikacije</string>
+    <string name="fragment_notification_settings_push_notifications_enabled">Uključene su Push notifikacije</string>
+    <string name="fragment_notification_settings_push_notifications_disabled">Isključene su Push notifikacije</string>
+    <string name="fragment_notification_settings_email_notifications">Mejl obaveštenja</string>
+    <string name="fragment_notification_settings_email_info">Odabirom ovih tipova obaveštenja dobićete važne informacije na vašu mejl adresu.</string>
+    <string name="fragment_notification_settings_settings_info">Morate otići na stranicu podešavanja kako biste aktivirali opciju dobijanja obaveštenja.</string>
+    <string name="fragment_notification_settings_prescription_pickup">Preuzimanje recepta</string>
+    <string name="fragment_notification_settings_prescription_pickup_confirmation">Aktivirajte potvrdu preuzimanja recepta prilikom realizacije u apoteci.</string>
+    <string name="fragment_notification_settings_notification_type_subtitle">Tip obaveštenja</string>
+    <string name="fragment_notification_settings_available_therapy_label">Dostupna terapija</string>
+    <string name="fragment_notification_settings_scheduled_exam_label">Zakazani pregled</string>
+    <string name="fragment_notification_settings_contact_request_label">Zahtev za kontakt</string>
+    <string name="fragment_notification_settings_contact_request_accepted_rejected_label">Prihvaćen/Odbijen zahtev za kontakt</string>
+    <string name="fragment_notification_settings_new_message_label">Nova poruka</string>
+    <string name="fragment_notification_settings_new_message_group_label">Nova poruka - grupa</string>
+    <string name="fragment_notification_settings_recommendation_label">Preporuka</string>
+    <string name="fragment_notification_settings_data_sharing_label">Deljenje podataka/profila</string>
+    <string name="fragment_notification_settings_date_subtitle">Datum</string>
+    <string name="fragment_notification_settings_sort_ascending_label">Sortiraj rastuce</string>
+    <string name="fragment_notification_settings_sort_descending_label">Sortiraj opadajuce</string>
+
+    <!--Fragment parameters-->
+    <string name="fragment_parameters_title">Unesite Vaše osnovne parametre</string>
+    <string name="fragment_parameters_description">Ove informacije omogućuju intergaciju Vaših karakteristika u aplikaciju radi lakšeg praćenja ostvarivanja rezultata.</string>
+    <string name="fragment_parameters_blood_type_label">Krvna grupa</string>
+    <string name="fragment_parameters_select">Izaberi</string>
+    <string name="fragment_parameters_height_label">Visina</string>
+    <string name="fragment_parameters_weight_label">Težina</string>
+    <string name="fragment_parameters_chest_circumference_label">Obim grudi</string>
+    <string name="fragment_parameters_waist_circumference_label">Obim struka</string>
+    <string name="fragment_parameters_next_btn">Dalje</string>
+    <string name="fragment_parameters_skip_btn">Preskoči</string>
+
+    <!--Fragment personal activity-->
+    <string name="fragment_personal_activity_date_title">Sreda 23.12.2023</string>
+    <string name="fragment_personal_activity_personal_activity_title">Lična aktivnost</string>
+    <string name="fragment_personal_activity_personal_activity_label">Lična aktivnost:</string>
+    <string name="fragment_personal_activity_description_label">Opis:</string>
+    <string name="fragment_personal_activity_time_label">Vreme:</string>
+
+    <!--Fragment pin-->
+    <string name="fragment_pin_enter_pin_code_title">Unesite PIN kod</string>
+    <string name="fragment_pin_enter_pin_code_save_pin">Sačuvaj PIN kod</string>
+    <string name="fragment_pin_enter_pin_code_continue_without_pin">Nastavi bez PIN koda</string>
+    <string name="fragment_pin_description_pin_code">Unesite PIN za potpun pristup podacima i opcijama portala eZdravlje. Ukoliko nemate PIN kod, prijavite se preko web stranice eid.gov.rs za potpun pristup podacima i opcijama portala eZdravlje.</string>
+
+    <!--Fragment profile access key title-->
+    <string name="fragment_profile_access_key_title">Generisanje pristupnih podataka za portal</string>
+    <string name="fragment_profile_access_key_title_copy_tv">Kopiraj</string>
+    <string name="fragment_profile_access_key_user_name_label">Korisničko ime:</string>
+    <string name="fragment_profile_access_key_password_label">Lozinka:</string>
+    <string name="fragment_profile_access_key_pin_label">PIN:</string>
+    <string name="fragment_profile_access_key_user_name_value">petarpetrović</string>
+    <string name="fragment_profile_access_key_password_value">123456#Aaaa</string>
+    <string name="fragment_profile_access_key_pin_value">12345678944</string>
+
+    <!--Fragment profile i can see-->
+    <string name="fragment_profile_i_can_see_users_title">Korisnici</string>
+    <string name="fragment_profile_i_can_see_doctors_title">Doktori</string>
+
+    <!--Fragment profile settings-->
+    <string name="fragment_profile_settings_title">Podešavanje profila</string>
+    <string name="fragment_profile_settings_description">Podesite Vaš profil. Unesite informacije u polja ispod.</string>
+    <string name="fragment_profile_settings_address_label">Adresa:</string>
+    <string name="fragment_profile_settings_phone_number_label">Broj telefona:</string>
+    <string name="fragment_profile_settings_address_hint">Unesite adresu</string>
+    <string name="fragment_profile_settings_enter_address">Unesi</string>
+    <string name="fragment_profile_settings_enter_phone_number_btn">0XXXXXXXXXX</string>
+    <string name="fragment_profile_settings_phone_number_hint">Unesite broj telefona</string>
+    <string name="fragment_profile_settings_enter_email_btn">Unesi</string>
+    <string name="fragment_profile_settings_email_label">Email:</string>
+    <string name="fragment_profile_settings_enter_email_hint">Unesite email</string>
+    <string name="fragment_profile_settings_language_app_label">Jezik aplikacije:</string>
+    <string name="fragment_profile_settings_choose_language_btn">Izaberi</string>
+    <string name="fragment_profile_settings_save_btn">Sačuvaj</string>
+    <string name="fragment_profile_settings_close_btn">Zatvori</string>
+    <string name="fragment_profile_settings_image_from_gallery">Otvori foto album</string>
+    <string name="fragment_profile_settings_make_picture">Pokreni kameru</string>
+    <string name="fragment_profile_settings_succesfully_update_profile_img">Uspešno ste promenili profilnu sliku.</string>
+    <string name="fragment_profile_settings_image_size_too_large">Veličina slike je prevelika. Maksimalna veličina je 50MB.</string>
+    <string name="fragment_profile_settings_camera_permission_denied">Dozvola za kameru odbijena.</string>
+    <string name="fragment_profile_settings_camera_permission_needed">Potrebna dozvola za kameru.</string>
+    <string name="fragment_profile_settings_camera_permission_notifiction">Ova aplikacija treba pristup vašoj kameri kako bi snimila profilne fotografije.</string>
+    <string name="fragment_profile_settings_allow">Dozvoli</string>
+
+
+    <!--Fragment profile who can see my data-->
+    <string name="fragment_profile_who_can_see_my_data_users_title">Korisnici</string>
+    <string name="fragment_profile_who_can_see_my_data_doctors_title">Doktori</string>
+    <string name="fragment_profile_who_can_see_my_data_pharmacists_title">Farmaceuti</string>
+
+    <!--Fragment qr code scanner-->
+    <string name="fragment_qr_code_scanner_title">Skeniraj QR Kod</string>
+    <string name="fragment_qr_code_scanner_description">Pozicionirajte QR kod unutar okvira</string>
+
+    <!--Fragment schedulle call-->
+    <string name="fragment_schedule_call_network_header_title">Mreža</string>
+    <string name="fragment_schedule_call_appointment_tv">Zakaži</string>
+    <string name="fragment_schedule_call_schedule_call_title">Zakaži poziv</string>
+    <string name="fragment_schedule_call_description_label">Opis:</string>
+    <string name="fragment_schedule_call_call_organizer_label">Organizator poziva:</string>
+    <string name="fragment_schedule_call_date_label">Datum:</string>
+    <string name="fragment_schedule_call_time_from_label">Vreme od:</string>
+    <string name="fragment_schedule_call_time_to_label">Vreme do:</string>
+    <string name="fragment_schedule_call_choose_label">Izaberi</string>
+    <string name="fragment_schedule_call_choose_toast_msg_successfully">Uspesno sačuvan poziv</string>
+    <string name="fragment_schedule_call_choose_toast_msg_link_successfully">Uspešno kreiran link za poziv</string>
+    <string name="fragment_schedule_call_choose_description">Opis</string>
+    <string name="fragment_schedule_call_choose_insert_description">Unesite opis</string>
+    <string name="fragment_schedule_call_add_participants">Učesnici:</string>
+    <string name="fragment_schedule_call_network_toast_copy_txt">Tekst kopiran.</string>
+    <string name="fragment_schedule_call_enter_call">Uđi u poziv</string>
+    <string name="fragment_schedule_call_start_call">Započni poziv</string>
+    <string name="fragment_schedule_call_cancel_call">Otkaži poziv</string>
+
+    <!--Fragment user info-->
+    <string name="fragment_user_info_header_title">Info tabla</string>
+    <string name="fragment_user_info_profil_user_title">Profil korisnika</string>
+    <string name="fragment_user_info_username_label">Petar Petrović</string>
+    <string name="fragment_user_info_jmbg_label">JMBG</string>
+    <string name="fragment_user_info_jmbg_value">291198760022</string>
+    <string name="fragment_user_info_insurance_number_label">Broj osiguranja</string>
+    <string name="fragment_user_info_insurance_number_value">291198760022</string>
+    <string name="fragment_user_info_id_card_number_label">BZK</string>
+    <string name="fragment_user_info_id_card_number_value">29119876</string>
+    <string name="fragment_user_info_gender_label">Pol</string>
+    <string name="fragment_user_info_gender_value">Muško</string>
+    <string name="fragment_user_info_phone_number_label">Broj telefona:</string>
+    <string name="fragment_user_info_phone_number_value">0641234567</string>
+    <string name="fragment_user_info_address_label">Adresa:</string>
+    <string name="fragment_user_info_address_value">Braće Jugović 32</string>
+    <string name="fragment_user_info_email_address_label">Email:</string>
+    <string name="fragment_user_info_email_label">pp@gmail.com</string>
+    <string name="fragment_user_info_generation_access_data_tv">Generisanje pristupnih podataka za portal</string>
+    <string name="fragment_user_info_permanent_deletion_order_btn">Trajno brisanje naloga</string>
+    <string name="fragment_user_info_logout_btn">Odjava</string>
+    <string name="fragment_user_info_logout_content_alert_dialog">Da li ste sigurni da želite da se odjavite?</string>
+    <string name="fragment_user_info_gender_male">Muško</string>
+    <string name="fragment_user_info_gender_female">Žensko</string>
+
+    <!--Fragment waist circumference-->
+    <string name="fragment_waist_circumference_header_title">Obim struka</string>
+    <string name="fragment_waist_circumference_choose_btn">Izaberi</string>
+    <string name="fragment_waist_circumference_cancel_btn">Zatvori</string>
+
+    <!--Fragment weight-->
+    <string name="fragment_weight_header_title">Težina</string>
+    <string name="fragment_weight_cancel_btn">Zatvori</string>
+    <string name="fragment_weight_choose_btn">Izaberi</string>
+
+    <!--Activity include empty screen-->
+    <string name="activity_include_empty_screen_description">Ne postoje podaci \n na izabranoj stranici.</string>
+
+    <!--Fragment item chat document-->
+    <string name="fragment_item_chat_document_extension">document.dpf</string>
+    <string name="fragment_item_chat_document_file_size">4.2 MB</string>
+    <string name="fragment_item_chat_document_time">22:56</string>
+
+    <!--Fragment item chat document-->
+    <string name="fragment_item_chat_image_extension">document.dpf</string>
+    <string name="fragment_item_chat_image_file_size">4.2 MB</string>
+    <string name="fragment_item_chat_image_time">22:56</string>
+
+    <!--Fragment item chat other-->
+    <string name="fragment_item_chat_other_file_size">4.2 MB</string>
+    <string name="fragment_item_chat_other_time">22:56</string>
+
+    <!--Fragment item chat other image-->
+    <string name="fragment_item_chat_other_image_extension">document.dpf</string>
+    <string name="fragment_item_chat_other_image_file_size">4.2 MB</string>
+    <string name="fragment_item_chat_other_image_time">22:56</string>
+
+    <!--Fragment item chat receiver-->
+    <string name="fragment_item_chat_receiver_text_area">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac neque ex. Sed mollis pharetra tempus?</string>
+
+    <!--Fragment item chat sender-->
+    <string name="item_chat_sender_time">22:56</string>
+
+    <!--Fragment item event-->
+    <string name="fragment_item_event_header_title">Dostupna terapija u apoteci</string>
+    <string name="fragment_item_event_receive_therapy_label">Preuzmi terapiju</string>
+    <string name="fragment_item_event_receive_therapy_value">Ceo Dan</string>
+
+    <!--Fragment item notification-->
+    <string name="fragment_item_notification_available_therapy_title">Dostupna terapija</string>
+    <string name="fragment_item_notification_e_recept_subtitle">eRecept sistem</string>
+    <string name="fragment_item_notification_name_doctor_value">Dr Mladen Đurić</string>
+    <string name="fragment_item_notification_date_value">16.5.2022.</string>
+    <string name="fragment_item_notification_description_taking_period_value">Vašu terapiju možete preuzeti u apoteci od 18.01.2023. do 25.01.2024.</string>
+
+    <!--Fragment item on boarding card-->
+    <string name="fragment_item_on_boarding_card_welcome_title">Dobrodošli</string>
+    <string name="fragment_item_on_boarding_card_welcome_description">eZdravlje je jedinstveni sistem Republike Srbije u Vašem džepu</string>
+
+    <!--Fragment item sub user-->
+    <string name="fragment_item_sub_user_name_label">Petar Petrović</string>
+    <string name="fragment_item_sub_user_info_text_label">Podosiguranik</string>
+
+    <!--Fragment pin chat bottom sheet-->
+    <string name="fragment_pin_chat_bottom_sheet_description_tv">Unesite PIN za potpun pristup podacima i opcijama portala eZdravlje. Ukoliko nemate PIN kod, prijavite se preko web stranice eid.gov.rs za potpun pristup podacima i opcijama portala eZdravlje.</string>
+    <string name="fragment_pin_chat_bottom_sheet_enter_pin_code_header">Unesi PIN kod</string>
+    <string name="fragment_pin_chat_bottom_sheet_save_pin_code_btn">Sačuvaj PIN kod</string>
+    <string name="fragment_pin_chat_bottom_sheet_continue_without_pin_btn">Nastavi bez Pin koda</string>
+
+    <!--Network - wrapper xml-->
+    <string name="network_description">Za uvid u medicinske podatke potreban je\n visok stepen autorizacije i autentikacije.\n Prijavite se preko eid.gov.rs dvofaktorkskom\n autorizacijom (Constent ID), ili unesite PIN kod </string>
+    <string name="network_title">Mreža</string>
+    <string name="network_enter_pin_btn">Unesi PIN kod</string>
+    <string name="network_login_btn">Prijavi se</string>
+
+
+    <!--Fragment way_of_life-->
+    <string name="fragmet_way_of_life_tv_description">Za pristup medicinskim podacima potrebna je visok nivo autorizacije i autentifikacije.\n Molimo vas da se prijavite putem eid.gov.rs sa dvofaktorskom autentifikacijom (Consent ID), ili unesite svoj PIN kod.\n</string>
+    <string name="fragment_way_of_life">Način života</string>
+    <string name="fragment_way_of_life_mb_login">Prijavi se</string>
+    <string name="fragment_way_of_life_mb_enter_pin_code">Unesi PIN kod</string>
+
+    <!--Fragment bottom sheet pin-->
+    <string name="fragment_bottom_sheet_pin_description">Unesite svoj PIN za potpun pristup podacima i opcijama eZdravlje portala. Ako nemate PIN, molimo vas da se prijavite putem eid.gov.rs sajta za potpuni pristup podacima i opcijama eZdravlje portala.</string>
+    <string name="fragment_bottom_sheet_pin_mb_save_pin_code">Spremi PIN kod</string>
+    <string name="fragment_bottom_sheet_mb_continue_without_pin">Nastavite bez PIN koda</string>
+    <string name="fragment_bottom_sheet_pin_enter_pin_code_header">Unesite PIN kod</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+
+    <!--BottomSheet Confirm Delete Reminder Fragment-->
+    <string name="fragment_bottom_sheet_confirm_delete_reminder_description_drug_consumption">"Podsetnik za konzumaciju leka će biti izbrisan \ntrajno iz kalendara.\nDa li želite da nastavite?"</string>
+    <string name="fragment_bottom_sheet_confirm_delete_reminder_description_personal_data_activity">"Podsetnik za ličnu aktivnost će biti izbrisan \n trajno iz kalendara.\nDa li želite da nastavite?"</string>
+    <string name="fragment_bottom_sheet_confirm_delete_reminder_description_scheduled_call">"Podsetnik za zakazani poziv će biti izbrisan \n trajno iz kalendara.\nDa li želite da nastavite?"</string>
+    <string name="fragment_bottom_sheet_confirm_delete_reminder_description_doctors_appointment">"Da li ste sigurni da želite da otkažete \ntermin kod lekara?"</string>
+    <string name="fragment_bottom_sheet_confirm_delete_reminder_delete_medicamente">Da liste sigurni \nda želite da obrišete lek?</string>
+    <string name="fragment_bottom_sheet_confirm_delete_reminder_header_title">Brisanje podsetnika</string>
+    <string name="fragment_bottom_sheet_confirm_delete_reminder_delete_medicamente_header">Brisanje leka</string>
+    <string name="fragment_bottom_sheet_confirm_delete_reminder_clear_all_reminders_in_row_radioBtn">Оbriši sve podsetnike u nizu</string>
+    <string name="fragment_bottom_sheet_confirm_delete_reminder_closeBtn">Zatvori</string>
+    <string name="fragment_bottom_sheet_confirm_delete_reminder_continueBtn">Nastavi</string>
+
+    <!--Fragment add medicament date interval add medicament -->
+    <string name="fragment_add_medicament_date_interval_add_medicament_title">Dodaj lek</string>
+    <string name="fragment_add_medicament_date_interval_add_medicament_subtitle">Dodaj interval ponavljanja aktivnosti:</string>
+    <string name="fragment_add_medicament_date_interval_add_medicament_drug_consumption_interval_label">Unesi interval ponavljanja uzimanja leka:</string>
+    <string name="fragment_add_medicament_date_interval_add_medicament_time_from_label">Vreme od:</string>
+    <string name="fragment_add_medicament_date_interval_add_medicament_name_activity_label">Naziv aktivnosti:</string>
+    <string name="fragment_add_medicament_date_interval_add_medicament_period_from_label">Period od:</string>
+    <string name="fragment_add_medicament_date_interval_add_medicament_period_to_label">Period do:</string>
+    <string name="fragment_add_medicament_date_interval_add_medicament_insert">Unesi</string>
+    <string name="fragment_add_medicament_date_interval_add_medicament_dosage">Doziranje:</string>
+
+
+    <!--Fragment add time tacking medicament -->
+    <string name="fragment_add_time_taking_medicament_title">Dodaj podsetnik za lek</string>
+    <string name="fragment_add_time_taking_medicament_add_time_tacking_medicament_label">Dodaj vreme uzimanja leka:</string>
+    <string name="fragment_add_time_taking_medicament_add_time_label">Dodaj vreme uzimanja leka</string>
+    <string name="fragment_add_time_taking_medicament_choose_time_mtv">Izaberi</string>
+    <string name="fragment_add_time_taking_medicament_add_time_one_label">Dodaj vreme uzimanja leka</string>
+    <string name="fragment_add_time_taking_medicament_choose_one_mtv">Izaberi</string>
+    <string name="fragment_add_time_taking_medicament_add_time_two_label">Dodaj vreme uzimnja leka</string>
+    <string name="fragment_add_time_taking_medicament_choose_two_mtv">Izaberi</string>
+    <string name="fragment_add_time_taking_medicament_add_time_three_label">Dodaj vreme uzimanja leka</string>
+    <string name="fragment_add_time_taking_medicament_choose_three_mtv">Izaberi</string>
+    <string name="fragment_add_time_taking_medicament_medicament_label">Lek:</string>
+    <string name="fragment_add_time_taking_medicament_dosage_label">Doziranje:</string>
+    <string name="fragment_add_time_taking_medicament_period_from_label">Period od:</string>
+    <string name="fragment_add_time_taking_medicament_period_to_label">Period do:</string>
+    <string name="fragment_add_time_taking_medicament_add_btn">Dodaj</string>
+
+    <!--Fragment address bottom sheet -->
+    <string name="fragment_address_bottom_sheet_header_title">Adresa</string>
+    <string name="fragment_address_bottom_sheet_address_hint_edit_text">Adresa</string>
+    <string name="fragment_address_bottom_sheet_cancel_btn">Odustani</string>
+    <string name="fragment_address_bottom_sheet_confirm_btn">Potvrdi</string>
+    <string name="fragment_address_bottom_sheet_insert_value">Unesi vrednost</string>
+
+    <!--Fragment ambulant examination -->
+    <string name="fragment_ambulant_examination_header_title">Zakaži termin kod lekara</string>
+    <string name="fragment_ambulant_examination_subtitle">Izaberi datum</string>
+    <string name="fragment_ambulant_examination_date_label">Datum</string>
+    <string name="fragment_ambulant_examination_choose_mtv">Izaberi</string>
+    <string name="fragment_ambulant_examination_doctor_label">Lekar:</string>
+    <string name="fragment_ambulant_examination_institution_label">Institucija:</string>
+    <string name="fragment_ambulant_examination_type_review_label">Vrsta pregleda:</string>
+
+    <!--Fragment answer -->
+    <string name="fragment_answer_back_mtv">Nazad</string>
+    <string name="fragment_answer_title">Odgovor</string>
+    <string name="fragment_anwer_descritpion_mtv">Suprotno uvreženom mišljenju, Lorem Ipsum nije jednostavno nasumični tekst. Ima korene u delu klasične latinske književnosti iz 45. godine pre nove ere, što ga čini starim preko 2000 godina. Ričard Meklintok, profesor latinskog jezika na Hampden-Sidni koledžu u Virdžiniji, potražio je jednu od ređih latinskih reči, consectetur, iz odlomka Lorem Ipsuma, i proučavajući njena pojavljivanja u klasičnoj literaturi, otkrio nesumnjiv izvor. Lorem Ipsum potiče iz delova 1.10.32 i 1.10.33 knjige &quot;De Finibus Bonorum et Malorum&quot; (O krajnjim granicama dobra i zla) koju je napisao Ciceron 45. godine pre nove ere. Ova knjiga je rasprava o teoriji etike, veoma popularna tokom renesanse. Prva rečenica Lorem Ipsuma, &quot;Lorem ipsum dolor sit amet..&quot;, dolazi iz odlomka 1.10.32. Standardni deo Lorem Ipsuma koji se koristi od 1500-ih godina ponovo je prikazan ispod za zainteresovane. Delovi 1.10.32 i 1.10.33 iz &quot;De Finibus Bonorum et Malorum&quot; takođe su prikazani u svom originalnom obliku, zajedno sa engleskim verzijama iz Rackhamovog prevoda iz 1914. godine.</string>
+
+    <!--Fragment ask question -->
+    <string name="fragment_ask_question_header_title">Prijava</string>
+    <string name="fragment_ask_question_title">Postavi pitanje</string>
+    <string name="fragment_ask_question_choose_question_category_label">Izaberite kategoriju pitanja:</string>
+    <string name="fragment_ask_question_title_label">Naslov:</string>
+    <string name="fragment_ask_question_email_label">Email adresa\n(na koju ćete poslati odgovor)</string>
+    <string name="fragment_ask_question_question__label">Postavi pitanje</string>
+    <string name="fragment_ask_question_choose_mtv">Izaberi</string>
+    <string name="fragment_ask_question_add_mtv">Dodaj</string>
+    <string name="fragment_ask_question_description_label">Maksimalni unos je 150 karaktera.</string>
+    <string name="fragment_ask_question_send_btn">Pošalji</string>
+    <string name="fragment_ask_question_success_message">Uspešno ste poslali pitanje</string>
+    <string name="fragment_ask_question_selected_category">Izabrana kategorija</string>
+    <string name="fragment_ask_question_titleOne">Naslov</string>
+    <string name="fragment_ask_question_email">Email</string>
+
+    <!--Fragment bottom sheet activity -->
+    <string name="fragment_bottom_sheet_activity_name_header_title">Naziv</string>
+    <string name="fragment_bottom_sheet_activity_name_name_hint_edit_text">Naziv</string>
+    <string name="fragment_bottom_sheet_activity_name_cancel_btn">Odustani</string>
+    <string name="fragment_bottom_sheet_activity_name_confirm_btn">Potvrdi</string>
+
+    <!--Fragment bottom sheet change name -->
+    <string name="fragment_bottom_sheet_change_name_header_title">Naziv</string>
+    <string name="fragment_bottom_sheet_change_name_name_hint_edit_text">Naziv</string>
+    <string name="fragment_bottom_sheet_change_name_cancel_btn">Odustani</string>
+    <string name="fragment_bottom_sheet_change_name_confirm_btn">Potvrdi</string>
+
+    <!--Fragment bottom sheet confirm add medicament calendar -->
+    <string name="fragment_bottom_sheet_confirm_add_medicament_calendar_header_title">Dodaj lek</string>
+    <string name="fragment_bottom_sheet_confirm_add_medicament_calendar_description">Da li ste sigurni da želite da \n dodate lek u kalendar ?</string>
+    <string name="fragment_bottom_sheet_confirm_add_medicament_calendar_cancel_btn">Odustani</string>
+    <string name="fragment_bottom_sheet_confirm_add_medicament_calendar_confirm_btn">Potvrdi</string>
+    <string name="fragment_bottom_sheet_confirm_add_medicament_calendar_add_medicine_toast_msg">Lek je dodat! Možete ga videti u svom kalendaru.</string>
+
+
+    <!--Fragment bottom sheet dialog confirm  -->
+    <string name="fragment_bottom_sheet_dialog_confirm_header_title">Zakaži termin kod lekara</string>
+    <string name="fragment_bottom_sheet_dialog_confirm_description_mtv">Da li ste sigurni da želite da \n zakažete pregled?</string>
+    <string name="fragment_bottom_sheet_dialog_confirm_cancel_btn">Ne</string>
+    <string name="fragment_bottom_sheet_dialog_confirm_continue_btn">Da</string>
+
+    <!--Fragment bottom sheet event info-->
+    <string name="fragment_bottom_sheet_event_info_header_title">Da li ste popili lek?</string>
+    <string name="fragment_bottom_sheet_event_info_prescribed_medicine_label">Propisani lek:</string>
+    <string name="fragment_bottom_sheet_event_info_dosage_label">Doziranje:</string>
+    <string name="fragment_bottom_sheet_event_info_prescribed_date_label">Datum:</string>
+    <string name="fragment_bottom_sheet_event_info_prescribed_time_label">Vreme:</string>
+    <string name="fragment_bottom_sheet_event_info_prescribed_cancel_label">Ne</string>
+    <string name="fragment_bottom_sheet_event_info_prescribed_confirm_label">Da</string>
+
+    <!--Fragment bottom sheet filter-->
+    <string name="fragment_bottom_sheet_filter_header">Filter</string>
+    <string name="fragment_bottom_sheet_filter_available_therapies_label">Dostupne terapije</string>
+    <string name="fragment_bottom_sheet_filter_reminders_therapy_consumption_label">Podsetnici za konzumaciju leka</string>
+    <string name="fragment_bottom_sheet_filter_scheduled_doctors_appointments_label">Termini kod lekara</string>
+    <string name="fragment_bottom_sheet_filter_screening_examinations_label">Skrining pregledi</string>
+    <string name="fragment_bottom_sheet_filter_personalized_activities_label">Lične aktivnosti</string>
+    <string name="fragment_bottom_sheet_filter_scheduled_calls_label">Zakazani pozivi</string>
+    <string name="fragment_bottom_sheet_filter_access_data">Pristup podacima</string>
+    <string name="fragment_bottom_sheet_filter_medication_reminder">Podsetnik za lekove</string>
+    <string name="fragment_bottom_sheet_filter_scheduled_appointment">Zakazani pregled</string>
+    <string name="fragment_bottom_sheet_filter_contact_request_status">Prihvaćen/Odbijen zahtev za kontakt</string>
+    <string name="fragment_bottom_sheet_filter_new_msg">Nova poruka</string>
+    <string name="fragment_bottom_sheet_filter_new_msg_group">Nova poruka - Grupa</string>
+    <string name="fragment_bottom_sheet_filter_system_msg">Sistemska poruka</string>
+    <string name="fragment_bottom_sheet_filter_show_all">Prikaži sve</string>
+    <string name="fragment_bottom_sheet_filter_recommendation">Preporuka</string>
+    <string name="fragment_bottom_sheet_filter_profile_data_sharing">Deljenje podataka profila</string>
+    <string name="fragment_bottom_sheet_filter_prescription_pickup_confirmation">Potvrda preuzimanja recepata</string>
+    <string name="fragment_bottom_sheet_filter_notification_type">Tip obaveštenja</string>
+    <string name="fragment_bottom_sheet_filter_close_btn">Zatvori</string>
+    <string name="fragment_bottom_sheet_filter_save_btn">Sačuvaj</string>
+
+
+    <!--Fragment bottom sheet free terms-->
+    <string name="fragment_bottom_sheet_free_terms_header_title">Slobodni termini</string>
+
+    <!--Fragment bottom sheet intervals hours-->
+    <string name="fragment_bottom_sheet_interval_hours_header_title">Interval</string>
+
+    <!--Fragment bottom sheet realized unrealized activity-->
+    <string name="fragment_bottom_sheet_realized_unrealized_activity_header_title">Da li ste popili lek?</string>
+    <string name="fragment_bottom_sheet_realized_unrealized_activity_personal_activity_label">Lična aktivnost:</string>
+    <string name="fragment_bottom_sheet_realized_unrealized_activity_description_label">Opis:</string>
+    <string name="fragment_bottom_sheet_realized_unrealized_activity_date_label">Datum:</string>
+    <string name="fragment_bottom_sheet_realized_unrealized_activity_time_label">Vreme:</string>
+    <string name="fragment_bottom_sheet_realized_unrealized_activity_cancel_label">Ne</string>
+    <string name="fragment_bottom_sheet_realized_unrealized_activity_confirm_label">Da</string>
+
+    <!--Fragment calendar appointment schedule-->
+    <string name="fragment_calendar_appointment_schedule_header_title">Zakaži termin kod lekara</string>
+    <string name="fragment_calendar_appointment_schedule_title">Izaberi vrstu pregleda:</string>
+    <string name="fragment_calendar_appointment_schedule_ambulatory_examination_label">Ambulantni pregled</string>
+    <string name="fragment_calendar_appointment_schedule_telemedicine_video_call_label">Telemedicina - video poziv</string>
+    <string name="fragment_calendar_appointment_schedule_telemedicine_call_phone_label">Telemedicina - poziv na telefonu</string>
+    <string name="fragment_calendar_appointment_schedule_doctor_label">Lekar:</string>
+    <string name="fragment_calendar_appointment_schedule_institution_label">Institucija:</string>
+    <string name="fragment_calendar_appointment_schedule_examination_type_label">Vrsta pregleda:</string>
+
+    <!--Fragment calendar personal activity date-->
+    <string name="fragment_calendar_personal_activity_date_header_title">Dodaj ličnu aktivnost</string>
+    <string name="fragment_calendar_personal_activity_date_title">Dodaj ličnu aktivnost</string>
+    <string name="fragment_calendar_personal_activity_date_subtitle">Izaberi datum:</string>
+    <string name="fragment_calendar_personal_activity_date_period_from_label">Datum od:</string>
+    <string name="fragment_calendar_personal_activity_date_choose_label">Izaberi</string>
+    <string name="fragment_calendar_personal_activity_date_period_to_label">Datum do:</string>
+    <string name="fragment_calendar_personal_activity_date_name_activity_label">Naziv aktivnosti:</string>
+
+    <!--Fragment hoose category quest bottom sheet-->
+    <string name="fragment_choose_category_quest_bottom_sheet_header_title">Izaberi kategoriju pitanja</string>
+    <string name="fragment_choose_category_quest_bottom_sheet_gdpr_btn">GDPR</string>
+    <string name="fragment_choose_category_quest_bottom_sheet_helpdesk_btn">Helpdesk</string>
+    <string name="fragment_choose_category_quest_bottom_sheet_registration_btn">Registracija</string>
+    <string name="fragment_choose_category_quest_bottom_sheet_close_btn">Zatvori</string>
+    <string name="fragment_email_ask_quest_bottom_sheet_header_title">Email</string>
+    <string name="fragment_email_ask_quest_bottom_sheet_email_et">Email</string>
+    <string name="fragment_email_ask_quest_bottom_sheet_cancel_btn">Odustani</string>
+    <string name="fragment_email_ask_quest_bottom_sheet_confirm_btn">Potvrdi</string>
+
+    <!--Fragment email bottom sheet-->
+    <string name="fragment_email_bottom_sheet_header_title">Email</string>
+    <string name="fragment_email_bottom_sheet_email_et">Email:</string>
+    <string name="fragment_email_bottom_sheet_cancel_btn">Odustani</string>
+    <string name="fragment_email_bottom_sheet_confirm_btn">Potvrdi</string>
+
+    <!--Fragment frequently asked questions -->
+    <string name="fragment_frequently_asked_questions_header_title">Prijava</string>
+    <string name="fragment_frequently_asked_questions_title">Često postavljana pitanja</string>
+    <string name="fragment_frequently_asked_questions_why_label">Zašto Lorem Ipsum Si Dont Mas??</string>
+    <string name="fragment_frequently_asked_questions_how_label">Kako Lorem Ipsum Si Dont Mas??</string>
+
+    <!--Fragment healthcare-->
+    <string name="fragment_healthcare_header_title">Zdravstvo</string>
+    <string name="fragment_healthcare_medical_card_title">eKarton</string>
+    <string name="fragment_healthcare_medical_card_description">Pretražite Vaše konsultacije sortirane prema zdravstvenim ustanovama i preuzmite izveštaje lekara.</string>
+    <string name="fragment_healthcare_e_file_title">eDosije</string>
+    <string name="fragment_healthcare_e_file_description">Sveobuhvatni medicinski prikaz pacijenta. Pogledajte Vašu medicinsku istoriju.</string>
+    <string name="fragment_healthcare_prescribed_list_medicines_title">Ordinirana lista lekova</string>
+    <string name="fragment_healthcare_prescribed_list_medicines_description">Pogledajte e-Recepte (Terapije) prepisane od strane lekara. Vidite sve detalje o lekovima.</string>
+    <string name="fragment_healthcare_e_sick_leave_title">eBolovanje</string>
+    <string name="fragment_healthcare_e_sick_leave_description">Prikaz svih otvorenih i zatvorenih bolovanja sa detaljnim izveštajima pacijenta.</string>
+    <string name="fragment_healthcare_scrinning_examinations_title">Skrining pregledi</string>
+    <string name="fragment_healthcare_scrinning_examinations_descriptions">Zakažite skrining pregled, odaberite zdravstvenu ustanovu, i popunite skrining upitnik.</string>
+    <string name="fragment_healthcare_prevention_title">Prevencija</string>
+    <string name="fragment_healthcare_prevention_description">Lorem Ipsum Text</string>
+    <string name="fragment_healthcare_schedule_exam_title">Zakazivanje termina</string>
+    <string name="fragment_healthcare_prevention_description_txt">Da bi ste videli sadržaj stranice, potreban je\nvisok stepen autorizacije i autentikacije. \nPrijavite se preko eid.gov.rs dvofaktorkskom autorizacijom (Constent ID), ili unesite PIN kod.</string>
+
+    <!--Fragment help and support bottom sheet-->
+    <string name="fragment_help_and_support_bottom_sheet_instructions_for_registration_btn">Uputstvo za registraciju</string>
+    <string name="fragment_help_and_support_bottom_sheet_frequently_asked_questions_btn">Često postavljana pitanja</string>
+    <string name="fragment_help_and_support_bottom_sheet_ask_questions_btn">Postavi pitanje</string>
+
+    <!--Fragment medicament info bottom sheet-->
+    <string name="fragment_medicament_info_bottom_sheet_header_title">Informacije o leku</string>
+    <string name="fragment_medicament_info_bottom_sheet_dosage_label">Doziranje:</string>
+    <string name="fragment_medicament_info_bottom_sheet_drug_strength_label">Jačina leka:</string>
+    <string name="fragment_medicament_info_bottom_sheet_date_date_accept_label">Datum preuzimanja:</string>
+    <string name="fragment_medicament_info_bottom_sheet_status_label">Status:</string>
+    <string name="fragment_medicament_info_bottom_sheet_type_recept_label">Tip recepta:</string>
+    <string name="fragment_medicament_info_bottom_sheet_close_btn">Zatvori</string>
+    <string name="fragment_medicament_info_bottom_sheet_etherapy">eTerapija</string>
+
+    <!--Fragment medicament withot out recept-->
+    <string name="fragment_medicament_with_out_recept_header_title">Dodaj lek bez recepta</string>
+
+    <!--FragmentMedicamentWithoutRecipe-->
+    <string name="fragment_medicament_with_recept_header_title">Dodaj lek</string>
+    <string name="fragment_medicament_with_recept_title">Izaberi lek sa ordinirane liste:</string>
+    <string name="fragment_medicament_with_recept_title_desc">Ukoliko niste, izabrani lek možete dodati na ordiniranu listu lekova.</string>
+    <string name="fragment_medicament_with_recept_notification">Nema podataka</string>
+
+    <!--PeriodFromToFragment-->
+    <string name="fragment_period_from_to_header_title">Dodaj lek</string>
+    <string name="fragment_period_from_to_title">Dodaj podsetnik za lek</string>
+    <string name="fragment_period_from_to_subtitle">Izaberi datum:</string>
+    <string name="fragment_period_from_to_period_from_label">Period od:</string>
+    <string name="fragment_period_from_to_period_to_label">Period do:</string>
+    <string name="fragment_period_from_to_choose_label">Izaberi</string>
+    <string name="fragment_period_from_to_medicament_label">Lek:</string>
+    <string name="fragment_period_from_to_title_bottom_sheet">Doziranje</string>
+    <string name="fragment_period_from_to_subtitle_bottom_sheet">Doza leka</string>
+    <string name="fragment_period_from_to_date_error">Došlo je do greške pri izboru datuma. Molimo vas da proverite unose.</string>
+
+    <!--Fragment personal activity date details-->
+    <string name="fragment_personal_activity_date_details_header_title">Dodaj ličnu aktivnost</string>
+    <string name="fragment_personal_activity_date_details_title">Dodaj vreme aktivnosti:</string>
+    <string name="fragment_personal_activity_date_details_add_time_activity_label">Dodaj vreme aktivnosti</string>
+    <string name="fragment_personal_activity_date_details_add_repetition_interval_label">Dodaj interval ponavljanja aktivnosti</string>
+    <string name="fragment_personal_activity_date_details_activity_name_label">Naziv aktivnosti:</string>
+    <string name="fragment_personal_activity_date_details_period_from_label">Period od:</string>
+    <string name="fragment_personal_activity_date_details_period_to_label">Peroid do:</string>
+
+    <!--Fragment personal activity date interval-->
+    <string name="fragment_personal_activity_date_interval_header_title">Dodaj ličnu aktivnost</string>
+    <string name="fragment_personal_activity_date_interval_title">Dodaj vreme aktivnosti:</string>
+    <string name="fragment_personal_activity_date_interval_add_repetition_interval_label">Unesi interval \nponavljanja aktivnosti (h):</string>
+    <string name="fragment_personal_activity_date_interval_time_from_label">Vreme od:</string>
+    <string name="fragment_personal_activity_date_interval_activity_name_label">Naziv aktivnosti:</string>
+    <string name="fragment_personal_activity_date_interval_period_from_label">Period od:</string>
+    <string name="fragment_personal_activity_date_interval_period_to_label">Period do:</string>
+
+    <!--Fragment personal activity time-->
+    <string name="fragment_personal_activity_time_header_title">Dodaj ličnu aktivnost</string>
+    <string name="fragment_personal_activity_time_title">Dodaj vreme aktivnosti:</string>
+    <string name="fragment_personal_activity_time_add_time_activity">Dodaj vreme aktivnosti</string>
+    <string name="fragment_personal_activity_time_choose">Izaberi</string>
+    <string name="fragment_personal_activity_time_activity_name_label">Naziv aktivnosti:</string>
+    <string name="fragment_personal_activity_time_perido_from_label">Period od:</string>
+    <string name="fragment_personal_activity_time_period_to">Period do:</string>
+
+    <!--Fragment phone number bottom sheet -->
+    <string name="fragment_phone_number_bottom_sheet_header_title">Broj telefona</string>
+    <string name="fragment_phone_number_bottom_sheet_phone_number_et">Broj telefona:</string>
+    <string name="fragment_phone_number_bottom_sheet_cancel_btn">Odustani</string>
+    <string name="fragment_phone_number_bottom_sheet_confirm_btn">Potvrdi</string>
+
+    <!--Fragment review entered data-->
+    <string name="fragment_review_entered_data_header_title">Zakaži termin kod lekara</string>
+    <string name="fragment_review_entered_data_title">Pregled unetih podataka</string>
+    <string name="fragment_review_entered_data_term_label">Termin:</string>
+    <string name="fragment_review_entered_data_date_label">Datum:</string>
+    <string name="fragment_review_entered_data_doctor_label">Lekar:</string>
+    <string name="fragment_review_entered_data_institution_label">Institucija:</string>
+    <string name="fragment_review_entered_data_type_review_label">Vrsta pregleda:</string>
+    <string name="fragment_review_entered_data_schedule_appointment_btn">Zakaži termin kod lekara</string>
+
+    <!--Fragment time tacking medicament-->
+    <string name="fragment_time_taking_medicament_header_title">Dodaj podsetnik za lek</string>
+    <string name="fragment_time_taking_medicament_title">Dodaj vreme uzimanja leka:</string>
+    <string name="fragment_time_taking_medicament_add_time_tacking_medicament_label">Dodaj vreme uzimanja leka</string>
+    <string name="fragment_time_taking_medicament_add_repeat_interval_tacking_medicament_label">Dodaj interval ponavljanja uzimanja leka</string>
+    <string name="fragment_time_taking_medicament_medicament_label">Lek:</string>
+    <string name="fragment_time_taking_medicament_dosage_label">Doziranje:</string>
+    <string name="fragment_time_taking_medicament_period_from_label">Datum od:</string>
+    <string name="fragment_time_taking_medicament_period_to_label">Datum do:</string>
+
+    <!--Fragment title bottom sheet-->
+    <string name="fragment_title_bottom_sheet_header_title">Naslov</string>
+    <string name="fragment_title_bottom_sheet_title_et">Naslov</string>
+    <string name="fragment_title_bottom_sheet_cancel_btn">Odustani</string>
+    <string name="fragment_title_bottom_sheet_confirm_btn">Potvrdi</string>
+
+    <!--Adapter Screening Examination-->
+    <string name="adapter_screening_examination_screening_invitation">Pozivnica za skrining pregled</string>
+    <string name="adapter_screening_examination_examination_report">Izveštaj skrining pregleda</string>
+    <string name="adapter_screening_examination_see_questionnaire">Vidi upitnik</string>
+    <string name="adapter_screening_examination_see_invitation">Vidi pozivnicu</string>
+    <string name="adapter_screening_examination_see_report">Vidi izveštaj</string>
+    <string name="adapter_screening_examination_choose">Izaberi</string>
+
+
+    <!--Fragment bottom sheet show pdf video-->
+    <string name="fragment_bottom_sheet_show_pdf_video_download_pdf_label">Izveštaj lekara</string>
+    <string name="fragment_bottom_sheet_show_pdf_video_download_pdf_title">Pregled izveštaja lekara</string>
+    <string name="fragment_bottom_sheet_show_pdf_video_show_video_label">Vidi snimak</string>
+    <string name="fragment_bottom_sheet_show_pdf_video_x_ray_diagnostics">Rendgenski snimak</string>
+    <string name="fragment_bottom_sheet_show_pdf_review_doctors_report">Pregled izveštaja lekara</string>
+
+    <!--Adapter Report disable for work-->
+    <string name="adapter_report_disability_for_work_remittance_title">Izveštaj o privremenoj sprečenosti za rad</string>
+
+    <!--Adapter eSick leave -->
+    <string name="adapter_e_sick_leave_remittance_title">Potvrda o privremenoj sprečenosti za rad</string>
+
+    <!--Fragment recipe details  -->
+    <string name="fragment_recipe_details_characteristics_medicamente">Karakteristike leka</string>
+    <string name="fragment_recipe_details_instruction_manual">Karakteristike leka</string>
+    <string name="fragment_recipe_details_manual_instruction">Uputstvo za upotrebu</string>
+
+    <!--Fragment prevention-->
+    <string name="fragment_prevention_select_institution">Izaberi</string>
+    <string name="fragment_prevention_select_category">Izaberi</string>
+    <string name="fragment_prevention_select_topic">Izaberi</string>
+    <!--NotificationTypeEnum  -->
+    <string name="class_notification_type_enum_vaccination">Vakcinacija</string>
+    <string name="class_notification_type_enum_medications">Lekovi</string>
+    <string name="class_notification_type_enum_medical_data_denial">Denjenje medicinskih podataka</string>
+    <string name="class_notification_type_enum_lifestyle">Životni stil</string>
+    <string name="class_notification_type_enum_social_media_message">Poruka na socijalnim mrežama</string>
+    <string name="class_notification_type_enum_social_media_comment">Komentar na socijalnim mrežama</string>
+    <string name="class_notification_type_enum_inbox_message">Poruka u inboxu</string>
+    <string name="class_notification_type_enum_contact_request">Zahtev za kontakt</string>
+    <string name="class_notification_type_enum_new_content_medical_atlas">Novi sadržaj u medicinskom atlasu</string>
+    <string name="class_notification_type_enum_new_topic">Nova tema</string>
+    <string name="class_notification_type_enum_missed_medication">Nije popijen lek</string>
+    <string name="class_notification_type_enum_lifestyle_note">Napomena za životni stil</string>
+    <string name="class_notification_type_enum_medical_data_access">Uvid u medicinske podatke</string>
+    <string name="class_notification_type_enum_missed_vaccination">Propuštena vakcinacija</string>
+    <string name="class_notification_type_enum_exam">Pregled</string>
+    <string name="class_notification_type_enum_consultations">Konsultacije</string>
+    <string name="class_notification_type_enum_scheduled_video_call">Zakazan video poziv</string>
+
+    <!--    MedicalCartonSortDialog-->
+    <string name="dialog_medical_carton_sort_ascending">Sortiraj - rastuće</string>
+    <string name="dialog_medical_carton_sort_descending">Sortiraj - opadajuće</string>
+
+    <!--    AccessMedicalCartonFragment-->
+    <string name="fragment_access_medical_carton_title">Pristup centralnom eKartonu od strane lekara iz zdravstvene ustanove</string>
+
+    <!--    ActiveClosedSicLeaveBottomSheetFragment-->
+    <string name="fragment_active_closed_sickleave_bottomsheet_title">Filter</string>
+    <string name="fragment_active_closed_sickleave_bottomsheet_active_sickleave">Aktivno bolovanje</string>
+    <string name="fragment_active_closed_sickleave_bottomsheet_closed_sickleave">Zatvoreno bolovanje</string>
+    <string name="fragment_active_closed_sickleave_bottomsheet_close_btn">Zatvori</string>
+    <string name="fragment_active_closed_sickleave_bottomsheet_save_btn">Zatvori</string>
+
+    <!--    AddPermissionBottomFragment-->
+    <string name="fragment_add_permisssion_botttom_title">Info</string>
+    <string name="fragment_add_permisssion_botttom_subtitle">Vaši podaci će biti sačuvani.\nDa li želite da nastavite?</string>
+    <string name="fragment_add_permisssion_botttom_cancel">Odustani</string>
+    <string name="fragment_add_permisssion_botttom_continue">Continue</string>
+
+    <!--    AddPermissionFragment-->
+    <string name="fragment_add_permissions_save_btn">Sačuvaj</string>
+    <string name="fragment_add_permissions_title">Dodaj dozvole</string>
+    <string name="fragment_add_permissions_choose_contact">Izaberi kontakt</string>
+    <string name="fragment_add_permissions_choose_btn">Izaberi</string>
+    <string name="fragment_add_permissions_add_btn">Dodaj</string>
+    <string name="fragment_add_permissions_ehr">EHR</string>
+    <string name="fragment_add_permissions_medicamente">Lekovi</string>
+    <string name="fragment_add_permissions_medical_card">Medicinski karton</string>
+    <string name="fragment_add_permissions_access_profile">Pristup profilu</string>
+    <string name="fragment_add_permissions_parameters_life_style">Parametri način života</string>
+    <string name="fragment_add_permissions_note">Napomena</string>
+    <string name="fragment_add_permissions_to">Do:</string>
+    <string name="fragment_add_permissions_from">From:</string>
+
+
+    <!--    AddReminderFragment-->
+    <string name="fragment_add_reminder_title">Konzumacija leka</string>
+    <string name="fragment_add_reminder_medicamente_name">Konzumacija leka:</string>
+    <string name="fragment_add_reminder_dosage">Doziranje:</string>
+    <string name="fragment_add_reminder_info_dosage">Informacije o doziranju:</string>
+    <string name="fragment_add_reminder_insert_value">Unesite vrednost:</string>
+    <string name="fragment_add_reminder_period_from">Datum od:</string>
+    <string name="fragment_add_reminder_period_to">Datum do:</string>
+    <string name="fragment_add_reminder_insert_date">Unesite datum:</string>
+    <string name="fragment_add_reminder_insert_term">Unesite termin:</string>
+    <string name="fragment_add_reminder_term_consumption">Unesite termin:</string>
+    <string name="fragment_add_reminder_every_hours">Na svaka/svakih sati:</string>
+    <string name="fragment_add_reminder_subtitle">Vreme uzimanja</string>
+    <string name="fragment_add_reminder_hours">Sati</string>
+    <string name="add_reminder_fragment_option_disabled">Opcija je isključena.</string>
+    <string name="add_reminder_fragment_end_date_greater_than_start_date">Datum završetka mora biti jednak ili veći od datuma početka.</string>
+    <string name="add_reminder_fragment_enter_date">Unesite datum</string>
+    <string name="add_reminder_fragment_data_saved_successfully">Uspešno sačuvani podaci</string>
+    <string name="add_reminder_fragment_data_save_failed">Neuspešno sačuvani podaci</string>
+    <string name="add_reminder_fragment_enter_value">Unesite vrednost</string>
+    <string name="add_reminder_fragment_error_saving_data">Greška pri čuvanju podataka:</string>
+
+    <!--    AmnesticInfoBottomSheetFragment-->
+    <string name="fragment_amnestic_info_bottomsheet_title">Info</string>
+    <string name="fragment_amnestic_info_bottomsheet_content">Da li ste sigurni da želite\n da sačuvate podatke?</string>
+    <string name="fragment_amnestic_info_bottomsheet_cancel_btn">Odustani</string>
+    <string name="fragment_amnestic_info_bottomsheet_save_btn">Sačuvaj</string>
+
+    <!--    AmnesticQuestionnaireFragment-->
+    <string name="fragment_amnestic_questionnaire_title">Amnestički podaci upitnik</string>
+    <string name="fragment_amnestic_questionnaire_save">Sačuvaj</string>
+    <string name="fragment_amnestic_questionnaire_general_info">Opšte informacije</string>
+    <string name="fragment_amnestic_questionnaire_first_menstruation">Prva menstruacija:</string>
+    <string name="fragment_amnestic_questionnaire_enter_value">Unesi vrednost</string>
+    <string name="fragment_amnestic_questionnaire_menstrual_cycle">Menstrualni ciklus:</string>
+    <string name="fragment_amnestic_questionnaire_choose">Izaberi</string>
+    <string name="fragment_amnestic_questionnaire_reason_cessation">Razlog prestanka menstruacije:</string>
+    <string name="fragment_amnestic_questionnaire_years_last_menstruation">Godina poslednje menstruacije:</string>
+    <string name="fragment_amnestic_questionnaire_first_pregnancy">Prva trudnoća (godine starosti):</string>
+    <string name="fragment_amnestic_questionnaire_num_pregnancies">Broj trudnoća</string>
+    <string name="fragment_amnestic_questionnaire_first_child">Sa koliko ste godina\nimali prvo dete</string>
+    <string name="fragment_amnestic_questionnaire_first_child_value">Unesi vrednost</string>
+    <string name="fragment_amnestic_questionnaire_smoker">Pušač</string>
+    <string name="fragment_amnestic_questionnaire_years_smoking">Koliko godina pušite</string>
+    <string name="fragment_amnestic_questionnaire_years_smoking_value">Unesi vrednost</string>
+    <string name="fragment_amnestic_questionnaire_blood_relatives_breast">Da li je i koliko krvnih srodnika imao dijagnostifikovanu bolest dojke</string>
+    <string name="fragment_amnestic_questionnaire_mother_breast">Majka</string>
+    <string name="fragment_amnestic_questionnaire_sisters_breast">Sestre</string>
+    <string name="fragment_amnestic_questionnaire_daughter_breast">Kćerka</string>
+    <string name="fragment_amnestic_questionnaire_grandma_breast">Baba</string>
+    <string name="fragment_amnestic_questionnaire_aunt_breast">Tetka</string>
+    <string name="fragment_amnestic_questionnaire_rbBloodRelativesOvaries">Da li je i koliko krvnih srodnika imao dijagnostifikovan rak jajnika</string>
+    <string name="fragment_amnestic_questionnaire_mtvMatherOvaries">Majka</string>
+    <string name="fragment_amnestic_questionnaire_mtvMatherOvariesValue">Izaberi</string>
+    <string name="fragment_amnestic_questionnaire_mtvSistersOvaries">Sestre</string>
+    <string name="fragment_amnestic_questionnaire_mtvSistersValueOvaries">Izaberi</string>
+    <string name="fragment_amnestic_questionnaire_mtvDaughterOvaries">Kćerka</string>
+    <string name="fragment_amnestic_questionnaire_mtvDaughterOvariesValue">Izaberi</string>
+    <string name="fragment_amnestic_questionnaire_mtvGrandmaOvaries">Baba</string>
+    <string name="fragment_amnestic_questionnaire_mtvAuntOvaries">Tetka</string>
+    <string name="fragment_amnestic_questionnaire_mtvGrandmaOvariesValue">Izaberi</string>
+    <string name="fragment_amnestic_questionnaire_rbChormonalContraception">Hormonska kontracepcija</string>
+    <string name="fragment_amnestic_questionnaire_mtvYears">Koliko godina</string>
+    <string name="fragment_amnestic_questionnaire_mtvYearsValue">Unesi vrednost</string>
+    <string name="fragment_amnestic_questionnaire_rbEstrogens">Korišćenje estrogena ili hormonskih terapija u menopauzi ili prevenciji osteoporoze</string>
+    <string name="fragment_amnestic_questionnaire_mtvHormoneTherapy">Godine početka uzimanja \nhormonske terapije</string>
+    <string name="fragment_amnestic_questionnaire_mtvYearsHormoneTherapy">Ukupan broj godina\nkorišćenja\nhormonske terapije</string>
+    <string name="fragment_amnestic_questionnaire_rbHormoneTherapyNow">Da li se i sada koristi hormonska terapija</string>
+    <string name="fragment_amnestic_questionnaire_rbDiagnosedMalignant">Da li je prethodno dijagnostifikovana\nmaligna bolest</string>
+    <string name="fragment_amnestic_questionnaire_mtvTotalMammography">Koliko ste mamografija imali\nu poslednjih 5 godina ?</string>
+    <string name="fragment_amnestic_questionnaire_clDateLastMammography">Datum poslednje mamografije</string>
+    <string name="fragment_amnestic_questionnaire_mtvDoctorsReport">Nalaz</string>
+    <string name="fragment_amnestic_questionnaire_rbBreastSelfControl">Samokontrola dojki</string>
+    <string name="fragment_amnestic_questionnaire_rbBreastProblem">Imate li problem sa dojkama?</string>
+    <string name="fragment_amnestic_questionnaire_mtvPein">Bol</string>
+    <string name="fragment_amnestic_questionnaire_mtvPeinValue">Izaberi</string>
+    <string name="fragment_amnestic_questionnaire_mtvKnot">Čvor</string>
+    <string name="fragment_amnestic_questionnaire_mtvKnotValue">Izaberi</string>
+    <string name="fragment_amnestic_questionnaire_mtvDischarges">Iscedak</string>
+    <string name="fragment_amnestic_questionnaire_mtvTheRest">Ostalo</string>
+    <string name="fragment_amnestic_questionnaire_rbBreastIntervention">Da li ste imali neku\nintervenciju na dojkama?</string>
+    <string name="fragment_amnestic_questionnaire_mtvTracer">Punkcija</string>
+    <string name="fragment_amnestic_questionnaire_mtvTracerValue">Izaberi</string>
+    <string name="fragment_amnestic_questionnaire_mtvOperation">Operacija</string>
+    <string name="fragment_amnestic_questionnaire_mtvBiopsy">Biopsija</string>
+    <string name="fragment_amnestic_questionnaire_mtvImplants">Implanti</string>
+    <string name="fragment_amnestic_questionnaire_mtvPreviousBreastBiopsy">Nalaz prethodne biopsije dojki</string>
+    <string name="fragment_amnestic_questionnaire_mtvPreviousBreastBiopsyValue">Unesi podatak</string>
+    <string name="fragment_amnestic_questionnaire_rbBloodRelatives">Da li je i koliko krvnih srodnika imao dijagnostifikovanu bolest dojke</string>
+    <string name="fragment_amnestic_questionnaire_mtvMather">Majka</string>
+    <string name="fragment_amnestic_questionnaire_mtvMatherValue">Izaberi</string>
+    <string name="fragment_amnestic_questionnaire_mtvSisters">Sestre</string>
+    <string name="fragment_amnestic_questionnaire_mtvSistersValue">Izaberi</string>
+    <string name="fragment_amnestic_questionnaire_mtvDaughter">Kćerka</string>
+    <string name="fragment_amnestic_questionnaire_mtvDaughterValue">Izaberi</string>
+    <string name="fragment_amnestic_questionnaire_mtvGrandma">Baba</string>
+    <string name="fragment_amnestic_questionnaire_mtvGrandmaValue">Izaberi</string>
+    <string name="fragment_amnestic_questionnaire_mtvAunt">Tetka</string>
+    <string name="fragment_amnestic_questionnaire_mtvAuntValue">Izaberi</string>
+
+    <!--    BottomSheetActionsFragment-->
+    <string name="fragment_bottomsheet_actions_header">Akcije</string>
+    <string name="fragment_bottomsheet_actions_like">Svidja mi se</string>
+    <string name="fragment_bottomsheet_actions_follow_group">Zaprati grupu</string>
+    <string name="fragment_bottomsheet_actions_copy_link">Kopiraj link</string>
+
+    <!--    BottomSheetCalendarFragment-->
+    <string name="fragment_bottomsheet_calendar_header">Slobodni datumi</string>
+
+    <!--    BottomSheetInsertValue-->
+    <string name="bottomsheet_insert_value_insert_value">Unesite vrednost</string>
+    <string name="bottomsheet_insert_value_cancel_btn">Odustani</string>
+    <string name="bottomsheet_insert_value_confirm_btn">Potvrdi</string>
+
+    <!--    BottomSheetLegendFragment-->
+    <string name="fragment_bottomsheet_legend_header">Legenda</string>
+    <string name="fragment_bottomsheet_legend_info">Info:</string>
+    <string name="fragment_bottomsheet_legend_tag_color">Oznaka/boja</string>
+    <string name="fragment_bottomsheet_legend_close_btn">Zatvori</string>
+    <string name="fragment_bottomsheet_legend_info1">Lek koji je pacijent ručno uneo na portalu</string>
+    <string name="fragment_bottomsheet_legend_info2">eRecept, terapija dostupna u budućnosti</string>
+    <string name="fragment_bottomsheet_legend_info3">eRecept, otkazan</string>
+    <string name="fragment_bottomsheet_legend_info4">eRecept, lek koji je dostupan za preuzimanje u apoteci</string>
+    <string name="fragment_bottomsheet_legend_info5">eRecept, lek koji je preuzet u apoteci</string>
+    <string name="fragment_bottomsheet_legend_info6">eRecept, istekao rok za realizaciju</string>
+
+    <!--    BreastBottomSheetFragment-->
+    <string name="fragment_breast_bottomsheet_header">Dojke</string>
+    <string name="fragment_breast_bottomsheet_rbleft">Leva</string>
+    <string name="fragment_breast_bottomsheet_rbright">Desna</string>
+
+    <!--    ChangeProfileBottomSheetFragment-->
+    <string name="fragment_change_profile_bottomsheet_header">Zamena profila</string>
+    <string name="fragment_change_profile_bottomsheet_content">Da li ste sigurni\nda želite da zamenite profil?</string>
+    <string name="fragment_change_profile_bottomsheet_cancel_btn">Odustani</string>
+    <string name="fragment_change_profile_bottomsheet_continue_btn">Nastavi</string>
+
+    <!--    ChatInCallFragment-->
+    <string name="fragment_chat_in_call_header">Nazad u poziv</string>
+
+    <!--    CommonsThemesFragment-->
+    <string name="fragment_commons_themes_header">Prevencija</string>
+    <string name="fragment_commons_themes_title">Zajedničke teme</string>
+    <string name="fragment_commons_themes_subtitle">Odabir grupe i teme:</string>
+
+    <!--    DoctorsAppointmentFragment-->
+    <string name="fragment_doctors_appointment_title">Termin kod lekara</string>
+    <string name="fragment_doctors_appointment_name_doctor">Ime lekara</string>
+    <string name="fragment_doctors_appointment_institution">Ustanova</string>
+    <string name="fragment_doctors_appointment_time">Termin</string>
+
+    <string name="fragment_doctors_appointment_type">Vrsta pregleda</string>
+    <string name="fragment_doctors_appointment_value">Pregled sa terminom</string>
+
+    <string name="fragment_doctors_appointment_type2">Tip pregleda</string>
+    <string name="fragment_doctors_appointment_value2">Ambulantni pregled</string>
+
+    <!--    DoctorsReportBottomSheetFragment-->
+    <string name="fragment_doctors_report_bottomsheet_header">Nalaz</string>
+    <string name="fragment_doctors_report_bottomsheet_doctors_name">Nalaz</string>
+
+    <!--    DownloadPdfFileFragment-->
+    <string name="fragment_download_pdf_file_download_btn">Sačuvaj</string>
+    <string name="fragment_download_pdf_file_downloaded_successfully">Pdf uspešno preuzet</string>
+    <string name="fragment_download_pdf_file_error_while_downloading">Greška prilikom preuzimanja</string>
+    <string name="fragment_download_pdf_file_error_open_doc">Dokument nije moguće otvoriti!</string>
+
+    <!--    ESickLeaveFragment-->
+    <string name="fragment_esick_leave_header">Zdravstvo</string>
+    <string name="fragment_esick_leave_title">eBolovanje</string>
+
+    <!--    EnterValueBottomSheetFragment-->
+    <string name="fragment_enter_value_bottomsheet_header">Unesite vrednosti</string>
+    <string name="fragment_enter_value_bottomsheet_cancel_btn">Odustani</string>
+    <string name="fragment_enter_value_bottomsheet_save_btn">Sačuvaj</string>
+    <string name="fragment_enter_value_bottomsheet_title">Unesi podatke učesnika</string>
+    <string name="fragment_enter_value_bottomsheet_mbclose">Zatvori</string>
+    <string name="fragment_enter_value_bottomsheet_mbadd">Dodaj</string>
+
+
+    <!--    InfoBottomSheetFragment-->
+    <string name="fragment_info_bottomsheet_header">Info</string>
+    <string name="fragment_info_bottomsheet_title">Dostupna terapija</string>
+    <string name="fragment_info_bottomsheet_content">Vašu terapiju možete preuzeti u apoteci od 03.10.2024. Rok za preuzimanje za antibiotike je 3 dana. Rok za preuzimanje ostalih lekova je 15 dana od datuma propisivanja recepta za prvi mesec terapije i za sve naredne (2-6 meseci), rok za preuzimanje je 7 dana pre i 7 dana posle datuma propisivanja.</string>
+    <string name="fragment_info_bottomsheet_close_btn">Zatvori</string>
+
+    <!--    InstitutionCategoryTopicFragment-->
+    <string name="fragment_institution_category_topic_choose_btn">Izaberi</string>
+    <string name="fragment_institution_category_topic_title">Institucije</string>
+    <string name="fragment_institution_category_topic_search">Traži</string>
+
+    <!--    InstitutionsFragment-->
+    <string name="fragment_institutions_search">Traži</string>
+    <string name="fragment_institutions_title">Ustanove</string>
+    <string name="fragment_institutions_num_institution_relathionship">Broj povezanih i dostupnih ustanova:</string>
+    <string name="fragment_institutions_new_institutions">Nove dodate ustanove u prethodnih 24h:</string>
+
+    <!--    InstitutionsArrayFragment-->
+    <string name="fragment_institutions_array_save_btn">Sačuvaj</string>
+    <string name="fragment_institutions_array_search">Traži</string>
+    <string name="fragment_institutions_array_title">Institucije</string>
+    <string name="fragment_institutions_array_all_institutions">Sve institucije</string>
+
+
+    <!--    LimitationsFragment-->
+    <string name="fragment_limitations_title">Detalji recepta</string>
+    <string name="fragment_limitations_desription_diagnoses">Opis dijagnose:</string>
+    <string name="fragment_limitations_participation">Participacija:</string>
+    <string name="fragment_limitations_years_from">Godine od:</string>
+    <string name="fragment_limitations_years_to">Godine do:</string>
+    <string name="fragment_limitations_max_quantity">Maksimalna količina:</string>
+
+    <!--    MKB10Fragment-->
+    <string name="fragment_mkb10_header">Prevencija</string>
+    <string name="fragment_mkb10_search">Traži</string>
+    <string name="fragment_mkb10_title">Međunarodna klasifikacija bolesti(MKB10) 10A revizija</string>
+
+    <!--    MamografiaScreeningFragment-->
+    <string name="fragment_mamografia_screening_appointments_btn">Zakaži</string>
+    <string name="fragment_mamografia_screening_title">Prijava na skrining</string>
+    <string name="fragment_mamografia_screening_name">Ime:</string>
+    <string name="fragment_mamografia_screening_type">Tip:</string>
+    <string name="fragment_mamografia_screening_rgm">RGM:</string>
+    <string name="fragment_mamografia_screening_location">Lokacija:</string>
+    <string name="fragment_mamografia_screening_date">Datum:</string>
+    <string name="fragment_mamografia_screening_free_terms">Slobodni termini(h):</string>
+    <string name="fragment_mamografia_screening_choose">Izaberi</string>
+    <string name="fragment_mamografia_screening_add">Dodaj</string>
+
+    <!--    MedicalCartonFragment-->
+    <string name="fragment_medical_carton_header">Zdravstvo</string>
+    <string name="fragment_medical_carton_title">eKarton</string>
+
+    <!--    MedicalCartonOptionsFragment-->
+    <string name="fragment_medical_carton_options_institutions">Ustanove</string>
+    <string name="fragment_medical_carton_options_access_to_medical_records">Pristup lekara eKatonu</string>
+
+    <!--    MedicamentDetailsFragment-->
+    <string name="fragment_medicament_details_title">Ograničenja</string>
+    <string name="fragment_medicament_details_name">Naziv:</string>
+    <string name="fragment_medicament_details_package">Pakovanje:</string>
+    <string name="fragment_medicament_details_maker">Proizvodjač:</string>
+    <string name="fragment_medicament_details_primary_package">Primarno pakovanje:</string>
+    <string name="fragment_medicament_details_dosage">Doziranje:</string>
+
+    <!--    MedicamentDetailsInfoFragment-->
+    <string name="fagment_medicament_details_info_title">Detalji o leku</string>
+    <string name="fagment_medicament_details_info_protected_name">Zaštćeno ime:</string>
+    <string name="fagment_medicament_details_info_inn">INN</string>
+    <string name="fagment_medicament_details_info_maker">Proizvodjač</string>
+    <string name="fagment_medicament_details_info_date_ecpiried">Datum važenja rješenja</string>
+    <string name="fagment_medicament_details_info_licence_holder">Nosilac dozvole</string>
+    <string name="fagment_medicament_details_info_atc">ATC:</string>
+    <string name="fagment_medicament_details_info_jkl">JKL:</string>
+    <string name="fagment_medicament_details_info_type_medicamente">Vrsta leka:</string>
+    <string name="fagment_medicament_details_info_relase_mode">Režim izdavanja:</string>
+    <string name="fagment_medicament_details_info_list_name">Naziv liste:</string>
+    <string name="fagment_medicament_details_info_price_medicine">Cena leka:</string>
+    <string name="fagment_medicament_details_info_restricition">Ograničenja</string>
+    <string name="fagment_medicament_details_info_diagnosis_description">Opis dijagnoze:</string>
+    <string name="fagment_medicament_details_info_participation">Participacija:</string>
+    <string name="fagment_medicament_details_info_age_from">Godište od:</string>
+    <string name="fagment_medicament_details_info_age_to">Godište do:</string>
+    <string name="fagment_medicament_details_info_max_quantity">Maksimalna količina:</string>
+
+    <!--    MedicamentsFragment-->
+    <string name="fragment_medicaments_header">Prevencija</string>
+    <string name="fragment_medicaments_title">Lekovi</string>
+
+    <!--    MenstrualCycleBottomSheetFragment-->
+    <string name="fragment_menstrual_cycle_bottomsheet_header">Menstrualni ciklus</string>
+    <string name="fragment_menstrual_cycle_bottomsheet_rbregular">Redovan</string>
+    <string name="fragment_menstrual_cycle_bottomsheet_rbiregular">Neredovan</string>
+    <string name="fragment_menstrual_cycle_bottomsheet_none">Nema</string>
+
+    <!--    NotificationFragment-->
+    <string name="fragment_notification_header">Nazad</string>
+    <string name="fragment_notification_mtvtitle">Obaveštenja</string>
+
+    <!--    PrescribedListBottomSheetFilterFragment-->
+    <string name="fragment_prescribed_list_bottomsheet_filter_title">Izaberi status:</string>
+    <string name="fragment_prescribed_list_bottomsheet_filter_manual_input">Manuelni unos:</string>
+    <string name="fragment_prescribed_list_bottomsheet_filter_request_rejected">Zahtev odbijen</string>
+    <string name="fragment_prescribed_list_bottomsheet_filter_dead_line">Istekao rok za realizaciju</string>
+    <string name="fragment_prescribed_list_bottomsheet_filter_canceled">Zahtev otkazan</string>
+    <string name="fragment_prescribed_list_bottomsheet_filter_realized">Zahtev realizovan</string>
+    <string name="fragment_prescribed_list_bottomsheet_filter_request_approved">Zahtev odobren</string>
+    <string name="fragment_prescribed_list_bottomsheet_filter_show_all">Prikaži sve</string>
+    <string name="fragment_prescribed_list_bottomsheet_filter_subtitle">Tip recepta:</string>
+    <string name="fragment_prescribed_list_bottomsheet_filter_e_therapy">eTerapija</string>
+    <string name="fragment_prescribed_list_bottomsheet_filter_e_recipe">eRecept</string>
+    <string name="fragment_prescribed_list_bottomsheet_filter_e_aids">ePomagala</string>
+    <string name="fragment_prescribed_list_bottomsheet_filter_no_prescription">Bez recepta</string>
+    <string name="fragment_prescribed_list_bottomsheet_filter_show_all_type_recipe">Prikaži sve</string>
+
+    <!--    PrescribedListMedicamentsFragment-->
+    <string name="fragment_prescribed_list_medicaments_header">Zdravstvo</string>
+    <string name="fragment_prescribed_list_medicaments_title">Ordinirana lista lekova</string>
+    <string name="fragment_prescribed_list_medicaments_header_adapter">Ordinirana lista</string>
+
+    <!--    PrescribedListMedicamentsAdapter-->
+    <string name="fragment_prescribed_list_medicaments_manual_entry">Manuelni unos</string>
+    <string name="fragment_prescribed_list_medicaments_requests_canceled">Zahtev otkazan</string>
+    <string name="fragment_prescribed_list_medicaments_request_approved">Zahtev odobren</string>
+    <string name="fragment_prescribed_list_medicaments_request_completed">Zahtev realizovan</string>
+    <string name="fragment_prescribed_list_medicaments_expired">Istekao rok za realizaciju</string>
+    <string name="fragment_prescribed_list_medicaments_prescription_type_e_therapy">eTerapija</string>
+    <string name="fragment_prescribed_list_medicaments_prescription_type_e_prescription">eRecept</string>
+    <string name="fragment_prescribed_list_medicaments_prescription_type_no_prescription">Bez recepta</string>
+    <string name="fragment_prescribed_list_medicaments_prescription_type_unknown">Nepoznat tip</string>
+    <string name="fragment_prescribed_list_medicaments_prescription_status_unknown">Nepoznat status</string>
+
+    <!--    PrescribedMedicamentOptionsFragment-->
+    <string name="fragment_prescribed_medicament_options_details_recipe">Detalji recepta</string>
+    <string name="fragment_prescribed_medicament_options_medicamente_details">Detalji o leku</string>
+    <string name="fragment_prescribed_medicament_options_limitations">Ograničenja</string>
+    <string name="fragment_prescribed_medicament_options_add_reminder">Dodaj podsetnik</string>
+
+    <!--    PreventionFragment-->
+    <string name="fragment_prevention_header">Zdravstvo</string>
+    <string name="fragment_prevention_title">Prevencija</string>
+    <string name="fragment_prevention_chommon_themes">Zajedničke teme</string>
+    <string name="fragment_prevention_questions_answers">Pitanja i odgovori</string>
+    <string name="fragment_prevention_recomendations">Preporuke</string>
+    <string name="fragment_prevention_medicments">Lekovi</string>
+    <string name="fragment_prevention_mkb10">MKB10</string>
+    <string name="fragment_prevention_interactions">Interakcije</string>
+
+    <!--    PreventionInfoFragment-->
+    <string name="fragment_prevention_info_header">Prevencija</string>
+    <string name="fragment_prevention_info_title">Dopunske dijagnostičke procedure u organizovanom skriningu raka dojke</string>
+
+    <!--    PreventionInfoDetailsFragment-->
+    <string name="fragment_prevention_info_details_header">Prevencija</string>
+
+    <!--    QuestionsAnswersFragment-->
+    <string name="fragment_questions_answers_header">Prevencija</string>
+    <string name="fragment_questions_answers_title">Pitanja i odgovori</string>
+    <string name="fragment_questions_answers_choose_institution">Izaberi ustanovu:</string>
+    <string name="fragment_questions_answers_choose_category">Izaberi kategoriju:</string>
+    <string name="fragment_questions_answers_choose_topic">Izaberi temu:</string>
+    <string name="fragment_questions_answers_choose_btn">Izaberi</string>
+
+    <!--    QuestionsDetailsFragment-->
+    <string name="fragment_questions_details_header">Prevencija</string>
+    <string name="fragment_questions_details_title">Detalji pitanja</string>
+    <string name="fragment_questions_details_choose_institution">Izaberi ustanovu:</string>
+    <string name="fragment_questions_details_institution_description">Centar za smeštaj i dnevni boravak dece i omladine ometene u razvoju Zemun</string>
+    <string name="fragment_questions_details_category">Kategorija:</string>
+    <string name="fragment_questions_details_category_description">Lorem Ispsum Si donet mas</string>
+    <string name="fragment_questions_details_question">Pitanje:</string>
+    <string name="fragment_questions_details_question_description">xxccvxcvxcvxcvcvxcvxcvxcvxcvxc</string>
+    <string name="fragment_questions_details_answer">Odgovor:</string>
+    <string name="fragment_questions_details_answer_description">dxaxaxaxaxaxaxaxaxxaxaxaxax</string>
+
+    <!--    RecipeDeatilsFragment-->
+    <string name="fragment_recipe_deatils_title">Detalji o leku</string>
+    <string name="fragment_recipe_deatils_protected_name">Zaštićeno ime:</string>
+    <string name="fragment_recipe_deatils_inn">INN:</string>
+    <string name="fragment_recipe_deatils_maker">Proizvodjač:</string>
+    <string name="fragment_recipe_deatils_validity_date_decision">Datum važenja rešenja:</string>
+    <string name="fragment_recipe_deatils_licence_holder">Nosilac dozvole:</string>
+    <string name="fragment_recipe_deatils_atc">ATC:</string>
+    <string name="fragment_recipe_deatils_jkl">JKL:</string>
+    <string name="fragment_recipe_deatils_type_medicamente">Vrsta leka:</string>
+    <string name="fragment_recipe_deatils_regime_dispensing">Režim izdavanja:</string>
+    <string name="fragment_recipe_deatils_list_name">Naziv liste:</string>
+    <string name="fragment_recipe_deatils_price_medicamente">Cena leka:</string>
+    <string name="fragment_recipe_deatils_characteristics_medicamente">Karakteristike leka</string>
+    <string name="fragment_recipe_deatils_instruction_manual">Uputstvo za upotrebu</string>
+    <string name="fragment_recipe_deatils_regime_dispensing_r">Lek se može izdavati samo uz lekarski recept</string>
+    <string name="fragment_recipe_deatils_regime_dispensing_br">Bez recepta</string>
+
+
+    <!--    RecommendationsFragment-->
+    <string name="fragment_recommendations_header">Prevencija</string>
+    <string name="fragment_recommendations_title">Preporuke</string>
+    <string name="fragment_recommendations_choose_year">Izaberi godinu:</string>
+    <string name="fragment_recommendations_open">Otvori</string>
+
+    <!--    ReportDisabilityForWorkFragment-->
+    <string name="fragment_report_disability_for_work_header">Zdravstvo</string>
+    <string name="fragment_report_disability_for_work_title">Izveštaj o sprečenosti za rad</string>
+
+    <!--    ScreeningExaminationBottomSheetFragment-->
+    <string name="fragment_screening_examination_bottomsheet_header">Skrining pregled</string>
+    <string name="fragment_screening_examination_bottomsheet_content">Morate popuniti sva polja da bi ste zakazali skrining\npregled.</string>
+    <string name="fragment_screening_examination_bottomsheet_cancel_btn">Odustani</string>
+    <string name="fragment_screening_examination_bottomsheet_continue_btn">Nastavi</string>
+
+    <!--    ScreeningExaminationsFragment-->
+    <string name="fragment_screening_examinations_header">Zdravstvo</string>
+    <string name="fragment_screening_examinations_title">Skrining pregledi</string>
+
+    <!--    ScreeningExaminationsLocationBottomSheetFragment-->
+    <string name="fragment_screening_examinations_location_bottomsheet_header">Izaberite lokaciju</string>
+    <string name="fragment_screening_examinations_location_bottomsheet_institutionOne">Klinički centar Voždovac</string>
+    <string name="fragment_screening_examinations_location_bottomsheet_institution_two">Dom zdravlja Karaburma</string>
+    <string name="fragment_screening_examinations_location_bottomsheet_institution_three">Klinički centar Zvezdara</string>
+
+    <!--    SelectValueBottomSheetFragment-->
+    <string name="fragment_select_value_bottomsheet_3_or_more">3 ili više</string>
+    <string name="fragment_select_value_bottomsheet_dont_now">Ne znam</string>
+    <string name="fragment_select_value_bottomsheet_header">Izaberi vrednost</string>
+
+    <!--    StopMenstruationBottomSheetFragment-->
+    <string name="fragment_stop_menstruation_bottomsheet_header">Razlog prestanka menstruacije</string>
+    <string name="fragment_stop_menstruation_bottomsheet_natural">Prirodan</string>
+    <string name="fragment_stop_menstruation_bottomsheet_other">Drugo</string>
+    <string name="fragment_stop_menstruation_bottomsheet_surgical_intervention">Hirurška intervencija</string>
+
+    <!--    item_access_doctor_medical_carton-->
+    <string name="item_access_doctor_medical_carton_reg_num_institution">Registracioni broj ustanove:</string>
+    <string name="item_access_doctor_medical_carton_institution_name">Naziv ustanove:</string>
+    <string name="item_access_doctor_medical_carton_doctor">Lekar:</string>
+    <string name="item_access_doctor_medical_carton_date">Datum:</string>
+    <string name="item_access_doctor_medical_carton_time">Vreme:</string>
+
+    <!--    item_e_sick_leave-->
+    <string name="item_e_sick_leave_status">Status bolovanja:</string>
+    <string name="item_e_sick_leave_start_date">Datum početka:</string>
+    <string name="item_e_sick_leave_end_date">Datum kraja:</string>
+    <string name="item_e_sick_leave_number_of_days">Broj dana:</string>
+    <string name="item_e_sick_leave_reason">Uzrok bolovanja:</string>
+    <string name="item_e_sick_leave_diagnosis_and_description">Šifra i opis dijagnoze:</string>
+    <string name="item_e_sick_leave_temporary_work_incapacity_certificate">Potvrda o privremenoj\nspriječenosti za rad:</string>
+    <string name="item_e_sick_leave_temporary_work_incapacity_report">Odluka lekarske komisije:</string>
+    <string name="item_e_sick_leave_open">Otvori</string>
+    <string name="item_e_sick_leave_documents">Dokumenti za poslodavca:</string>
+
+    <!--    item_institution-->
+    <string name="item_institution_num_relationship_available_institutions">Broj povezanih i dostupnih ustanova:</string>
+
+    <!--    item_institution_arr-->
+    <string name="item_institution_arr_empty_data">nema podataka</string>
+
+    <!--    item_medicine_carton-->
+    <string name="item_medicine_carton_title">Pedijatrija za školsku decu</string>
+    <string name="item_medicine_carton_date">Datum:</string>
+    <string name="item_medicine_carton_time">Vreme:</string>
+    <string name="item_medicine_carton_organizational_unit">Organizaciona jedinica:</string>
+    <string name="item_medicine_carton_doctor">Lekar:</string>
+    <string name="item_medicine_carton_type_referrale">Tip uputa:</string>
+
+    <!--    item_prescribed_list_medicament-->
+    <string name="item_prescribed_list_medicament_strength_medicamente">Jačina leka:</string>
+    <string name="item_prescribed_list_medicament_dosage">Doziranje:</string>
+    <string name="item_prescribed_list_medicament_quantity">Količina:</string>
+    <string name="item_prescribed_list_medicament_expiry_date">Datum dospeća:</string>
+    <string name="item_prescribed_list_medicament_status">Status:</string>
+    <string name="item_prescribed_list_medicament_type_recipe">Tip recepta:</string>
+
+    <!--    item_profile_user-->
+    <string name="item_profile_user_shared_profile">Deljeni profil</string>
+
+    <!--    item_recommendation-->
+    <string name="item_recommendation_recommendation">Preporuka</string>
+    <string name="item_recommendation_recommendation_description">Na osnovu Vašeg broja koraka treba da…</string>
+
+    <!--    item_report_disability_work-->
+    <string name="item_report_disability_work_start_date">Datum OLK</string>
+    <string name="item_report_disability_work_end_date">Broj OLK:</string>
+    <string name="item_report_disability_work_remittance">Dokument:</string>
+    <string name="item_report_disability_work_open">Otvori</string>
+
+    <!--    item_screening_examinations-->
+    <string name="item_screening_examinations_title">Nacionalni preventivni program\nranog otkrivanja raka dojke</string>
+    <string name="item_screening_examinations_date">Datum:</string>
+    <string name="item_screening_examinations_time">Vreme:</string>
+    <string name="item_screening_examinations_location">Lokacija:</string>
+    <string name="item_screening_examinations_status">Status:</string>
+    <string name="item_screening_examinations_amnesty_questionnare">Amnestički upitnik</string>
+    <string name="item_screening_examinations_invitation">Pozivnica:</string>
+    <string name="item_screening_examinations_report">Izvještaj:</string>
+    <string name="item_screening_examinations_action">Akcija:</string>
+    <string name="item_screening_examinations_see_questionnaire">Vidi upitnik</string>
+    <string name="item_screening_examinations_see_invitation">Vidi pozivnicu</string>
+    <string name="item_screening_examinations_see_report">Vidi izvještaj</string>
+    <string name="item_screening_examinations_choose_action">Izaberi</string>
+
+    <!--    item_social_group_arr-->
+    <string name="item_social_group_arr_content">Dopunske dijagnostičke procedure u organizovanom skriningu raka dojke</string>
+
+    <!--    layout_under_construction-->
+    <string name="layout_under_construction_description">Stranica u pripremi</string>
+
+    <!--    WayOfLifeFragment-->
+    <string name="fragment_way_of_life_header">Način života</string>
+    <string name="fragment_way_of_life_title">Parametri</string>
+    <string name="fragment_way_of_life_height">Visina</string>
+    <string name="fragment_way_of_life_weight">Težina</string>
+    <string name="fragment_way_of_life_blood_group">Krvna grupa</string>
+    <string name="fragment_way_of_life_body_mass">Indeks mase tela</string>
+    <string name="fragment_way_of_life_subtitle">Praćenje parametara</string>
+    <string name="fragment_way_of_life_body_temperature">Temperatura tela</string>
+    <string name="fragment_way_of_life_blood_pressure">Krvni pritisak</string>
+    <string name="fragment_way_of_life_blood_glucose">Glukoza u krvi</string>
+    <string name="fragment_way_of_life_oxygen_saturation">Saturacija kiseonikom</string>
+    <string name="fragment_way_of_life_sleep_analysis">Analiza sna</string>
+    <string name="fragment_way_of_life_body_fat">Telesna masnoća</string>
+    <string name="fragment_way_of_life_step_counting">Broj koraka</string>
+    <string name="fragment_way_of_life_weight_value">Težina</string>
+    <string name="fragment_way_of_life_body_mass_value">Indeks mase tela (BMI)</string>
+    <string name="fragment_way_of_life_height_value">Visina</string>
+    <string name="fragment_way_of_life_chest_circumference">Obim grudi</string>
+    <string name="fragment_way_of_life_waist_circumference">Obim struka</string>
+
+    <!--    CalendarActivityAdapter-->
+    <string name="calendar_activity_adapter_doctors_appointment">Termin kod lekara</string>
+    <string name="calendar_activity_adapter_consumption_medicamente">Konzumacija leka</string>
+    <string name="calendar_activity_adapter_available_therapy_pharmacy">Dostupna terapija u apoteci</string>
+    <string name="calendar_activity_adapter_realized_e_recipe">Realizovan eRecept</string>
+    <string name="calendar_activity_adapter_personal_activity">Lična aktivnost</string>
+    <string name="calendar_activity_adapter_appointment_screening_examination">Termin skrining pregleda</string>
+    <string name="calendar_activity_adapter_completed_doctor_visit">Realizovana poseta lekaru</string>
+    <string name="calendar_activity_adapter_scheduled_call">Zakazan poziv</string>
+    <string name="calendar_activity_adapter_all_day">Ceo dan</string>
+
+    <!--    ChatInboxAdapter-->
+    <string name="chat_inbox_adapter_send_request">Poslat zahtev</string>
+    <string name="chat_inbox_adapter_request_in_progress">Zahtev u obradi</string>
+    <string name="chat_inbox_adapter_new_contact">Novi kontakt</string>
+    <string name="chat_inbox_adapter_yesterday">Juče</string>
+    <string name="chat_inbox_delete_contact">Obrisan kontakt</string>
+
+    <!--    ESickLeaveAdapter-->
+    <string name="esick_leave_adapter_url_toast">URL nije dostupan</string>
+    <string name="esick_leave_adapter_certificate_temporary_incapacity_for_work">Potvrda o privremenoj sprečenosti za rad</string>
+
+    <!--    InstitutionsAdapter-->
+    <string name="institutions_adapter_msg_one">Ustanova nije evidentirala nijedan zapis.</string>
+    <string name="institutions_adapter_msg_two">Uspešno ste osvežili podatke iz ustanove.</string>
+
+    <!--    ReportDisabilityForWorkAdapter-->
+    <string name="report_disability_for_work_adapter_id_toast">ID nije dostupan.</string>
+    <string name="report_disability_for_work_adapter_report_temporary_incapacity_for_work">Izveštaj o privremenoj sprečenosti za rad.</string>
+    <string name="report_disability_for_work_adapter_pdf_open">PDF se otvara:</string>
+    <string name="report_disability_for_work_adapter_download_rejected">Preuzimanje nije uspelo:</string>
+    <string name="report_disability_for_work_adapter_unknown_error">Nepoznata greška</string>
+    <string name="report_disability_for_work_adapter_error_save_pdf">Greška pri čuvanju PDF-a:</string>
+
+    <!--    ActivityAdapter-->
+    <string name="activity_adapter_drug_consumption">Konzumacija leka</string>
+    <string name="activity_adapter_doctors_appointment">Termin kod lekara</string>
+    <string name="activity_adapter_available_therapy_pharmacy">Dostupna terapija u apoteci</string>
+    <string name="activity_adapter_realized_e_recipe">Realizovan eRecept</string>
+    <string name="activity_adapter_personal_activity">Lična aktivnost</string>
+    <string name="activity_adapter_appointment_screening_examination">Termin skrining pregleda</string>
+    <string name="activity_adapter_completed_doctor_visit">Realizovana poseta lekaru</string>
+    <string name="activity_adapter_all_day">Ceo dan</string>
+
+    <!--    NotificationAdapter-->
+    <string name="notification_adapter_data_available">Nema podataka</string>
+    <string name="notification_adapter_msg_read">Poruka je označena kao pročitana.</string>
+    <string name="notification_adapter_available_therapy_pharmacy">Dostupna terapija u apoteci</string>
+    <string name="notification_adapter_available_questions_therapy">Da li ste preuzeli terpaiju iz apoteke?</string>
+    <string name="notification_adapter_available_therapy">Terapija:</string>
+    <string name="notification_adapter_personal_activity">Lična aktivnost</string>
+    <string name="notification_adapter_available_questions_personal_activity">Da li ste realizovali\n personalizovanu aktivnost?</string>
+    <string name="notification_adapter_appointment_completed">Realizovan pregled</string>
+    <string name="notification_adapter_questions_appointment_completed">Da li ste realizovali\n pregled?</string>
+    <string name="notification_adapter_doctor_exam">Pregled kod lekara</string>
+    <string name="notification_adapter_sender_type_no_event">nema prateći događaj</string>
+    <string name="notification_adapter_sender_type_eRecept">eRecept sistem</string>
+    <string name="notification_adapter_sender_type_eKarton">eKarton sistem</string>
+    <string name="notification_adapter_sender_type_eDosije">eDosije sistem</string>
+    <string name="notification_adapter_sender_type_eHealth">eZdravlje sistem</string>
+    <string name="notification_adapter_sender_type_all">sve</string>
+    <string name="notification_adapter_sender_type_unknown">Nepoznat tip</string>
+
+
+    <!--    SharedProfileAdapter-->
+    <string name="shared_profile_adapter_who_can_see_data">Moje dozvole</string>
+    <string name="shared_profile_adapter_who_can_see_my_data">Date dozvole</string>
+
+    <!--    AmbulantExaminationFragment-->
+    <string name="fragment_ambulant_examination_toast_no_available_appointments">Trenutno nema slobodnih termina kod izabranog lekara</string>
+    <string name="fragment_ambulant_examination_toast_no_available_appointments_for_date">Nema slobodnih termina kod izabranog lekara za datum:</string>
+    <string name="fragment_ambulant_examination_toast_invalid_appointment_times">Nevažeće vreme zakazivanja</string>
+
+    <!--    BottomSheetDialogConfirmFragment-->
+    <string name="fragment_bottomsheet_dialog_confirm_toast_select_date">Molimo izaberite termin</string>
+
+    <!--    CalendarAppointmentExaminationFragment-->
+    <string name="fragment_calendar_appointment_eaxamination_patient_not_found_rfzo">Pacijent nije pronađen u bazi RFZO-a</string>
+
+    <!--    CalendarAppointmentScheduleFragment-->
+    <string name="fragment_calendar_appointment_schedule_appointment_type_ambulatory">Ambulantni pregled</string>
+    <string name="fragment_calendar_appointment_schedule_appointment_type_telemedicine_audio">Telemedicina - audio poziv</string>
+    <string name="fragment_calendar_appointment_schedule_appointment_type_telemedicine_video">Telemedicina - video poziv</string>
+    <string name="fragment_calendar_appointment_schedule_choose_date">Izaberi datum:</string>
+    <string name="fragment_calendar_appointment_schedule_unknown_name">Nepoznat naziv</string>
+    <string name="fragment_calendar_appointment_schedule_unknown_institution">Nepoznata ustanova</string>
+    <string name="fragment_calendar_appointment_schedule_unknown_type">Nepoznat tip</string>
+    <string name="fragment_calendar_appointment_schedule_unauthorized_request">Neovlašteni zahtev</string>
+    <string name="fragment_calendar_appointment_schedule_no_available_appointments">Trenutno nema slobodnih termina kod izabranog lekara</string>
+
+    <!--    ChatAddContactFragment-->
+    <string name="fragment_chat_add_contact_no_contacts_found">Ne postoje kontakti sa zadatim kriterijumima!</string>
+    <string name="fragment_chat_add_contact_user_add_error">Zahtev za prijateljstvo je već poslat.</string>
+
+    <!--    ChatMessagesGroupCreated-->
+    <string name="fragment_chat_messages_group_created_participant">Učesnika</string>
+
+    <!--    ScheduleCallFragment-->
+    <string name="fragment_schedule_call_start_time">Početak poziva</string>
+    <string name="fragment_schedule_call_end_time">Kraj poziva</string>
+
+    <!--    PinChatBottomSheetFragment-->
+    <string name="fragment_pin_chat_bottom_sheet_pin_cannot_be_empty">PIN ne može biti prazan.</string>
+    <string name="fragment_pin_chat_bottom_sheet_wrong_pin_try_again">Pogrešan PIN kod, probajte ponovo.</string>
+
+    <!--    AudioVideoCallFragment-->
+    <string name="fragment_audio_video_call_send_message">Pošaljite poruku</string>
+    <string name="fragment_audio_video_call_send">Pošaljite</string>
+    <string name="fragment_audio_video_call_cancel">Otkaži</string>
+    <string name="fragment_audio_video_call_connected">Povezano</string>
+    <string name="fragment_audio_video_call_connecting">Povezivanje</string>
+    <string name="fragment_audio_video_call_data_received">Podaci primljeni</string>
+
+    <!--    ChatInCallFragment-->
+    <string name="fragment_chat_in_call_message_cannot_be_empty">Poruka ne može biti prazna</string>
+
+    <!--    ActiveClosedSicLeaveBottomSheetFragment-->
+    <string name="fragment_active_closed_sic_leave_bottom_sheet_active">Aktivno</string>
+    <string name="fragment_active_closed_sic_leave_bottom_sheet_closed">Zatvoreno</string>
+    <string name="fragment_active_closed_sic_leave_bottom_sheet_filtered">Filtrirano</string>
+    <string name="fragment_active_closed_sic_leave_bottom_sheet_records">rekorda</string>
+
+
+    <!--    ESickLeaveFragment-->
+    <string name="fragment_e_sick_leave_filtered_from">Filtrirano od</string>
+    <string name="fragment_e_sick_leave_error_selecting_date">Greška pri odabiru datuma</string>
+    <string name="fragment_e_sick_leave_error_processing_date">Greška pri obradi datuma</string>
+
+
+    <!--    OpenPdfFileUri2Fragment-->
+    <string name="fragment_open_pdf_file_uri2_error_downloading_pdf">Greška pri preuzimanju PDF-a</string>
+    <string name="fragment_open_pdf_file_uri2_pdf_content_not_available">PDF sadržaj nije dostupan za preuzimanje</string>
+    <string name="fragment_open_pdf_file_uri2_pdf_saved_in_downloads">PDF sačuvan u Downloads folderu kao</string>
+    <string name="fragment_open_pdf_file_uri2_invalid_pdf_file">Fajl nije validan</string>
+    <string name="fragment_open_pdf_file_uri2_error_displaying_pdf">Greška pri prikazivanju PDF-a</string>
+    <string name="fragment_open_pdf_file_uri2_error_saving_pdf">Greška pri čuvanju PDF-a</string>
+
+
+    <!--    OpenPdfFileUriFragment-->
+    <string name="fragment_open_pdf_file_uri_error_loading_pdf">PDF fajl nije učitan</string>
+    <string name="fragment_open_pdf_file_uri_pdf_file_not_found">Greška: PDF fajl nije pronađen.</string>
+    <string name="fragment_open_pdf_file_uri_error_displaying_pdf">Greška pri prikazivanju PDF-a.</string>
+    <string name="fragment_open_pdf_file_uri_pdf_saved_in_downloads">PDF sačuvan u Downloads folderu kao</string>
+    <string name="fragment_open_pdf_file_uri_error_saving_pdf">Greška pri čuvanju PDF-a</string>
+
+
+    <!--    BottomSheetShowPdfVideoFragment-->
+    <string name="fragment_bottom_sheet_show_pdf_video_error_opening_pdf">Greška pri otvaranju PDF-a</string>
+
+    <!--    BottomSheetDosageFragment-->
+    <string name="bottom_sheet_dosage_fragment_successful_value_entered">Uspješno unešena vrednost</string>
+
+    <!--    RecipeDetailsFragment-->
+    <string name="recipe_details_fragment_file_is_empty">Fajl je prazan</string>
+
+    <!--    PrescribedListBottomSheetFilterFragment-->
+    <string name="prescribed_list_bottom_sheet_filter_fragment_status">Status</string>
+    <string name="prescribed_list_bottom_sheet_filter_fragment_recipe_type">Tip recepta</string>
+
+
+    <!--    BottomSheetActionsFragment-->
+    <string name="bottom_sheet_actions_fragment_message_marked_as_liked">Poruka je uspešno označena sa "Sviđa mi se"</string>
+    <string name="bottom_sheet_actions_fragment_message_removed_from_likes">Poruka je uklonjena sa "Sviđa mi se"</string>
+    <string name="bottom_sheet_actions_fragment_confirm_follow_group">Da li ste sigurni da želite da pratite ovu grupu?</string>
+    <string name="bottom_sheet_actions_fragment_confirm_unfollow_group">Da li ste sigurni da želite da otpratite ovu grupu?</string>
+    <string name="bottom_sheet_actions_fragment_confirmation">Potvrda</string>
+    <string name="bottom_sheet_actions_fragment_user_followed_group">Korisnik je zapratio grupu</string>
+    <string name="bottom_sheet_actions_fragment_user_unfollowed_group">Korisnik je uspešno prekinuo praćenje grupe</string>
+    <string name="bottom_sheet_actions_fragment_yes">Da</string>
+    <string name="bottom_sheet_actions_fragment_no">Ne</string>
+    <string name="bottom_sheet_actions_fragment_likes">lajkova</string>
+    <string name="bottom_sheet_actions_fragment_like">Sviđa mi se</string>
+    <string name="bottom_sheet_actions_fragment_followers">Pratilaca</string>
+    <string name="bottom_sheet_actions_fragment_follow_group">Zaprati grupu</string>
+
+
+    <!--    InstitutionCategoryTopicFragment-->
+    <string name="fragment_institution_category_topic_category">Kategorija</string>
+    <string name="fragment_institution_category_topic_topic">Tema</string>
+
+    <!--    RecommendationsFragment-->
+    <string name="fragment_recommendations_no_data_for_this_year">Nema podataka za ovu godinu.</string>
+    <string name="fragment_recommendations_selected_year">Izabrana godina</string>
+
+    <!--    AmnesticInfoBottomSheetFragment-->
+    <string name="fragment_amnestic_info_bottom_sheet_data_saved_successfully">Uspješno sačuvani podaci</string>
+
+    <!--    DoctorsReportBottomSheetFragment-->
+    <string name="fragment_doctors_report_bottom_sheet_enter_data">Unesi podatak</string>
+
+    <!--    EnterValueBottomSheetFragment-->
+    <string name="fragment_enter_value_bottom_sheet_select">Izaberi</string>
+
+    <!--    ScreeningExaminationBottomSheetFragment-->
+    <string name="fragment_screening_examination_bottom_sheet_scheduled_screening_examination">Zakazan skrining pregled</string>
+
+    <!--    ScreeningProgramFragment-->
+    <string name="fragment_screening_program_national_preventive_breast_cancer_detection_program">Nacionalni preventivni\nprogram ranog otkrivanja\nraka dojke</string>
+    <string name="fragment_screening_program_national_preventive_cervical_cancer_detection_program">Nacionalni preventivni\nprogram ranog otkrivanja\nraka grlica materice</string>
+    <string name="fragment_screening_program_mamo">MAMO</string>
+    <string name="fragment_screening_program_rgm">RGM</string>
+
+    <!--    DownloadPdfFileFragment-->
+    <string name="fragment_download_pdf_file_pdf_cached_successfully">PDF je uspešno kesiran i prikazan!</string>
+    <string name="fragment_download_pdf_file_cache_open_error">Greška pri kesiranju i otvaranju PDF-a.</string>
+    <string name="fragment_download_pdf_file_display_error">Greška pri prikazivanju PDF-a.</string>
+    <string name="fragment_download_pdf_file_success_download">PDF je uspešno preuzet u Downloads folder.</string>
+    <string name="fragment_download_pdf_file_error_download">Došlo je do greške pri preuzimanju PDF-a.</string>
+    <string name="fragment_download_pdf_file_error_start_download">Greška pri pokretanju preuzimanja.</string>
+
+    <!--    HealthcareFragment-->
+    <string name="healthcare_fragment_no_prescriptions_found">Nema pronađenih recepata</string>
+    <string name="healthcare_fragment_no_data_found">Nema podataka o eBolovanju</string>
+
+    <!--    HealthcareViewModel-->
+    <string name="healthcare_view_model_error">Greška u HealthcareViewModel</string>
+
+    <!--    AvaliableTherapyInPharmacyActivity-->
+    <string name="activity_available_therapy_in_pharmacy_message">Vašu terapiju možete preuzeti u narednih 5 dana</string>
+    <string name="activity_available_therapy_all_day">Ceo dan</string>
+
+
+    <!--    DrugConsumptionActivity-->
+    <string name="activity_drug_consumption_activity_completed">Aktivnost je označena kao završena</string>
+    <string name="activity_drug_consumption_invalid_date_format">Molimo unesite validan datum u formatu: YYYY-MM-DD HH:mm.</string>
+    <string name="activity_drug_consumption_invalid_time">Molimo unesite validna vremena.</string>
+    <string name="activity_drug_consumption_enter_consumption_time">Molimo unesite termin konzumacije.</string>
+    <string name="activity_drug_consumption_enter_consumption_content_bottom_sheet">Naredni podsetnici za konzumaciju datog leka biće obrisani, a zatim kreirani novi na osnovu definisanih detalja.</string>
+    <string name="activity_drug_consumption_enter_consumption_header_bottom_sheet">Izmeni sve u nizu</string>
+
+    <!--    PersonalDataActivity-->
+    <string name="activity_personal_data_activity_completed">Aktivnost je označena kao završena</string>
+    <string name="tivity_personal_data_invalid_time">Molimo unesite validna vremena.</string>
+
+    <!--    RealisedTherapyInPharmacyActivity-->
+    <string name="activity_realised_therapy_in_pharmacy_erecept">eRecept</string>
+
+    <!--    ActivitiesFragment-->
+    <string name="fragment_activity_next_scheduled">Sledeće po rasporedu</string>
+    <string name="fragment_activity_calendar_in_progress">Kalendar u toku</string>
+
+    <!--    HomeFragment-->
+    <string name="fragment_home_display_unrealized_event_in_progress">Prikaz nerealizovanog eventa u toku</string>
+    <string name="fragment_home_personal_activity">Lična aktivnost</string>
+    <string name="fragment_home_personal_activity_question">Da li ste realizovali\npersonalizovanu aktivnost?</string>
+
+    <!--    ChooseCategoryQuestBottomSheetFragment-->
+    <string name="fragment_choose_category_quest_bottom_sheet_gdpr">GDPR</string>
+    <string name="fragment_choose_category_quest_bottom_sheet_helpdesk">Helpdesk</string>
+    <string name="fragment_choose_category_quest_bottom_sheet_registration">Registracija</string>
+
+    <!--    EmailAskQuestBottomSheetFragment-->
+    <string name="fragment_email_ask_quest_bottom_sheet_successful_email_entry">Uspješno unešena e-mail adresa</string>
+
+    <!--    ParametersFragment-->
+    <string name="fragment_parameters_your_field_of_expertise">Vaš obim struka</string>
+    <string name="fragment_parameters_your_blood_type">Vaša krvna grupa</string>
+    <string name="fragment_parameters_your_chest_circumference">Vaš obim grudi</string>
+    <string name="fragment_parameters_your_height">Vaša visina</string>
+    <string name="fragment_parameters_your_weight">Vaša težina</string>
+
+    <!--    LoginEmailPasswordFragment-->
+    <string name="fragment_login_email_password_username_empty">UserName ne sme biti prazan</string>
+    <string name="fragment_login_email_password_password_empty">Lozinka ne sme biti prazna</string>
+    <string name="fragment_login_email_password_invalid_credentials">Pogrešno korisničko ime ili lozinka</string>
+
+    <!--    PinBottomSheetFragment-->
+    <string name="fragment_pin_bottom_sheet_empty_pin">PIN ne može biti prazan.</string>
+    <string name="fragment_pin_bottom_sheet_incorrect_pin">Pogrešan PIN kod, probajte ponovo.</string>
+
+    <!--    NotificationFilterFragment-->
+    <string name="fragment_notification_filter_data_saved_successfully">Uspešno ste sačuvali podatke</string>
+    <string name="fragment_notification_filter_select">Izaberi</string>
+
+    <!--    NotificationFragment-->
+    <string name="fragment_notification_all_marked_as_read">Sve notifikacije su označene kao pročitane.</string>
+    <string name="fragment_notification_data_for_period">Podaci za period</string>
+    <string name="fragment_notification_to">do</string>
+    <string name="fragment_notification_loaded">Učitano</string>
+    <string name="fragment_notification_records">rekorda</string>
+
+    <!--    NotificationSettingsFragment-->
+    <string name="fragment_notification_settings_data_saved_successfully">Uspešno sačuvani podaci</string>
+
+    <!--    NotificationViewModel-->
+    <string name="notification_view_model_error">Greška u NotificationViewModel</string>
+
+    <!--    OnBoardingActivity-->
+    <string name="onboarding_welcome_message">Dobrodošli</string>
+    <string name="onboarding_parameters">Parametri</string>
+    <string name="onboarding_notifications">Obaveštenja</string>
+    <string name="onboarding_healthcare">Zdravstvo</string>
+    <string name="onboarding_network">Mreža</string>
+    <string name="onboarding_profile_sharing">Deljenje profila</string>
+    <string name="onboarding_ezdravlje_description">eZdravlje je Vaša jedinstvena aplikacija koja Vam nudi brz i siguran pristup svim zdravstvenim podacima u Republici Srbiji.</string>
+    <string name="onboarding_biometric_data_sync">Uživajte u jednostavnoj sinhronizaciji biometrijskih podataka sa Vašim uređajima, tako da su vaši podaci uvek ažurni.</string>
+    <string name="onboarding_stay_up_to_date">Pogledajte recepte i terapije, pristupite elektronskom kartonu, informacijama o bolovanju i zakazujte termine kod izabranog lekara – sve to na jednom mestu!</string>
+    <string name="onboarding_contact_doctors_and_access_dependents_data">Povežite se sa lekarima i drugim korisnicima putem audio, video i chat komunikacije, te uvek budite u toku.</string>
+    <string name="onboarding_sharing_profile_desc">Delite i pristupajte podacima drugih korisnika aplikacije, gradeći zajednicu poverenja i razmene informacija.</string>
+    <string name="onboarding_notifications_desc">Bez obzira da li posećujete lekara, koristite terapiju ili uživate u događajima na platformi, naš sistem podsetnika i notifikacija uvek će Vas blagovremeno obavestiti o narednom koraku.</string>
+    <string name="onboarding_version_info">V 2.0\nepošta: helpdesk@e-zdravlje.gov.rs</string>
+
+    <!--    AddPermissionsFragment-->
+    <string name="fragment_add_permissions_data_permission">Data dozvola:</string>
+    <string name="fragment_add_permissions_select_option">Izaberi</string>
+    <string name="fragment_add_permissions_no_contact_person_selected">Niste izabrali Kontakt osobu.</string>
+    <string name="fragment_add_permissions_set_dates_in_profile_access">Molimo vas da postavite datume u Pristup profilu.</string>
+    <string name="fragment_add_permissions_set_dates_in_ehr">Molimo vas da postavite datume u EHR.</string>
+    <string name="fragment_add_permissions_edit">Izmeni</string>
+    <string name="fragment_add_permissions_add_date">Dodaj datum</string>
+
+    <!--    BottomSheetPasswordSettings-->
+    <string name="fragment_bottom_sheet_password_settings_data_saved_successfully">Uspješno ste sačuvali podatke!</string>
+    <string name="fragment_bottom_sheet_password_settings_passwords_do_not_match">Lozinke se ne podudaraju!</string>
+
+    <!--    ProfileAccessKeyFragment-->
+    <string name="fragment_profile_access_key_copied">Kopirano</string>
+
+    <!--    CalendarFragment-->
+    <string name="fragment_calendar_display_unrealized_event_in_progress">Prikaz nerealizovanog eventa u toku</string>
+
+    <!--    BottomSheetFilterFragment-->
+    <string name="fragment_bottom_sheet_filter_must_select_something">Niste izabrali nijednu opciju.</string>
+
+    <!--    ScheduledCallInfoFragment-->
+    <string name="fragment_scheduled_call_info_creator_call">Nema kreatora</string>
+
+    <!--    Schedule call participant fragment-->
+    <string name="fragment_schedule_call_participant_add_btn">Dodaj</string>
+    <string name="fragment_schedule_call_participant_added_participants">Dodati učesnici:</string>
+
+    <!--    NoDataFragment-->
+    <string name="fragment_no_data_title">Ne postoje podaci \nna izabranoj stranici.</string>
+
+    <!--    MedicalCartonDateFragment-->
+    <string name="fragment_medical_carton_date_title">Izaberi period za pretragu</string>
+    <string name="fragment_medical_carton_date_search_btn">Pretraži</string>
+    <string name="fragment_medical_carton_date_clear_search_btn">Poništi pretragu</string>
+    <string name="fragment_medical_carton_date_error_processing_date">Greška pri obradi datuma</string>
+    <string name="fragment_medical_carton_date_dates_toast">Datumi</string>
+    <string name="fragment_medical_carton_date_toast_msg">nisu dobro postavljeni, probajte ponovo</string>
+
+    <!--    Calendar day item-->
+    <string name="calendar_day_item_available_therapy">Dostupna terapija</string>
+    <string name="calendar_day_item_drug_consumption">Konzumacija leka</string>
+    <string name="calendar_day_item_doctors_appointment">Termin kod lekara</string>
+    <string name="calendar_day_item_personal_activity">Lična aktivnost</string>
+    <string name="calendar_day_item_scheduled_meeting">Zakazani sastanak</string>
+
+    <!--    ScheduledAppointmentsFragment-->
+    <string name="fragment_scheduled_appointments_toast_delete_msg">Termin uspešno izbrisan. </string>
+
+    <!--    AppointmentSchedulingFragment-->
+    <string name="fragment_appointments_scheduling_tab_scheduled_appointments">Zakazani termini</string>
+    <string name="fragment_appointments_scheduling_tab_appointment_history">Istorija termina</string>
+    <!--    ESickDocumentsFragment-->
+    <string name="fragment_e_sick_documents_title">eBolovanje - Dokumenti</string>
+    <string name="fragment_e_sick_documents_employee">Poslodavac</string>
+    <string name="fragment_e_sick_documents_employes">Poslodavaci</string>
+    <string name="fragment_e_sick_document">Dokumenti</string>
+    <string name="fragment_e_sick_documents_select_employer_label">Izaberi poslodavca</string>
+    <string name="fragment_e_sick_documents_certificate_label">Potvrda o privremenoj sprečenosti za rad</string>
+    <string name="fragment_e_sick_documents_confirmation_label">Potvrda</string>
+    <string name="fragment_e_sick_documents_report_label">Izveštaj o privremenoj sprečenosti za rad</string>
+    <string name="fragment_e_sick_documents_no_data_label">Nema podataka - izveštaja \o privremenoj sprečenosti za rad</string>
+
+    <!--    MedicamentDetailsFragment-->
+    <string name="fragment_medicament_details_title_lbl">Detalji recepta</string>
+    <string name="fragment_medicament_details_medicine_lbl">Naziv:</string>
+    <string name="fragment_medicament_details_package_lbl">Pakovanje:</string>
+    <string name="fragment_medicament_details_manufacturer_lbl">Proizvođač:</string>
+    <string name="fragment_medicament_details_primary_package_lbl">Primarno pakovanje:</string>
+    <string name="fragment_medicament_details_dosage_lbl">Doziranje:</string>
+    <string name="fragment_medicament_details_quantity_lbl">Količina:</string>
+    <string name="fragment_medicament_details_status_lbl">Status:</string>
+    <string name="fragment_medicament_details_diagnosis_lbl">Dijagnoza:</string>
+    <string name="fragment_medicament_details_jkl_lbl">JKL:</string>
+    <string name="fragment_medicament_details_prescription_type_lbl">Tip recepta:</string>
+    <string name="fragment_medicament_details_date_prescribed_lbl">Datum propisivanja:</string>
+    <string name="fragment_medicament_details_date_due_lbl">Datum dospeća:</string>
+    <string name="fragment_medicament_details_prescribed_by_lbl">Propisao:</string>
+
+
+    <!--    AppointmentSchedulingFragment-->
+    <string name="fragment_appointment_scheduling_title">Zakazani termini</string>
+    <string name="fragment_appointment_schedulimg_an_appointments">Zakazivanje termina</string>
+    <string name="fragment_appointment_description">Za zakazivanje termina potreban je \nvisok stepen autorizacije i autentikacije. \nPrijavite se preko eid.gov.rs dvofaktorkskom autorizacijom (Constent ID), ili unesite PIN kod.</string>
+
+    <!--    GroupParticipantsFragment-->
+    <string name="fragment_group_participants_title">Članovi grupe</string>
+
+    <!--    ProfileSinkFragment-->
+    <string name="fragment_sink_profile_synchronization_started">Sinhronizacija je pokrenuta. Molimo vas da proverite status ponovo za nekoliko minuta.</string>
+    <string name="fragment_sink_profile_last_2_hours">U toku poslednja 2 sata</string>
+    <string name="fragment_sink_profile_last_24_hours">U toku poslednja 24 sata</string>
+    <string name="fragment_sink_profile_more_than_24_hours">Više od 24 sata</string>
+
+
+    <!--    PrescribedListLimitationsAdapter-->
+    <string name="adapter_list_limitations_header_title">Opis dijagnoze</string>
+    <string name="adapter_list_limitations_participation">Participacija (%):</string>
+    <string name="adapter_list_limitations_year_from">Godine od:</string>
+    <string name="adapter_list_limitations_year_to">Godine do:</string>
+    <string name="adapter_list_limitations_max_quantity">Maksimalna količina:</string>
+
+
+    <!--    SyncStatusAdapter-->
+    <string name="adapter_sync_status_header_title">Status</string>
+    <string name="adapter_sync_status_external_system">Eksterni sistem:</string>
+    <string name="adapter_sync_status_synhronization">Sinhronizovano:</string>
+    <string name="adapter_sync_status_date_synhronization">Datum sinhronizacije:</string>
+    <string name="adapter_sync_status_time_synhronization">Vreme sinhronizacije:</string>
+    <string name="adapter_sync_status_erecipe_data">eRecept podaci</string>
+    <string name="adapter_sync_status_ecard_data">eKarton podaci</string>
+    <string name="adapter_sync_status_ereferral_data">eUput podaci</string>
+    <string name="adapter_sync_status_life_style">Način žvota</string>
+    <string name="adapter_sync_status_underinsured_persons">Podaci o podosiguranicima</string>
+
+    <!--    AddMedicmentPrescribedListFragment-->
+    <string name="fragment_add_medicamente_prescibed_list_title">Dodaj lek</string>
+    <string name="fragment_add_medicamente_prescibed_list_medicine_name">Naziv leka:</string>
+    <string name="fragment_add_medicamente_prescibed_list_input">Unesi:</string>
+    <string name="fragment_add_medicamente_prescibed_list_dosage">Doziranje:</string>
+    <string name="fragment_add_medicamente_prescibed_list_quantity">Količina:</string>
+    <string name="fragment_add_medicamente_prescibed_list_diagnosis">Dijagnoza:</string>
+    <string name="fragment_add_medicamente_prescibed_list_issuing_doctor">Propisao lekar:</string>
+    <string name="fragment_add_medicamente_prescibed_list_realized_pharmacy">Realizovano u apoteci:</string>
+    <string name="fragment_add_medicamente_prescibed_list_pharmacist">Farmaceut:</string>
+    <string name="fragment_add_medicamente_prescibed_list_create_date">Datum propisivanja:</string>
+    <string name="fragment_add_medicamente_prescibed_list_arrival_date">Datum preuzimanja:</string>
+    <string name="fragment_add_medicamente_prescibed_list_time_of_intake">Vreme uzimanja</string>
+    <string name="fragment_add_medicamente_prescibed_list_enter_dosage">Unesite dozu</string>
+    <string name="fragment_add_medicamente_prescibed_list_enter_quantity">Unesite količinu</string>
+    <string name="fragment_add_medicamente_prescibed_list_enter_diagnosis">Unesite dijagnozu</string>
+    <string name="fragment_add_medicamente_prescibed_list_prescribed_by_doctor">Prepisao lekar</string>
+    <string name="fragment_add_medicamente_prescibed_list_dispensed_pharmacy">Realizovano u apoteci</string>
+    <string name="fragment_add_medicamente_prescibed_list_date_prescribed">Datum propisa</string>
+    <string name="fragment_add_medicamente_prescibed_list_edit_medicine">Izmeni lek</string>
+
+    <!--    InteractionsDescriptionFragment-->
+    <string name="fragment_interactions_description_header">Interakcija lekova</string>
+    <string name="fragment_interactions_description_level_interaction">Nivo interakcije:</string>
+    <string name="fragment_interactions_description_no_interaction">Nema interakcija</string>
+    <string name="fragment_interactions_description_moderate_interaction">Umerena interakcija</string>
+    <string name="fragment_interactions_description_severe_interaction">Ozbiljna interakcija</string>
+    <string name="fragment_interactions_description_types_interactions">Tipovi interakcija</string>
+
+    <!--    BottomSheetLikesInteractionsFragment-->
+    <string name="fragment_bottom_sheet_likes_interactions_like">Sviđa mi se</string>
+    <string name="fragment_bottom_sheet_likes_interactions_unlike">Ne sviđa mi se</string>
+    <string name="fragment_bottom_sheet_likes_interactions_edit">Izmeni</string>
+    <string name="fragment_bottom_sheet_likes_interactions_copy">Kopiraj</string>
+    <string name="fragment_bottom_sheet_likes_interactions_title">Interakcije</string>
+    <string name="fragment_bottom_sheet_likes_interactions_copy_txt_msg">Tekst je kopiran.</string>
+
+    <!--    InteractionFragment-->
+    <string name="fragment_interaction_title">Interakcija lekova</string>
+    <string name="fragment_interaction_header_title">Prevencija</string>
+    <string name="fragment_interaction_tab_first">Drug interaction</string>
+    <string name="fragment_interaction_tab_second">Previous check</string>
+
+    <!--    InteractionsCheckFragment-->
+    <string name="fragment_interacrions_check_title">Provera interakcije</string>
+    <string name="fragment_interacrions_check_header_title">Interakcija lekova</string>
+    <string name="fragment_interacrions_check_btn_check">Proveri interakciju</string>
+    <string name="fragment_interacrions_check_btn_clear">Ocisti listu</string>
+
+
+    <!--    MedicamenteInteractionFragment-->
+    <string name="fragment_medicamente_interactions_search_description">Unesite min 3 karaktera kao kriterijum pretrage. Koristite filter za odabir kategorije pretrage (Lek i INN, Lek, INN)</string>
+    <string name="fragment_medicamente_interactions_search_hint">Lek i INN</string>
+
+    <!--    BottomSheetFilterInteractionsFragment-->
+    <string name="fragment_bottom_sheet_filter_interactions_drug">Lek</string>
+    <string name="fragment_bottom_sheet_filter_interactions_inn">INN</string>
+
+
+</resources>
+
+

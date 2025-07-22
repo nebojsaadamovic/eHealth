@@ -1,0 +1,88 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_bg"
+    android:padding="15dp"
+    tools:context="com.example.zdravlje.ui.healthcare.prevention.commonsthemes.PreventionInfoFragment">
+
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:paddingRight="15dp"
+        android:src="@drawable/ic_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_medium_500"
+        android:text="@string/fragment_prevention_info_header"
+        android:textColor="@color/text_color_3E5764"
+        android:textSize="@dimen/size_18sp"
+        app:layout_constraintBottom_toBottomOf="@id/ivBack"
+        app:layout_constraintStart_toEndOf="@+id/ivBack"
+        app:layout_constraintTop_toTopOf="@id/ivBack" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/mtvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/roboto_medium_500"
+        android:text="@string/fragment_prevention_info_title"
+        android:textColor="@color/text_color_3E5764"
+        android:textSize="@dimen/size_18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivBack" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/reciclerViewCommonThemesInfo"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:nestedScrollingEnabled="true"
+        android:paddingHorizontal="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mtvTitle" />
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:translationZ="200dp"
+        android:visibility="visible"
+        app:layout_constraintTop_toBottomOf="@+id/mtvTitle">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/item_social_group_info_arr_shimerin" />
+
+            <include layout="@layout/item_social_group_info_arr_shimerin" />
+
+            <include layout="@layout/item_social_group_info_arr_shimerin" />
+
+            <include layout="@layout/item_social_group_info_arr_shimerin" />
+
+            <include layout="@layout/item_social_group_info_arr_shimerin" />
+
+            <include layout="@layout/item_social_group_info_arr_shimerin" />
+
+            <include layout="@layout/item_social_group_info_arr_shimerin" />
+
+        </LinearLayout>
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

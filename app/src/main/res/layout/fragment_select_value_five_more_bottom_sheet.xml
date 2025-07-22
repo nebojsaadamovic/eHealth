@@ -1,0 +1,211 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_white_radius_10"
+        android:paddingBottom="50dp"
+        tools:context="com.example.zdravlje.ui.healthcare.screeningexaminations.SelectValueFiveMoreBottomSheetFragment">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/mtvHeaderTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_header_blue"
+            android:paddingVertical="10dp"
+            android:paddingStart="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mtvMenstrualCycle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_bold_700"
+                android:text="Izaberi vrednost"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <RadioGroup
+            android:id="@+id/rbChooseValueFiveMore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toBottomOf="@+id/mtvHeaderTitle">
+
+            <RadioButton
+                android:id="@+id/rbZero"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/blue_0270BB"
+                android:drawablePadding="8dp"
+                android:fontFamily="@font/roboto_medium_500"
+                android:padding="15dp"
+                android:paddingStart="@dimen/size_15sp"
+                android:layoutDirection="rtl"
+                android:textDirection="ltr"
+                android:text="0"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray_E9E9E9"
+                app:layout_constraintBottom_toBottomOf="@id/availableTherapyRadioButton" />
+
+            <RadioButton
+                android:id="@+id/rbOne"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/blue_0270BB"
+                android:drawablePadding="8dp"
+                android:fontFamily="@font/roboto_medium_500"
+                android:gravity="center_vertical"
+                android:padding="15dp"
+                android:layoutDirection="rtl"
+                android:textDirection="ltr"
+                android:text="1"
+                android:textSize="@dimen/size_14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray_E9E9E9"
+                app:layout_constraintBottom_toBottomOf="@id/reminderDrugRadioButton" />
+
+            <RadioButton
+                android:id="@+id/rbTwo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/blue_0270BB"
+                android:drawablePadding="8dp"
+                android:fontFamily="@font/roboto_medium_500"
+                android:gravity="center_vertical"
+                android:padding="15dp"
+                android:layoutDirection="rtl"
+                android:textDirection="ltr"
+                android:text="2"
+                android:textSize="@dimen/size_14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray_E9E9E9"
+                app:layout_constraintBottom_toBottomOf="@id/rbTwo" />
+
+            <RadioButton
+                android:id="@+id/rbThree"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/blue_0270BB"
+                android:drawablePadding="8dp"
+                android:fontFamily="@font/roboto_medium_500"
+                android:gravity="center_vertical"
+                android:layoutDirection="rtl"
+                android:textDirection="ltr"
+                android:padding="15dp"
+                android:text="3"
+                android:textSize="@dimen/size_14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray_E9E9E9"
+                app:layout_constraintBottom_toBottomOf="@id/rbTwo" />
+
+            <RadioButton
+                android:id="@+id/rbFour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/blue_0270BB"
+                android:drawablePadding="8dp"
+                android:fontFamily="@font/roboto_medium_500"
+                android:gravity="center_vertical"
+                android:layoutDirection="rtl"
+                android:textDirection="ltr"
+                android:padding="15dp"
+                android:text="4"
+                android:textSize="@dimen/size_14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray_E9E9E9"
+                app:layout_constraintBottom_toBottomOf="@id/rbTwo" />
+
+            <RadioButton
+                android:id="@+id/rbFive"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/blue_0270BB"
+                android:drawablePadding="8dp"
+                android:fontFamily="@font/roboto_medium_500"
+                android:gravity="center_vertical"
+                android:layoutDirection="rtl"
+                android:textDirection="ltr"
+                android:padding="15dp"
+                android:text="5"
+                android:textSize="@dimen/size_14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray_E9E9E9"
+                app:layout_constraintBottom_toBottomOf="@id/rbTwo" />
+
+
+            <RadioButton
+                android:id="@+id/rbFiveMore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/blue_0270BB"
+                android:drawablePadding="8dp"
+                android:fontFamily="@font/roboto_medium_500"
+                android:gravity="center_vertical"
+                android:layoutDirection="rtl"
+                android:textDirection="ltr"
+                android:padding="15dp"
+                android:text=">5"
+                android:textSize="@dimen/size_14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray_E9E9E9"
+                app:layout_constraintBottom_toBottomOf="@id/rbTwo" />
+
+        </RadioGroup>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/mbClose"
+            style="@style/whiteButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="@string/fragment_bottom_sheet_filter_close_btn"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/mbConfirm"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rbChooseValueFiveMore"
+            app:strokeColor="@color/base_blue_color"
+            app:strokeWidth="1dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/mbConfirm"
+            style="@style/blueButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/fragment_bottom_sheet_filter_save_btn"
+            app:layout_constraintBottom_toBottomOf="@+id/mbClose"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/mbClose"
+            app:layout_constraintTop_toTopOf="@+id/mbClose" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>

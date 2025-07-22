@@ -1,0 +1,218 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_bg"
+    android:paddingHorizontal="15dp"
+    android:paddingVertical="20dp"
+    tools:context="com.example.zdravlje.ui.healthcare.screeningexaminations.MamografiaScreeningFragment">
+
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="10dp"
+        android:src="@drawable/ic_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvAppointments"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fragment_mamografia_screening_appointments_btn"
+        android:fontFamily="@font/roboto_bold_700"
+        android:textColor="@color/base_blue_color"
+        android:textSize="@dimen/size_16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivBack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/ivBack" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/roboto_bold_700"
+        android:text="@string/fragment_mamografia_screening_title"
+        android:textColor="@color/blackColor_333333"
+        android:textSize="@dimen/size_18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivBack" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clMamografia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_stroke_white_rounded_all_10"
+        android:padding="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/fragment_mamografia_screening_name"
+            android:textColor="@color/black"
+            android:fontFamily="@font/roboto_regular_400"
+            android:textSize="@dimen/size_14sp"
+            app:layout_constraintEnd_toStartOf="@+id/mtvNameValue"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvNameValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Nacionalni preventivni\nprogram ranog otkrivanja\nraka grlića materice:"
+            android:textAlignment="textEnd"
+            android:textColor="@color/text_color_8A8A8D"
+            android:fontFamily="@font/roboto_medium_500"
+            android:textSize="@dimen/size_14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/mtvName"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvType"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/fragment_mamografia_screening_type"
+            android:textColor="@color/black"
+            android:fontFamily="@font/roboto_regular_400"
+            android:textSize="@dimen/size_14sp"
+            app:layout_constraintEnd_toStartOf="@+id/mtvTypeValue"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mtvNameValue" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvTypeValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="RGM"
+            android:textColor="@color/text_color_8A8A8D"
+            android:fontFamily="@font/roboto_medium_500"
+            android:textSize="@dimen/size_14sp"
+            android:textAlignment="textEnd"
+            app:layout_constraintStart_toEndOf="@+id/mtvType"
+            app:layout_constraintBottom_toBottomOf="@id/mtvType"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/mtvType" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvDuration"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/fragment_mamografia_screening_rgm"
+            android:textColor="@color/black"
+            android:fontFamily="@font/roboto_regular_400"
+            android:textSize="@dimen/size_14sp"
+            app:layout_constraintEnd_toStartOf="@+id/mtvDurationValue"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mtvTypeValue" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvDurationValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="16.06.2023.-16.06.2024."
+            android:textColor="@color/text_color_8A8A8D"
+            android:fontFamily="@font/roboto_medium_500"
+            android:textAlignment="textEnd"
+            android:textSize="@dimen/size_14sp"
+            app:layout_constraintStart_toEndOf="@+id/mtvDuration"
+            app:layout_constraintBottom_toBottomOf="@id/mtvDuration"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/mtvDuration" />
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/fragment_mamografia_screening_location"
+            android:textColor="@color/black"
+            android:fontFamily="@font/roboto_regular_400"
+            android:textSize="@dimen/size_14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mtvDuration" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvLocationValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fragment_mamografia_screening_choose"
+            android:textColor="@color/base_blue_color"
+            android:fontFamily="@font/roboto_medium_500"
+            android:textSize="@dimen/size_14sp"
+            app:layout_constraintBottom_toBottomOf="@id/mtvLocation"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/mtvLocation" />
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/fragment_mamografia_screening_date"
+            android:textColor="@color/black"
+            android:fontFamily="@font/roboto_regular_400"
+            android:textSize="@dimen/size_14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mtvLocation" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvDateValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fragment_mamografia_screening_add"
+            android:enabled="false"
+            android:alpha="0.4"
+            android:textColor="@color/base_blue_color"
+            android:fontFamily="@font/roboto_medium_500"
+            android:textSize="@dimen/size_14sp"
+            app:layout_constraintBottom_toBottomOf="@id/mtvDate"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/mtvDate" />
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvFreeAppointments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/fragment_mamografia_screening_free_terms"
+            android:textColor="@color/black"
+            android:fontFamily="@font/roboto_regular_400"
+            android:textSize="@dimen/size_14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mtvDate" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvFreeAppointmentsValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fragment_mamografia_screening_add"
+            android:enabled="false"
+            android:alpha="0.4"
+            android:textColor="@color/base_blue_color"
+            android:fontFamily="@font/roboto_medium_500"
+            android:textSize="@dimen/size_14sp"
+            app:layout_constraintBottom_toBottomOf="@id/mtvFreeAppointments"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/mtvFreeAppointments" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

@@ -1,0 +1,126 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    tools:context="com.example.zdravlje.ui.login.PinFragment">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:fontFamily="@font/roboto_bold_700"
+        android:foregroundGravity="center_horizontal"
+        android:text="@string/fragment_pin_enter_pin_code_title"
+        android:textColor="@color/text_color_3E5764"
+        android:textSize="@dimen/size_22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imageView6"
+        app:layout_constraintStart_toStartOf="@+id/imageView6"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="346dp"
+        android:layout_height="107dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/roboto_regular_400"
+        android:foregroundGravity="center_horizontal"
+        android:gravity="center"
+        android:text="@string/fragment_pin_description_pin_code"
+        android:textAlignment="center"
+        android:textSize="@dimen/size_13sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <com.chaos.view.PinView
+        android:id="@+id/pinView"
+        style="@style/PinWidget.PinView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:cursorVisible="true"
+        android:foregroundGravity="center_horizontal"
+        android:hint="Hint."
+        android:inputType="numberPassword"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:cursorWidth="2dp"
+        app:hideLineWhenFilled="false"
+        app:itemCount="10"
+        app:itemHeight="40dp"
+        app:itemRadius="0dp"
+        app:itemSpacing="8dp"
+        app:itemWidth="27dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@id/textView2"
+        app:lineColor="@android:color/darker_gray"
+        app:lineWidth="2dp"
+        app:viewType="line" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_save_pin"
+        style="@style/blueButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:foregroundGravity="center_horizontal"
+        android:text="@string/fragment_pin_enter_pin_code_save_pin"
+        android:textAllCaps="false"
+        app:icon="@drawable/ic_save_add"
+        app:iconPadding="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnSkipPin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnSkipPin"
+        style="@style/whiteButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:foregroundGravity="center_horizontal"
+        android:text="@string/fragment_pin_enter_pin_code_continue_without_pin"
+        android:textAllCaps="false"
+        app:icon="@drawable/ic_login_enter"
+        app:iconPadding="8dp"
+        app:iconTint="@color/base_blue_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btn_save_pin"
+        app:layout_constraintStart_toStartOf="@+id/btn_save_pin"
+        app:strokeColor="@color/base_blue_color"
+        app:strokeWidth="1dp" />
+
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="180dp"
+        android:layout_height="82dp"
+        android:layout_marginTop="64dp"
+        android:foregroundGravity="center"
+        android:src="@drawable/logo_ezdravlje"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:indeterminateTint="@color/base_blue_color"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

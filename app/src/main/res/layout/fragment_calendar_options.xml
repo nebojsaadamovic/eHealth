@@ -1,0 +1,153 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_bg"
+    tools:context="com.example.zdravlje.ui.calendar.options.CalendarOptionsFragment">
+
+    <ImageView
+        android:id="@+id/blurBackground"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_blure_base"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clAddMedicamentFromERecipe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/clScheduleExamination"
+        app:layout_constraintStart_toStartOf="@+id/clScheduleExamination">
+
+        <ImageView
+            android:id="@+id/ivAddMedicamentFromERecipe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="30dp"
+            android:padding="10dp"
+            android:src="@drawable/ic_add_medication"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvAddMedicamentFromERecipe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/roboto_regular_400"
+            android:text="@string/fragment_calendar_options_add_medicament"
+            android:textColor="@color/text_color_3E5764"
+            android:textSize="@dimen/size_20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/ivAddMedicamentFromERecipe"
+            app:layout_constraintStart_toEndOf="@+id/ivAddMedicamentFromERecipe"
+            app:layout_constraintTop_toTopOf="@id/ivAddMedicamentFromERecipe" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clScheduleExamination"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/clScreening"
+        app:layout_constraintStart_toStartOf="@+id/clScreening">
+
+        <ImageView
+            android:id="@+id/ivScheduleExamination"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="30dp"
+            android:padding="10dp"
+            android:src="@drawable/ic_schedule_exam"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvScheduleExamination"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/roboto_regular_400"
+            android:text="@string/fragment_calendar_options_schedule_examination"
+            android:textColor="@color/text_color_3E5764"
+            android:textSize="@dimen/size_20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/ivScheduleExamination"
+            app:layout_constraintStart_toEndOf="@+id/ivScheduleExamination"
+            app:layout_constraintTop_toTopOf="@id/ivScheduleExamination" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clScreening"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@id/clPersonalActivity"
+        app:layout_constraintStart_toStartOf="@+id/clPersonalActivity">
+
+        <ImageView
+            android:id="@+id/ivScreening"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="30dp"
+            android:padding="10dp"
+            android:src="@drawable/ic_app_screening"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvUserSettings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/roboto_regular_400"
+            android:text="@string/fragment_calendar_options_application_for_screening"
+            android:textColor="@color/text_color_3E5764"
+            android:textSize="@dimen/size_20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/ivScreening"
+            app:layout_constraintStart_toEndOf="@+id/ivScreening"
+            app:layout_constraintTop_toTopOf="@id/ivScreening" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clPersonalActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/ivPersonalActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="30dp"
+            android:padding="10dp"
+            android:src="@drawable/ic_per_activity"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvPersonalActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/roboto_regular_400"
+            android:text="@string/fragment_calendar_options_add_personaly_activity"
+            android:textColor="@color/text_color_3E5764"
+            android:textSize="@dimen/size_20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/ivPersonalActivity"
+            app:layout_constraintStart_toEndOf="@+id/ivPersonalActivity"
+            app:layout_constraintTop_toTopOf="@id/ivPersonalActivity" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

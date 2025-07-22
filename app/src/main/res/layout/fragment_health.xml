@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_bg">
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/mcvEmail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp"
+        android:backgroundTint="@color/white"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mtvTitle"
+        app:strokeColor="@color/transparent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/wrapperTwo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include layout="@layout/layout_under_construction" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp">
+
+            <TextView
+                android:id="@+id/dateTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:letterSpacing="0.02"
+                android:text="@string/fragment_health_title"
+                android:textColor="@color/black"
+                android:textSize="@dimen/size_20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvDescDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fragment_health_date"
+                android:textColor="@color/text_color_3E5764"
+                android:textSize="@dimen/size_12sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/dateTextView" />
+
+            <ImageView
+                android:id="@+id/ivIconRight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:src="@drawable/ic_right_blue"
+                app:layout_constraintBottom_toBottomOf="@id/dateTextView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/dateTextView" />
+
+
+            <LinearLayout
+                android:id="@+id/wrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_white_radius_10"
+                android:orientation="vertical"
+                android:padding="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvDescDate">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/clSteps"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                    <ImageView
+                        android:id="@+id/ivSteps"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_health_steps"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:text="@string/fragment_health_steps_label"
+                        android:textColor="@color/text_color_3E5764"
+                        android:textSize="@dimen/size_18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/ivSteps"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/stepsLastValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/fragment_health_steps_last_value"
+                        android:textColor="#9D9D9D"
+                        app:layout_constraintBottom_toTopOf="@id/steps"
+                        app:layout_constraintEnd_toEndOf="parent" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/steps"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/fragment_health_steps_count_value"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/size_29sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@id/stepsTitle" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/stepsTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="4dp"
+                        android:paddingBottom="4dp"
+                        android:text="@string/fragment_health_steps_count_suffix"
+                        android:textColor="@color/text_color_3E5764"
+                        android:textSize="@dimen/size_14sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/clCalories"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                    <ImageView
+                        android:id="@+id/ivCalories"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_calory_count"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:text="@string/fragment_health_calories_label"
+                        android:textColor="@color/text_color_3E5764"
+                        android:textSize="@dimen/size_18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/ivCalories"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/caloriesLastValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/fragment_health_calories_last_value"
+                        android:textColor="#9D9D9D"
+                        app:layout_constraintBottom_toTopOf="@id/burned_calories"
+                        app:layout_constraintEnd_toEndOf="parent" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/burned_calories"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/fragment_health_calories_count"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/size_29sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@id/caloriesTitle" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/caloriesTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="4dp"
+                        android:paddingBottom="4dp"
+                        android:text="@string/fragment_health_calories_count_suffix"
+                        android:textColor="@color/text_color_3E5764"
+                        android:textSize="@dimen/size_14sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/clDistance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                    <ImageView
+                        android:id="@+id/ivDistance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_distance_count"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:text="@string/fragment_health_distance_label"
+                        android:textColor="@color/text_color_3E5764"
+                        android:textSize="@dimen/size_18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/ivDistance"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/distanceLastValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/fragment_health_distance_last_value"
+                        android:textColor="#9D9D9D"
+                        app:layout_constraintBottom_toTopOf="@id/distance"
+                        app:layout_constraintEnd_toEndOf="parent" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/distance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/fragment_health_progress_steps_count"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/size_29sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@id/distanceTitle" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/distanceTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="4dp"
+                        android:paddingBottom="4dp"
+                        android:text="@string/fragment_health_distance_count_suffix"
+                        android:textColor="@color/text_color_3E5764"
+                        android:textSize="@dimen/size_14sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginBottom="25dp"
+                    android:background="@color/white_bg" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/ivFirst"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="15dp"
+                        android:paddingBottom="15dp"
+                        android:src="@drawable/ic_circle_15"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tvFirst"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:maxWidth="75dp"
+                        android:text="@string/fragment_health_counting_steps_label"
+                        android:textColor="@color/text_color_3E5764"
+                        android:textSize="@dimen/size_14sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/ivFirst"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/ivSecond"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:src="@drawable/ic_circle_15"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/tvFirst"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:tint="#1C93BE" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tvSecond"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:maxWidth="75dp"
+                        android:text="@string/fragment_health_counting_calories_label"
+                        android:textColor="@color/text_color_3E5764"
+                        android:textSize="@dimen/size_14sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/ivSecond"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                    <ImageView
+                        android:id="@+id/ivThird"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:src="@drawable/ic_circle_15"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/tvSecond"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:tint="#A7E8FF" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tvThird"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:maxWidth="75dp"
+                        android:text="@string/fragment_health_spun_distance_label"
+                        android:textColor="@color/text_color_3E5764"
+                        android:textSize="@dimen/size_14sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/ivThird"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp">
+
+                    <com.google.android.material.progressindicator.CircularProgressIndicator
+                        android:id="@+id/stepsProgressBar"
+                        android:layout_width="208dp"
+                        android:layout_height="208dp"
+                        android:max="8000"
+                        app:indicatorColor="#A7E8FF"
+                        app:indicatorSize="208dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:trackColor="#F2F4F7"
+                        app:trackCornerRadius="10dp"
+                        app:trackThickness="13dp" />
+
+                    <com.google.android.material.progressindicator.CircularProgressIndicator
+                        android:id="@+id/caloriesProgressBar"
+                        android:layout_width="170dp"
+                        android:layout_height="170dp"
+                        android:max="5000"
+                        app:indicatorColor="#67C9ED"
+                        app:indicatorSize="170dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/stepsProgressBar"
+                        app:layout_constraintEnd_toEndOf="@id/stepsProgressBar"
+                        app:layout_constraintStart_toStartOf="@id/stepsProgressBar"
+                        app:layout_constraintTop_toTopOf="@id/stepsProgressBar"
+                        app:trackColor="#F2F4F7"
+                        app:trackCornerRadius="10dp"
+                        app:trackThickness="13dp" />
+
+                    <com.google.android.material.progressindicator.CircularProgressIndicator
+                        android:id="@+id/distanceProgressBar"
+                        android:layout_width="130dp"
+                        android:layout_height="130dp"
+                        android:max="4"
+                        app:indicatorColor="#1C93BE"
+                        app:indicatorSize="130dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/stepsProgressBar"
+                        app:layout_constraintEnd_toEndOf="@id/stepsProgressBar"
+                        app:layout_constraintStart_toStartOf="@id/stepsProgressBar"
+                        app:layout_constraintTop_toTopOf="@id/stepsProgressBar"
+                        app:trackColor="#F2F4F7"
+                        app:trackCornerRadius="10dp"
+                        app:trackThickness="13dp" />
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_medium_500"
+                        android:text="@string/fragment_health_goal_today_label"
+                        android:textAlignment="center"
+                        android:textColor="@color/text_color_3E5764"
+                        android:textSize="@dimen/size_11sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/stepsProgressBar"
+                        app:layout_constraintEnd_toEndOf="@+id/stepsProgressBar"
+                        app:layout_constraintStart_toStartOf="@+id/stepsProgressBar"
+                        app:layout_constraintTop_toTopOf="@+id/stepsProgressBar" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/healthInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/roboto_bold_700"
+                android:letterSpacing="0.02"
+                android:paddingBottom="40dp"
+                android:text="@string/fragment_health_health_info"
+                android:textColor="@color/black"
+                android:textSize="@dimen/size_12sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/wrapper" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

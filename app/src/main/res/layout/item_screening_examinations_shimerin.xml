@@ -1,0 +1,199 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/bg_white_radius_10">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clMedicamentNameItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/ivBreast"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@color/background_shimmer_gray"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/clMedicamentNameItem" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mvMedicamentNameItemValue"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:fontFamily="@font/roboto_medium_500"
+            android:background="@color/background_shimmer_gray"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textSize="@dimen/size_14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/ivBreast"
+
+            app:layout_constraintStart_toEndOf="@+id/ivBreast"
+            app:layout_constraintTop_toTopOf="@+id/ivBreast"
+            app:layout_constraintVertical_bias="0.25" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clContentItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/clMedicamentNameItem">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvDateItem"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:background="@color/background_shimmer_gray"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/clContentItem" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvDateItemValue"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:background="@color/background_shimmer_gray"
+            app:layout_constraintBottom_toBottomOf="@+id/mtvDateItem"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/mtvDateItem" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvTimeItem"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@color/background_shimmer_gray"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mtvDateItem" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvTimeItemValue"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:background="@color/background_shimmer_gray"
+            app:layout_constraintBottom_toBottomOf="@+id/mtvTimeItem"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/mtvTimeItem" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvLocationItem"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@color/background_shimmer_gray"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mtvTimeItem" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvLocationItemValue"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@color/background_shimmer_gray"
+            app:layout_constraintBottom_toBottomOf="@+id/mtvLocationItem"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/mtvLocationItem" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvStatusItem"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@color/background_shimmer_gray"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mtvLocationItem" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvStatusItemValue"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:background="@color/background_shimmer_gray"
+            app:layout_constraintBottom_toBottomOf="@+id/mtvStatusItem"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/mtvStatusItem" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvAmnestyQuestionnaireItem"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@color/background_shimmer_gray"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mtvStatusItem" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvAmnestyQuestionnaireItemValue"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:background="@color/background_shimmer_gray"
+            app:layout_constraintBottom_toBottomOf="@+id/mtvAmnestyQuestionnaireItem"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/mtvAmnestyQuestionnaireItem" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvInvitationItem"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@color/background_shimmer_gray"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mtvAmnestyQuestionnaireItem" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvInvitationItemValue"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@color/background_shimmer_gray"
+            app:layout_constraintBottom_toBottomOf="@+id/mtvInvitationItem"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/mtvInvitationItem" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvReportItem"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@color/background_shimmer_gray"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mtvInvitationItem" />
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvReportItemValue"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="@color/background_shimmer_gray"
+            app:layout_constraintBottom_toBottomOf="@+id/mtvReportItem"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/mtvReportItem" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvActionItem"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@color/background_shimmer_gray"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mtvReportItem" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvActionItemValue"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:background="@color/background_shimmer_gray"
+            app:layout_constraintBottom_toBottomOf="@+id/mtvActionItem"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/mtvActionItem" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

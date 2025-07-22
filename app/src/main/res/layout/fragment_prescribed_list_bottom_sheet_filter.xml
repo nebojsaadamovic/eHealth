@@ -1,0 +1,375 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/design_bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_white_radius_10"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.zdravlje.ui.healthcare.prescribedlistmedicaments.PrescribedListBottomSheetFilterFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_header_blue"
+        android:padding="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_bold_700"
+            android:text="@string/fragment_bottom_sheet_filter_header"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:id="@+id/ScrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/clHeader">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clScrollViewLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="15dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="15dp"
+            android:paddingBottom="30dp">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mtvChooseStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/roboto_bold_700"
+                android:text="@string/fragment_prescribed_list_bottomsheet_filter_title"
+                android:textColor="@color/black"
+                android:textSize="@dimen/size_18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:background="@color/gray_E9E9E9"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/mtvChooseStatus" />
+
+            <RadioGroup
+                android:id="@+id/statusRadioGroup"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/mtvChooseStatus">
+
+                <RadioButton
+                    android:id="@+id/rbManualInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/blue_0270BB"
+                    android:drawablePadding="8dp"
+                    android:fontFamily="@font/roboto_medium_500"
+                    android:gravity="center_vertical"
+                    android:layoutDirection="rtl"
+                    android:padding="15dp"
+                    android:paddingStart="@dimen/size_15sp"
+                    android:tag="100"
+                    android:text="@string/fragment_prescribed_list_bottomsheet_filter_manual_input"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray_E9E9E9" />
+
+                <RadioButton
+                    android:id="@+id/rbRequestRejected"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/blue_0270BB"
+                    android:drawablePadding="8dp"
+                    android:fontFamily="@font/roboto_medium_500"
+                    android:gravity="center_vertical"
+                    android:layoutDirection="rtl"
+                    android:padding="15dp"
+                    android:tag="6"
+                    android:text="@string/fragment_prescribed_list_bottomsheet_filter_request_rejected"
+                    android:textSize="@dimen/size_14sp"
+                    android:visibility="gone" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray_E9E9E9" />
+
+                <RadioButton
+                    android:id="@+id/rbDeadline"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/blue_0270BB"
+                    android:drawablePadding="8dp"
+                    android:fontFamily="@font/roboto_medium_500"
+                    android:gravity="center_vertical"
+                    android:layoutDirection="rtl"
+                    android:padding="15dp"
+                    android:tag="4"
+                    android:text="@string/fragment_prescribed_list_bottomsheet_filter_dead_line"
+                    android:textSize="@dimen/size_14sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray_E9E9E9" />
+
+                <RadioButton
+                    android:id="@+id/rbCanceled"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/blue_0270BB"
+                    android:drawablePadding="8dp"
+                    android:fontFamily="@font/roboto_medium_500"
+                    android:gravity="center_vertical"
+                    android:layoutDirection="rtl"
+                    android:padding="15dp"
+                    android:tag="6"
+                    android:text="@string/fragment_prescribed_list_bottomsheet_filter_canceled"
+                    android:textSize="@dimen/size_14sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray_E9E9E9" />
+
+                <RadioButton
+                    android:id="@+id/rbRealized"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/blue_0270BB"
+                    android:drawablePadding="8dp"
+                    android:fontFamily="@font/roboto_medium_500"
+                    android:gravity="center_vertical"
+                    android:layoutDirection="rtl"
+                    android:padding="15dp"
+                    android:tag="2"
+                    android:text="@string/fragment_prescribed_list_bottomsheet_filter_realized"
+                    android:textSize="@dimen/size_14sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray_E9E9E9" />
+
+
+                <RadioButton
+                    android:id="@+id/rbRequestApproved"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/blue_0270BB"
+                    android:drawablePadding="8dp"
+                    android:fontFamily="@font/roboto_medium_500"
+                    android:gravity="center_vertical"
+                    android:layoutDirection="rtl"
+                    android:padding="15dp"
+                    android:tag="1"
+                    android:text="@string/fragment_prescribed_list_bottomsheet_filter_request_approved"
+                    android:textSize="@dimen/size_14sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray_E9E9E9" />
+
+                <RadioButton
+                    android:id="@+id/rbShowAllStatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/blue_0270BB"
+                    android:drawablePadding="8dp"
+                    android:fontFamily="@font/roboto_medium_500"
+                    android:gravity="center_vertical"
+                    android:layoutDirection="rtl"
+                    android:padding="15dp"
+                    android:text="@string/fragment_prescribed_list_bottomsheet_filter_show_all"
+                    android:textSize="@dimen/size_14sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray_E9E9E9" />
+
+            </RadioGroup>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mtvTypeRecipe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/roboto_bold_700"
+                android:text="@string/fragment_prescribed_list_bottomsheet_filter_subtitle"
+                android:textColor="@color/black"
+                android:textSize="@dimen/size_18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/statusRadioGroup" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:background="@color/gray_E9E9E9"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/mtvTypeRecipe" />
+
+            <RadioGroup
+                android:id="@+id/typeRecipeRadioGroup"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/mtvTypeRecipe">
+
+                <RadioButton
+                    android:id="@+id/rbETherapy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/blue_0270BB"
+                    android:drawablePadding="8dp"
+                    android:fontFamily="@font/roboto_medium_500"
+                    android:gravity="center_vertical"
+                    android:layoutDirection="rtl"
+                    android:padding="15dp"
+                    android:paddingStart="@dimen/size_15sp"
+                    android:tag="1"
+                    android:text="@string/fragment_prescribed_list_bottomsheet_filter_e_therapy"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray_E9E9E9" />
+
+                <RadioButton
+                    android:id="@+id/rbRecipe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/blue_0270BB"
+                    android:drawablePadding="8dp"
+                    android:fontFamily="@font/roboto_medium_500"
+                    android:gravity="center_vertical"
+                    android:layoutDirection="rtl"
+                    android:padding="15dp"
+                    android:tag="2"
+                    android:text="@string/fragment_prescribed_list_bottomsheet_filter_e_recipe"
+                    android:textSize="@dimen/size_14sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray_E9E9E9" />
+
+                <RadioButton
+                    android:id="@+id/rbEAids"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/blue_0270BB"
+                    android:drawablePadding="8dp"
+                    android:fontFamily="@font/roboto_medium_500"
+                    android:gravity="center_vertical"
+                    android:layoutDirection="rtl"
+                    android:padding="15dp"
+                    android:tag="4"
+                    android:text="@string/fragment_prescribed_list_bottomsheet_filter_e_aids"
+                    android:textSize="@dimen/size_14sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray_E9E9E9" />
+
+                <RadioButton
+                    android:id="@+id/rbWithOutRecipe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/blue_0270BB"
+                    android:drawablePadding="8dp"
+                    android:fontFamily="@font/roboto_medium_500"
+                    android:gravity="center_vertical"
+                    android:layoutDirection="rtl"
+                    android:padding="15dp"
+                    android:tag="3"
+                    android:text="@string/fragment_prescribed_list_bottomsheet_filter_no_prescription"
+                    android:textSize="@dimen/size_14sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray_E9E9E9" />
+
+                <RadioButton
+                    android:id="@+id/rbShowAllTypeRecipe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/blue_0270BB"
+                    android:drawablePadding="8dp"
+                    android:fontFamily="@font/roboto_medium_500"
+                    android:gravity="center_vertical"
+                    android:layoutDirection="rtl"
+                    android:padding="15dp"
+                    android:text="@string/fragment_prescribed_list_bottomsheet_filter_show_all_type_recipe"
+                    android:textSize="@dimen/size_14sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray_E9E9E9" />
+
+            </RadioGroup>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/mbClose"
+                style="@style/whiteButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="30dp"
+                android:text="@string/fragment_bottom_sheet_filter_close_btn"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/mbConfirm"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/typeRecipeRadioGroup"
+                app:strokeColor="@color/base_blue_color"
+                app:strokeWidth="1dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/mbConfirm"
+                style="@style/blueButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/fragment_bottom_sheet_filter_save_btn"
+                app:layout_constraintBottom_toBottomOf="@+id/mbClose"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/mbClose"
+                app:layout_constraintTop_toTopOf="@+id/mbClose"
+                app:strokeWidth="1dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

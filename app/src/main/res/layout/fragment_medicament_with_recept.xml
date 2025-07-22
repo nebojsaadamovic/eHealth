@@ -1,0 +1,183 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_bg"
+    android:padding="15dp"
+    tools:context="com.example.zdravlje.ui.calendar.medicament.withrecipe.MedicamentWithRecipeFragment">
+
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingVertical="10dp"
+        android:paddingEnd="10dp"
+        android:src="@drawable/ic_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvAddMedicine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/roboto_medium_500"
+        android:text="@string/fragment_calendar_options_add_medicament"
+        android:textColor="@color/text_color_3E5764"
+        android:textSize="@dimen/size_18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivBack" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/mcvSearch"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/gray_CDCDCE"
+        android:clipToPadding="false"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAddMedicine"
+        app:strokeColor="@color/gray_E6E6E6">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clContentSerch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="8dp">
+
+            <ImageView
+                android:id="@+id/ivSearchText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/ic_search_normal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@color/white" />
+
+            <EditText
+                android:id="@+id/mtvSearch"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="@string/fragment_institutions_array_search"
+                android:paddingHorizontal="5dp"
+                android:textColorHint="@color/white"
+                android:textSize="@dimen/size_14sp"
+                app:layout_constraintEnd_toEndOf="@+id/clContentSerch"
+                app:layout_constraintStart_toEndOf="@+id/ivSearchText"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/mtvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/roboto_regular_400"
+        android:text="@string/fragment_medicament_with_recept_title"
+        android:textColor="@color/text_color_3E5764"
+        android:textSize="@dimen/size_17sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mcvSearch" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/mtvTitleDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/roboto_medium_500"
+        android:text="@string/fragment_medicament_with_recept_title_desc"
+        android:textColor="@color/text_color_8A8A8D"
+        android:textSize="@dimen/size_10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mtvTitle" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewMedicines"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="15dp"
+        android:fadingEdge="vertical"
+        android:fadingEdgeLength="50dp"
+        android:paddingBottom="20dp"
+        android:requiresFadingEdge="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mtvTitleDesc" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clWrapperData"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mtvTitleDesc">
+
+        <include
+            android:id="@+id/layoutNoData"
+            layout="@layout/fragment_no_data" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="15dp"
+        android:padding="10dp"
+        android:translationZ="200dp"
+        android:visibility="visible"
+        app:layout_constraintTop_toBottomOf="@+id/mtvTitleDesc">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/item_medicine_shimerin" />
+
+            <include layout="@layout/item_medicine_shimerin" />
+
+            <include layout="@layout/item_medicine_shimerin" />
+
+            <include layout="@layout/item_medicine_shimerin" />
+
+            <include layout="@layout/item_medicine_shimerin" />
+
+            <include layout="@layout/item_medicine_shimerin" />
+
+            <include layout="@layout/item_medicine_shimerin" />
+
+            <include layout="@layout/item_medicine_shimerin" />
+
+            <include layout="@layout/item_medicine_shimerin" />
+
+            <include layout="@layout/item_medicine_shimerin" />
+
+            <include layout="@layout/item_medicine_shimerin" />
+
+            <include layout="@layout/item_medicine_shimerin" />
+
+            <include layout="@layout/item_medicine_shimerin" />
+
+            <include layout="@layout/item_medicine_shimerin" />
+
+            <include layout="@layout/item_medicine_shimerin" />
+
+        </LinearLayout>
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

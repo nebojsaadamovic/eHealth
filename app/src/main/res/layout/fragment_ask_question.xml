@@ -1,0 +1,239 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_bg"
+    tools:context="com.example.zdravlje.ui.login.info.AskQuestionFragment">
+
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/ic_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/mtvEntry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:fontFamily="@font/roboto_medium_500"
+        android:text="@string/fragment_ask_question_header_title"
+        android:textColor="@color/text_color_3E5764"
+        android:textSize="@dimen/size_18sp"
+        app:layout_constraintBottom_toBottomOf="@id/ivBack"
+        app:layout_constraintStart_toEndOf="@+id/ivBack"
+        app:layout_constraintTop_toTopOf="@id/ivBack" />
+
+    <View
+        android:id="@+id/vLine"
+        android:layout_width="0dp"
+        android:layout_height="0.4dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/gray_B9B9BB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivBack" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clContent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/vLine">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvAskQuest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/roboto_bold_700"
+            android:text="@string/fragment_ask_question_title"
+            android:textColor="@color/black"
+            android:textSize="@dimen/size_18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/clContent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/bg_white_radius_10"
+            android:paddingHorizontal="15dp"
+            android:paddingVertical="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mtvAskQuest">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mtvChooseCatQuest"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/roboto_regular_400"
+                android:text="@string/fragment_ask_question_choose_question_category_label"
+                android:textColor="@color/black"
+                android:textSize="@dimen/size_14sp"
+                app:layout_constraintStart_toStartOf="@id/clQuestion"
+                app:layout_constraintTop_toTopOf="@id/clQuestion" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mtvChoose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_medium_500"
+                android:text="@string/fragment_ask_question_choose_mtv"
+                android:textColor="@color/base_blue_color"
+                android:textSize="@dimen/size_14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/mtvChooseCatQuest"
+                app:layout_constraintEnd_toEndOf="@id/clQuestion"
+                app:layout_constraintTop_toTopOf="@+id/mtvChooseCatQuest" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mtvTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/roboto_regular_400"
+                android:text="@string/fragment_ask_question_title_label"
+                android:textColor="@color/black"
+                android:textSize="@dimen/size_14sp"
+                app:layout_constraintStart_toStartOf="@id/clQuestion"
+                app:layout_constraintTop_toBottomOf="@id/mtvChooseCatQuest" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mtvAddTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_medium_500"
+                android:text="@string/fragment_ask_question_add_mtv"
+                android:textColor="@color/base_blue_color"
+                android:textSize="@dimen/size_14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/mtvTitle"
+                app:layout_constraintEnd_toEndOf="@id/clQuestion"
+                app:layout_constraintTop_toTopOf="@+id/mtvTitle" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mtvEmail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="@font/roboto_regular_400"
+                android:text="@string/fragment_ask_question_email_label"
+                android:textColor="@color/black"
+                android:textSize="@dimen/size_14sp"
+                app:layout_constraintBottom_toBottomOf="@id/clQuestion"
+                app:layout_constraintStart_toStartOf="@id/clQuestion"
+                app:layout_constraintTop_toBottomOf="@id/mtvAddTitle" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mtvAddEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_medium_500"
+                android:text="@string/fragment_ask_question_add_mtv"
+                android:textColor="@color/base_blue_color"
+                android:textSize="@dimen/size_14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/mtvEmail"
+                app:layout_constraintEnd_toEndOf="@id/clQuestion"
+                app:layout_constraintTop_toTopOf="@+id/mtvEmail" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clAskQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="100dp"
+            android:background="@drawable/bg_white_radius_10"
+            android:paddingHorizontal="15dp"
+            android:paddingVertical="10dp"
+            app:layout_constraintBottom_toTopOf="@id/mbSend"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/clQuestion">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mtvAskQuestionEdit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_medium_500"
+                android:text="@string/fragment_ask_question_question__label"
+                android:textColor="@color/base_blue_color"
+                android:textSize="@dimen/size_14sp"
+                app:layout_constraintEnd_toEndOf="@id/clAskQuestion"
+                app:layout_constraintStart_toStartOf="@id/clAskQuestion"
+                app:layout_constraintTop_toTopOf="@+id/clAskQuestion" />
+
+            <EditText
+                android:id="@+id/etAskQuest"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@null"
+                android:gravity="top|start"
+                android:maxLength="150"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="@dimen/size_14sp"
+                app:layout_constraintBottom_toBottomOf="@id/clAskQuestion"
+                app:layout_constraintEnd_toEndOf="@id/clAskQuestion"
+                app:layout_constraintStart_toStartOf="@+id/clAskQuestion"
+                app:layout_constraintTop_toBottomOf="@id/mtvAskQuestionEdit" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_medium_500"
+            android:text="@string/fragment_ask_question_description_label"
+            android:textColor="@color/text_color_8A8A8D"
+            android:textSize="@dimen/size_10sp"
+            android:layout_marginBottom="15dp"
+            app:layout_constraintBottom_toTopOf="@+id/mbAttachment"
+            app:layout_constraintStart_toStartOf="@id/clAskQuestion"
+            app:layout_constraintTop_toBottomOf="@id/clAskQuestion" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/mbAttachment"
+            style="@style/whiteButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:text="@string/bottom_sheet_add_file_button"
+            android:textColor="@color/base_blue_color"
+            app:icon="@drawable/ic_attachment"
+            app:iconGravity="textStart"
+            app:iconTint="@color/base_blue_color"
+            app:layout_constraintBottom_toTopOf="@id/mbSend"
+            app:layout_constraintEnd_toEndOf="@id/clContent"
+            app:layout_constraintStart_toStartOf="@id/clContent" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/mbSend"
+            style="@style/blueButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:text="@string/fragment_ask_question_send_btn"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

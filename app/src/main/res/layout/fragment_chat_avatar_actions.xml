@@ -1,0 +1,116 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_bg"
+    android:padding="20dp"
+    tools:context="com.example.zdravlje.ui.chat.singleAndGroupMessages.ChatAvatarActionsFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clChatConfigure"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="58dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/ivDeleteMember"
+            android:layout_width="150dp"
+            android:layout_height="84dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/ic_delete_contact"
+            app:layout_constraintStart_toStartOf="@id/clChatConfigure"
+            app:layout_constraintTop_toTopOf="@id/clChatConfigure" />
+
+        <TextView
+            android:id="@+id/tvDeleteContact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_regular_400"
+            android:text="@string/fragment_chat_avatar_actions_delete_contact"
+            android:textColor="@color/text_color_3E5764"
+            android:textSize="@dimen/size_18sp"
+            app:layout_constraintEnd_toEndOf="@id/ivDeleteMember"
+            app:layout_constraintStart_toStartOf="@id/ivDeleteMember"
+            app:layout_constraintTop_toBottomOf="@id/ivDeleteMember" />
+
+        <ImageView
+            android:id="@+id/ivAddMember"
+            android:layout_width="150dp"
+            android:layout_height="84dp"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/ic_add_contact"
+            app:layout_constraintEnd_toEndOf="@id/clChatConfigure"
+            app:layout_constraintTop_toTopOf="@id/ivDeleteMember" />
+
+        <TextView
+            android:id="@+id/tvAddMember"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_regular_400"
+            android:text="@string/fragment_chat_avatar_actions_add_member"
+            android:textColor="@color/text_color_3E5764"
+            android:textSize="@dimen/size_18sp"
+            app:layout_constraintEnd_toEndOf="@id/ivAddMember"
+            app:layout_constraintStart_toStartOf="@id/ivAddMember"
+            app:layout_constraintTop_toBottomOf="@id/ivAddMember" />
+
+        <ImageView
+            android:id="@+id/ivInformation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:src="@drawable/ic_information"
+            app:layout_constraintEnd_toEndOf="@id/ivDeleteMember"
+            app:layout_constraintStart_toStartOf="@id/ivDeleteMember"
+            app:layout_constraintTop_toBottomOf="@id/tvDeleteContact"
+            app:layout_goneMarginTop="70dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_regular_400"
+            android:text="@string/fragment_chat_avatar_actions_information"
+            android:textColor="@color/text_color_3E5764"
+            android:textSize="@dimen/size_18sp"
+            app:layout_constraintEnd_toEndOf="@id/ivInformation"
+            app:layout_constraintStart_toStartOf="@id/ivInformation"
+            app:layout_constraintTop_toBottomOf="@id/ivInformation" />
+
+        <ImageView
+            android:id="@+id/ivDeleteHistory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="70dp"
+            android:src="@drawable/ic_delete_history"
+            app:layout_constraintEnd_toEndOf="@id/ivAddMember"
+            app:layout_constraintStart_toStartOf="@id/ivAddMember"
+            app:layout_constraintTop_toBottomOf="@id/tvAddMember" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_regular_400"
+            android:text="@string/fragment_chat_avatar_actions_delete_history"
+            android:textColor="@color/text_color_3E5764"
+            android:textSize="@dimen/size_18sp"
+            app:layout_constraintEnd_toEndOf="@id/ivDeleteHistory"
+            app:layout_constraintStart_toStartOf="@id/ivDeleteHistory"
+            app:layout_constraintTop_toBottomOf="@id/ivDeleteHistory" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/ivClose"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="50dp"
+        android:src="@drawable/ic_close_black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

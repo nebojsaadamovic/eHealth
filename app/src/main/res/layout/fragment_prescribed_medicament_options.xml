@@ -1,0 +1,225 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_bg"
+    tools:context="com.example.zdravlje.ui.healthcare.prescribedlistmedicaments.PrescribedMedicamentOptionsFragment">
+
+    <ImageView
+        android:id="@+id/blurBackground"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_blure_base"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clDetailsRecipe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/clMedicamentDetails"
+        app:layout_constraintStart_toStartOf="@+id/clMedicamentDetails">
+
+        <ImageView
+            android:id="@+id/ivDetailsRecipe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="30dp"
+            android:padding="10dp"
+            android:src="@drawable/ic_recipe_details"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvDetailsRecipe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:clickable="false"
+            android:fontFamily="@font/roboto_regular_400"
+            android:text="@string/fragment_prescribed_medicament_options_details_recipe"
+            android:textColor="@color/text_color_3E5764"
+            android:textSize="@dimen/size_20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/ivDetailsRecipe"
+            app:layout_constraintStart_toEndOf="@+id/ivDetailsRecipe"
+            app:layout_constraintTop_toTopOf="@id/ivDetailsRecipe" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clMedicamentDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/clLimitations"
+        app:layout_constraintStart_toStartOf="@+id/clLimitations">
+
+        <ImageView
+            android:id="@+id/ivMedicamentDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="30dp"
+            android:padding="10dp"
+            android:src="@drawable/ic_medicamente_details"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvMedicamentDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:clickable="false"
+            android:fontFamily="@font/roboto_regular_400"
+            android:text="@string/fragment_prescribed_medicament_options_medicamente_details"
+            android:textColor="@color/text_color_3E5764"
+            android:textSize="@dimen/size_20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/ivMedicamentDetails"
+            app:layout_constraintStart_toEndOf="@+id/ivMedicamentDetails"
+            app:layout_constraintTop_toTopOf="@id/ivMedicamentDetails" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clLimitations"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/clAddReminder"
+        app:layout_constraintStart_toStartOf="@+id/clAddReminder">
+
+        <ImageView
+            android:id="@+id/ivLimitations"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="30dp"
+            android:padding="10dp"
+            android:src="@drawable/ic_limitations"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvLimitations"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/roboto_regular_400"
+            android:text="@string/fragment_prescribed_medicament_options_limitations"
+            android:textColor="@color/text_color_3E5764"
+            android:textSize="@dimen/size_20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/ivLimitations"
+            app:layout_constraintStart_toEndOf="@+id/ivLimitations"
+            app:layout_constraintTop_toTopOf="@id/ivLimitations" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clAddReminder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/clEdit"
+        app:layout_constraintStart_toStartOf="@+id/clEdit">
+
+        <ImageView
+            android:id="@+id/ivAddReminder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="30dp"
+            android:padding="10dp"
+            android:src="@drawable/ic_add_reminder"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvAddReminder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/roboto_regular_400"
+            android:text="@string/fragment_prescribed_medicament_options_add_reminder"
+            android:textColor="@color/text_color_3E5764"
+            android:textSize="@dimen/size_20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/ivAddReminder"
+            app:layout_constraintStart_toEndOf="@+id/ivAddReminder"
+            app:layout_constraintTop_toTopOf="@id/ivAddReminder" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@id/clDelete"
+        app:layout_constraintStart_toStartOf="@+id/clDelete">
+
+        <ImageView
+            android:id="@+id/ivEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="30dp"
+            android:padding="10dp"
+            android:src="@drawable/ic_edit"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/roboto_regular_400"
+            android:text="Izmeni"
+            android:textColor="@color/text_color_3E5764"
+            android:textSize="@dimen/size_20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/ivEdit"
+            app:layout_constraintStart_toEndOf="@+id/ivEdit"
+            app:layout_constraintTop_toTopOf="@id/ivEdit" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clDelete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/ivDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="30dp"
+            android:padding="10dp"
+            android:src="@drawable/ic_delete"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/roboto_regular_400"
+            android:text="Obriši"
+            android:textColor="@color/text_color_3E5764"
+            android:textSize="@dimen/size_20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/ivDelete"
+            app:layout_constraintStart_toEndOf="@+id/ivDelete"
+            app:layout_constraintTop_toTopOf="@id/ivDelete" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

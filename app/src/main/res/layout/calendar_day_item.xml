@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardWrapper"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="0dp"
+    app:cardElevation="0dp"
+    app:strokeColor="@color/gray_E6E6E6_20"
+    app:strokeWidth="1dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        app:cardBackgroundColor="@color/white">
+
+        <TextView
+            android:id="@+id/date_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/roboto_medium_500"
+            android:textColor="@color/black"
+            android:textSize="@dimen/size_14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/gray_E6E6E6_20" />
+
+        <LinearLayout
+            android:id="@+id/eventContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mtvConsumptionMedicine"
+                android:layout_width="match_parent"
+                android:layout_height="21dp"
+                android:layout_marginVertical="2dp"
+                android:background="@color/green_light_C6E0B4"
+                android:fontFamily="@font/roboto_medium_500"
+                android:gravity="center"
+                android:text="@string/calendar_day_item_drug_consumption"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size_7sp"
+                android:visibility="invisible" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:alpha="0.4"
+                android:background="@color/gray_E9E9E9" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mtvAvailableTherapy"
+                android:layout_width="match_parent"
+                android:layout_height="21dp"
+                android:layout_margin="2dp"
+                android:background="@color/green_light_C6E0B4"
+                android:fontFamily="@font/roboto_medium_500"
+                android:gravity="center"
+                android:text="@string/calendar_day_item_available_therapy"
+                android:textColor="@color/text_color_3E5764"
+                android:textSize="@dimen/size_7sp"
+                android:visibility="invisible" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:alpha="0.4"
+                android:background="@color/gray_E9E9E9" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mtvDoctorsAppointment"
+                android:layout_width="match_parent"
+                android:layout_height="21dp"
+                android:layout_margin="2dp"
+                android:background="@color/yellow_light_FFEBA"
+                android:fontFamily="@font/roboto_medium_500"
+                android:gravity="center"
+                android:text="@string/calendar_day_item_doctors_appointment"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size_7sp"
+                android:visibility="invisible" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:alpha="0.4"
+                android:background="@color/gray_E9E9E9" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mtvPersonaActivity"
+                android:layout_width="match_parent"
+                android:layout_height="21dp"
+                android:layout_margin="2dp"
+                android:background="@color/base_blue_color"
+                android:fontFamily="@font/roboto_medium_500"
+                android:gravity="center"
+                android:text="@string/calendar_day_item_personal_activity"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size_7sp"
+                android:visibility="invisible" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:alpha="0.4"
+                android:background="@color/gray_E9E9E9" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mtvScheduledMeeting"
+                android:layout_width="match_parent"
+                android:layout_height="21dp"
+                android:layout_margin="2dp"
+                android:background="@color/blue_light_D9E1F2"
+                android:fontFamily="@font/roboto_medium_500"
+                android:gravity="center"
+                android:text="@string/calendar_day_item_scheduled_meeting"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size_7sp"
+                android:visibility="invisible" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:alpha="0.4"
+                android:background="@color/gray_E9E9E9" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mtvThreeDot"
+                android:layout_width="match_parent"
+                android:layout_height="21dp"
+                android:layout_margin="2dp"
+                android:fontFamily="@font/roboto_medium_500"
+                android:gravity="center"
+                android:text="..."
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/size_7sp"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,55 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.example.zdravlje.ui.adaptersAndViewHolders.healthcare.InstitutionsAdapter">
+
+    <ImageView
+        android:id="@+id/ivStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/circle_status_shape"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/mtvInstitutions"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:fontFamily="@font/roboto_regular_400"
+        android:gravity="start"
+        android:text="@string/item_institution_num_relationship_available_institutions"
+        android:textColor="@color/black"
+        android:textSize="@dimen/size_14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivStatus"
+        app:layout_constraintEnd_toStartOf="@+id/ivRefresh"
+        app:layout_constraintStart_toEndOf="@+id/ivStatus"
+        app:layout_constraintTop_toTopOf="@+id/ivStatus" />
+
+    <ImageView
+        android:id="@+id/ivRefresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingVertical="5dp"
+        android:src="@drawable/ic_refresh"
+        app:layout_constraintBottom_toBottomOf="@+id/mtvInstitutions"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/mtvInstitutions" />
+
+    <ProgressBar
+        android:id="@+id/progressBarr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:progressTint="@color/base_blue_color"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,159 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_bg"
+    android:paddingStart="15dp"
+    android:paddingTop="20dp"
+    android:paddingEnd="15dp"
+    android:paddingBottom="20dp"
+    tools:context="com.example.zdravlje.ui.notification.NotificationFragment">
+
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingVertical="10dp"
+        android:paddingEnd="10dp"
+        android:src="@drawable/ic_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/infoText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/roboto_medium_500"
+        android:text="@string/fragment_notification_header"
+        android:textColor="@color/text_color_3E5764"
+        android:textSize="@dimen/size_18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/ivBack"
+        app:layout_constraintStart_toEndOf="@id/ivBack"
+        app:layout_constraintTop_toTopOf="@id/ivBack" />
+
+    <ImageView
+        android:id="@+id/ivSort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:padding="10dp"
+        android:src="@drawable/ic_sort"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/ivFilter"
+        app:layout_constraintEnd_toStartOf="@id/ivFilter"
+        app:layout_constraintTop_toTopOf="@id/ivFilter" />
+
+    <ImageView
+        android:id="@+id/ivFilter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:padding="10dp"
+        android:src="@drawable/ic_filter"
+        app:layout_constraintBottom_toBottomOf="@id/ivSettings"
+        app:layout_constraintEnd_toStartOf="@id/ivSettings" />
+
+    <ImageView
+        android:id="@+id/ivSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:padding="10dp"
+        android:src="@drawable/ic_settings_blue"
+        app:layout_constraintBottom_toBottomOf="@+id/ivFilter"
+        app:layout_constraintEnd_toStartOf="@id/ivReadAllMsg"
+        app:layout_constraintTop_toTopOf="@+id/ivFilter" />
+
+    <ImageView
+        android:id="@+id/ivReadAllMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:src="@drawable/ic_notes"
+        app:layout_constraintBottom_toBottomOf="@+id/ivSettings"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ivSettings" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/mtvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/roboto_medium_500"
+        android:text="@string/fragment_notification_mtvtitle"
+        android:textColor="@color/black"
+        android:textSize="@dimen/size_18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/infoText" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clWrapperData"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mtvTitle">
+
+        <include
+            android:id="@+id/layoutNoData"
+            layout="@layout/fragment_no_data" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/notification_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mtvTitle" />
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:translationZ="200dp"
+        android:visibility="visible"
+        app:layout_constraintTop_toBottomOf="@+id/mtvTitle">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/item_notification_shimerin" />
+
+            <include layout="@layout/item_notification_shimerin" />
+
+            <include layout="@layout/item_notification_shimerin" />
+
+            <include layout="@layout/item_notification_shimerin" />
+
+            <include layout="@layout/item_notification_shimerin" />
+
+            <include layout="@layout/item_notification_shimerin" />
+
+        </LinearLayout>
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:visibility="gone">
+
+        <include layout="@layout/network" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

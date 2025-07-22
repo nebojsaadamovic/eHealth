@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/clChatItem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="5dp">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cvUserPhoto"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@color/white"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeColor="@color/white">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/ivParticipantPhoto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@color/background_shimmer_gray"
+            android:scaleType="centerCrop"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:id="@+id/tvUserTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:background="@color/background_shimmer_gray"
+        android:ellipsize="end"
+        android:fontFamily="@font/roboto_regular_400"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:paddingEnd="15dp"
+        app:layout_constraintEnd_toStartOf="@id/tvChatTime"
+        app:layout_constraintStart_toEndOf="@+id/cvUserPhoto"
+        app:layout_constraintTop_toTopOf="@+id/cvUserPhoto" />
+
+    <TextView
+        android:id="@+id/tvChatSubtitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="4dp"
+        android:background="@color/background_shimmer_gray"
+        android:ellipsize="end"
+        android:fontFamily="@font/roboto_medium_500"
+        android:maxLines="1"
+
+        app:layout_constraintBottom_toBottomOf="@+id/cvUserPhoto"
+        app:layout_constraintEnd_toStartOf="@+id/mcvUnreadMessages"
+        app:layout_constraintStart_toEndOf="@+id/cvUserPhoto"
+        app:layout_constraintTop_toBottomOf="@+id/tvUserTitle" />
+
+
+    <TextView
+        android:id="@+id/tvChatTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:fontFamily="@font/roboto_medium_500"
+        android:textColor="@color/black"
+        android:textSize="@dimen/size_14sp"
+        app:layout_constraintEnd_toStartOf="@id/ivNext"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/ivNext"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="10dp"
+        android:background="@color/background_shimmer_gray"
+        app:layout_constraintBottom_toBottomOf="@+id/tvUserTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvUserTitle" />
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/mcvUnreadMessages"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="@color/base_blue_color"
+        android:visibility="gone"
+        app:cardCornerRadius="35dp"
+        app:layout_constraintEnd_toEndOf="@id/tvChatTime"
+        app:layout_constraintTop_toBottomOf="@+id/tvUserTitle"
+        app:strokeColor="@color/transparent">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvUnreadMessagesValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/roboto_bold_700"
+            android:text="20"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_12sp"
+            android:textStyle="bold" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@color/gray_B9B9BB"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

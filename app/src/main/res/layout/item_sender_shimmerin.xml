@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="50dp"
+    android:paddingTop="5dp"
+    android:paddingEnd="20dp">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="50dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="10dp">
+
+            <TextView
+                android:id="@+id/tvSingleMessage"
+                android:layout_width="150dp"
+                android:background="@color/background_shimmer_gray"
+                android:layout_height="20dp"
+                android:fontFamily="@font/roboto_medium_500"
+                android:lineHeight="22dp"
+                android:textAlignment="textStart"
+                android:textColor="@color/text_color_3E5764"
+                android:textSize="@dimen/size_16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvTimeReceivedMessage"
+                android:layout_width="50dp"
+                android:layout_marginTop="3dp"
+                android:background="@color/background_shimmer_gray"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvSingleMessage" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

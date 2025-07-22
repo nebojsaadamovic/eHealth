@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="whiteButton">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:height">60dp</item>
+        <item name="android:layout_marginStart">23dp</item>
+        <item name="android:layout_marginEnd">23dp</item>
+        <item name="android:backgroundTint">@color/white</item>
+        <item name="cornerRadius">5dp</item>
+        <item name="android:fontFamily">@font/roboto_bold_700</item>
+        <item name="android:letterSpacing">0.04</item>
+        <item name="android:textColor">@color/base_blue_color</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="blueButton">
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@font/roboto_bold_700</item>
+        <item name="android:height">60dp</item>
+        <item name="android:letterSpacing">0.02</item>
+        <item name="android:layout_marginStart">23dp</item>
+        <item name="android:layout_marginEnd">23dp</item>
+        <item name="android:backgroundTint">@color/base_blue_color</item>
+        <item name="cornerRadius">5dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <!--  default TextInputLayout -->
+    <style name="DefaultTextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="boxBackgroundColor">@color/transparent</item>
+        <item name="boxCornerRadiusBottomEnd">4dp</item>
+        <item name="android:layout_marginStart">23dp</item>
+        <item name="android:layout_marginEnd">23dp</item>
+        <item name="boxCornerRadiusBottomStart">4dp</item>
+        <item name="boxCornerRadiusTopEnd">4dp</item>
+        <item name="boxCornerRadiusTopStart">4dp</item>
+        <item name="boxStrokeColor">@color/selector_til</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="boxBackgroundMode">filled</item>
+        <item name="boxStrokeWidthFocused">1dp</item>
+        <item name="boxCollapsedPaddingTop">0dp</item>
+        <item name="hintTextColor">@color/selector_til</item>
+        <item name="android:textColorHint">@color/selector_til</item>
+        <item name="hintEnabled">true</item>
+    </style>
+
+    <style name="DefaultTextInputEditText" parent="ThemeOverlay.Material3.TextInputEditText.OutlinedBox">
+        <item name="paddingStart">0dp</item>
+        <item name="paddingEnd">0dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/text_color_3E5764</item>
+        <item name="android:textColorHint">@color/text_color_3E5764</item>
+        <item name="android:backgroundTint">@color/white</item>
+    </style>
+
+    <style name="errorText">
+        <item name="paddingEnd">2dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:textColor">@color/red_FFE50915</item>
+    </style>
+
+    <style name="BottomNavTextActive">
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="BottomNavTextInactive">
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="BottomSheetDialogTheme" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/BottomSheetStyle</item>
+        <item name="android:windowSoftInputMode">adjustResize</item>
+        <item name="android:windowIsFloating">false</item>
+    </style>
+
+    <style name="BottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowSoftInputMode">adjustResize|stateVisible</item>
+        <item name="android:windowIsFloating">false</item>
+    </style>
+
+    <style name="TabTextAppearance">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="DialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/base_blue_color</item>
+        <item name="android:buttonBarPositiveButtonStyle">@style/DialogButtonStyled</item>
+        <item name="android:buttonBarNegativeButtonStyle">@style/DialogButtonStyled</item>
+        <item name="android:buttonBarNeutralButtonStyle">@style/DialogButtonStyled</item>
+    </style>
+
+    <style name="DialogButtonStyled" parent="Theme.MaterialComponents.Light">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="CustomCheckBox" parent="Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="android:button">@android:drawable/btn_radio</item>
+        <item name="colorControlActivated">@color/base_blue_color</item>
+    </style>
+
+    <style name="CalendarDateText" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">18sp</item>   <!-- Veličina brojeva (datumi) -->
+        <item name="android:textColor">#000000</item>  <!-- Crna boja teksta -->
+        <item name="android:fontFamily">sans-serif</item>  <!-- Stil fonta -->
+    </style>
+
+    <style name="CalendarWeekDayText" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">14sp</item>   <!-- Veličina dana u sedmici -->
+        <item name="android:textColor">#757575</item>  <!-- Siva boja teksta -->
+        <item name="android:fontFamily">sans-serif-medium</item>  <!-- Podebljani font -->
+    </style>
+
+
+</resources>

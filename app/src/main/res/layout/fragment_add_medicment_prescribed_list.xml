@@ -1,0 +1,389 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_bg"
+    android:padding="15dp"
+    tools:context="com.example.zdravlje.ui.healthcare.prescribedlistmedicaments.medicamentoptions.AddMedicmentPrescribedListFragment">
+
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:paddingVertical="10dp"
+        android:paddingRight="10dp"
+        android:src="@drawable/ic_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/mtvSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_bold_700"
+        android:paddingVertical="10dp"
+        android:paddingStart="10dp"
+        android:text="@string/save"
+        android:textColor="@color/base_blue_color"
+        android:textSize="@dimen/size_16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivBack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ivBack" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/mtvHeaderTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/roboto_medium_500"
+        android:text="Sreda 23.12.2013"
+        android:textColor="@color/blackColor_333333"
+        android:textSize="@dimen/size_18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivBack" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/mcvConsumationMedicament"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="@color/white"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mtvHeaderTitle"
+        app:strokeColor="@color/transparent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clConsumationMedicament"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <ImageView
+                android:id="@+id/ivMedicament"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_medicament"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mtvTitleMedicamente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:fontFamily="@font/roboto_bold_700"
+                android:text="@string/fragment_add_medicamente_prescibed_list_title"
+                android:textColor="@color/text_color_3E5764"
+                android:textSize="@dimen/size_15sp"
+                app:layout_constraintBottom_toBottomOf="@+id/ivMedicament"
+                app:layout_constraintStart_toEndOf="@+id/ivMedicament"
+                app:layout_constraintTop_toTopOf="@id/ivMedicament" />
+
+            <View
+                android:id="@+id/vLine"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white_bg"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ivMedicament" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mtvNameMedicamente"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/roboto_regular_400"
+                android:text="@string/fragment_add_medicamente_prescibed_list_medicine_name"
+                android:textColor="@color/black"
+                android:textSize="@dimen/size_14sp"
+                app:layout_constraintEnd_toStartOf="@+id/mtvNameMedicamenteValue"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/vLine" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mtvNameMedicamenteValue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_medium_500"
+                android:text="@string/fragment_add_medicamente_prescibed_list_input"
+                android:textAlignment="viewEnd"
+                android:textColor="@color/base_blue_color"
+                android:textSize="@dimen/size_14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/mtvNameMedicamente"
+                app:layout_constraintTop_toTopOf="@+id/mtvNameMedicamente" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mtvDosage"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/roboto_regular_400"
+                android:text="@string/fragment_add_reminder_dosage"
+                android:textColor="@color/black"
+                android:textSize="@dimen/size_14sp"
+                app:layout_constraintEnd_toStartOf="@+id/mtvDosageValue"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/mtvNameMedicamenteValue" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mtvDosageValue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_medium_500"
+                android:text="@string/fragment_add_medicamente_prescibed_list_input"
+                android:textAlignment="viewEnd"
+                android:textColor="@color/base_blue_color"
+                android:textSize="@dimen/size_14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/mtvDosage"
+                app:layout_constraintTop_toTopOf="@+id/mtvDosage" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mtvQuantity"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/roboto_regular_400"
+                android:text="@string/fragment_add_medicamente_prescibed_list_quantity"
+                android:textColor="@color/black"
+                android:textSize="@dimen/size_14sp"
+                app:layout_constraintEnd_toStartOf="@+id/mtvQuantityValue"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/mtvDosageValue" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mtvQuantityValue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_medium_500"
+                android:text="@string/fragment_add_medicamente_prescibed_list_input"
+                android:textAlignment="viewEnd"
+                android:textColor="@color/base_blue_color"
+                android:textSize="@dimen/size_14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/mtvQuantity"
+                app:layout_constraintTop_toTopOf="@+id/mtvQuantity" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mtvDiagnosis"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/roboto_regular_400"
+                android:text="@string/fragment_add_medicamente_prescibed_list_diagnosis"
+                android:textColor="@color/black"
+                android:textSize="@dimen/size_14sp"
+                app:layout_constraintEnd_toStartOf="@+id/mtvDiagnosisValue"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/mtvQuantityValue" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mtvDiagnosisValue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_medium_500"
+                android:text="@string/fragment_add_medicamente_prescibed_list_input"
+                android:textAlignment="viewEnd"
+                android:textColor="@color/base_blue_color"
+                android:textSize="@dimen/size_14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/mtvDiagnosis"
+                app:layout_constraintTop_toTopOf="@+id/mtvDiagnosis" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mtvPrescribedByDoctor"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/roboto_regular_400"
+                android:text="@string/fragment_add_medicamente_prescibed_list_issuing_doctor"
+                android:textColor="@color/black"
+                android:textSize="@dimen/size_14sp"
+                app:layout_constraintEnd_toStartOf="@+id/mtvPrescribedByDoctorValue"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/mtvDiagnosisValue" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mtvPrescribedByDoctorValue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_medium_500"
+                android:text="@string/fragment_add_medicamente_prescibed_list_input"
+                android:textAlignment="viewEnd"
+                android:textColor="@color/base_blue_color"
+                android:textSize="@dimen/size_14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/mtvPrescribedByDoctor"
+                app:layout_constraintTop_toTopOf="@+id/mtvPrescribedByDoctor" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mtvRealizedInPharmacy"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/roboto_regular_400"
+                android:text="@string/fragment_add_medicamente_prescibed_list_realized_pharmacy"
+                android:textColor="@color/black"
+                android:textSize="@dimen/size_14sp"
+                app:layout_constraintEnd_toStartOf="@+id/mtvRealizedInPharmacyValue"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/mtvPrescribedByDoctorValue" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mtvRealizedInPharmacyValue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_medium_500"
+                android:text="@string/fragment_add_medicamente_prescibed_list_input"
+                android:textAlignment="viewEnd"
+                android:textColor="@color/base_blue_color"
+                android:textSize="@dimen/size_14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/mtvRealizedInPharmacy"
+                app:layout_constraintTop_toTopOf="@+id/mtvRealizedInPharmacy" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mtvPharmacist"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/roboto_regular_400"
+                android:text="@string/fragment_add_medicamente_prescibed_list_pharmacist"
+                android:textColor="@color/black"
+                android:textSize="@dimen/size_14sp"
+                app:layout_constraintEnd_toStartOf="@+id/mtvPharmacistValue"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/mtvRealizedInPharmacyValue" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mtvPharmacistValue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_medium_500"
+                android:text="@string/fragment_add_medicamente_prescibed_list_input"
+                android:textAlignment="viewEnd"
+                android:textColor="@color/base_blue_color"
+                android:textSize="@dimen/size_14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/mtvPharmacist"
+                app:layout_constraintTop_toTopOf="@+id/mtvPharmacist" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/mcvTimeConsumation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="@color/white"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mcvConsumationMedicament"
+        app:strokeColor="@color/transparent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clTimeConsumation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mtvTitleConsumation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_bold_700"
+                android:text="@string/fragment_add_medicamente_prescibed_list_time_of_intake"
+                android:textColor="@color/text_color_3E5764"
+                android:textSize="@dimen/size_15sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <View
+                android:id="@+id/vLine1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white_bg"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/mtvTitleConsumation" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mtvPeriodFrom"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/roboto_regular_400"
+                android:text="@string/fragment_add_medicamente_prescibed_list_create_date"
+                android:textColor="@color/black"
+                android:textSize="@dimen/size_14sp"
+                app:layout_constraintEnd_toStartOf="@+id/mtvPeriodFromValue"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/vLine1" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mtvPeriodFromValue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_medium_500"
+                android:text="@string/select"
+                android:textAlignment="viewEnd"
+                android:textColor="@color/base_blue_color"
+                android:textSize="@dimen/size_14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/mtvPeriodFrom"
+                app:layout_constraintTop_toTopOf="@+id/mtvPeriodFrom" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mtvPeriodTo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/roboto_regular_400"
+                android:text="@string/fragment_add_medicamente_prescibed_list_arrival_date"
+                android:textColor="@color/black"
+                android:textSize="@dimen/size_14sp"
+                app:layout_constraintEnd_toStartOf="@+id/mtvPeriodToValue"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/mtvPeriodFromValue" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mtvPeriodToValue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_medium_500"
+                android:text="@string/select"
+                android:textAlignment="viewEnd"
+                android:textColor="@color/text_color_8A8A8D"
+                android:textSize="@dimen/size_14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/mtvPeriodTo"
+                app:layout_constraintTop_toTopOf="@+id/mtvPeriodTo" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

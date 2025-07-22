@@ -1,0 +1,43 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/clTheraphy"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="5dp">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/mtvTheraphy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_regular_400"
+        android:paddingHorizontal="15dp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/size_14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/mtvTheraphyDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_regular_400"
+        android:paddingHorizontal="15dp"
+        android:textColor="@color/text_color_8A8A8D"
+        android:textSize="@dimen/size_14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/mtvTheraphy"
+        app:layout_constraintTop_toBottomOf="@+id/mtvTheraphy" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/white_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mtvTheraphyDesc" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

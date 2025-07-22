@@ -1,0 +1,620 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_bg"
+    android:paddingHorizontal="15dp"
+    android:paddingVertical="20dp"
+    tools:context="com.example.zdravlje.ui.profile.sharedProfile.AddPermissionsFragment">
+
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/ic_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/mbSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_bold_700"
+        android:text="@string/fragment_add_permissions_save_btn"
+        android:padding="10dp"
+        android:textColor="@color/base_blue_color"
+        android:textSize="@dimen/size_16sp"
+        app:layout_constraintBottom_toBottomOf="@id/ivBack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/ivBack" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/mtvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/roboto_bold_700"
+        android:paddingHorizontal="5dp"
+        android:text="@string/fragment_add_permissions_title"
+        android:textColor="@color/black"
+        android:textSize="@dimen/size_18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivBack" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clPermissionGiven"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_white_radius_10"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mtvTitle">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvPermissionGivenName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_regular_400"
+            android:text="@string/fragment_add_permissions_choose_contact"
+            android:textColor="@color/black"
+            android:textSize="@dimen/size_14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvPermissionGivenNameValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:fontFamily="@font/roboto_medium_500"
+            android:text="@string/fragment_add_permissions_choose_btn"
+            android:textColor="@color/base_blue_color"
+            android:textSize="@dimen/size_14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/mtvPermissionGivenName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/mtvPermissionGivenName"
+            app:layout_constraintVertical_bias="0.0" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clContent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clPermissionGiven">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clStyleParam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_white_radius_10"
+            android:paddingHorizontal="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/clContent">
+
+            <CheckBox
+                android:id="@+id/cbLifeStyleParam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/checkbox_selector"
+                android:fontFamily="@font/roboto_medium_500"
+                android:text="@string/fragment_add_permissions_parameters_life_style"
+                android:textColor="@color/black"
+                android:textSize="@dimen/size_15sp"
+                app:buttonTint="@color/blue_0270BB"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/clStyleParam" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mtvChangeLifeStyleParam"
+                android:layout_width="wrap_content"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_medium_500"
+                android:text="@string/fragment_add_permissions_add_btn"
+                android:textColor="@color/base_blue_color"
+                android:textSize="@dimen/size_14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/cbLifeStyleParam"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/cbLifeStyleParam" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clDateFromToLifeStyleParam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:visibility="gone"
+                app:layout_constraintTop_toBottomOf="@+id/cbLifeStyleParam">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/mtvFromLifeStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/roboto_bold_700"
+                    android:text="@string/fragment_add_permissions_from"
+                    android:textColor="@color/base_blue_color"
+                    android:textSize="@dimen/size_15sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/mtvToLifeStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="100dp"
+                    android:fontFamily="@font/roboto_bold_700"
+                    android:text="@string/fragment_add_permissions_to"
+                    android:textColor="@color/base_blue_color"
+                    android:textSize="@dimen/size_15sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/mtvFromLifeStyle"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/mtvFromLifeStyle" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/mtvDateFromLifeStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/fragment_add_permissions_add_date"
+                    android:textColor="@color/base_blue_color"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/mtvFromLifeStyle"
+                    app:layout_constraintTop_toBottomOf="@id/mtvFromLifeStyle" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/mtvDateToLifeStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/fragment_add_permissions_add_date"
+                    android:textColor="@color/base_blue_color"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/mtvToLifeStyle" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clAccessProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_white_radius_10"
+            android:paddingHorizontal="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/clStyleParam">
+
+            <CheckBox
+                android:id="@+id/cbAccessProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/checkbox_selector"
+                android:fontFamily="@font/roboto_medium_500"
+                android:text="@string/fragment_add_permissions_access_profile"
+                android:textColor="@color/black"
+                android:textSize="@dimen/size_15sp"
+                app:buttonTint="@color/blue_0270BB"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/clAccessProfile" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mtvChangeAccesProfile"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_medium_500"
+                android:text="@string/fragment_add_permissions_add_btn"
+                android:textColor="@color/base_blue_color"
+                android:textSize="@dimen/size_14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/cbAccessProfile"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/cbAccessProfile" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clDateFromToAccesProfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:visibility="gone"
+                app:layout_constraintTop_toBottomOf="@+id/mtvChangeAccesProfile">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/mtvFromAccesProfile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/roboto_bold_700"
+                    android:text="@string/fragment_add_permissions_from"
+                    android:textColor="@color/base_blue_color"
+                    android:textSize="@dimen/size_15sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/mtvToAccessProfile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="100dp"
+                    android:fontFamily="@font/roboto_bold_700"
+                    android:text="@string/fragment_add_permissions_to"
+                    android:textColor="@color/base_blue_color"
+                    android:textSize="@dimen/size_15sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/mtvFromAccesProfile"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/mtvFromAccesProfile" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/mtvDateFromAccesProfile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/fragment_add_permissions_add_date"
+                    android:textColor="@color/base_blue_color"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/mtvFromAccesProfile"
+                    app:layout_constraintTop_toBottomOf="@id/mtvFromAccesProfile" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/mtvDateToAccesProfile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/fragment_add_permissions_add_date"
+                    android:textColor="@color/base_blue_color"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/mtvToAccessProfile"
+                    app:layout_constraintTop_toBottomOf="@id/mtvToAccessProfile" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clMedicalCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_white_radius_10"
+            android:paddingHorizontal="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/clAccessProfile">
+
+            <CheckBox
+                android:id="@+id/cbMedicalCard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/checkbox_selector"
+                android:fontFamily="@font/roboto_medium_500"
+                android:text="@string/fragment_add_permissions_medical_card"
+                android:textColor="@color/black"
+                android:textSize="@dimen/size_15sp"
+                app:buttonTint="@color/blue_0270BB"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/clMedicalCard" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mtvChangeMedicalCard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:fontFamily="@font/roboto_medium_500"
+                android:text="@string/fragment_add_permissions_add_btn"
+                android:textColor="@color/base_blue_color"
+                android:textSize="@dimen/size_14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/cbMedicalCard"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/cbMedicalCard" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clDateFromToMedicalCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:visibility="gone"
+                app:layout_constraintTop_toBottomOf="@+id/mtvChangeMedicalCard">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/mtvFromMedicalCard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/roboto_bold_700"
+                    android:text="@string/fragment_add_permissions_from"
+                    android:textColor="@color/base_blue_color"
+                    android:textSize="@dimen/size_15sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/mtvToMedicalCard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="100dp"
+                    android:fontFamily="@font/roboto_bold_700"
+                    android:text="@string/fragment_add_permissions_to"
+                    android:textColor="@color/base_blue_color"
+                    android:textSize="@dimen/size_15sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/mtvFromMedicalCard"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/mtvFromMedicalCard" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/mtvDateFromMedicalCard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/fragment_add_permissions_add_date"
+                    android:textColor="@color/base_blue_color"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/mtvFromMedicalCard"
+                    app:layout_constraintTop_toBottomOf="@id/mtvFromMedicalCard" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/mtvDateToMedicalCard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/fragment_add_permissions_add_date"
+                    android:textColor="@color/base_blue_color"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/mtvToMedicalCard"
+                    app:layout_constraintTop_toBottomOf="@id/mtvToMedicalCard" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clMedicaments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_white_radius_10"
+            android:paddingHorizontal="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/clMedicalCard">
+
+            <CheckBox
+                android:id="@+id/cbMedicaments"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/checkbox_selector"
+                android:fontFamily="@font/roboto_medium_500"
+                android:text="@string/fragment_add_permissions_medicamente"
+                android:textColor="@color/black"
+                android:textSize="@dimen/size_15sp"
+                app:buttonTint="@color/blue_0270BB"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/clMedicaments" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mtvChangeMedicaments"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:fontFamily="@font/roboto_medium_500"
+                android:text="@string/fragment_add_permissions_add_btn"
+                android:textColor="@color/base_blue_color"
+                android:textSize="@dimen/size_14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/cbMedicaments"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/cbMedicaments" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clDateFromToMedicaments"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:visibility="gone"
+                app:layout_constraintTop_toBottomOf="@+id/mtvChangeMedicaments">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/mtvFromMedicaments"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/roboto_bold_700"
+                    android:text="@string/fragment_add_permissions_from"
+                    android:textColor="@color/base_blue_color"
+                    android:textSize="@dimen/size_15sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/mtvToMedicaments"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="100dp"
+                    android:fontFamily="@font/roboto_bold_700"
+                    android:text="@string/fragment_add_permissions_to"
+                    android:textColor="@color/base_blue_color"
+                    android:textSize="@dimen/size_15sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/mtvFromMedicaments"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/mtvFromMedicaments" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/mtvDateFromMedicaments"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/fragment_add_permissions_add_date"
+                    android:textColor="@color/base_blue_color"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/mtvFromMedicaments"
+                    app:layout_constraintTop_toBottomOf="@id/mtvFromMedicaments" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/mtvDateToMedicaments"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/fragment_add_permissions_add_date"
+                    android:textColor="@color/base_blue_color"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/mtvToMedicaments"
+                    app:layout_constraintTop_toBottomOf="@id/mtvToMedicaments" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clEHR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            android:background="@drawable/bg_white_radius_10"
+            android:paddingHorizontal="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/clMedicaments">
+
+            <CheckBox
+                android:id="@+id/cbEHR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/checkbox_selector"
+                android:fontFamily="@font/roboto_medium_500"
+                android:text="@string/fragment_add_permissions_ehr"
+                android:textColor="@color/black"
+                android:textSize="@dimen/size_15sp"
+                app:buttonTint="@color/blue_0270BB"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/clEHR" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mtvChangeEHR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_medium_500"
+                android:text="@string/fragment_add_permissions_add_btn"
+                android:visibility="gone"
+                android:textColor="@color/base_blue_color"
+                android:textSize="@dimen/size_14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/cbEHR"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/cbEHR" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clDateFromToEHR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:visibility="gone"
+                app:layout_constraintTop_toBottomOf="@+id/mtvChangeEHR">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/mtvFromEHR"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/roboto_bold_700"
+                    android:text="@string/fragment_add_permissions_from"
+                    android:textColor="@color/base_blue_color"
+                    android:textSize="@dimen/size_15sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/mtvToEHR"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="100dp"
+                    android:fontFamily="@font/roboto_bold_700"
+                    android:text="@string/fragment_add_permissions_to"
+                    android:textColor="@color/base_blue_color"
+                    android:textSize="@dimen/size_15sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/mtvFromEHR"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/mtvFromEHR" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/mtvDateFromEHR"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/fragment_add_permissions_add_date"
+                    android:textColor="@color/base_blue_color"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/mtvFromEHR"
+                    app:layout_constraintTop_toBottomOf="@id/mtvFromEHR" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/mtvDateToEHR"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/fragment_add_permissions_add_date"
+                    android:textColor="@color/base_blue_color"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/mtvToEHR"
+                    app:layout_constraintTop_toBottomOf="@id/mtvToEHR" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clNotes"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_white_radius_10"
+            android:paddingHorizontal="15dp"
+            android:paddingVertical="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/clEHR">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mtvNotesEdit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_medium_500"
+                android:text="@string/fragment_add_permissions_note"
+                android:textColor="@color/black"
+                android:textSize="@dimen/size_14sp"
+                app:layout_constraintEnd_toEndOf="@id/clNotes"
+                app:layout_constraintStart_toStartOf="@id/clNotes"
+                app:layout_constraintTop_toTopOf="@+id/clNotes" />
+
+            <EditText
+                android:id="@+id/etNotes"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@null"
+                android:gravity="top|start"
+                android:maxLength="150"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="@dimen/size_14sp"
+                app:layout_constraintBottom_toBottomOf="@id/clNotes"
+                app:layout_constraintEnd_toEndOf="@id/clNotes"
+                app:layout_constraintStart_toStartOf="@+id/clNotes"
+                app:layout_constraintTop_toBottomOf="@id/mtvNotesEdit" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

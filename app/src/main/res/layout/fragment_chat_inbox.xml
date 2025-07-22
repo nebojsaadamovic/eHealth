@@ -1,0 +1,281 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="@color/white_bg"
+    android:paddingTop="20dp"
+    tools:context="com.example.zdravlje.ui.chat.ChatInboxFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="20dp">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/imageWrapper"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="15dp"
+            android:backgroundTint="@color/transparent"
+            app:cardCornerRadius="100dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:strokeColor="@color/base_blue_color"
+            app:strokeWidth="2dp">
+
+            <ImageView
+                android:id="@+id/ivAvatar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_contact_avatar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvAvatarInitials"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_circle_avatar_no_profile_img"
+                android:fontFamily="@font/roboto_bold_700"
+                android:gravity="center"
+                android:text="N1"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/size_16sp"
+                android:visibility="gone" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/infoText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:fontFamily="@font/roboto_medium_500"
+            android:text="@string/fragment_chat_inbox_network_header_title"
+            android:textColor="@color/text_color_3E5764"
+            android:textSize="@dimen/size_20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/imageWrapper"
+            app:layout_constraintStart_toEndOf="@id/imageWrapper"
+            app:layout_constraintTop_toTopOf="@id/imageWrapper" />
+
+        <ImageView
+            android:id="@+id/ivFilter"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginEnd="10dp"
+            android:paddingStart="15dp"
+            android:paddingTop="5dp"
+            android:paddingEnd="15dp"
+            android:paddingBottom="5dp"
+            android:src="@drawable/ic_filter"
+            app:layout_constraintBottom_toBottomOf="@+id/ivNotification"
+            app:layout_constraintEnd_toStartOf="@id/ivNotification"
+            app:layout_constraintTop_toTopOf="@id/ivNotification" />
+
+        <ImageView
+            android:id="@+id/ivNotification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:padding="5dp"
+            android:src="@drawable/ic_notification"
+            app:layout_constraintBottom_toBottomOf="@id/infoText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/infoText" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvNotificationCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="21dp"
+            android:layout_marginBottom="15.5dp"
+            android:text="00"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_8sp"
+            app:layout_constraintBottom_toBottomOf="@+id/ivNotification"
+            app:layout_constraintStart_toStartOf="@id/ivNotification"
+            app:layout_constraintTop_toTopOf="@id/ivNotification" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/mcvSearch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="15dp"
+            android:backgroundTint="@color/gray_CDCDCE"
+            app:cardCornerRadius="13dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imageWrapper"
+            app:strokeColor="@color/gray_E6E6E6">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/ivSendMessage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:src="@drawable/ic_notification_search"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:tint="@color/white" />
+
+                <EditText
+                    android:id="@+id/etSearch"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/gray_CDCDCE"
+                    android:fontFamily="@font/roboto_regular_400"
+                    android:hint="@string/fragment_chat_inbox_hint_search"
+                    android:inputType="textMultiLine|textCapSentences"
+                    android:maxHeight="100dp"
+                    android:maxLines="3"
+                    android:padding="12dp"
+                    android:paddingStart="10dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="@dimen/size_18sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/ivSendMessage"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <include
+            android:id="@+id/emptyScreen"
+            layout="@layout/include_empty_screen"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            app:layout_constrainedHeight="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mcvSearch" />
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swipe_refresh_layout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            app:layout_constrainedHeight="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mcvSearch">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/chatListRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fadingEdge="vertical"
+                android:fadingEdgeLength="30dp"
+                android:requiresFadingEdge="vertical" />
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/shimmer"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:translationZ="200dp"
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@+id/mcvSearch">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/item_chat_inbox_shimerin" />
+
+                <include layout="@layout/item_chat_inbox_shimerin" />
+
+                <include layout="@layout/item_chat_inbox_shimerin" />
+
+                <include layout="@layout/item_chat_inbox_shimerin" />
+
+                <include layout="@layout/item_chat_inbox_shimerin" />
+
+                <include layout="@layout/item_chat_inbox_shimerin" />
+
+                <include layout="@layout/item_chat_inbox_shimerin" />
+
+                <include layout="@layout/item_chat_inbox_shimerin" />
+
+                <include layout="@layout/item_chat_inbox_shimerin" />
+
+                <include layout="@layout/item_chat_inbox_shimerin" />
+
+                <include layout="@layout/item_chat_inbox_shimerin" />
+
+                <include layout="@layout/item_chat_inbox_shimerin" />
+
+                <include layout="@layout/item_chat_inbox_shimerin" />
+
+                <include layout="@layout/item_chat_inbox_shimerin" />
+
+            </LinearLayout>
+
+        </com.facebook.shimmer.ShimmerFrameLayout>
+
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="30dp"
+            android:elevation="12dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/white"
+                android:contentDescription="@string/fragment_chat_inbox_fab_description"
+                android:elevation="4dp"
+                android:src="@drawable/ic_chat_add_fab"
+                android:textAlignment="center"
+                android:theme="@style/AppTheme"
+                android:tintMode="multiply"
+                app:backgroundTint="@color/base_blue_color"
+                app:borderWidth="2dp"
+                app:elevation="2dp"
+                app:fabCustomSize="70dp"
+                app:fabSize="normal" />
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:visibility="gone">
+
+        <include layout="@layout/network" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

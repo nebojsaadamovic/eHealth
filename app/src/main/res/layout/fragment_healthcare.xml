@@ -1,0 +1,484 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_bg"
+    android:padding="15dp"
+    tools:context="com.example.zdravlje.ui.healthcare.HealthcareFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/imageWrapper"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:backgroundTint="@color/transparent"
+            app:cardCornerRadius="100dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:strokeColor="@color/base_blue_color"
+            app:strokeWidth="2dp">
+
+            <ImageView
+                android:id="@+id/ivAvatar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_contact_avatar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvAvatarInitials"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_circle_avatar_no_profile_img"
+                android:fontFamily="@font/roboto_bold_700"
+                android:gravity="center"
+                android:text="N1"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/size_16sp"
+                android:visibility="gone" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/infoText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:fontFamily="@font/roboto_medium_500"
+            android:text="@string/fragment_healthcare_header_title"
+            android:textColor="@color/text_color_3E5764"
+            android:textSize="@dimen/size_20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/imageWrapper"
+            app:layout_constraintStart_toEndOf="@id/imageWrapper"
+            app:layout_constraintTop_toTopOf="@id/imageWrapper" />
+
+        <ImageView
+            android:id="@+id/ivNotification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:src="@drawable/ic_notification"
+            app:layout_constraintBottom_toBottomOf="@id/infoText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/infoText" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvNotificationCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="21dp"
+            android:layout_marginBottom="15.5dp"
+            android:text="00"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_8sp"
+            app:layout_constraintBottom_toBottomOf="@+id/ivNotification"
+            app:layout_constraintStart_toStartOf="@id/ivNotification"
+            app:layout_constraintTop_toTopOf="@id/ivNotification" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:fadeScrollbars="true"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/header">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="50dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clCarton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_stroke_white_rounded_all_10"
+                android:padding="15dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/ivDrAvatar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_healthcate_carton"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/cartonTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/roboto_bold_700"
+                    android:text="@string/fragment_healthcare_medical_card_title"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/size_18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/ivDrAvatar"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <View
+                    android:id="@+id/line"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="7dp"
+                    android:background="@color/gray_E6E6E6"
+                    app:layout_constraintTop_toBottomOf="@id/cartonTitle" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:fontFamily="@font/roboto_regular_400"
+                    android:text="@string/fragment_healthcare_medical_card_description"
+                    android:textColor="@color/text_color_3E5764"
+                    android:textSize="@dimen/size_13sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/line" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clAppointmentScheduling"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_stroke_white_rounded_all_10"
+                android:padding="15dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/clCarton">
+
+                <ImageView
+                    android:id="@+id/ivAppointmentScheduling"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_scheduling_appointment"
+                    app:layout_constraintStart_toStartOf="@id/clAppointmentScheduling"
+                    app:layout_constraintTop_toTopOf="@id/clAppointmentScheduling" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/mtvAppointmentScheduling"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/roboto_bold_700"
+                    android:text="@string/fragment_healthcare_schedule_exam_title"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/size_18sp"
+                    app:layout_constraintEnd_toEndOf="@id/clAppointmentScheduling"
+                    app:layout_constraintStart_toEndOf="@+id/ivAppointmentScheduling"
+                    app:layout_constraintTop_toTopOf="@+id/clAppointmentScheduling" />
+
+                <View
+                    android:id="@+id/line6"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="7dp"
+                    android:background="@color/gray_E6E6E6"
+                    app:layout_constraintTop_toBottomOf="@id/mtvAppointmentScheduling" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:fontFamily="@font/roboto_regular_400"
+                    android:text="Zakažite termin kod izabranog lekara. Pratite zakazane termine i upute u realnom vremenu."
+                    android:textColor="@color/text_color_3E5764"
+                    android:textSize="@dimen/size_13sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/line6" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clEDosije"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_stroke_white_rounded_all_10"
+                android:padding="15dp"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/clAppointmentScheduling">
+
+                <ImageView
+                    android:id="@+id/ivEDosije"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_edosije"
+                    app:layout_constraintStart_toStartOf="@id/clEDosije"
+                    app:layout_constraintTop_toTopOf="@id/clEDosije" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/eDosijeTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/roboto_bold_700"
+                    android:text="@string/fragment_healthcare_e_file_title"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/size_18sp"
+                    app:layout_constraintEnd_toEndOf="@id/clEDosije"
+                    app:layout_constraintStart_toEndOf="@+id/ivEDosije"
+                    app:layout_constraintTop_toTopOf="@+id/clEDosije" />
+
+                <View
+                    android:id="@+id/line11"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="7dp"
+                    android:background="@color/gray_E6E6E6"
+                    app:layout_constraintTop_toBottomOf="@id/eDosijeTitle" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:fontFamily="@font/roboto_regular_400"
+                    android:text="@string/fragment_healthcare_e_file_description"
+                    android:textColor="@color/text_color_3E5764"
+                    android:textSize="@dimen/size_13sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/line11" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clOLL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_stroke_white_rounded_all_10"
+                android:padding="15dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/clEDosije">
+
+                <ImageView
+                    android:id="@+id/ivOLL"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_ordered_list"
+                    app:layout_constraintStart_toStartOf="@id/clOLL"
+                    app:layout_constraintTop_toTopOf="@id/clOLL" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/eDosijeTitle2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/roboto_bold_700"
+                    android:text="@string/fragment_healthcare_prescribed_list_medicines_title"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/size_18sp"
+                    app:layout_constraintEnd_toEndOf="@id/clOLL"
+                    app:layout_constraintStart_toEndOf="@+id/ivOLL"
+                    app:layout_constraintTop_toTopOf="@+id/clOLL" />
+
+                <View
+                    android:id="@+id/line12"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="7dp"
+                    android:background="@color/gray_E6E6E6"
+                    app:layout_constraintTop_toBottomOf="@id/eDosijeTitle2" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:fontFamily="@font/roboto_regular_400"
+                    android:text="@string/fragment_healthcare_prescribed_list_medicines_description"
+                    android:textColor="@color/text_color_3E5764"
+                    android:textSize="@dimen/size_13sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/line12" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clESickLeave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_stroke_white_rounded_all_10"
+                android:padding="15dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/clOLL">
+
+                <ImageView
+                    android:id="@+id/ivEDosije3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_toplomer"
+                    app:layout_constraintStart_toStartOf="@id/clESickLeave"
+                    app:layout_constraintTop_toTopOf="@id/clESickLeave" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/eDosijeTitle3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/roboto_bold_700"
+                    android:text="@string/fragment_healthcare_e_sick_leave_title"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/size_18sp"
+                    app:layout_constraintEnd_toEndOf="@id/clESickLeave"
+                    app:layout_constraintStart_toEndOf="@+id/ivEDosije3"
+                    app:layout_constraintTop_toTopOf="@+id/clESickLeave" />
+
+                <View
+                    android:id="@+id/line13"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="7dp"
+                    android:background="@color/gray_E6E6E6"
+                    app:layout_constraintTop_toBottomOf="@id/eDosijeTitle3" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:fontFamily="@font/roboto_regular_400"
+                    android:text="@string/fragment_healthcare_e_sick_leave_description"
+                    android:textColor="@color/text_color_3E5764"
+                    android:textSize="@dimen/size_13sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/line13" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clScreeningExaminations"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_stroke_white_rounded_all_10"
+                android:padding="15dp"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/clESickLeave">
+
+                <ImageView
+                    android:id="@+id/ivScreeningExaminations"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_halthcare_screening"
+                    app:layout_constraintStart_toStartOf="@id/clScreeningExaminations"
+                    app:layout_constraintTop_toTopOf="@id/clScreeningExaminations" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/eDosijeTitle4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/roboto_bold_700"
+                    android:text="@string/fragment_healthcare_scrinning_examinations_title"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/size_18sp"
+                    app:layout_constraintEnd_toEndOf="@id/clScreeningExaminations"
+                    app:layout_constraintStart_toEndOf="@+id/ivScreeningExaminations"
+                    app:layout_constraintTop_toTopOf="@+id/clScreeningExaminations" />
+
+                <View
+                    android:id="@+id/line1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="7dp"
+                    android:background="@color/gray_E6E6E6"
+                    app:layout_constraintTop_toBottomOf="@id/eDosijeTitle4" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:fontFamily="@font/roboto_regular_400"
+                    android:text="@string/fragment_healthcare_scrinning_examinations_descriptions"
+                    android:textColor="@color/text_color_3E5764"
+                    android:textSize="@dimen/size_13sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/line1" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clPrevention"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_stroke_white_rounded_all_10"
+                android:padding="15dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/clScreeningExaminations">
+
+                <ImageView
+                    android:id="@+id/ivEDosije5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_prevention"
+                    app:layout_constraintStart_toStartOf="@id/clPrevention"
+                    app:layout_constraintTop_toTopOf="@id/clPrevention" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/eDosijeTitle5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/roboto_bold_700"
+                    android:text="@string/fragment_healthcare_prevention_title"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/size_18sp"
+                    app:layout_constraintEnd_toEndOf="@id/clPrevention"
+                    app:layout_constraintStart_toEndOf="@+id/ivEDosije5"
+                    app:layout_constraintTop_toTopOf="@+id/clPrevention" />
+
+                <View
+                    android:id="@+id/line5"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="7dp"
+                    android:background="@color/gray_E6E6E6"
+                    app:layout_constraintTop_toBottomOf="@id/eDosijeTitle5" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:fontFamily="@font/roboto_regular_400"
+                    android:text="Zajedničke teme, pitanja i odgovori, preporuke, lekovi, interakcije, MKB10"
+                    android:textColor="@color/text_color_3E5764"
+                    android:textSize="@dimen/size_13sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/line5" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

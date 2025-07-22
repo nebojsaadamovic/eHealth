@@ -1,0 +1,212 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_bg"
+    android:padding="20dp"
+    tools:context="com.example.zdravlje.ui.chat.singleAndGroupMessages.GroupChatOptionsFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clGroupName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/ivGroupImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_group_chat"
+            app:layout_constraintEnd_toStartOf="@+id/mtvGrupName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvGrupName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_regular_400"
+            android:paddingHorizontal="15dp"
+            android:text="Naziv grupe: "
+            android:textColor="@color/black"
+            android:textSize="@dimen/size_14sp"
+            app:layout_constraintBottom_toBottomOf="@id/ivGroupImage"
+            app:layout_constraintEnd_toStartOf="@+id/mtvGrupNameValue"
+            app:layout_constraintStart_toEndOf="@+id/ivGroupImage"
+            app:layout_constraintTop_toTopOf="@id/ivGroupImage" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvGrupNameValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_medium_500"
+            android:padding="5dp"
+            android:text="naziv grupee.."
+            android:textAlignment="textEnd"
+            android:textColor="@color/black"
+            android:textSize="@dimen/size_14sp"
+            app:layout_constraintBottom_toBottomOf="@id/mtvGrupName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/mtvGrupName"
+            app:layout_constraintTop_toTopOf="@id/mtvGrupName" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clChatConfigure"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/clGroupName">
+
+        <ImageView
+            android:id="@+id/ivParticipants"
+            android:layout_width="150dp"
+            android:layout_height="84dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/people"
+            app:layout_constraintStart_toStartOf="@id/clChatConfigure"
+            app:layout_constraintTop_toTopOf="@id/clChatConfigure" />
+
+        <TextView
+            android:id="@+id/tvParticipants"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_regular_400"
+            android:text="Članovi grupe"
+            android:textColor="@color/text_color_3E5764"
+            android:textSize="@dimen/size_18sp"
+            app:layout_constraintEnd_toEndOf="@id/ivParticipants"
+            app:layout_constraintStart_toStartOf="@id/ivParticipants"
+            app:layout_constraintTop_toBottomOf="@id/ivParticipants" />
+
+        <ImageView
+            android:id="@+id/ivAddMember"
+            android:layout_width="150dp"
+            android:layout_height="84dp"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/ic_add_contact"
+            app:layout_constraintEnd_toEndOf="@id/clChatConfigure"
+            app:layout_constraintTop_toTopOf="@id/ivParticipants" />
+
+        <TextView
+            android:id="@+id/tvAddMember"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_regular_400"
+            android:text="@string/fragment_chat_avatar_actions_add_member"
+            android:textColor="@color/text_color_3E5764"
+            android:textSize="@dimen/size_18sp"
+            app:layout_constraintEnd_toEndOf="@id/ivAddMember"
+            app:layout_constraintStart_toStartOf="@id/ivAddMember"
+            app:layout_constraintTop_toBottomOf="@id/ivAddMember" />
+
+        <ImageView
+            android:id="@+id/ivInformation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:src="@drawable/ic_change_name"
+            app:layout_constraintEnd_toEndOf="@id/ivParticipants"
+            app:layout_constraintStart_toStartOf="@id/ivParticipants"
+            app:layout_constraintTop_toBottomOf="@id/tvParticipants"
+            app:layout_goneMarginTop="70dp" />
+
+        <TextView
+            android:id="@+id/mtvInformation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_regular_400"
+            android:text="Promeni \nnaziv"
+            android:textColor="@color/text_color_3E5764"
+            android:textSize="@dimen/size_18sp"
+            app:layout_constraintEnd_toEndOf="@id/ivInformation"
+            app:layout_constraintStart_toStartOf="@id/ivInformation"
+            app:layout_constraintTop_toBottomOf="@id/ivInformation" />
+
+        <ImageView
+            android:id="@+id/ivDeleteHistory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+
+            android:src="@drawable/ic_delete_history"
+            app:layout_constraintEnd_toEndOf="@id/ivAddMember"
+            app:layout_constraintStart_toStartOf="@id/ivAddMember"
+            app:layout_constraintTop_toBottomOf="@id/tvAddMember"
+            app:layout_constraintTop_toTopOf="@id/ivInformation" />
+
+        <TextView
+            android:id="@+id/mtvDeleteHistory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_regular_400"
+            android:text="@string/fragment_chat_avatar_actions_delete_history"
+            android:textColor="@color/text_color_3E5764"
+            android:textSize="@dimen/size_18sp"
+            app:layout_constraintEnd_toEndOf="@id/ivDeleteHistory"
+            app:layout_constraintStart_toStartOf="@id/ivDeleteHistory"
+            app:layout_constraintTop_toBottomOf="@id/ivDeleteHistory" />
+
+
+        <ImageView
+            android:id="@+id/ivDeleteParticipiants"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="70dp"
+            android:src="@drawable/ic_delete_contact"
+            app:layout_constraintEnd_toEndOf="@id/ivInformation"
+            app:layout_constraintStart_toStartOf="@id/ivInformation"
+            app:layout_constraintTop_toBottomOf="@id/mtvInformation" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_regular_400"
+            android:text="Obriši \nčlanove"
+            android:textColor="@color/text_color_3E5764"
+            android:textSize="@dimen/size_18sp"
+            app:layout_constraintEnd_toEndOf="@id/ivDeleteParticipiants"
+            app:layout_constraintStart_toStartOf="@id/ivDeleteParticipiants"
+            app:layout_constraintTop_toBottomOf="@id/ivDeleteParticipiants" />
+
+        <ImageView
+            android:id="@+id/ivLeaveGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_delete_history"
+            app:layout_constraintBottom_toBottomOf="@+id/ivDeleteParticipiants"
+            app:layout_constraintEnd_toEndOf="@id/ivDeleteHistory"
+            app:layout_constraintStart_toStartOf="@id/ivDeleteHistory"
+            app:layout_constraintTop_toTopOf="@id/ivDeleteParticipiants" />
+
+        <TextView
+            android:id="@+id/mtvLeaveGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_regular_400"
+            android:text="Napusti \ngrupu"
+            android:textColor="@color/text_color_3E5764"
+            android:textSize="@dimen/size_18sp"
+            app:layout_constraintEnd_toEndOf="@id/ivLeaveGroup"
+            app:layout_constraintStart_toStartOf="@id/ivLeaveGroup"
+            app:layout_constraintTop_toBottomOf="@id/ivLeaveGroup" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/ivClose"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="40dp"
+        android:src="@drawable/ic_close_black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

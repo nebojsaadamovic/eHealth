@@ -1,0 +1,115 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_header_white"
+    tools:context="com.example.zdravlje.ui.healthcare.prevention.commonsthemes.BottomSheetActionsFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_header_blue"
+        android:paddingVertical="10dp"
+        android:paddingStart="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvHeaderTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_bold_700"
+            android:text="Akcije"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/ivLike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/ic_like"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clHeader" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/mtvLike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/roboto_regular_400"
+        android:text="Svidja mi se"
+        android:textColor="@color/text_color_3E5764"
+        android:textSize="@dimen/size_12sp"
+        app:layout_constraintEnd_toEndOf="@+id/ivLike"
+        app:layout_constraintStart_toStartOf="@+id/ivLike"
+        app:layout_constraintTop_toBottomOf="@+id/ivLike" />
+
+    <ImageView
+        android:id="@+id/ivHeartLike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_heart_like"
+        app:layout_constraintBottom_toBottomOf="@+id/ivLike"
+        app:layout_constraintEnd_toStartOf="@+id/ivCopyLink"
+        app:layout_constraintStart_toEndOf="@+id/ivLike"
+        app:layout_constraintTop_toTopOf="@+id/ivLike" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/mtvHeartLike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/roboto_regular_400"
+        android:text="Zaprati grupu"
+        android:textColor="@color/text_color_3E5764"
+        android:textSize="@dimen/size_12sp"
+        app:layout_constraintEnd_toEndOf="@+id/ivHeartLike"
+        app:layout_constraintStart_toStartOf="@+id/ivHeartLike"
+        app:layout_constraintTop_toBottomOf="@+id/ivHeartLike" />
+
+    <ImageView
+        android:id="@+id/ivCopyLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:src="@drawable/ic_heart_like"
+        app:layout_constraintBottom_toBottomOf="@+id/ivHeartLike"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ivHeartLike" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/mtvCopyLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/roboto_regular_400"
+        android:text="Kopiraj link"
+        android:textColor="@color/text_color_3E5764"
+        android:textSize="@dimen/size_12sp"
+        app:layout_constraintEnd_toEndOf="@+id/ivCopyLink"
+        app:layout_constraintStart_toStartOf="@+id/ivCopyLink"
+        app:layout_constraintTop_toBottomOf="@+id/ivCopyLink" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/mbClose"
+        style="@style/blueButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="50dp"
+        android:text="Zatvori"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mtvHeartLike" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

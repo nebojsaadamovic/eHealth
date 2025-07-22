@@ -1,0 +1,88 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_bg"
+    tools:context="com.example.zdravlje.ui.healthcare.medicalcarton.MedicalCartonOptionsFragment">
+
+    <ImageView
+        android:id="@+id/blurBackground"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_blure_base"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clInstitution"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/clECarton"
+        app:layout_constraintStart_toStartOf="@+id/clECarton">
+
+        <ImageView
+            android:id="@+id/ivInstitution"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="30dp"
+            android:padding="10dp"
+            android:src="@drawable/ic_institutions_med_card"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvInstitution"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/roboto_regular_400"
+            android:text="@string/fragment_medical_carton_options_institutions"
+            android:textColor="@color/text_color_3E5764"
+            android:textSize="@dimen/size_20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/ivInstitution"
+            app:layout_constraintStart_toEndOf="@+id/ivInstitution"
+            app:layout_constraintTop_toTopOf="@id/ivInstitution" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clECarton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/ivECarton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="30dp"
+            android:padding="10dp"
+            android:src="@drawable/ic_access_medical_card"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvECarton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/roboto_regular_400"
+            android:text="@string/fragment_medical_carton_options_access_to_medical_records"
+            android:textColor="@color/text_color_3E5764"
+            android:textSize="@dimen/size_20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/ivECarton"
+            app:layout_constraintStart_toEndOf="@+id/ivECarton"
+            app:layout_constraintTop_toTopOf="@id/ivECarton" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

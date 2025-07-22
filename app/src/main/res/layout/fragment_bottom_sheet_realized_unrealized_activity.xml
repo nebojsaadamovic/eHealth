@@ -1,0 +1,331 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_background"
+    tools:context="com.example.zdravlje.ui.calendar.nextOnSchedule.BottomSheetRealizedUnrealizedActivityFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clHeader"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/rounded_header_red"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mvHeaderTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:fontFamily="@font/roboto_bold_700"
+            android:text="@string/fragment_bottom_sheet_realized_unrealized_activity_header_title"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/clHeader"
+            app:layout_constraintStart_toStartOf="@id/clHeader"
+            app:layout_constraintTop_toTopOf="@id/clHeader" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clHeader">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_regular_400"
+            android:padding="20dp"
+            android:text="xxxxxxx"
+            android:textAlignment="center"
+            android:textColor="@color/text_color_3E5764"
+            android:textSize="@dimen/size_15sp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/clMedicine"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/clContent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clMedicine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mtvTitle">
+
+            <TextView
+                android:id="@+id/tvPersonalActivity"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_medium_500"
+                android:gravity="start"
+                android:text="@string/fragment_bottom_sheet_realized_unrealized_activity_personal_activity_label"
+                android:textColor="@color/black"
+                android:textSize="@dimen/size_14sp"
+                app:layout_constraintEnd_toStartOf="@+id/tvPersonalActivityValue"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvPersonalActivityValue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_regular_400"
+                android:gravity="center_vertical|end"
+                android:text="@string/fragment_bottom_sheet_contact_information_name_value"
+                android:textColor="@color/text_color_8A8A8D"
+                android:textSize="@dimen/size_14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/tvPersonalActivity"
+                app:layout_constraintTop_toTopOf="@id/tvPersonalActivity" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/vLine"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white_bg"
+            app:layout_constraintTop_toBottomOf="@id/clMedicine" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clDose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/vLine">
+
+            <TextView
+                android:id="@+id/tvDescription"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_medium_500"
+                android:gravity="start"
+                android:text="@string/fragment_bottom_sheet_realized_unrealized_activity_description_label"
+                android:textColor="#000000"
+                android:textSize="@dimen/size_14sp"
+                app:layout_constraintEnd_toStartOf="@+id/tvDescriptionValue"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvDescriptionValue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="@string/fragment_bottom_sheet_contact_information_email_value"
+                android:textColor="@color/text_color_8A8A8D"
+                android:textSize="@dimen/size_14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/tvDescription"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/vLine2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white_bg"
+            app:layout_constraintTop_toBottomOf="@id/clDose" />
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/vLine2">
+
+            <TextView
+                android:id="@+id/tvDate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_medium_500"
+                android:gravity="start"
+                android:text="@string/fragment_bottom_sheet_realized_unrealized_activity_date_label"
+                android:textColor="#000000"
+                android:textSize="@dimen/size_14sp"
+                app:layout_constraintEnd_toStartOf="@+id/tvDateValue"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvDateValue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="@string/fragment_bottom_sheet_contact_information_email_value"
+                android:textColor="@color/text_color_8A8A8D"
+                android:textSize="@dimen/size_14sp"
+                app:layout_constraintStart_toEndOf="@+id/tvDate"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/vLine3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white_bg"
+            app:layout_constraintTop_toBottomOf="@id/clDate" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/vLine3">
+
+            <TextView
+                android:id="@+id/tvTime"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_medium_500"
+                android:gravity="start"
+                android:text="@string/fragment_bottom_sheet_realized_unrealized_activity_time_label"
+                android:textColor="#000000"
+                android:textSize="@dimen/size_14sp"
+                app:layout_constraintEnd_toStartOf="@+id/tvTimeValue"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvTimeValue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="@string/fragment_bottom_sheet_contact_information_email_value"
+                android:textColor="@color/text_color_8A8A8D"
+                android:textSize="@dimen/size_14sp"
+                app:layout_constraintStart_toEndOf="@+id/tvTime"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <View
+            android:id="@+id/vLine4"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white_bg"
+            app:layout_constraintTop_toBottomOf="@id/clTime" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/mbCancel"
+            style="@style/whiteButton"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginVertical="50dp"
+            android:layout_marginStart="10dp"
+            android:minWidth="160dp"
+            android:text="@string/fragment_bottom_sheet_realized_unrealized_activity_cancel_label"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/vLine4"
+            app:strokeColor="@color/base_blue_color"
+            app:strokeWidth="1dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/mbConfirm"
+            style="@style/blueButton"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginEnd="10dp"
+            android:minWidth="160dp"
+            android:text="@string/fragment_bottom_sheet_realized_unrealized_activity_confirm_label"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/mbCancel" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clContentSecond"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="15dp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clContent">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvTitleSecond"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_regular_400"
+            android:padding="20dp"
+            android:text="xxxxxxx ?"
+            android:textAlignment="center"
+            android:textColor="@color/text_color_3E5764"
+            android:textSize="@dimen/size_15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/clContentSecond" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/mbYesBtn"
+            style="@style/blueButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Da"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mtvTitleSecond" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/mbNoBtn"
+            style="@style/whiteButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Ne"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mbYesBtn"
+            app:strokeColor="@color/base_blue_color"
+            app:strokeWidth="1dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/mbCancelBtn"
+            style="@style/whiteButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Odustani"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mbNoBtn"
+            app:strokeColor="@color/base_blue_color"
+            app:strokeWidth="1dp" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

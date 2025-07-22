@@ -1,0 +1,156 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_white_radius_10"
+    android:paddingBottom="50dp"
+    tools:context="com.example.zdravlje.ui.healthcare.prevention.interactions.BottomSheetTypeInteractionsFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_header_blue"
+        android:paddingVertical="10dp"
+        android:paddingStart="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/profileText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_bold_700"
+            android:text="@string/fragment_interactions_description_types_interactions"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@id/mbClose"
+        app:layout_constraintTop_toBottomOf="@id/clHeader">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mtvInfoColor3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/roboto_regular_400"
+                android:text="@string/fragment_interactions_description_no_interaction"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/mcvColor3"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="15dp"
+                app:cardBackgroundColor="@color/green_light_C6E0B4"
+                app:cardCornerRadius="5dp"
+                app:layout_constraintBottom_toBottomOf="@+id/mtvInfoColor3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/mtvInfoColor3" />
+
+            <View
+                android:id="@+id/view3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/gray_E9E9E9"
+                app:layout_constraintTop_toBottomOf="@id/mcvColor3" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mtvInfoColor4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/roboto_regular_400"
+                android:text="Umerene interakcije"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view3" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/mcvColor4"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="15dp"
+                app:cardBackgroundColor="@color/orange_light_FDCEAB"
+                app:cardCornerRadius="5dp"
+                app:layout_constraintBottom_toBottomOf="@+id/mtvInfoColor4"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/mtvInfoColor4" />
+
+            <View
+                android:id="@+id/view4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/gray_E9E9E9"
+                app:layout_constraintTop_toBottomOf="@id/mcvColor4" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mtvInfoColor5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/roboto_regular_400"
+                android:text="@string/fragment_interactions_description_severe_interaction"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view4" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/mcvColor5"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="15dp"
+                app:cardBackgroundColor="@color/pink_light_F8BABA"
+                app:cardCornerRadius="5dp"
+                app:layout_constraintBottom_toBottomOf="@+id/mtvInfoColor5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/mtvInfoColor5" />
+
+            <View
+                android:id="@+id/view5"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/gray_E9E9E9"
+                app:layout_constraintTop_toBottomOf="@id/mcvColor5" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/mbClose"
+        style="@style/blueButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:minWidth="160dp"
+        android:text="@string/fragment_bottomsheet_legend_close_btn"
+        android:textSize="@dimen/size_15sp"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

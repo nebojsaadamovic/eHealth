@@ -1,0 +1,236 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_bg"
+    android:padding="15dp"
+    tools:context="com.example.zdravlje.ui.calendar.medicament.withoutrecipe.AddMedicamentDateIntervalFragment">
+
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:paddingStart="0dp"
+        android:src="@drawable/ic_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvCalendar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_medium_500"
+        android:text="@string/fragment_add_medicament_date_interval_add_medicament_title"
+        android:textColor="@color/text_color_3E5764"
+        android:textSize="@dimen/size_18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivBack"
+        app:layout_constraintStart_toEndOf="@id/ivBack"
+        app:layout_constraintTop_toTopOf="@id/ivBack" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvAddActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/roboto_regular_400"
+        android:text="@string/fragment_add_medicament_date_interval_add_medicament_subtitle"
+        android:textColor="@color/text_color_3E5764"
+        android:textSize="@dimen/size_17sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCalendar" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clTimeTo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/bg_stroke_white_rounded_all_10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAddActivity">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvInterval"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:fontFamily="@font/roboto_medium_500"
+            android:text="@string/fragment_add_medicament_date_interval_add_medicament_drug_consumption_interval_label"
+            android:textColor="@color/black"
+            android:textSize="@dimen/size_14sp"
+            app:layout_constraintEnd_toStartOf="@+id/tvDateFromValue"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvDateFromValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_medium_500"
+            android:padding="10dp"
+            android:text="@string/fragment_add_medicament_date_interval_add_medicament_insert"
+            android:textColor="@color/base_blue_color"
+            android:textSize="@dimen/size_14sp"
+            app:layout_constraintBottom_toBottomOf="@id/tvInterval"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tvInterval" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvTimeFrom"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="15dp"
+            android:fontFamily="@font/roboto_medium_500"
+            android:text="@string/fragment_add_medicament_date_interval_add_medicament_time_from_label"
+            android:textColor="@color/black"
+            android:textSize="@dimen/size_14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvInterval" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvTimeFromValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_medium_500"
+            android:padding="10dp"
+            android:text="@string/fragment_add_medicament_date_interval_add_medicament_insert"
+            android:textColor="@color/base_blue_color"
+            android:textSize="@dimen/size_14sp"
+            app:layout_constraintBottom_toBottomOf="@id/tvTimeFrom"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tvTimeFrom" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:padding="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clTimeTo">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvActivityName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_medium_500"
+            android:text="@string/fragment_add_medicament_date_interval_add_medicament_name_activity_label"
+            android:textColor="@color/black"
+            android:textSize="@dimen/size_14sp"
+            app:layout_constraintEnd_toStartOf="@+id/mtvActivityNameValue"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvActivityNameValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_medium_500"
+            android:textAlignment="viewEnd"
+            android:textColor="@color/text_color_8A8A8D"
+            android:textSize="@dimen/size_14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/mtvActivityName"
+            app:layout_constraintTop_toTopOf="@+id/mtvActivityName" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvDosage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/roboto_medium_500"
+            android:text="@string/fragment_add_medicament_date_interval_add_medicament_dosage"
+            android:textColor="@color/black"
+            android:textSize="@dimen/size_14sp"
+            app:layout_constraintEnd_toStartOf="@+id/mtvActivityNameValue"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mtvActivityNameValue" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvDosageValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_medium_500"
+            android:paddingStart="10dp"
+            android:textAlignment="textEnd"
+            android:textColor="@color/text_color_8A8A8D"
+            android:textSize="@dimen/size_14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/mtvDosage"
+            app:layout_constraintTop_toTopOf="@+id/mtvDosage" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvITimeFrom"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/roboto_medium_500"
+            android:text="@string/fragment_add_medicament_date_interval_add_medicament_period_from_label"
+            android:textColor="@color/black"
+            android:textSize="@dimen/size_14sp"
+            app:layout_constraintEnd_toStartOf="@+id/mtvDosageValue"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mtvDosageValue" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvITimeFromValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_medium_500"
+            android:textAlignment="viewEnd"
+            android:textColor="@color/text_color_8A8A8D"
+            android:textSize="@dimen/size_14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tvITimeFrom"
+            app:layout_constraintTop_toTopOf="@+id/tvITimeFrom" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvITimeTo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/roboto_medium_500"
+            android:text="@string/fragment_add_medicament_date_interval_add_medicament_period_to_label"
+            android:textColor="@color/black"
+            android:textSize="@dimen/size_14sp"
+            app:layout_constraintEnd_toStartOf="@+id/tvITimeFromValue"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvITimeFromValue" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvTimeToValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_medium_500"
+            android:textAlignment="viewEnd"
+            android:textColor="@color/text_color_8A8A8D"
+            android:textSize="@dimen/size_14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tvITimeTo"
+            app:layout_constraintTop_toTopOf="@+id/tvITimeTo" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/mbNext"
+        style="@style/blueButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:alpha="0.3"
+        android:enabled="false"
+        android:text="@string/fragment_parameters_next_btn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+

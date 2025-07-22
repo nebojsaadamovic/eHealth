@@ -1,0 +1,1456 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="50dp"
+    android:background="@color/white_bg"
+    android:paddingHorizontal="15dp"
+    android:paddingVertical="20dp"
+    tools:context="com.example.zdravlje.ui.healthcare.screeningexaminations.AmnesticQuestionnaireFragment">
+
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="10dp"
+        android:src="@drawable/ic_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/mtvSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_bold_700"
+        android:text="@string/fragment_amnestic_questionnaire_save"
+        android:textColor="@color/base_blue_color"
+        android:textSize="@dimen/size_16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivBack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/ivBack" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/roboto_bold_700"
+        android:text="@string/fragment_amnestic_questionnaire_title"
+        android:textColor="@color/blackColor_333333"
+        android:textSize="@dimen/size_18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivBack" />
+
+    <android.widget.ScrollView
+        android:id="@+id/svGeneralInfo"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clGeneralInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_stroke_white_rounded_all_10"
+                android:padding="15dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/clScrollView">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/mtvGeneralInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_medium_500"
+                    android:paddingBottom="10dp"
+                    android:text="@string/fragment_amnestic_questionnaire_general_info"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/size_14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <View
+                    android:id="@+id/lineGeneralInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray_E9E9E9"
+                    app:layout_constraintBottom_toBottomOf="@id/mtvGeneralInfo" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/mtvFirstMenstruation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/roboto_regular_400"
+                    android:text="@string/fragment_amnestic_questionnaire_first_menstruation"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/size_14sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/lineGeneralInfo" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/mtvFirstMenstruationValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_medium_500"
+                    android:text="@string/fragment_amnestic_questionnaire_enter_value"
+                    android:textColor="@color/base_blue_color"
+                    android:textSize="@dimen/size_14sp"
+                    app:layout_constraintBottom_toBottomOf="@id/mtvFirstMenstruation"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/mtvFirstMenstruation" />
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/mtvMenstrualCycle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/roboto_regular_400"
+                    android:text="@string/fragment_amnestic_questionnaire_menstrual_cycle"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/size_14sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/mtvFirstMenstruation" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/mtvMenstrualCycleValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_medium_500"
+                    android:text="@string/fragment_amnestic_questionnaire_choose"
+                    android:textColor="@color/base_blue_color"
+                    android:textSize="@dimen/size_14sp"
+                    app:layout_constraintBottom_toBottomOf="@id/mtvMenstrualCycle"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/mtvMenstrualCycle" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/mtvReasonCessationMenstruation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/roboto_regular_400"
+                    android:text="@string/fragment_amnestic_questionnaire_reason_cessation"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/size_14sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/mtvMenstrualCycle" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/mtvReasonCessationMenstruationValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_medium_500"
+                    android:text="@string/fragment_amnestic_questionnaire_choose"
+                    android:textColor="@color/base_blue_color"
+                    android:textSize="@dimen/size_14sp"
+                    app:layout_constraintBottom_toBottomOf="@id/mtvReasonCessationMenstruation"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/mtvReasonCessationMenstruation" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/mtvYearsLastMenstruation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/roboto_regular_400"
+                    android:text="@string/fragment_amnestic_questionnaire_years_last_menstruation"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/size_14sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/mtvReasonCessationMenstruation" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/mtvYearsLastMenstruationValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_medium_500"
+                    android:text="@string/fragment_amnestic_questionnaire_enter_value"
+                    android:textColor="@color/base_blue_color"
+                    android:textSize="@dimen/size_14sp"
+                    app:layout_constraintBottom_toBottomOf="@id/mtvYearsLastMenstruation"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/mtvYearsLastMenstruation" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/mtvFirstPregnancy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/roboto_regular_400"
+                    android:text="@string/fragment_amnestic_questionnaire_first_pregnancy"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/size_14sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/mtvYearsLastMenstruation" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/mtvFirstPregnancyValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_medium_500"
+                    android:text="@string/fragment_amnestic_questionnaire_enter_value"
+                    android:textColor="@color/base_blue_color"
+                    android:textSize="@dimen/size_14sp"
+                    app:layout_constraintBottom_toBottomOf="@id/mtvFirstPregnancy"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/mtvFirstPregnancy" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/mtvNumPregnancies"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/roboto_regular_400"
+                    android:text="@string/fragment_amnestic_questionnaire_num_pregnancies"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/size_14sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/mtvFirstPregnancy" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/mtvNumPregnanciesValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_medium_500"
+                    android:text="@string/fragment_amnestic_questionnaire_enter_value"
+                    android:textColor="@color/base_blue_color"
+                    android:textSize="@dimen/size_14sp"
+                    app:layout_constraintBottom_toBottomOf="@id/mtvNumPregnancies"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/mtvNumPregnancies" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/mtvFistChild"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/roboto_regular_400"
+                    android:text="@string/fragment_amnestic_questionnaire_first_child"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/size_14sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/mtvNumPregnancies" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/mtvFistChildValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_medium_500"
+                    android:text="@string/fragment_amnestic_questionnaire_enter_value"
+                    android:textColor="@color/base_blue_color"
+                    android:textSize="@dimen/size_14sp"
+                    app:layout_constraintBottom_toBottomOf="@id/mtvFistChild"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/mtvFistChild" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clSmokerInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_stroke_white_rounded_all_10"
+                android:paddingHorizontal="15dp"
+                android:paddingBottom="15dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/clGeneralInfo">
+
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:id="@+id/rbSmoker"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_medium_500"
+                    android:layoutDirection="rtl"
+                    android:text="@string/fragment_amnestic_questionnaire_smoker"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/size_14sp"
+                    app:buttonTint="@color/blue_0270BB"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <View
+                    android:id="@+id/lineSmoker"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray_E9E9E9"
+                    app:layout_constraintBottom_toBottomOf="@id/rbSmoker" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/mtvYearsSmoking"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/roboto_regular_400"
+                    android:text="@string/fragment_amnestic_questionnaire_years_smoking"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/size_14sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/lineSmoker" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/mtvYearsSmokingValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_medium_500"
+                    android:text="@string/fragment_amnestic_questionnaire_years_smoking_value"
+                    android:textColor="@color/base_blue_color"
+                    android:textSize="@dimen/size_14sp"
+                    app:layout_constraintBottom_toBottomOf="@id/mtvYearsSmoking"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/mtvYearsSmoking" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clBloodRelatives"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_stroke_white_rounded_all_10"
+                android:paddingHorizontal="15dp"
+                android:paddingBottom="15dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/clSmokerInfo">
+
+                <RadioButton
+                    android:id="@+id/rbBloodRelatives"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_medium_500"
+                    android:layoutDirection="rtl"
+                    android:text="@string/fragment_amnestic_questionnaire_rbBloodRelatives"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/size_14sp"
+                    app:buttonTint="@color/blue_0270BB"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/mtvMather"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/roboto_regular_400"
+                    android:text="@string/fragment_amnestic_questionnaire_mtvMather"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/size_14sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/rbBloodRelatives" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/mtvMatherValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_medium_500"
+                    android:text="@string/fragment_amnestic_questionnaire_mtvMatherValue"
+                    android:textColor="@color/base_blue_color"
+                    android:textSize="@dimen/size_14sp"
+                    app:layout_constraintBottom_toBottomOf="@id/mtvMather"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/mtvMather" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/mtvSisters"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/roboto_regular_400"
+                    android:text="@string/fragment_amnestic_questionnaire_mtvSisters"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/size_14sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/mtvMather" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/mtvSistersValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_medium_500"
+                    android:text="@string/fragment_amnestic_questionnaire_mtvSistersValue"
+                    android:textColor="@color/base_blue_color"
+                    android:textSize="@dimen/size_14sp"
+                    app:layout_constraintBottom_toBottomOf="@id/mtvSisters"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/mtvSisters" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/mtvDaughter"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/roboto_regular_400"
+                    android:text="@string/fragment_amnestic_questionnaire_mtvDaughter"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/size_14sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/mtvSisters" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/mtvDaughterValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_medium_500"
+                    android:text="@string/fragment_amnestic_questionnaire_mtvDaughterValue"
+                    android:textColor="@color/base_blue_color"
+                    android:textSize="@dimen/size_14sp"
+                    app:layout_constraintBottom_toBottomOf="@id/mtvDaughter"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/mtvDaughter" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/mtvGrandma"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/roboto_regular_400"
+                    android:text="@string/fragment_amnestic_questionnaire_mtvGrandma"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/size_14sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/mtvDaughter" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/mtvGrandmaValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_medium_500"
+                    android:text="@string/fragment_amnestic_questionnaire_mtvGrandmaValue"
+                    android:textColor="@color/base_blue_color"
+                    android:textSize="@dimen/size_14sp"
+                    app:layout_constraintBottom_toBottomOf="@id/mtvGrandma"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/mtvGrandma" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/mtvAunt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/roboto_regular_400"
+                    android:text="@string/fragment_amnestic_questionnaire_mtvAunt"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/size_14sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/mtvGrandma" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/mtvAuntValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_medium_500"
+                    android:text="@string/fragment_amnestic_questionnaire_mtvAuntValue"
+                    android:textColor="@color/base_blue_color"
+                    android:textSize="@dimen/size_14sp"
+                    app:layout_constraintBottom_toBottomOf="@id/mtvAunt"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/mtvAunt" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clBloodRelativesBreast"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_stroke_white_rounded_all_10"
+                android:paddingHorizontal="15dp"
+                android:paddingBottom="15dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/clSmokerInfo">
+
+
+                <RadioButton
+                    android:id="@+id/rbBloodRelativesBreast"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_medium_500"
+                    android:layoutDirection="rtl"
+                    android:text="@string/fragment_amnestic_questionnaire_blood_relatives_breast"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/size_14sp"
+                    app:buttonTint="@color/blue_0270BB"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <View
+                    android:id="@+id/lineBloodRelativesBreast"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray_E9E9E9"
+                    app:layout_constraintBottom_toBottomOf="@id/rbBloodRelativesBreast" />
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/mtvMatherBreast"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/roboto_regular_400"
+                    android:text="@string/fragment_amnestic_questionnaire_mother_breast"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/size_14sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/lineBloodRelativesBreast" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/mtvMatherBreastValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_medium_500"
+                    android:text="@string/fragment_amnestic_questionnaire_choose"
+                    android:textColor="@color/base_blue_color"
+                    android:textSize="@dimen/size_14sp"
+                    app:layout_constraintBottom_toBottomOf="@id/mtvMatherBreast"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/mtvMatherBreast" />
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/mtvSistersBreast"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/roboto_regular_400"
+                    android:text="@string/fragment_amnestic_questionnaire_sisters_breast"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/size_14sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/mtvMatherBreast" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/mtvSistersValueBreast"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_medium_500"
+                    android:text="@string/fragment_amnestic_questionnaire_choose"
+                    android:textColor="@color/base_blue_color"
+                    android:textSize="@dimen/size_14sp"
+                    app:layout_constraintBottom_toBottomOf="@id/mtvSistersBreast"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/mtvSistersBreast" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/mtvDaughterBreast"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/roboto_regular_400"
+                    android:text="@string/fragment_amnestic_questionnaire_daughter_breast"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/size_14sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/mtvSistersBreast" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/mtvDaughterBreastValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_medium_500"
+                    android:text="@string/fragment_amnestic_questionnaire_choose"
+                    android:textColor="@color/base_blue_color"
+                    android:textSize="@dimen/size_14sp"
+                    app:layout_constraintBottom_toBottomOf="@id/mtvDaughterBreast"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/mtvDaughterBreast" />
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/mtvGrandmaBreast"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/roboto_regular_400"
+                    android:text="@string/fragment_amnestic_questionnaire_grandma_breast"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/size_14sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/mtvDaughterBreast" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/mtvGrandmaBreastValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_medium_500"
+                    android:text="@string/fragment_amnestic_questionnaire_choose"
+                    android:textColor="@color/base_blue_color"
+                    android:textSize="@dimen/size_14sp"
+                    app:layout_constraintBottom_toBottomOf="@id/mtvGrandmaBreast"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/mtvGrandmaBreast" />
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/mtvAuntBreast"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/roboto_regular_400"
+                    android:text="@string/fragment_amnestic_questionnaire_aunt_breast"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/size_14sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/mtvGrandmaBreast" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/mtvAuntBreastValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_medium_500"
+                    android:text="@string/fragment_amnestic_questionnaire_choose"
+                    android:textColor="@color/base_blue_color"
+                    android:textSize="@dimen/size_14sp"
+                    app:layout_constraintBottom_toBottomOf="@id/mtvAuntBreast"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/mtvAuntBreast" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clBloodRelativesOvaries"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_stroke_white_rounded_all_10"
+                android:paddingHorizontal="15dp"
+                android:paddingBottom="15dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/clBloodRelativesBreast">
+
+
+                <RadioButton
+                    android:id="@+id/rbBloodRelativesOvaries"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_medium_500"
+                    android:layoutDirection="rtl"
+                    android:text="@string/fragment_amnestic_questionnaire_rbBloodRelativesOvaries"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/size_14sp"
+                    app:buttonTint="@color/blue_0270BB"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <View
+                    android:id="@+id/lineBloodRelativesOvaries"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray_E9E9E9"
+                    app:layout_constraintBottom_toBottomOf="@id/rbBloodRelativesOvaries" />
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/mtvMatherOvaries"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/roboto_regular_400"
+                    android:text="@string/fragment_amnestic_questionnaire_mtvMatherOvaries"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/size_14sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/lineBloodRelativesOvaries" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/mtvMatherOvariesValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_medium_500"
+                    android:text="@string/fragment_amnestic_questionnaire_mtvGrandmaOvariesValue"
+                    android:textColor="@color/base_blue_color"
+                    android:textSize="@dimen/size_14sp"
+                    app:layout_constraintBottom_toBottomOf="@id/mtvMatherOvaries"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/mtvMatherOvaries" />
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/mtvSistersOvaries"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/roboto_regular_400"
+                    android:text="@string/fragment_amnestic_questionnaire_mtvSistersOvaries"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/size_14sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/mtvMatherOvaries" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/mtvSistersValueOvaries"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_medium_500"
+                    android:text="@string/fragment_amnestic_questionnaire_mtvGrandmaOvariesValue"
+                    android:textColor="@color/base_blue_color"
+                    android:textSize="@dimen/size_14sp"
+                    app:layout_constraintBottom_toBottomOf="@id/mtvSistersOvaries"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/mtvSistersOvaries" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/mtvDaughterOvaries"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/roboto_regular_400"
+                    android:text="@string/fragment_amnestic_questionnaire_mtvDaughterOvaries"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/size_14sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/mtvSistersOvaries" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/mtvDaughterOvariesValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_medium_500"
+                    android:text="@string/fragment_amnestic_questionnaire_mtvGrandmaOvariesValue"
+                    android:textColor="@color/base_blue_color"
+                    android:textSize="@dimen/size_14sp"
+                    app:layout_constraintBottom_toBottomOf="@id/mtvDaughterOvaries"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/mtvDaughterOvaries" />
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/mtvGrandmaOvaries"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/roboto_regular_400"
+                    android:text="@string/fragment_amnestic_questionnaire_mtvGrandmaOvaries"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/size_14sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/mtvDaughterOvaries" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/mtvGrandmaOvariesValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_medium_500"
+                    android:text="@string/fragment_amnestic_questionnaire_mtvGrandmaOvariesValue"
+                    android:textColor="@color/base_blue_color"
+                    android:textSize="@dimen/size_14sp"
+                    app:layout_constraintBottom_toBottomOf="@id/mtvGrandmaOvaries"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/mtvGrandmaOvaries" />
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/mtvAuntOvaries"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/roboto_regular_400"
+                    android:text="@string/fragment_amnestic_questionnaire_mtvAuntOvaries"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/size_14sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/mtvGrandmaOvaries" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/mtvAuntOvariesValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_medium_500"
+                    android:text="@string/fragment_amnestic_questionnaire_mtvGrandmaOvariesValue"
+                    android:textColor="@color/base_blue_color"
+                    android:textSize="@dimen/size_14sp"
+                    app:layout_constraintBottom_toBottomOf="@id/mtvAuntOvaries"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/mtvAuntOvaries" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clChormonalContraception"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_stroke_white_rounded_all_10"
+                android:paddingHorizontal="15dp"
+                android:paddingVertical="15dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/clBloodRelativesOvaries">
+
+
+                <RadioButton
+                    android:id="@+id/rbChormonalContraception"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_medium_500"
+                    android:layoutDirection="rtl"
+                    android:text="@string/fragment_amnestic_questionnaire_rbChormonalContraception"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/size_14sp"
+                    app:buttonTint="@color/blue_0270BB"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <View
+                    android:id="@+id/lineChormonalContraception"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray_E9E9E9"
+                    app:layout_constraintBottom_toBottomOf="@id/rbChormonalContraception" />
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/mtvYears"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/roboto_regular_400"
+                    android:text="@string/fragment_amnestic_questionnaire_mtvYears"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/size_14sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/lineChormonalContraception" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/mtvYearsValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_medium_500"
+                    android:text="@string/fragment_amnestic_questionnaire_mtvYearsValue"
+                    android:textColor="@color/base_blue_color"
+                    android:textSize="@dimen/size_14sp"
+                    app:layout_constraintBottom_toBottomOf="@id/mtvYears"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/mtvYears" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clEstrogens"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_stroke_white_rounded_all_10"
+                android:paddingHorizontal="15dp"
+                android:paddingVertical="15dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/clChormonalContraception">
+
+
+                <RadioButton
+                    android:id="@+id/rbEstrogens"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_medium_500"
+                    android:layoutDirection="rtl"
+                    android:text="@string/fragment_amnestic_questionnaire_rbEstrogens"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/size_14sp"
+                    app:buttonTint="@color/blue_0270BB"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clHormoneTherapy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_stroke_white_rounded_all_10"
+                android:paddingHorizontal="15dp"
+                android:paddingVertical="15dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/clEstrogens">
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/mtvHormoneTherapy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_medium_500"
+                    android:text="@string/fragment_amnestic_questionnaire_mtvHormoneTherapy"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/size_14sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/clHormoneTherapy" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/mtvHormoneTherapyValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_medium_500"
+                    android:text="@string/fragment_amnestic_questionnaire_mtvYearsValue"
+                    android:textColor="@color/base_blue_color"
+                    android:textSize="@dimen/size_14sp"
+                    app:layout_constraintBottom_toBottomOf="@id/mtvHormoneTherapy"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/mtvHormoneTherapy" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clYearsHormoneTherapy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_stroke_white_rounded_all_10"
+                android:paddingHorizontal="15dp"
+                android:paddingVertical="15dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/clHormoneTherapy">
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/mtvYearsHormoneTherapy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_medium_500"
+                    android:text="@string/fragment_amnestic_questionnaire_mtvYearsHormoneTherapy"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/size_14sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/clYearsHormoneTherapy" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/mtvYearsHormoneTherapyValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_medium_500"
+                    android:text="@string/fragment_amnestic_questionnaire_mtvYearsValue"
+                    android:textColor="@color/base_blue_color"
+                    android:textSize="@dimen/size_14sp"
+                    app:layout_constraintBottom_toBottomOf="@id/mtvYearsHormoneTherapy"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/mtvYearsHormoneTherapy" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clHormoneTherapyNow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_stroke_white_rounded_all_10"
+                android:paddingHorizontal="15dp"
+                android:paddingVertical="15dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/clYearsHormoneTherapy">
+
+
+                <RadioButton
+                    android:id="@+id/rbHormoneTherapyNow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_medium_500"
+                    android:layoutDirection="rtl"
+                    android:text="@string/fragment_amnestic_questionnaire_rbHormoneTherapyNow"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/size_14sp"
+                    app:buttonTint="@color/blue_0270BB"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clDiagnosedMalignant"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_stroke_white_rounded_all_10"
+                android:paddingHorizontal="15dp"
+                android:paddingVertical="15dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/clHormoneTherapyNow">
+
+
+                <RadioButton
+                    android:id="@+id/rbDiagnosedMalignant"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_medium_500"
+                    android:layoutDirection="rtl"
+                    android:text="@string/fragment_amnestic_questionnaire_rbDiagnosedMalignant"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/size_14sp"
+                    app:buttonTint="@color/blue_0270BB"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clTotalMammography"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_stroke_white_rounded_all_10"
+                android:paddingHorizontal="15dp"
+                android:paddingVertical="15dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/clDiagnosedMalignant">
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/mtvTotalMammography"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_medium_500"
+                    android:text="@string/fragment_amnestic_questionnaire_mtvTotalMammography"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/size_14sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/clTotalMammography" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/mtvTotalMammographyValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_medium_500"
+                    android:text="@string/fragment_amnestic_questionnaire_mtvPeinValue"
+                    android:textColor="@color/base_blue_color"
+                    android:textSize="@dimen/size_14sp"
+                    app:layout_constraintBottom_toBottomOf="@id/mtvTotalMammography"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/mtvTotalMammography" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clDateLastMammography"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_stroke_white_rounded_all_10"
+                android:paddingHorizontal="15dp"
+                android:paddingVertical="15dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/clTotalMammography">
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/mtvDateLastMammography"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_medium_500"
+                    android:text="@string/fragment_amnestic_questionnaire_clDateLastMammography"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/size_14sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/clDateLastMammography" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/mtvDateLastMammographyValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_medium_500"
+                    android:text="@string/fragment_amnestic_questionnaire_mtvPeinValue"
+                    android:textColor="@color/base_blue_color"
+                    android:textSize="@dimen/size_14sp"
+                    app:layout_constraintBottom_toBottomOf="@id/mtvDateLastMammography"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/mtvDateLastMammography" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clDoctorsReport"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_stroke_white_rounded_all_10"
+                android:paddingHorizontal="15dp"
+                android:paddingVertical="15dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/clDateLastMammography">
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/mtvDoctorsReport"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_medium_500"
+                    android:text="@string/fragment_amnestic_questionnaire_mtvDoctorsReport"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/size_14sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/clDoctorsReport" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/mtvDoctorsReportValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_medium_500"
+                    android:text="@string/fragment_amnestic_questionnaire_mtvPreviousBreastBiopsyValue"
+                    android:textColor="@color/base_blue_color"
+                    android:textSize="@dimen/size_14sp"
+                    app:layout_constraintBottom_toBottomOf="@id/mtvDoctorsReport"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/mtvDoctorsReport" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clBreastSelfControl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_stroke_white_rounded_all_10"
+                android:paddingHorizontal="15dp"
+                android:paddingVertical="15dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/clDoctorsReport">
+
+
+                <RadioButton
+                    android:id="@+id/rbBreastSelfControl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_medium_500"
+                    android:layoutDirection="rtl"
+                    android:text="@string/fragment_amnestic_questionnaire_rbBreastSelfControl"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/size_14sp"
+                    app:buttonTint="@color/blue_0270BB"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clBreastProblem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_stroke_white_rounded_all_10"
+                android:paddingHorizontal="15dp"
+                android:paddingBottom="15dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/clBreastSelfControl">
+
+
+                <RadioButton
+                    android:id="@+id/rbBreastProblem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_medium_500"
+                    android:layoutDirection="rtl"
+                    android:text="@string/fragment_amnestic_questionnaire_rbBreastProblem"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/size_14sp"
+                    app:buttonTint="@color/blue_0270BB"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <View
+                    android:id="@+id/lineBreastProblem"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray_E9E9E9"
+                    app:layout_constraintBottom_toBottomOf="@id/rbBreastProblem" />
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/mtvPein"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/roboto_regular_400"
+                    android:text="@string/fragment_amnestic_questionnaire_mtvPein"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/size_14sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/lineBreastProblem" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/mtvPeinValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_medium_500"
+                    android:text="@string/fragment_amnestic_questionnaire_mtvPeinValue"
+                    android:textColor="@color/base_blue_color"
+                    android:textSize="@dimen/size_14sp"
+                    app:layout_constraintBottom_toBottomOf="@id/mtvPein"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/mtvPein" />
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/mtvKnot"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/roboto_regular_400"
+                    android:text="@string/fragment_amnestic_questionnaire_mtvKnot"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/size_14sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/mtvPein" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/mtvKnotValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_medium_500"
+                    android:text="@string/fragment_amnestic_questionnaire_mtvPeinValue"
+                    android:textColor="@color/base_blue_color"
+                    android:textSize="@dimen/size_14sp"
+                    app:layout_constraintBottom_toBottomOf="@id/mtvKnot"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/mtvKnot" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/mtvDischarges"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/roboto_regular_400"
+                    android:text="@string/fragment_amnestic_questionnaire_mtvDischarges"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/size_14sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/mtvKnot" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/mtvDischargesValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_medium_500"
+                    android:text="@string/fragment_amnestic_questionnaire_mtvPeinValue"
+                    android:textColor="@color/base_blue_color"
+                    android:textSize="@dimen/size_14sp"
+                    app:layout_constraintBottom_toBottomOf="@id/mtvDischarges"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/mtvDischarges" />
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/mtvTheRest"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/roboto_regular_400"
+                    android:text="@string/fragment_amnestic_questionnaire_mtvTheRest"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/size_14sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/mtvDischarges" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/mtvTheRestValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_medium_500"
+                    android:text="@string/fragment_amnestic_questionnaire_mtvPeinValue"
+                    android:textColor="@color/base_blue_color"
+                    android:textSize="@dimen/size_14sp"
+                    app:layout_constraintBottom_toBottomOf="@id/mtvTheRest"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/mtvTheRest" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clBreastIntervention"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_stroke_white_rounded_all_10"
+                android:paddingHorizontal="15dp"
+                android:paddingBottom="15dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/clBreastProblem">
+
+
+                <RadioButton
+                    android:id="@+id/rbBreastIntervention"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_medium_500"
+                    android:layoutDirection="rtl"
+                    android:text="@string/fragment_amnestic_questionnaire_rbBreastIntervention"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/size_14sp"
+                    app:buttonTint="@color/blue_0270BB"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <View
+                    android:id="@+id/lineBreastIntervention"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray_E9E9E9"
+                    app:layout_constraintBottom_toBottomOf="@id/rbBreastIntervention" />
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/mtvTracer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/roboto_regular_400"
+                    android:text="@string/fragment_amnestic_questionnaire_mtvTracer"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/size_14sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/lineBreastIntervention" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/mtvTracerValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_medium_500"
+                    android:text="@string/fragment_amnestic_questionnaire_mtvTracerValue"
+                    android:textColor="@color/base_blue_color"
+                    android:textSize="@dimen/size_14sp"
+                    app:layout_constraintBottom_toBottomOf="@id/mtvTracer"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/mtvTracer" />
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/mtvOperation"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/roboto_regular_400"
+                    android:text="@string/fragment_amnestic_questionnaire_mtvOperation"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/size_14sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/mtvTracer" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/mtvOperationValues"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_medium_500"
+                    android:text="@string/fragment_amnestic_questionnaire_mtvTracerValue"
+                    android:textColor="@color/base_blue_color"
+                    android:textSize="@dimen/size_14sp"
+                    app:layout_constraintBottom_toBottomOf="@id/mtvOperation"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/mtvOperation" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/mtvBiopsy"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/roboto_regular_400"
+                    android:text="@string/fragment_amnestic_questionnaire_mtvBiopsy"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/size_14sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/mtvOperation" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/mtvBiopsyValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_medium_500"
+                    android:text="@string/fragment_amnestic_questionnaire_mtvTracerValue"
+                    android:textColor="@color/base_blue_color"
+                    android:textSize="@dimen/size_14sp"
+                    app:layout_constraintBottom_toBottomOf="@id/mtvBiopsy"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/mtvBiopsy" />
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/mtvImplants"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/roboto_regular_400"
+                    android:text="@string/fragment_amnestic_questionnaire_mtvImplants"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/size_14sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/mtvBiopsy" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/mtvImplantsValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_medium_500"
+                    android:text="@string/fragment_amnestic_questionnaire_mtvTracerValue"
+                    android:textColor="@color/base_blue_color"
+                    android:textSize="@dimen/size_14sp"
+                    app:layout_constraintBottom_toBottomOf="@id/mtvImplants"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/mtvImplants" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clPreviousBreastBiopsy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_stroke_white_rounded_all_10"
+                android:paddingHorizontal="15dp"
+                android:paddingVertical="15dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/clBreastIntervention">
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/mtvPreviousBreastBiopsy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_medium_500"
+                    android:text="@string/fragment_amnestic_questionnaire_mtvPreviousBreastBiopsy"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/size_14sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/clPreviousBreastBiopsy" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/mtvPreviousBreastBiopsyValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_medium_500"
+                    android:text="@string/fragment_amnestic_questionnaire_mtvPreviousBreastBiopsyValue"
+                    android:textColor="@color/base_blue_color"
+                    android:textSize="@dimen/size_14sp"
+                    app:layout_constraintBottom_toBottomOf="@id/mtvPreviousBreastBiopsy"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/mtvPreviousBreastBiopsy" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </android.widget.ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

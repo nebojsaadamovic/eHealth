@@ -1,0 +1,1567 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="@color/white_bg"
+    android:paddingTop="20dp"
+    tools:context="com.example.zdravlje.ui.fitparameters.WayOfLifeFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/ivAvatar"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="15dp"
+            android:src="@drawable/ic_contact_avatar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/infoText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:fontFamily="@font/roboto_medium_500"
+            android:text="@string/fragment_way_of_life_header"
+            android:textColor="@color/text_color_3E5764"
+            android:textSize="@dimen/size_20sp"
+            app:layout_constraintBottom_toBottomOf="@id/ivAvatar"
+            app:layout_constraintStart_toEndOf="@id/ivAvatar"
+            app:layout_constraintTop_toTopOf="@id/ivAvatar" />
+
+        <ImageView
+            android:id="@+id/ivNotification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:paddingStart="15dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:src="@drawable/ic_notification"
+            app:layout_constraintBottom_toBottomOf="@id/infoText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/infoText" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <android.widget.ScrollView
+        android:id="@+id/svGeneralInfo"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clHeader">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mtvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="40dp"
+                android:fontFamily="@font/roboto_regular_400"
+                android:text="@string/fragment_way_of_life_title"
+                android:textColor="@color/text_color_3E5764"
+                android:textSize="@dimen/size_17sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/clScrollView" />
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clParameters"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginVertical="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/mtvTitle">
+
+                <!-- MaterialCardView for Height -->
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/mcvHeight"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    app:cardBackgroundColor="@color/blue_color_5785D4"
+                    app:layout_constraintBottom_toTopOf="@+id/mcvBloodGroup"
+                    app:layout_constraintEnd_toStartOf="@+id/mcvWeight"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/clHeight"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp">
+
+                        <ImageView
+                            android:id="@+id/ivHeight"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_height_param"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <ImageView
+                            android:id="@+id/ivHeightMenu"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="50dp"
+                            android:src="@drawable/ic_menu_dots"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="@+id/ivHeight" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/mtvHightLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/roboto_bold_700"
+                            android:text="@string/fragment_way_of_life_height"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/size_14sp"
+                            app:layout_constraintStart_toStartOf="@+id/ivHeight"
+                            app:layout_constraintTop_toBottomOf="@+id/ivHeight" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/mtvHightValue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_black_900"
+                            android:text="188"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/size_22sp"
+                            app:layout_constraintStart_toStartOf="@+id/mtvHightLabel"
+                            app:layout_constraintTop_toBottomOf="@+id/mtvHightLabel" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/mtvHightUnit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:fontFamily="@font/roboto_black_900"
+                            android:text="cm"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/size_15sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/mtvHightValue"
+                            app:layout_constraintStart_toEndOf="@+id/mtvHightValue" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- MaterialCardView for Weight -->
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/mcvWeight"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    app:cardBackgroundColor="@color/blue_color_498CFF"
+                    app:layout_constraintBottom_toBottomOf="@+id/mcvHeight"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/mcvHeight"
+                    app:layout_constraintTop_toTopOf="@+id/mcvHeight">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/clWeight"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp">
+
+                        <ImageView
+                            android:id="@+id/ivWeight"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_weight_param"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <ImageView
+                            android:id="@+id/ivWeightMenu"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="50dp"
+                            android:src="@drawable/ic_menu_dots"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="@+id/ivWeight" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/mtvWeightLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/roboto_bold_700"
+                            android:text="@string/fragment_way_of_life_weight"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/size_14sp"
+                            app:layout_constraintStart_toStartOf="@+id/ivWeight"
+                            app:layout_constraintTop_toBottomOf="@+id/ivWeight" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/mtvWeightValue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_black_900"
+                            android:text="88"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/size_22sp"
+                            app:layout_constraintStart_toStartOf="@+id/mtvWeightLabel"
+                            app:layout_constraintTop_toBottomOf="@+id/mtvWeightLabel" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/mtvWeightUnit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:fontFamily="@font/roboto_black_900"
+                            android:text="kg"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/size_15sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/mtvWeightValue"
+                            app:layout_constraintStart_toEndOf="@+id/mtvWeightValue" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <!--/kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk-->
+
+
+                <!-- MaterialCardView for Blood group -->
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/mcvBloodGroup"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    app:cardBackgroundColor="@color/blue_color_3DBFDB"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/mcvBodyMass"
+                    app:layout_constraintStart_toStartOf="@+id/mcvHeight"
+                    app:layout_constraintTop_toBottomOf="@+id/mcvHeight">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/clBloodGroup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp">
+
+                        <ImageView
+                            android:id="@+id/ivBloodGroup"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_blood_group_param"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <ImageView
+                            android:id="@+id/ivBloodGroupMenu"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="50dp"
+                            android:src="@drawable/ic_menu_dots"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="@+id/ivBloodGroup" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/mtvBloodGroupLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/roboto_bold_700"
+                            android:text="@string/fragment_way_of_life_blood_group"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/size_14sp"
+                            app:layout_constraintStart_toStartOf="@+id/ivBloodGroup"
+                            app:layout_constraintTop_toBottomOf="@+id/ivBloodGroup" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/mtvBloodGroupValue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_black_900"
+                            android:text="AB+"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/size_22sp"
+                            app:layout_constraintStart_toStartOf="@+id/mtvBloodGroupLabel"
+                            app:layout_constraintTop_toBottomOf="@+id/mtvBloodGroupLabel" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+
+                <!-- MaterialCardView for Weight -->
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/mcvBodyMass"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    app:cardBackgroundColor="@color/blue_color_87B1F8"
+                    app:layout_constraintBottom_toBottomOf="@+id/mcvBloodGroup"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/mcvBloodGroup"
+                    app:layout_constraintTop_toTopOf="@+id/mcvBloodGroup">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/clBodyMass"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp">
+
+                        <ImageView
+                            android:id="@+id/ivBodyMass"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_body_mass_param"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <ImageView
+                            android:id="@+id/ivBodyMassMenu"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="50dp"
+                            android:src="@drawable/ic_menu_dots"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="@+id/ivBodyMass" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/mtvBodyMassLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/roboto_bold_700"
+                            android:text="@string/fragment_way_of_life_body_mass"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/size_14sp"
+                            app:layout_constraintStart_toStartOf="@+id/ivBodyMass"
+                            app:layout_constraintTop_toBottomOf="@+id/ivBodyMass" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/mtvBodyMassValue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_black_900"
+                            android:text="97"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/size_22sp"
+                            app:layout_constraintStart_toStartOf="@+id/mtvBodyMassLabel"
+                            app:layout_constraintTop_toBottomOf="@+id/mtvBodyMassLabel" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/mtvBodyMassUnit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:fontFamily="@font/roboto_black_900"
+                            android:text="kg/cm"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/size_15sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/mtvBodyMassValue"
+                            app:layout_constraintStart_toEndOf="@+id/mtvBodyMassValue" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/mtvSupBodyMassSymbol"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:fontFamily="@font/roboto_bold_700"
+                            android:text="2"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/size_8sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/mtvBodyMassUnit"
+                            app:layout_constraintStart_toEndOf="@+id/mtvBodyMassUnit"
+                            app:layout_constraintTop_toTopOf="@+id/mtvBodyMassUnit"
+
+                            />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <!--    //end paramters-->
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mtvMonitoringParameters"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/roboto_regular_400"
+                android:text="@string/fragment_way_of_life_subtitle"
+                android:textColor="@color/text_color_3E5764"
+                android:textSize="@dimen/size_17sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/clParameters" />
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/mcvBodyTemperature"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/mtvMonitoringParameters">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/clBodyTemperature"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="10dp">
+
+                    <ImageView
+                        android:id="@+id/ivBodyTemperature"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_body_temperature"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <View
+                        android:id="@+id/lineBodyTemperature"
+                        android:layout_width="2dp"
+                        android:layout_height="70dp"
+                        android:layout_marginStart="10dp"
+                        android:background="@color/gray_E6E6E6"
+                        app:layout_constraintBottom_toBottomOf="@+id/ivBodyTemperature"
+                        app:layout_constraintStart_toEndOf="@+id/ivBodyTemperature"
+                        app:layout_constraintTop_toTopOf="@+id/ivBodyTemperature" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/mtvBodyTemperatureTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:fontFamily="@font/roboto_bold_700"
+                        android:text="@string/fragment_way_of_life_body_temperature"
+                        android:textColor="@color/text_color_3E5764"
+                        android:textSize="@dimen/size_14sp"
+                        app:layout_constraintStart_toEndOf="@+id/lineBodyTemperature"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/ivRightArrowBodyTemperature"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_right_arrow"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/mtvBodyTemperatureTitle" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/mtvBodyTemperatureValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/roboto_bold_700"
+                        android:text="36.6"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/size_22sp"
+                        app:layout_constraintStart_toStartOf="@+id/mtvBodyTemperatureTitle"
+                        app:layout_constraintTop_toBottomOf="@+id/mtvBodyTemperatureTitle" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/mtvBodyTemperatureSymbol"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="2dp"
+                        android:fontFamily="@font/roboto_regular_400"
+                        android:text="0"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/size_12sp"
+                        app:layout_constraintStart_toEndOf="@+id/mtvBodyTemperatureValue"
+                        app:layout_constraintTop_toTopOf="@+id/mtvBodyTemperatureValue" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/mtvBodyTemperatureDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_medium_500"
+                        android:text="Poslednja vrednost: 26.05.2024.  09:35 AM"
+                        android:textColor="@color/text_color_8A8A8D"
+                        android:textSize="@dimen/size_10sp"
+                        app:layout_constraintStart_toStartOf="@+id/mtvBodyTemperatureValue"
+                        app:layout_constraintTop_toBottomOf="@+id/mtvBodyTemperatureValue" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/mcvBloodPressure"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/mcvBodyTemperature">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/clBloodPressure"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="10dp">
+
+                    <ImageView
+                        android:id="@+id/ivBloodPressure"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_heart_param"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <View
+                        android:id="@+id/lineBloodPressure"
+                        android:layout_width="2dp"
+                        android:layout_height="70dp"
+                        android:layout_marginStart="10dp"
+                        android:background="@color/gray_E6E6E6"
+                        app:layout_constraintBottom_toBottomOf="@+id/ivBloodPressure"
+                        app:layout_constraintStart_toEndOf="@+id/ivBloodPressure"
+                        app:layout_constraintTop_toTopOf="@+id/ivBloodPressure" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/mtvBloodPressureTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:fontFamily="@font/roboto_bold_700"
+                        android:text="@string/fragment_way_of_life_blood_pressure"
+                        android:textColor="@color/text_color_3E5764"
+                        android:textSize="@dimen/size_14sp"
+                        app:layout_constraintStart_toEndOf="@+id/lineBloodPressure"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/ivRightArrowBloodPressure"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_right_arrow"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/mtvBloodPressureTitle" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/mtvBloodPressureValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/roboto_bold_700"
+                        android:text="188/80"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/size_22sp"
+                        app:layout_constraintStart_toStartOf="@+id/mtvBloodPressureTitle"
+                        app:layout_constraintTop_toBottomOf="@+id/mtvBloodPressureTitle" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/mtvBloodPressureSymbol"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:fontFamily="@font/roboto_bold_700"
+                        android:text="mmHg"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/size_15sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/mtvBloodPressureValue"
+                        app:layout_constraintStart_toEndOf="@+id/mtvBloodPressureValue" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/mtvBloodPressureDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_medium_500"
+                        android:text="Poslednja vrednost: 26.05.2024.  09:35 AM"
+                        android:textColor="@color/text_color_8A8A8D"
+                        android:textSize="@dimen/size_10sp"
+                        app:layout_constraintStart_toStartOf="@+id/mtvBloodPressureValue"
+                        app:layout_constraintTop_toBottomOf="@+id/mtvBloodPressureValue" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/mcvBloodGlucose"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/mcvBloodPressure">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/clBloodGlucose"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="10dp">
+
+                    <ImageView
+                        android:id="@+id/ivBloodGlucose"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_blood_glucose_param"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <View
+                        android:id="@+id/lineBloodGlucose"
+                        android:layout_width="2dp"
+                        android:layout_height="70dp"
+                        android:layout_marginStart="10dp"
+                        android:background="@color/gray_E6E6E6"
+                        app:layout_constraintBottom_toBottomOf="@+id/ivBloodGlucose"
+                        app:layout_constraintStart_toEndOf="@+id/ivBloodGlucose"
+                        app:layout_constraintTop_toTopOf="@+id/ivBloodGlucose" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/mtvBloodGlucoseTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:fontFamily="@font/roboto_bold_700"
+                        android:text="@string/fragment_way_of_life_blood_glucose"
+                        android:textColor="@color/text_color_3E5764"
+                        android:textSize="@dimen/size_14sp"
+                        app:layout_constraintStart_toEndOf="@+id/lineBloodGlucose"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/ivRightArrowBloodGlucose"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_right_arrow"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/mtvBloodGlucoseTitle" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/mtvBloodGlucoseValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/roboto_bold_700"
+                        android:text="97"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/size_22sp"
+                        app:layout_constraintStart_toStartOf="@+id/mtvBloodGlucoseTitle"
+                        app:layout_constraintTop_toBottomOf="@+id/mtvBloodGlucoseTitle" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/mtvBloodGlucoseSymbol"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:fontFamily="@font/roboto_bold_700"
+                        android:text="mg/dl"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/size_15sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/mtvBloodGlucoseValue"
+                        app:layout_constraintStart_toEndOf="@+id/mtvBloodGlucoseValue" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/mtvBloodGlucoseDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_medium_500"
+                        android:text="Poslednja vrednost: 26.05.2024.  09:35 AM"
+                        android:textColor="@color/text_color_8A8A8D"
+                        android:textSize="@dimen/size_10sp"
+                        app:layout_constraintStart_toStartOf="@+id/mtvBloodGlucoseValue"
+                        app:layout_constraintTop_toBottomOf="@+id/mtvBloodGlucoseValue" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/mcvOxygenSaturation"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/mcvBloodGlucose">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/clOxygenSaturation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="10dp">
+
+                    <ImageView
+                        android:id="@+id/ivOxygenSaturation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_oxygen_saturation"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <View
+                        android:id="@+id/lineOxygenSaturation"
+                        android:layout_width="2dp"
+                        android:layout_height="70dp"
+                        android:layout_marginStart="10dp"
+                        android:background="@color/gray_E6E6E6"
+                        app:layout_constraintBottom_toBottomOf="@+id/ivOxygenSaturation"
+                        app:layout_constraintStart_toEndOf="@+id/ivOxygenSaturation"
+                        app:layout_constraintTop_toTopOf="@+id/ivOxygenSaturation" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/mtvOxygenSaturationTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:fontFamily="@font/roboto_bold_700"
+                        android:text="@string/fragment_way_of_life_oxygen_saturation"
+                        android:textColor="@color/text_color_3E5764"
+                        android:textSize="@dimen/size_14sp"
+                        app:layout_constraintStart_toEndOf="@+id/lineOxygenSaturation"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/ivRightArrowOxygenSaturation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_right_arrow"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/mtvOxygenSaturationTitle" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/mtvOxygenSaturationValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/roboto_bold_700"
+                        android:text="98"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/size_22sp"
+                        app:layout_constraintStart_toStartOf="@+id/mtvOxygenSaturationTitle"
+                        app:layout_constraintTop_toBottomOf="@+id/mtvOxygenSaturationTitle" />
+
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/mtvOxygenSaturationSymbol"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:fontFamily="@font/roboto_bold_700"
+                        android:text="%"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/size_15sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/mtvOxygenSaturationValue"
+                        app:layout_constraintStart_toEndOf="@+id/mtvOxygenSaturationValue" />
+
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/mtvOxygenSaturationDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_medium_500"
+                        android:text="Poslednja vrednost: 26.05.2024.  09:35 AM"
+                        android:textColor="@color/text_color_8A8A8D"
+                        android:textSize="@dimen/size_10sp"
+                        app:layout_constraintStart_toStartOf="@+id/mtvOxygenSaturationValue"
+                        app:layout_constraintTop_toBottomOf="@+id/mtvOxygenSaturationValue" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/mcvSleepAnalysis"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/mcvOxygenSaturation">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/clSleepAnalysis"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="10dp">
+
+                    <ImageView
+                        android:id="@+id/ivSleepAnalysis"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_sleep_analysis"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <View
+                        android:id="@+id/lineSleepAnalysis"
+                        android:layout_width="2dp"
+                        android:layout_height="70dp"
+                        android:layout_marginStart="10dp"
+                        android:background="@color/gray_E6E6E6"
+                        app:layout_constraintBottom_toBottomOf="@+id/ivSleepAnalysis"
+                        app:layout_constraintStart_toEndOf="@+id/ivSleepAnalysis"
+                        app:layout_constraintTop_toTopOf="@+id/ivSleepAnalysis" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/mtvSleepAnalysisTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:fontFamily="@font/roboto_bold_700"
+                        android:text="@string/fragment_way_of_life_sleep_analysis"
+                        android:textColor="@color/text_color_3E5764"
+                        android:textSize="@dimen/size_14sp"
+                        app:layout_constraintStart_toEndOf="@+id/lineSleepAnalysis"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/ivRightArrowSleepAnalysis"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_right_arrow"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/mtvSleepAnalysisTitle" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/mtvSleepAnalysisValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/roboto_bold_700"
+                        android:text="7h 53m"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/size_22sp"
+                        app:layout_constraintStart_toStartOf="@+id/mtvSleepAnalysisTitle"
+                        app:layout_constraintTop_toBottomOf="@+id/mtvSleepAnalysisTitle" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/mtvSleepAnalysisDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_medium_500"
+                        android:text="Poslednja vrednost: 26.05.2024.  09:35 AM"
+                        android:textColor="@color/text_color_8A8A8D"
+                        android:textSize="@dimen/size_10sp"
+                        app:layout_constraintStart_toStartOf="@+id/mtvSleepAnalysisValue"
+                        app:layout_constraintTop_toBottomOf="@+id/mtvSleepAnalysisValue" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/mcvBodyFat"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/mcvSleepAnalysis">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/clBodyFat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="10dp">
+
+                    <ImageView
+                        android:id="@+id/ivBodyFat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_body_fat"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <View
+                        android:id="@+id/lineBodyFat"
+                        android:layout_width="2dp"
+                        android:layout_height="70dp"
+                        android:layout_marginStart="10dp"
+                        android:background="@color/gray_E6E6E6"
+                        app:layout_constraintBottom_toBottomOf="@+id/ivBodyFat"
+                        app:layout_constraintStart_toEndOf="@+id/ivBodyFat"
+                        app:layout_constraintTop_toTopOf="@+id/ivBodyFat" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/mtvBodyFatTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:fontFamily="@font/roboto_bold_700"
+                        android:text="@string/fragment_way_of_life_body_fat"
+                        android:textColor="@color/text_color_3E5764"
+                        android:textSize="@dimen/size_14sp"
+                        app:layout_constraintStart_toEndOf="@+id/lineBodyFat"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/ivRightArrowBodyFat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_right_arrow"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/mtvBodyFatTitle" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/mtvBodyFatValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/roboto_bold_700"
+                        android:text="21"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/size_22sp"
+                        app:layout_constraintStart_toStartOf="@+id/mtvBodyFatTitle"
+                        app:layout_constraintTop_toBottomOf="@+id/mtvBodyFatTitle" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/mtvBodyFatSymbol"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:fontFamily="@font/roboto_bold_700"
+                        android:text="%"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/size_15sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/mtvBodyFatValue"
+                        app:layout_constraintStart_toEndOf="@+id/mtvBodyFatValue" />
+
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/mtvBodyFatDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_medium_500"
+                        android:text="Poslednja vrednost: 26.05.2024.  09:35 AM"
+                        android:textColor="@color/text_color_8A8A8D"
+                        android:textSize="@dimen/size_10sp"
+                        app:layout_constraintStart_toStartOf="@+id/mtvBodyFatValue"
+                        app:layout_constraintTop_toBottomOf="@+id/mtvBodyFatValue" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/mcvStepCounting"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/mcvBodyFat">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/clStepCounting"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="10dp">
+
+                    <ImageView
+                        android:id="@+id/ivStepCounting"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_step_counting"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <View
+                        android:id="@+id/lineStepCounting"
+                        android:layout_width="2dp"
+                        android:layout_height="70dp"
+                        android:layout_marginStart="10dp"
+                        android:background="@color/gray_E6E6E6"
+                        app:layout_constraintBottom_toBottomOf="@+id/ivStepCounting"
+                        app:layout_constraintStart_toEndOf="@+id/ivStepCounting"
+                        app:layout_constraintTop_toTopOf="@+id/ivStepCounting" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/mtvStepCountingTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:fontFamily="@font/roboto_bold_700"
+                        android:text="@string/fragment_way_of_life_step_counting"
+                        android:textColor="@color/text_color_3E5764"
+                        android:textSize="@dimen/size_14sp"
+                        app:layout_constraintStart_toEndOf="@+id/lineStepCounting"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/ivRightArrowStepCounting"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_right_arrow"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/mtvStepCountingTitle" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/mtvStepCountingValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/roboto_bold_700"
+                        android:text="10.220"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/size_22sp"
+                        app:layout_constraintStart_toStartOf="@+id/mtvStepCountingTitle"
+                        app:layout_constraintTop_toBottomOf="@+id/mtvStepCountingTitle" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/mtvStepCountingSymbol"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:fontFamily="@font/roboto_bold_700"
+                        android:text="koraka"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/size_15sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/mtvStepCountingValue"
+                        app:layout_constraintStart_toEndOf="@+id/mtvStepCountingValue" />
+
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/mtvStepCountingDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_medium_500"
+                        android:text="Poslednja vrednost: 26.05.2024.  09:35 AM"
+                        android:textColor="@color/text_color_8A8A8D"
+                        android:textSize="@dimen/size_10sp"
+                        app:layout_constraintStart_toStartOf="@+id/mtvStepCountingValue"
+                        app:layout_constraintTop_toBottomOf="@+id/mtvStepCountingValue" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/mcvWeightTwo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/mcvStepCounting">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/clWeightTwo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="10dp">
+
+                    <ImageView
+                        android:id="@+id/ivWeightTwo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_weight"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <View
+                        android:id="@+id/lineWeight"
+                        android:layout_width="2dp"
+                        android:layout_height="70dp"
+                        android:layout_marginStart="10dp"
+                        android:background="@color/gray_E6E6E6"
+                        app:layout_constraintBottom_toBottomOf="@+id/ivWeightTwo"
+                        app:layout_constraintStart_toEndOf="@+id/ivWeightTwo"
+                        app:layout_constraintTop_toTopOf="@+id/ivWeightTwo" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/mtvWeightTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:fontFamily="@font/roboto_bold_700"
+                        android:text="@string/fragment_way_of_life_weight_value"
+                        android:textColor="@color/text_color_3E5764"
+                        android:textSize="@dimen/size_14sp"
+                        app:layout_constraintStart_toEndOf="@+id/lineWeight"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/ivRightArrowWeight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_right_arrow"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/mtvWeightTitle" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/mtvWeightValueTwo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/roboto_bold_700"
+                        android:text="92"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/size_22sp"
+                        app:layout_constraintStart_toStartOf="@+id/mtvWeightTitle"
+                        app:layout_constraintTop_toBottomOf="@+id/mtvWeightTitle" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/mtvWeightValueTwoSymbol"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:fontFamily="@font/roboto_bold_700"
+                        android:text="kg"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/size_15sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/mtvWeightValueTwo"
+                        app:layout_constraintStart_toEndOf="@+id/mtvWeightValueTwo" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/mtvWeightDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_medium_500"
+                        android:text="Poslednja vrednost: 26.05.2024.  09:35 AM"
+                        android:textColor="@color/text_color_8A8A8D"
+                        android:textSize="@dimen/size_10sp"
+                        app:layout_constraintStart_toStartOf="@+id/mtvWeightValueTwo"
+                        app:layout_constraintTop_toBottomOf="@+id/mtvWeightValueTwo" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/mcvBodyMassIndex"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/mcvWeightTwo">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/clBodyMassIndex"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="10dp">
+
+                    <ImageView
+                        android:id="@+id/ivBodyMassIndex"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_body_mass_index"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <View
+                        android:id="@+id/lineBodyMassIndex"
+                        android:layout_width="2dp"
+                        android:layout_height="70dp"
+                        android:layout_marginStart="10dp"
+                        android:background="@color/gray_E6E6E6"
+                        app:layout_constraintBottom_toBottomOf="@+id/ivBodyMassIndex"
+                        app:layout_constraintStart_toEndOf="@+id/ivBodyMassIndex"
+                        app:layout_constraintTop_toTopOf="@+id/ivBodyMassIndex" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/mtvBodyMassIndexTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:fontFamily="@font/roboto_bold_700"
+                        android:text="@string/fragment_way_of_life_body_mass_value"
+                        android:textColor="@color/text_color_3E5764"
+                        android:textSize="@dimen/size_14sp"
+                        app:layout_constraintStart_toEndOf="@+id/lineBodyMassIndex"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                    <ImageView
+                        android:id="@+id/ivRightArrowBodyMassIndex"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_right_arrow"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/mtvBodyMassIndexTitle" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/mtvBodyMassIndexValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/roboto_bold_700"
+                        android:text="97"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/size_22sp"
+                        app:layout_constraintStart_toStartOf="@+id/mtvBodyMassIndexTitle"
+                        app:layout_constraintTop_toBottomOf="@+id/mtvBodyMassIndexTitle" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/mtvBodyMassIndexValueSymbol"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:fontFamily="@font/roboto_bold_700"
+                        android:text="kg/cm"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/size_15sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/mtvBodyMassIndexValue"
+                        app:layout_constraintStart_toEndOf="@+id/mtvBodyMassIndexValue" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/mtvSupSymbol"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/roboto_bold_700"
+                        android:text="2"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/size_8sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/mtvBodyMassIndexValueSymbol"
+                        app:layout_constraintStart_toEndOf="@+id/mtvBodyMassIndexValueSymbol"
+                        app:layout_constraintTop_toTopOf="@+id/mtvBodyMassIndexValueSymbol" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/mtvBodyMassIndexDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_medium_500"
+                        android:text="Poslednja vrednost: 26.05.2024.  09:35 AM"
+                        android:textColor="@color/text_color_8A8A8D"
+                        android:textSize="@dimen/size_10sp"
+                        app:layout_constraintStart_toStartOf="@+id/mtvBodyMassIndexValue"
+                        app:layout_constraintTop_toBottomOf="@+id/mtvBodyMassIndexValue" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/mcvHeightTwo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/mcvBodyMassIndex">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/clHeightTwo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="10dp">
+
+                    <ImageView
+                        android:id="@+id/ivHeightTwo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_height"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <View
+                        android:id="@+id/lineHeight"
+                        android:layout_width="2dp"
+                        android:layout_height="70dp"
+                        android:layout_marginStart="10dp"
+                        android:background="@color/gray_E6E6E6"
+                        app:layout_constraintBottom_toBottomOf="@+id/ivHeightTwo"
+                        app:layout_constraintStart_toEndOf="@+id/ivHeightTwo"
+                        app:layout_constraintTop_toTopOf="@+id/ivHeightTwo" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/mtvHeightTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:fontFamily="@font/roboto_bold_700"
+                        android:text="@string/fragment_way_of_life_height_value"
+                        android:textColor="@color/text_color_3E5764"
+                        android:textSize="@dimen/size_14sp"
+                        app:layout_constraintStart_toEndOf="@+id/lineHeight"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/ivRightArrowHeight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_right_arrow"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/mtvHeightTitle" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/mtvHeightValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/roboto_bold_700"
+                        android:text="192"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/size_22sp"
+                        app:layout_constraintStart_toStartOf="@+id/mtvHeightTitle"
+                        app:layout_constraintTop_toBottomOf="@+id/mtvHeightTitle" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/mtvHeightValueSymbol"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:fontFamily="@font/roboto_bold_700"
+                        android:text="cm"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/size_15sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/mtvHeightValue"
+                        app:layout_constraintStart_toEndOf="@+id/mtvHeightValue" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/mtvHeightDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_medium_500"
+                        android:text="Poslednja vrednost: 26.05.2024.  09:35 AM"
+                        android:textColor="@color/text_color_8A8A8D"
+                        android:textSize="@dimen/size_10sp"
+                        app:layout_constraintStart_toStartOf="@+id/mtvHeightValue"
+                        app:layout_constraintTop_toBottomOf="@+id/mtvHeightValue" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/mcvChestCircumference"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/mcvHeightTwo">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/clChestCircumference"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="10dp">
+
+                    <ImageView
+                        android:id="@+id/ivChestCircumference"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_chest_circumference"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <View
+                        android:id="@+id/lineChestCircumference"
+                        android:layout_width="2dp"
+                        android:layout_height="70dp"
+                        android:layout_marginStart="10dp"
+                        android:background="@color/gray_E6E6E6"
+                        app:layout_constraintBottom_toBottomOf="@+id/ivChestCircumference"
+                        app:layout_constraintStart_toEndOf="@+id/ivChestCircumference"
+                        app:layout_constraintTop_toTopOf="@+id/ivChestCircumference" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/mtvChestCircumferenceTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:fontFamily="@font/roboto_bold_700"
+                        android:text="@string/fragment_way_of_life_chest_circumference"
+                        android:textColor="@color/text_color_3E5764"
+                        android:textSize="@dimen/size_14sp"
+                        app:layout_constraintStart_toEndOf="@+id/lineChestCircumference"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/ivRightArrowChestCircumference"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_right_arrow"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/mtvChestCircumferenceTitle" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/mtvChestCircumferenceValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/roboto_bold_700"
+                        android:text="97"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/size_22sp"
+                        app:layout_constraintStart_toStartOf="@+id/mtvChestCircumferenceTitle"
+                        app:layout_constraintTop_toBottomOf="@+id/mtvChestCircumferenceTitle" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/mtvChestCircumferenceValueSymbol"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:fontFamily="@font/roboto_bold_700"
+                        android:text="cm"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/size_15sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/mtvChestCircumferenceValue"
+                        app:layout_constraintStart_toEndOf="@+id/mtvChestCircumferenceValue" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/mtvChestCircumferenceDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_medium_500"
+                        android:text="Poslednja vrednost: 26.05.2024.  09:35 AM"
+                        android:textColor="@color/text_color_8A8A8D"
+                        android:textSize="@dimen/size_10sp"
+                        app:layout_constraintStart_toStartOf="@+id/mtvChestCircumferenceValue"
+                        app:layout_constraintTop_toBottomOf="@+id/mtvChestCircumferenceValue" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/mcvWaistCircumference"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/mcvChestCircumference">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/clWaistCircumference"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="10dp">
+
+                    <ImageView
+                        android:id="@+id/ivWaistCircumference"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_waist_circumference"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <View
+                        android:id="@+id/lineWaistCircumference"
+                        android:layout_width="2dp"
+                        android:layout_height="70dp"
+                        android:layout_marginStart="10dp"
+                        android:background="@color/gray_E6E6E6"
+                        app:layout_constraintBottom_toBottomOf="@+id/ivWaistCircumference"
+                        app:layout_constraintStart_toEndOf="@+id/ivWaistCircumference"
+                        app:layout_constraintTop_toTopOf="@+id/ivWaistCircumference" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/mtvWaistCircumferenceTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:fontFamily="@font/roboto_bold_700"
+                        android:text="@string/fragment_way_of_life_waist_circumference"
+                        android:textColor="@color/text_color_3E5764"
+                        android:textSize="@dimen/size_14sp"
+                        app:layout_constraintStart_toEndOf="@+id/lineWaistCircumference"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/ivRightArrowWaistCircumference"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_right_arrow"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/mtvWaistCircumferenceTitle" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/mtvWaistCircumferenceValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/roboto_bold_700"
+                        android:text="65"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/size_22sp"
+                        app:layout_constraintStart_toStartOf="@+id/mtvWaistCircumferenceTitle"
+                        app:layout_constraintTop_toBottomOf="@+id/mtvWaistCircumferenceTitle" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/mtvWaistCircumferenceValueSymbol"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:fontFamily="@font/roboto_bold_700"
+                        android:text="cm"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/size_15sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/mtvWaistCircumferenceValue"
+                        app:layout_constraintStart_toEndOf="@+id/mtvWaistCircumferenceValue" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/mtvWaistCircumferenceDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_medium_500"
+                        android:text="Poslednja vrednost: 26.05.2024.  09:35 AM"
+                        android:textColor="@color/text_color_8A8A8D"
+                        android:textSize="@dimen/size_10sp"
+                        app:layout_constraintStart_toStartOf="@+id/mtvWaistCircumferenceValue"
+                        app:layout_constraintTop_toBottomOf="@+id/mtvWaistCircumferenceValue" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </android.widget.ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

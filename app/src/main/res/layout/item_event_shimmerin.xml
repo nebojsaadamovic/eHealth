@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:paddingBottom="10dp"
+    android:background="@color/transparent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        app:strokeColor="@color/white"
+        android:backgroundTint="@color/white"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingStart="15dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="15dp"
+            android:paddingBottom="10dp">
+
+            <ImageView
+                android:id="@+id/ivEventIcon"
+                android:background="@color/background_shimmer_gray"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mtvEventTitle"
+                android:layout_width="150dp"
+                android:layout_height="20dp"
+                android:background="@color/background_shimmer_gray"
+                android:layout_marginStart="10dp"
+                app:layout_constraintBottom_toBottomOf="@id/ivEventIcon"
+                app:layout_constraintStart_toEndOf="@id/ivEventIcon"
+                app:layout_constraintTop_toTopOf="@id/ivEventIcon" />
+
+            <ImageView
+                android:id="@+id/ivIconRight"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@color/background_shimmer_gray"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="@id/mtvEventTitle"
+                app:layout_constraintTop_toTopOf="@id/mtvEventTitle"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mtvEventDesc"
+                android:layout_width="140dp"
+                android:layout_height="20dp"
+                android:background="@color/background_shimmer_gray"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mtvEventTime"
+                android:layout_width="40dp"
+                android:layout_height="20dp"
+                android:background="@color/background_shimmer_gray"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

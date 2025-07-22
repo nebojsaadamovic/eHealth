@@ -1,0 +1,70 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_background"
+    tools:context="com.example.zdravlje.ui.login.parameters.BloodGroupFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bottom_sheet_blue_bg"
+        android:paddingVertical="10dp"
+        android:paddingStart="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvTitleHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_bold_700"
+            android:paddingLeft="5dp"
+            android:text="@string/fragment_blood_group_title_header"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_20sp"
+            app:layout_constraintStart_toStartOf="@id/clHeader"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <NumberPicker
+        android:id="@+id/pckBloodGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clHeader" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/mbClose"
+        style="@style/whiteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
+        android:minWidth="160dp"
+        android:text="@string/fragment_blood_group_close_button"
+        android:textSize="@dimen/size_15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pckBloodGroup"
+        app:strokeColor="@color/base_blue_color"
+        app:strokeWidth="1dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/mbChoose"
+        style="@style/blueButton"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginEnd="10dp"
+        android:minWidth="160dp"
+        android:paddingRight="10dp"
+        android:text="@string/fragment_blood_group_choose_button"
+        android:textSize="@dimen/size_15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/mbClose" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

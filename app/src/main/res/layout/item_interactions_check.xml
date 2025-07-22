@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/mcvItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:backgroundTint="@color/white"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeColor="@color/transparent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mtvName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="@font/roboto_medium_500"
+                android:padding="10dp"
+                android:paddingStart="0dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/size_15sp"
+                app:layout_constraintEnd_toStartOf="@+id/mtvRemove"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mtvType"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:fontFamily="@font/roboto_medium_500"
+                android:padding="5dp"
+                android:paddingStart="0dp"
+                android:textColor="@color/gray_C4C4C4"
+                android:textSize="@dimen/size_15sp"
+                app:layout_constraintEnd_toStartOf="@+id/mtvRemove"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/mtvName" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mtvRemove"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_medium_500"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="25dp"
+                android:src="@drawable/ic_calendar_arrow_right"
+                android:text="Ukloni"
+                android:textColor="@color/base_blue_color"
+                android:textSize="@dimen/size_18sp"
+                app:layout_constraintBottom_toBottomOf="@+id/mtvType"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/mtvName" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

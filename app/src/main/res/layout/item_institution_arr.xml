@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RadioGroup
+        android:id="@+id/institutionRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/rbInstitutionNameValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="8dp"
+            android:fontFamily="@font/roboto_regular_400"
+            android:gravity="center_vertical"
+            android:layoutDirection="rtl"
+            android:padding="15dp"
+            android:text="@string/item_institution_arr_empty_data"
+            android:textColor="@color/black"
+            android:textSize="@dimen/size_14sp"
+            app:buttonTint="@color/blue_0270BB" />
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

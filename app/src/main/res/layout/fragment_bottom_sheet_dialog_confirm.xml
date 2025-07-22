@@ -1,0 +1,79 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_white_top_radius"
+    tools:context="com.example.zdravlje.ui.calendar.apointment.BottomSheetDialogConfirmFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clHeader"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/rounded_header_blue"
+        android:paddingHorizontal="15dp"
+        android:paddingVertical="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvHeaderTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_bold_700"
+            android:text="@string/fragment_bottom_sheet_dialog_confirm_header_title"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/clHeader"
+            app:layout_constraintStart_toStartOf="@id/clHeader"
+            app:layout_constraintTop_toTopOf="@id/clHeader" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/mtvConfirmText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="30dp"
+        android:fontFamily="@font/roboto_regular_400"
+        android:gravity="center"
+        android:padding="20dp"
+        android:text="@string/fragment_bottom_sheet_dialog_confirm_description_mtv"
+        android:textColor="@color/text_color_3E5764"
+        android:textSize="@dimen/size_15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/clHeader" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/mbCancel"
+        style="@style/whiteButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="70dp"
+        android:text="@string/fragment_bottom_sheet_dialog_confirm_cancel_btn"
+        android:textSize="@dimen/size_15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/mbContinue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mtvConfirmText"
+        app:strokeColor="@color/base_blue_color"
+        app:strokeWidth="1dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/mbContinue"
+        style="@style/blueButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/fragment_bottom_sheet_dialog_confirm_continue_btn"
+        android:textSize="@dimen/size_15sp"
+        app:layout_constraintBottom_toBottomOf="@id/mbCancel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/mbCancel"
+        app:layout_constraintTop_toTopOf="@id/mbCancel" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

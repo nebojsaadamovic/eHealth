@@ -1,0 +1,109 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_white_top_radius"
+    tools:context="com.example.zdravlje.ui.chat.PinChatBottomSheetFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/tvHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_header_blue"
+        android:paddingVertical="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvDeleteHistory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:fontFamily="@font/roboto_bold_700"
+            android:text="@string/fragment_pin_chat_bottom_sheet_enter_pin_code_header"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tvHeader" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/tvDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/roboto_regular_400"
+        android:paddingHorizontal="30dp"
+        android:text="@string/fragment_pin_chat_bottom_sheet_description_tv"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/size_13sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvHeader" />
+
+
+    <com.chaos.view.PinView
+        android:id="@+id/pinView"
+        style="@style/PinWidget.PinView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="150dp"
+        android:cursorVisible="true"
+        android:foregroundGravity="center_horizontal"
+        android:hint="Hint."
+        android:inputType="numberPassword"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:cursorWidth="2dp"
+        app:hideLineWhenFilled="false"
+        app:itemCount="10"
+        app:itemHeight="40dp"
+        app:itemRadius="0dp"
+        app:itemSpacing="8dp"
+        app:itemWidth="27dp"
+        app:layout_constraintBottom_toTopOf="@+id/mbWithOutPin"
+        app:layout_constraintEnd_toEndOf="@+id/tvDescription"
+        app:layout_constraintStart_toStartOf="@+id/tvDescription"
+        app:layout_constraintTop_toBottomOf="@id/tvDescription"
+        app:lineColor="@android:color/darker_gray"
+        app:lineWidth="2dp"
+        app:viewType="line" />
+
+    <TextView
+        android:id="@+id/errorPin"
+        style="@style/errorText"
+        app:layout_constraintEnd_toEndOf="@id/pinView"
+        app:layout_constraintTop_toBottomOf="@+id/pinView" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/mbSavePin"
+        style="@style/blueButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="@string/fragment_pin_chat_bottom_sheet_save_pin_code_btn"
+        app:icon="@drawable/ic_login"
+        app:iconGravity="textStart"
+        app:layout_constraintBottom_toTopOf="@id/mbWithOutPin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/mbWithOutPin"
+        style="@style/whiteButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="48dp"
+        android:drawableLeft="@drawable/ic_login"
+        android:text="@string/fragment_pin_chat_bottom_sheet_continue_without_pin_btn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:strokeColor="@color/base_blue_color"
+        app:strokeWidth="1dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,270 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_bg"
+    android:paddingStart="15dp"
+    android:paddingTop="20dp"
+    android:paddingEnd="15dp"
+    android:paddingBottom="20dp"
+    tools:context="com.example.zdravlje.ui.notification.NotificationSettingsFragment">
+
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingVertical="10dp"
+        android:paddingRight="10dp"
+        android:src="@drawable/ic_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/mtvTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/fragment_notification_filter_title"
+        android:textColor="@color/black"
+        android:textSize="@dimen/size_18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/ivBack" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/mcvEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="@color/white"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mtvTitle"
+        app:strokeColor="@color/transparent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clSettings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <ImageView
+                android:id="@+id/ivSettings"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/iv_bell_circle"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mbSettings"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:fontFamily="@font/roboto_regular_400"
+                android:text="@string/fragment_notification_mtvtitle"
+                android:textColor="@color/black"
+                android:textSize="@dimen/size_14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/ivSettings"
+                app:layout_constraintEnd_toStartOf="@+id/mbEnableNotifications"
+                app:layout_constraintStart_toEndOf="@+id/ivSettings"
+                app:layout_constraintTop_toTopOf="@+id/ivSettings" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/mbEnableNotifications"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fragment_bottom_sheet_profile_settings_label_btn"
+                android:textAllCaps="false"
+                android:textSize="@dimen/size_16sp"
+                app:backgroundTint="@color/base_blue_color"
+                app:cornerRadius="5dp"
+                app:layout_constraintBottom_toBottomOf="@+id/mbSettings"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/mbSettings"
+                app:layout_constraintTop_toTopOf="@+id/mbSettings" />
+
+
+            <View
+                android:id="@+id/lineEmail"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/gray_E9E9E9"
+                app:layout_constraintTop_toBottomOf="@id/ivSettings" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mtvDescEmail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/roboto_regular_400"
+                android:text="@string/fragment_notification_settings_settings_info"
+                android:textColor="@color/text_color_3E5764"
+                android:textSize="@dimen/size_11sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lineEmail" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/mcvNotification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="@color/white"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mcvEmail"
+        app:strokeColor="@color/transparent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clEmailNotification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <ImageView
+                android:id="@+id/ivNotification"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_notification_img"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mtvNotification"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:fontFamily="@font/roboto_regular_400"
+                android:text="@string/fragment_notification_settings_email_notifications"
+                android:textColor="@color/black"
+                android:textSize="@dimen/size_14sp"
+                app:layout_constraintEnd_toStartOf="@+id/scEmailNotification"
+                app:layout_constraintStart_toEndOf="@+id/ivNotification"
+                app:layout_constraintTop_toTopOf="@+id/ivNotification" />
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/scEmailNotification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:trackTint="@color/base_blue_color"
+                app:layout_constraintBottom_toBottomOf="@+id/mtvNotification"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/mtvNotification"
+                app:thumbTint="@color/base_blue_color" />
+
+
+            <View
+                android:id="@+id/lineNotification"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="7dp"
+                android:background="@color/gray_E9E9E9"
+                app:layout_constraintTop_toBottomOf="@id/ivNotification" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mtvDescNotification"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/roboto_regular_400"
+                android:text="@string/fragment_notification_settings_email_info"
+                android:textColor="@color/text_color_3E5764"
+                android:textSize="@dimen/size_11sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lineNotification" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/mcvDownloadRecipe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="@color/white"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mcvNotification"
+        app:strokeColor="@color/transparent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clConfirmRecipe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <ImageView
+                android:id="@+id/ivDownloadRecipe"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_download_recipe"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mtvDownloadRecipe"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:fontFamily="@font/roboto_regular_400"
+                android:text="@string/fragment_notification_settings_prescription_pickup"
+                android:textColor="@color/black"
+                android:textSize="@dimen/size_14sp"
+                app:layout_constraintEnd_toStartOf="@+id/scConfirmRecipe"
+                app:layout_constraintStart_toEndOf="@+id/ivDownloadRecipe"
+                app:layout_constraintTop_toTopOf="@+id/ivDownloadRecipe" />
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/scConfirmRecipe"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:layout_constraintBottom_toBottomOf="@+id/mtvDownloadRecipe"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/mtvDownloadRecipe"
+                app:thumbTint="@color/base_blue_color" />
+
+            <View
+                android:id="@+id/lineDownloadRecipe"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="7dp"
+                android:background="@color/gray_E9E9E9"
+                app:layout_constraintTop_toBottomOf="@id/ivDownloadRecipe" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mtvDescDownloadRecipe"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/roboto_regular_400"
+                android:text="@string/fragment_notification_settings_prescription_pickup_confirmation"
+                android:textColor="@color/text_color_3E5764"
+                android:textSize="@dimen/size_11sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lineDownloadRecipe" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

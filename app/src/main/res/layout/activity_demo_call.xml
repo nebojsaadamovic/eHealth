@@ -1,0 +1,250 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#202020"
+    android:paddingStart="10dp"
+    android:paddingEnd="10dp"
+    android:keepScreenOn="true">
+
+
+    <!-- Naslov box -->
+    <LinearLayout
+        android:id="@+id/titleBox"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:translationZ="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_demo_call_connecting_text"
+            android:textAlignment="center"
+            android:textColor="@color/gray_CDCDCE"
+            android:textSize="@dimen/size_18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/timerTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="@string/activity_demo_call_timer_default_text"
+            android:textColor="@color/gray_CDCDCE"
+            android:textSize="@dimen/size_12sp"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/speaker_view"
+        android:layout_width="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="0dp"
+        android:background="@color/black30"
+        app:layout_constraintBottom_toTopOf="@id/audience_row"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.842"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleBox"
+        app:layout_constraintVertical_bias="1.0">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:id="@+id/audience_row"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintBottom_toTopOf="@id/controls_box" />
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/controls_box"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@id/controls_box2">
+
+        <ImageView
+            android:id="@+id/screen_share"
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:padding="20dp"
+            android:background="@drawable/baseline_cast_24"
+            app:tint="@android:color/white" />
+
+        <ImageView
+            android:id="@+id/message"
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:padding="20dp"
+            android:background="@drawable/baseline_chat_24"
+            app:tint="@android:color/white" />
+
+        <ImageView
+            android:id="@+id/enhanced_ns"
+            android:visibility="gone"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="20dp"
+            android:src="@drawable/mic"
+            app:tint="@android:color/white" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/controls_box2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@id/linearLayout">
+
+        <ImageView
+            android:id="@+id/audio_select"
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:padding="20dp"
+            android:background="@drawable/volume_up_48px"
+            app:tint="@android:color/white" />
+
+        <ImageView
+            android:id="@+id/permissions"
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:padding="20dp"
+            android:background="@drawable/account_cancel_outline"
+            app:tint="@android:color/white" />
+
+        <ImageView
+            android:id="@+id/debug_menu"
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:padding="20dp"
+            android:background="@drawable/dots_horizontal_circle_outline"
+            app:tint="@android:color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="30dp"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/flip_camera"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="0"
+            android:backgroundTint="@color/gray_3C4043"
+            app:cardCornerRadius="30dp"
+            app:strokeColor="@color/transparent">
+
+            <ImageView
+                android:id="@+id/ivFlipCamera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_switch_camera" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/mic"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="0"
+            android:backgroundTint="@color/gray_3C4043"
+            app:cardCornerRadius="30dp"
+            app:strokeColor="@color/transparent">
+
+            <ImageView
+                android:id="@+id/ivMic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_microfone" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/camera"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="0"
+            android:backgroundTint="@color/gray_3C4043"
+            app:cardCornerRadius="30dp"
+            app:strokeColor="@color/transparent">
+
+            <ImageView
+                android:id="@+id/ivCamera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_call_camera" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/exit"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="0"
+            android:backgroundTint="@color/red_EA4335"
+            app:cardCornerRadius="30dp"
+            app:strokeColor="@color/transparent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_chat_audio_call" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

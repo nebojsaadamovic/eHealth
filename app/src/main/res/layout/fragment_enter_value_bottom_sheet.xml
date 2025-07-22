@@ -1,0 +1,92 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_white_radius_10"
+    tools:context="com.example.zdravlje.ui.healthcare.screeningexaminations.EnterValueBottomSheetFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clHeaderTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_header_blue"
+        android:paddingVertical="10dp"
+        android:paddingStart="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvTitleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_bold_700"
+            android:text="@string/fragment_enter_value_bottomsheet_header"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clContent"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginVertical="20dp"
+        android:background="@drawable/bg_stroke_white_bg_rounded_all_10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/clHeaderTitle">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etiValue"
+            style="@style/DefaultTextInputEditText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/transparent"
+            android:fontFamily="@font/roboto_bold_700"
+            android:gravity="center"
+            android:hint=""
+            android:paddingStart="0dp"
+            android:paddingEnd="0dp"
+            android:textSize="@dimen/size_22sp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/gray_E6E6E6_20"
+        app:layout_constraintTop_toBottomOf="@+id/clContent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/mbClose"
+        style="@style/whiteButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="250dp"
+        android:text="@string/fragment_enter_value_bottomsheet_cancel_btn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/mbConfirm"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line"
+        app:strokeColor="@color/base_blue_color"
+        app:strokeWidth="1dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/mbConfirm"
+        style="@style/blueButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/fragment_enter_value_bottomsheet_save_btn"
+        app:layout_constraintBottom_toBottomOf="@+id/mbClose"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/mbClose"
+        app:layout_constraintTop_toTopOf="@+id/mbClose" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

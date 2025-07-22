@@ -1,0 +1,161 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/clItemTimeSlot"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:background="@drawable/bg_white_radius_10">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clHeaderItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_gray_top_radis_10"
+        android:padding="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvNameDiagnose"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_medium_500"
+            android:text="@string/adapter_list_limitations_header_title"
+            android:textColor="@color/black"
+            android:textSize="@dimen/size_14sp"
+            app:layout_constraintEnd_toStartOf="@+id/mtvNameDiagnoseValue"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvNameDiagnoseValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_medium_500"
+            android:text=""
+            android:textAlignment="textEnd"
+            android:textColor="@color/black"
+            android:textSize="@dimen/size_14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/mtvNameDiagnose"
+            app:layout_constraintTop_toTopOf="@+id/mtvNameDiagnose" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clContentItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/clHeaderItem">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvParticipation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_regular_400"
+            android:text="@string/adapter_list_limitations_participation"
+            android:textColor="@color/black"
+            android:textSize="@dimen/size_14sp"
+            app:layout_constraintEnd_toStartOf="@+id/mtvParticipationValue"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/clContentItem" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvParticipationValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_medium_500"
+            android:text="8888"
+            android:textAlignment="viewEnd"
+            android:textColor="@color/text_color_8A8A8D"
+            android:textSize="@dimen/size_14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/mtvParticipation"
+            app:layout_constraintTop_toTopOf="@id/mtvParticipation" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvTimeFromItem"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/roboto_regular_400"
+            android:text="@string/adapter_list_limitations_year_from"
+            android:textColor="@color/black"
+            android:textSize="@dimen/size_14sp"
+            app:layout_constraintEnd_toStartOf="@+id/mtvTimeFromItemValue"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mtvParticipationValue" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvTimeFromItemValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_medium_500"
+            android:text="8888"
+            android:textAlignment="viewEnd"
+            android:textColor="@color/text_color_8A8A8D"
+            android:textSize="@dimen/size_14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/mtvTimeFromItem"
+            app:layout_constraintTop_toTopOf="@id/mtvTimeFromItem" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvTimeToItem"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/roboto_regular_400"
+            android:text="@string/adapter_list_limitations_year_to"
+            android:textColor="@color/black"
+            android:textSize="@dimen/size_14sp"
+            app:layout_constraintEnd_toStartOf="@id/mtvTimeToItemValue"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mtvTimeFromItemValue" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvTimeToItemValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_medium_500"
+            android:text="8888"
+            android:textAlignment="viewEnd"
+            android:textColor="@color/text_color_8A8A8D"
+            android:textSize="@dimen/size_14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/mtvTimeToItem"
+            app:layout_constraintTop_toTopOf="@id/mtvTimeToItem" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvMaxQuantityItem"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/roboto_regular_400"
+            android:text="@string/adapter_list_limitations_max_quantity"
+            android:textColor="@color/black"
+            android:textSize="@dimen/size_14sp"
+            app:layout_constraintEnd_toStartOf="@+id/mtvMaxQuantityItemValue"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mtvTimeToItemValue" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvMaxQuantityItemValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_medium_500"
+            android:text="8888"
+            android:textAlignment="viewEnd"
+            android:textColor="@color/text_color_8A8A8D"
+            android:textSize="@dimen/size_14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/mtvMaxQuantityItem"
+            app:layout_constraintTop_toTopOf="@id/mtvMaxQuantityItem" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

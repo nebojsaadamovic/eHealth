@@ -1,0 +1,45 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_white_top_radius"
+    tools:context="com.example.zdravlje.ui.calendar.apointment.BottomSheetCalendarFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clHeader"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/rounded_header_blue"
+        android:paddingHorizontal="15dp"
+        android:paddingVertical="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mvHeaderTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_bold_700"
+            android:text="@string/fragment_bottomsheet_calendar_header"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/clHeader"
+            app:layout_constraintStart_toStartOf="@id/clHeader"
+            app:layout_constraintTop_toTopOf="@id/clHeader" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+        android:id="@+id/materialCalendarView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@color/white"
+        android:visibility="visible"
+        app:layout_constraintTop_toBottomOf="@+id/clHeader"
+        app:mcv_dateTextAppearance="@style/CalendarDateText"
+        app:mcv_selectionColor="@color/base_blue_color"
+        app:mcv_weekDayTextAppearance="@style/CalendarWeekDayText" />
+    
+</androidx.constraintlayout.widget.ConstraintLayout>

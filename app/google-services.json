@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "190816275939",
+    "project_id": "ezdravlje-notification",
+    "storage_bucket": "ezdravlje-notification.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:190816275939:android:29d15588309c1a0c01a4d6",
+        "android_client_info": {
+          "package_name": "com.nites.ezdravljeapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "190816275939-7pougnhcgak0uenv77j29jsdojvnmktk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nites.ezdravljeapp",
+            "certificate_hash": "420ea194c73dabfba8cc7627d86b8b7fc36cdf1a"
+          }
+        },
+        {
+          "client_id": "190816275939-gqm13ujv2jtsakjho35h21ncrm7mdlur.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBsNtCYhpr-VvGLChWhskDP0l8w0319-r8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "190816275939-gqm13ujv2jtsakjho35h21ncrm7mdlur.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "190816275939-1li9k0v2t62022695p05j1vucijdeqtc.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "rs.gov.ezdravlje.portalapp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

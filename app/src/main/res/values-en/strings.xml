@@ -1,0 +1,2041 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">E_Health</string>
+
+    <!--    Global attribute -->
+    <string name="error">Error</string>
+    <string name="health">Health</string>
+    <string name="unknown_error">Unknown error</string>
+    <string name="toast_data_save">Data has been saved</string>
+    <string name="toast_error_answer">Error in response</string>
+    <string name="exception">Exception</string>
+    <string name="activity_executed">Активност је ознаћена као завршена</string>
+    <string name="data_deleted_successfully">"Data has been successfully deleted."</string>
+    <string name="select">Select</string>
+    <string name="save">Save</string>
+    <string name="edit">Edit</string>
+    <string name="close">"Close"</string>
+    <string name="cancel">Cancel</string>
+    <string name="unsuccessfully">Unsuccessfully.</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="attention">Attention!</string>
+    <string name="error_upload_image">Error while uploading the image</string>
+    <string name="error_empty_email">The entered email is empty</string>
+    <string name="error_pin_is_not_valid">The PIN is not valid</string>
+    <string name="success_change_data">You have successfully changed the data</string>
+    <string name="unsuccessful_save_data">Data could not be saved</string>
+    <string name="successful_save_data">Successful save data.</string>
+    <string name="enter_value">Enter value</string>
+
+
+    <!--Activity available therapy in pharmacy-->
+    <string name="activity_avaliable_therapy_in_pharmacy_header">Info Table</string>
+    <string name="activity_avaliable_therapy_in_pharmacy_title_date">Wednesday 23.12.2023</string>
+    <string name="activity_avaliable_therapy_in_pharmacy_title">Available Therapy in Pharmacy</string>
+    <string name="activity_avaliable_therapy_in_pharmacy_therapy_label">Therapy:</string>
+    <string name="activity_avaliable_therapy_in_pharmacy_decsription_therapy">Beridual Pressurized Inhaler with a Dose Counter. Solution for inhalation ...</string>
+    <string name="activity_avaliable_therapy_in_pharmacy_info_label">Info:</string>
+    <string name="activity_avaliable_therapy_in_pharmacy_description_info">Beridual Pressurized Inhaler with a Dose Counter. Solution for inhalation ...</string>
+    <string name="activity_avaliable_therapy_in_pharmacy_appointment_label">Appointment:</string>
+    <string name="activity_avaliable_therapy_in_pharmacy_description_appointment">All day</string>
+
+    <!--Activity call-->
+    <string name="activity_call_back_label">Back</string>
+    <string name="activity_call_connecting_text">Connecting...</string>
+    <string name="activity_call_timer_default_text">00:00</string>
+
+    <!--Activity demo call-->
+    <string name="activity_demo_call_connecting_text">Connecting...</string>
+    <string name="activity_demo_call_timer_default_text">00:00</string>
+
+    <!--Activity drug consumption-->
+    <string name="activity_drug_consumption_date_title">Wednesday 23.12.2023</string>
+    <string name="activity_drug_consumption_title">Drug Consumption</string>
+    <string name="activity_drug_consumption_medicament_name_label">Drug Name:</string>
+    <string name="activity_drug_consumption_dosage_label">Dosage:</string>
+    <string name="activity_drug_consumption_rx_info_label">Dosage Info from eRx:</string>
+    <string name="activity_drug_consumption_taking_time_title">Taking Time</string>
+    <string name="activity_drug_consumption_period_from_label">Period From:</string>
+    <string name="activity_drug_consumption_period_to_label">Period To:</string>
+    <string name="activity_drug_consumption_consumption_time_label">Consumption Appointment:</string>
+    <string name="activity_drug_consumption_consumption_time_decription_full_day">All day</string>
+    <string name="activity_drug_consumption_save_btn">Save</string>
+    <string name="activity_drug_consumption_change_all_in_array_mb">Change all in array</string>
+    <string name="activity_drug_consumption_remittance">Remittance:</string>
+
+    <!--Activity initial parameters-->
+    <string name="activity_initial_parameters_title">Manage Parameters</string>
+    <string name="activity_initial_parameters_info_subtitle">This information allows for the integration of your characteristics into the application for easier tracking of results.</string>
+    <string name="activity_initial_parameters_gender_label">Gender</string>
+    <string name="activity_initial_parameters_gender_value">Enter gender</string>
+    <string name="activity_initial_parameters_years_label">Your Age</string>
+    <string name="activity_initial_parameters_year_value">Enter age</string>
+    <string name="activity_initial_parameters_height_label">Height</string>
+    <string name="activity_initial_parameters_height_value">Enter height</string>
+    <string name="activity_initial_parameters_weight_label">Weight</string>
+    <string name="activity_initial_parameters_weight_value">Enter weight</string>
+    <string name="activity_initial_parameters_blood_type_label">Blood Type</string>
+    <string name="activity_initial_parameters_blood_type_value">Enter blood type</string>
+    <string name="activity_initial_parameters_allergy_label">Allergies</string>
+    <string name="activity_initial_parameters_allergy_value">Enter allergy</string>
+    <string name="activity_initial_parameters_next_button">Next</string>
+    <string name="activity_initial_parameters_skip_button">Skip</string>
+
+    <!--Activity onboarding-->
+    <string name="activity_on_boarding_next_button">Next</string>
+
+    <!--Activity personal-->
+    <string name="activity_personal_header_title">Info Table</string>
+    <string name="activity_personal_activity_title_date">Wednesday 23.12.2023</string>
+    <string name="activity_personal_title">Personal Activity</string>
+    <string name="activity_personal_personal_activity_label">Personal Activity:</string>
+    <string name="activity_personal_description_label">Description:</string>
+    <string name="activity_personal_time_label">Time:</string>
+    <string name="activity_personal_date_period_from_label">Date from:</string>
+    <string name="activity_personal_date_period_to_label">Date to:</string>
+
+    <!--Activity realized therapy in pharmacy-->
+    <string name="activity_realised_therapy_in_pharmacy_header_title">Info Table</string>
+    <string name="activity_realised_therapy_in_pharmacy_see_more_label">See More</string>
+    <string name="activity_realised_therapy_in_pharmacy_activity_date_title">Wednesday 23.12.2023</string>
+    <string name="activity_realised_therapy_in_pharmacy_title">Realized ePrescription</string>
+    <string name="activity_realised_therapy_in_pharmacy_medicament_name_label">Drug Name:</string>
+    <string name="activity_realised_therapy_in_pharmacy_medicament_value">Beridual Pressurized Inhaler with a Dose Counter. Solution for inhalation ...</string>
+    <string name="activity_realised_therapy_in_pharmacy_prescription_type_label">Prescription Type:</string>
+    <string name="activity_realised_therapy_in_pharmacy_prescription_value">ePrescription</string>
+    <string name="activity_realised_therapy_in_pharmacy_realization_date_label">Realization Date:</string>
+    <string name="activity_realised_therapy_in_pharmacy_realization_time_value">All day</string>
+    <string name="activity_realised_therapy_in_pharmacy_pharmacy_realization_label">Pharmacy of Realization:</string>
+    <string name="activity_realised_therapy_in_pharmacy_pharmacy_realization_value">All day</string>
+    <string name="activity_realised_therapy_in_pharmacy_e_recept_label">ePrescription</string>
+
+    <!--Activity realized visited doctor-->
+    <string name="activity_realised_visited_doctor_header_title">Info Table</string>
+    <string name="activity_realised_visited_doctor_date_title">Wednesday 23.12.2023</string>
+    <string name="activity_realised_visited_doctor_title">Realized Doctor Visit</string>
+    <string name="activity_realised_visited_doctor_date_label">Date:</string>
+    <string name="activity_realised_visited_doctor_date_value">Beridual Pressurized Inhaler with a Dose Counter. Solution for inhalation ...</string>
+    <string name="activity_realised_visited_doctor_health_institution_label">Health Institution:</string>
+    <string name="activity_realised_visited_doctor_health_institution_value">Beridual Pressurized Inhaler with a Dose Counter. Solution for inhalation ...</string>
+    <string name="activity_realised_visited_doctor_place_organizational_unit_label">Organizational Unit:</string>
+    <string name="activity_realised_visited_doctor_place_organizational_unit_value">All day</string>
+    <string name="activity_realised_visited_doctor_visit_type_label">Referral Type:</string>
+    <string name="activity_realised_visited_doctor_visit_type_value">All day</string>
+    <string name="activity_realised_visited_doctor_doctor_name_label">Doctor\'s Name:</string>
+    <string name="activity_realised_visited_doctor_doctor_name_value">All day</string>
+    <string name="activity_realised_visited_doctor_laboratory_label">Laboratory</string>
+    <string name="activity_realised_visited_doctor_type_examination">Type of \nexamination:</string>
+
+    <!--Activity shared profile-->
+    <string name="activity_shared_profile_header_title">Info Table</string>
+    <string name="activity_shared_profile_title">Dependents and Shared Profiles</string>
+    <string name="activity_shared_profile_add_permissions">Add permissions</string>
+
+    <!--Dialog chat list filter-->
+    <string name="dialog_chat_list_filter_show_doctors">Show Only Doctors</string>
+    <string name="dialog_chat_list_filter_show_pharmacists">Show Only Pharmacists</string>
+    <string name="dialog_chat_list_filter_show_my_contacts">Show My Contacts</string>
+    <string name="dialog_chat_list_filter_show_chat_groups">Show Only Chat Groups</string>
+    <string name="dialog_chat_list_filter_requests_received">Requests Sent/Received</string>
+    <string name="dialog_chat_list_filter_show_all">Show All</string>
+
+    <!--Fragment activities-->
+    <string name="fragment_activities_next_on_schedule_tv">Next on Schedule</string>
+    <string name="fragment_activities_term_more_activities_tv">Appointment with More Activities</string>
+    <string name="fragment_activities_event_time_tv">12:00</string>
+    <string name="fragment_activities_add_activity_tv">Add Activity</string>
+    <string name="fragment_activities_date_tv">Friday 09.02.2024</string>
+    <string name="fragment_activities_medicament_consumation">Drug Consumption</string>
+    <string name="fragment_activities_medicine_add_medicament">Add a medication reminder</string>
+    <string name="fragment_activities_doctors_appointment">Doctor\'s Appointment</string>
+    <string name="fragment_activities_schedule_examination">Schedule Examination</string>
+    <string name="fragment_activities_appointment_screening_examination">Screening Examination Appointment</string>
+    <string name="fragment_activities_make_appointment">Make Appointment</string>
+    <string name="fragment_activities_personal_activity">Personal Activity</string>
+    <string name="fragment_activities_add_activity">Add Activity</string>
+    <string name="fragment_activities_multiple_activities_at_same_time">Appointment with multiple activities</string>
+
+    <!--    Fragment details activities-->
+    <string name="fragment_details_activities_date_title">Wednesday 23.12.2023</string>
+    <string name="fragment_details_activity_title">Available Therapy in Pharmacy</string>
+    <string name="fragment_details_activity_therapy_label">Therapy:</string>
+    <string name="fragment_details_activity_therapy_value">Beridual Pressurized Inhaler with a Dose Counter. Solution for inhalation ...</string>
+    <string name="fragment_details_activity_info_label">Info:</string>
+    <string name="fragment_details_activity_info_value">Beridual Pressurized Inhaler with a Dose Counter. Solution for inhalation ...</string>
+    <string name="fragment_details_activity_term_label">Appointment:</string>
+    <string name="fragment_details_activity_term_value">All day</string>
+
+    <!-- Fragment add medicament -->
+    <string name="fragment_add_medicament_header_title">Calendar</string>
+    <string name="fragment_add_medicament_add_medicament_title">Add Medicine</string>
+    <string name="fragment_add_medicament_choose_prescribed_medicament">Choose Prescribed Medicine (ePrescription)</string>
+    <string name="fragment_add_medicament_choose_non_prescribed_medicament">Choose Non-Prescribed Medicine</string>
+
+    <!--Fragment add member-->
+    <string name="fragment_add_member_search_hint">Search</string>
+    <string name="fragment_add_member_description">Enter name and surname, or email address as a search criterion (min 3 characters)</string>
+    <string name="fragment_add_member_search_button">Search</string>
+
+    <!--Fragment audio video call-->
+    <string name="fragment_audio_video_call_back_label">Back</string>
+    <string name="fragment_audio_video_call_connecting_label">Connecting...</string>
+    <string name="fragment_audio_video_call_timer_label">00:00</string>
+
+    <!--Fragment blood group-->
+    <string name="fragment_blood_group_title_header">Blood type</string>
+    <string name="fragment_blood_group_close_button">Close</string>
+    <string name="fragment_blood_group_choose_button">Choose</string>
+
+    <!--Bottom_sheet add file-->
+    <string name="bottom_sheet_add_file_button">Add File</string>
+
+    <!--Fragment bottom sheet add language-->
+    <string name="fragment_bottom_sheet_choose_header_title">Application Language</string>
+    <string name="fragment_bottom_sheet_choose_language_srpski_latinica_radio_btn">Serbian - Latin</string>
+    <string name="fragment_bottom_sheet_choose_language_srpski_cirilica_radio_btn">Serbian - Cyrillic</string>
+    <string name="fragment_bottom_sheet_choose_language_engleski_radio_btn">English</string>
+    <string name="fragment_bottom_sheet_choose_language_close_btn">Close</string>
+    <string name="fragment_bottom_sheet_choose_language_save_btn">Save</string>
+    <string name="fragment_bottom_sheet_choose_language_toast_choose_leng">Please select a language</string>
+
+    <!--Fragment bottom sheet contact information-->
+    <string name="fragment_bottom_sheet_contact_information_header_title">Contact Information</string>
+    <string name="fragment_bottom_sheet_contact_information_name_label">Full Name:</string>
+    <string name="fragment_bottom_sheet_contact_information_name">Full Name</string>
+    <string name="fragment_bottom_sheet_contact_information_name_value">Petar Petrovic</string>
+    <string name="fragment_bottom_sheet_contact_information_email_label">Email:</string>
+    <string name="fragment_bottom_sheet_contact_information_email">Email</string>
+    <string name="fragment_bottom_sheet_contact_information_email_value">####@gmail.com</string>
+
+    <!--Fragment bottom sheet delete contact-->
+    <string name="fragment_bottom_sheet_delete_contact_header_title">Delete Contact</string>
+    <string name="fragment_bottom_sheet_delete_contact_confirm_dialog_description">Are you sure you want to delete the contact?</string>
+    <string name="fragment_bottom_sheet_delete_contact_cancel">Cancel</string>
+    <string name="fragment_bottom_sheet_delete_contact_delete">Delete</string>
+
+    <!--Fragment bottom sheet delete history-->
+    <string name="fragment_bottom_sheet_delete_history_header_title">Delete History</string>
+    <string name="fragment_bottom_sheet_delete_history_confirm_dialog_description">Are you sure you want to delete the history?</string>
+    <string name="fragment_bottom_sheet_delete_history_cancel_btn">Cancel</string>
+    <string name="fragment_bottom_sheet_delete_history_delete_btn">Delete</string>
+    <string name="fragment_bottom_sheet_filter_header_title">Filter</string>
+
+    <!--Fragment bottom sheet password settings-->
+    <string name="fragment_bottom_sheet_password_settings_header_title">Change/Set Password</string>
+    <string name="fragment_bottom_sheet_password_settings_new_password_label">New Password for Portal Access:</string>
+    <string name="fragment_bottom_sheet_password_settings_change_tv">Change</string>
+    <string name="fragment_bottom_sheet_password_settings_confirm_password_label">Confirm Password:</string>
+    <string name="fragment_bottom_sheet_password_settings_confirm_tv">Confirm</string>
+    <string name="fragment_bottom_sheet_password_settings_close_btn">Close</string>
+    <string name="fragment_bottom_sheet_password_settings_save_btn">Save</string>
+
+    <!--Fragment bottom sheet initial settings-->
+    <string name="fragment_bottom_sheet_profile_initial_shared_profile_label_btn">Shared Profiles</string>
+    <string name="fragment_bottom_sheet_profile_initial_user_profile_label_btn">User Profile</string>
+    <string name="fragment_bottom_sheet_profile_settings_label_btn">Settings</string>
+    <string name="fragment_bottom_sheet_profile_settings_sink">Refreshing data</string>
+
+
+    <!--Fragment bottom sheet scheduling-->
+    <string name="fragment_bottom_sheet_scheduling_title_header">Schedule Call</string>
+    <string name="fragment_bottom_sheet_scheduling_confirm_dialog">Do you want to schedule a call?</string>
+    <string name="fragment_bottom_sheet_scheduling_cancel">No</string>
+    <string name="fragment_bottom_sheet_scheduling_yes">Yes</string>
+
+    <!--Fragment bottom sheet time from-->
+    <string name="fragment_bottom_sheet_time_from_title_header">Time</string>
+    <string name="fragment_bottom_sheet_time_from_close_btn">Close</string>
+    <string name="fragment_bottom_sheet_time_from_choose_btn">Choose</string>
+
+    <!--Fragment bottom sheet time to-->
+    <string name="fragment_bottom_sheet_time_to_title_header">Time</string>
+    <string name="fragment_bottom_sheet_time_to_close_btn">Close</string>
+    <string name="fragment_bottom_sheet_time_to_choose_btn">Choose</string>
+
+    <!--Fragment calendar-->
+    <string name="fragment_calendar_title">Calendar</string>
+    <string name="fragment_calendar_day_monday_label">Mon</string>
+    <string name="fragment_calendar_day_tuesday_label">Tue</string>
+    <string name="fragment_calendar_day_wednesday_label">Wed</string>
+    <string name="fragment_calendar_day_thursday_label">Thu</string>
+    <string name="fragment_calendar_day_friday">Fri</string>
+    <string name="fragment_calendar_day_saturday">Sat</string>
+    <string name="fragment_calendar_day_sunday">Sun</string>
+
+    <!--Fragment calendar appointment examination-->
+    <string name="fragment_calendar_appointment_examination_header_title">Calendar</string>
+    <string name="fragment_calendar_appointment_examination_schedule_title">schedule appointment with doctor</string>
+    <string name="fragment_calendar_appointment_examination_choose_doctor_subtitle">Choose Doctor:</string>
+    <string name="fragment_calendar_appointment_examination_doctor_name_tv">DR Milenko Milenković</string>
+    <string name="fragment_calendar_appointment_examination_doctor_name1_tv">DR Bojana Bojić</string>
+    <string name="fragment_calendar_appointment_examination_doctor_name2_tv">DR Petar Petrović</string>
+    <string name="fragment_calendar_appointment_examination_profess_place_work_doctor">General Medicine Doctor\nClinical Center Banovo Brdo</string>
+    <string name="fragment_calendar_appointment_examination_info_table">Info table</string>
+    <string name="fragment_calendar_appointment_examination_personal_activity">Personal activity</string>
+    <string name="fragment_calendar_appointment_examination_content">Do you want a personal activity \nmark complete?</string>
+
+    <!--Fragment calendar options-->
+    <string name="fragment_calendar_options_add_medicament">Add a medication reminder</string>
+    <string name="fragment_calendar_options_schedule_examination">Schedule appointment with doctor</string>
+    <string name="fragment_calendar_options_application_for_screening">Application for Screening</string>
+    <string name="fragment_calendar_options_add_personaly_activity">Add Personal Activity</string>
+    <string name="fragment_calendar_options_add_medicamente_from_eprescription">Add medication \nfrom the \nePrescription system</string>
+
+    <!--Fragment calendar personal activity-->
+    <string name="fragment_calendar_personal_activity_header_title">Calendar</string>
+    <string name="fragment_calendar_personal_activity_add_personal_activity_title">Add Personal Activity</string>
+    <string name="fragment_calendar_personal_activity_add_activity_subtitle">Add Activity:</string>
+    <string name="fragment_calendar_personal_activity_name_activity">Enter Activity Name:</string>
+    <string name="fragment_calendar_personal_activity_enter_activity_tv">Enter</string>
+
+    <!--Fragment calendar screening-->
+    <string name="fragment_calendar_screening_calendar_header_title">Calendar</string>
+    <string name="fragment_calendar_screening_schedule_examination_title">Schedule Examination</string>
+    <string name="fragment_calendar_screening_choose_screening_program_subtitle">Choose Screening Program:</string>
+    <string name="fragment_calendar_screening_mammography">Mammography</string>
+    <string name="fragment_calendar_screening_description_mammography">National Preventive Program for Early Detection of Breast Cancer</string>
+    <string name="fragment_calendar_screening_rgm_screening">RGM Screening</string>
+    <string name="fragment_calendar_screening_description_rgm_screening">National Preventive Program for Early Detection of Cervical Cancer</string>
+    <string name="fragment_chat_add_contact_search_hint">Search</string>
+    <string name="fragment_chat_add_contact_search_description">Enter full name or email address as a search criterion (min 3 characters)</string>
+
+    <!--Fragment chat add contact details-->
+    <string name="fragment_chat_add_contact_details_profil_name">Petar Petrovic</string>
+    <string name="fragment_chat_add_contact_details_subtitle_name">New contact</string>
+    <string name="fragment_chat_add_contact_details_send_contact_request">Contact request sent</string>
+    <string name="fragment_chat_add_contact_details_cancel_contact_request">Do you want to cancel the sent contact request?</string>
+    <string name="fragment_chat_add_contact_details_cancel">No</string>
+    <string name="fragment_chat_add_contact_details_confirm">Yes</string>
+
+    <!--Fragment chat avatar actions-->
+    <string name="fragment_chat_avatar_actions_delete_contact">Delete Contact</string>
+    <string name="fragment_chat_avatar_actions_add_member">Add Member</string>
+    <string name="fragment_chat_avatar_actions_information">Information</string>
+    <string name="fragment_chat_avatar_actions_delete_history">Delete \nHistory</string>
+
+    <!--Fragment chat actions-->
+    <string name="fragment_chat_in_call_hint_message">Type a message</string>
+    <string name="fragment_chat_inbox_network_header_title">Network</string>
+    <string name="fragment_chat_inbox_hint_search">Search</string>
+    <string name="fragment_chat_inbox_fab_description">fab</string>
+
+    <!--Fragment chat link call-->
+    <string name="fragment_chat_link_call_network_header_title">Network</string>
+    <string name="fragment_chat_link_call_generate_link_title">Generate Call Link</string>
+    <string name="fragment_chat_link_call_hint_description">Description text</string>
+    <string name="fragment_chat_link_call_title_description">Description</string>
+    <string name="fragment_chat_link_call_enter_text">Enter</string>
+    <string name="fragment_chat_link_call_generate_link_button">Generate Call Link</string>
+
+    <!--Fragment chat options-->
+    <string name="fragment_chat_options_add_contact">Add Contact</string>
+    <string name="fragment_chat_options_create_chat_group">Create Group</string>
+    <string name="fragment_chat_options_schedule_call">Schedule Call</string>
+    <string name="fragment_chat_options_link_call">Call Link</string>
+
+    <!--Fragment chest circumference-->
+    <string name="fragment_chest_circumference_header_title">Chest Circumference</string>
+    <string name="fragment_chest_circumference_choose_btn">Choose</string>
+    <string name="fragment_chest_circumference_close_btn">Close</string>
+
+    <!--Fragment chat group initial-->
+    <string name="fragment_chat_group_initial_title">Creating Group</string>
+    <string name="fragment_chat_group_initial_group_name">Group Name:</string>
+    <string name="fragment_chat_group_initial_continue_btn">Continue</string>
+    <string name="fragment_chat_group_initial_red_warning">The group name must have at least 3 characters</string>
+
+    <!--Fragment create group my contact-->
+    <string name="fragment_create_group_my_contact_add_contact_title">Add Contact</string>
+    <string name="fragment_create_group_my_contact_add">Add</string>
+    <string name="fragment_create_group_my_contact_contacts_label">Contacts:</string>
+    <string name="fragment_create_group_my_contact_wraning_msg">The group must contain at least 3 members.</string>
+    <string name="fragment_create_group_my_contact_decription">Enter first and last name or email as search criteria (min 3 characters).</string>
+
+    <!--Fragment drug consumption-->
+    <string name="fragment_drug_consumption_date_title">Wednesday 23.12.2023</string>
+    <string name="fragment_drug_consumption_medicament_consumption_title">Medication Consumption</string>
+    <string name="fragment_drug_consumption_medicament_name_label">Medication Name:</string>
+    <string name="fragment_drug_consumption_dosage_label">Dosage:</string>
+    <string name="fragment_drug_consumption_dosage_info_from_eRx_label">Dosage Info from eRx:</string>
+    <string name="fragment_drug_consumption_time_of_taking_title">Time of Taking</string>
+    <string name="fragment_drug_consumption_time_from_label">Period From:</string>
+    <string name="fragment_drug_consumption_time_to_label">Period To:</string>
+    <string name="fragment_drug_consumption_term_of_consumption_label">Consumption Schedule:</string>
+    <string name="fragment_drug_consumption_term_of_consumption_value">All Day</string>
+
+    <!--Fragment events-->
+    <string name="fragment_events_empty_error_text">You have no doctor visits recorded in your eKarton or any realized ePrescription in the last 6 months.</string>
+
+    <!--Fragment health-->
+    <string name="fragment_health_title">Lifestyle</string>
+    <string name="fragment_health_date">Friday 09.02.2024</string>
+    <string name="fragment_health_steps_label">Step Count</string>
+    <string name="fragment_health_steps_last_value">Last Value</string>
+    <string name="fragment_health_steps_count_value">0</string>
+    <string name="fragment_health_health_info">On the Lifestyle page, you can select tracking parameters, enter values, and set goals.</string>
+    <string name="fragment_health_calories_label">Calorie Count</string>
+    <string name="fragment_health_calories_last_value">Last Value</string>
+    <string name="fragment_health_calories_count_suffix">Kcal</string>
+    <string name="fragment_health_distance_label">Distance Traveled</string>
+    <string name="fragment_health_distance_last_value">Last Value</string>
+    <string name="fragment_health_distance_count_suffix">km</string>
+    <string name="fragment_health_calories_count">0</string>
+    <string name="fragment_health_progress_steps_count">0</string>
+    <string name="fragment_health_steps_count_suffix">steps</string>
+    <string name="fragment_health_counting_steps_label">Step Counting</string>
+    <string name="fragment_health_counting_calories_label">Calorie Counting</string>
+    <string name="fragment_health_spun_distance_label">Distance Traveled</string>
+    <string name="fragment_health_goal_today_label">Goals for Today</string>
+    <string name="fragment_health_progress_steps_count_value">0</string>
+
+    <!--Fragment height-->
+    <string name="fragment_height_header_title">Height</string>
+    <string name="fragment_height_close_btn">Close</string>
+    <string name="fragment_height_choose_btn">Choose</string>
+
+    <!--Fragment incoming call dialog-->
+    <string name="fragment_incoming_call_dialog_incoming_call_tv">Incoming Call</string>
+
+    <!--Fragment login email password-->
+    <string name="fragment_login_email_password_title">Login</string>
+    <string name="fragment_login_email_password_user_name_label">Username</string>
+    <string name="fragment_login_email_password_password_label">Password</string>
+    <string name="fragment_login_email_password_login">Login</string>
+    <string name="fragment_login_email_password_login_desc">Enter your username and password</string>
+    <string name="fragment_login_email_password_health">Health</string>
+    <string name="fragment_login_email_password_rfzo_desc">Application through the information of the Republic Fund \for health insurance</string>
+    <string name="fragment_login_email_password_health_card_number">Health card number:</string>
+
+    <!--Fragment login initial-->
+    <string name="fragment_login_initial_application_registration_tv">Login/Register</string>
+    <string name="fragment_login_initial_application_gov_eid_btn">Login eID</string>
+    <string name="fragment_login_initial_register_gov_eid">Register eID</string>
+    <string name="fragment_login_initial_application_portal_e_zdravlje_btn">Login eHealth</string>
+    <string name="fragment_login_initial_application_qr_code_btn">Scan QR Code</string>
+    <string name="fragment_login_initial_login_rfzo_card">Login RFZO</string>
+    <string name="fragment_login_initial_help_support_btn">Help and Support</string>
+    <string name="fragment_login_initial_continue_a_guest">Continue as a guest</string>
+    <string name="fragment_login_initial_content">Log in to the eZdravlje portal via the application. Choose a login method by clicking on one of the two available options.</string>
+    <string name="fragment_login_initial_title">Log in to eZdravlje</string>
+    <string name="fragment_login_initial_msg_wait">Please waiting</string>
+
+    <!--Fragment login_qr_code-->
+    <string name="fragment_login_qr_code_next_btn">Next</string>
+
+    <!--Fragment messages-->
+    <string name="fragment_messages_hint_message_tv">Type a message</string>
+
+    <!--Fragment next on schedule-->
+    <string name="fragment_next_on_schedule_title">Next on Schedule</string>
+    <string name="fragment_next_on_schedule_back_label">Back</string>
+
+    <!--Fragment notification-->
+    <string name="fragment_notification_title">Notifications</string>
+
+    <!--Fragment notification filter-->
+    <string name="fragment_notification_filter_save_label">Save</string>
+    <string name="fragment_notification_filter_title">Incoming Notifications Settings</string>
+    <string name="fragment_notification_filter_available_therapy">Available Therapy</string>
+    <string name="fragment_notification_filter_scheduled_checkup">Scheduled Checkup</string>
+    <string name="fragment_notification_filter_contact_request">Contact Request</string>
+    <string name="fragment_notification_filter_contact_request_response">Accepted/Rejected Contact Request</string>
+    <string name="fragment_notification_filter_new_message">New Message</string>
+    <string name="fragment_notification_filter_new_group_message">New Group Message</string>
+    <string name="fragment_notification_filter_recommendation">Recommendation</string>
+    <string name="fragment_notification_filter_data_sharing">Data/Profile Sharing</string>
+
+    <!--Fragment notification settings-->
+    <string name="fragment_notification_settings_save">Save</string>
+    <string name="fragment_notification_settings_filter_title">Filter</string>
+    <string name="fragment_notification_settings_email_notifications_enabled">Email notifications enabled</string>
+    <string name="fragment_notification_settings_email_notifications_disabled">Email notifications disabled</string>
+    <string name="fragment_notification_settings_push_notifications_enabled">Push notifications enabled</string>
+    <string name="fragment_notification_settings_push_notifications_disabled">Push notifications disabled</string>
+    <string name="fragment_notification_settings_email_notifications">Email notifications</string>
+    <string name="fragment_notification_settings_email_info">By selecting these types of notifications, you will receive important information to your email address.</string>
+    <string name="fragment_notification_settings_settings_info">You must go to the settings page to enable the option to receive notifications.</string>
+    <string name="fragment_notification_settings_prescription_pickup">Prescription pickup</string>
+    <string name="fragment_notification_settings_prescription_pickup_confirmation">Activate prescription pickup confirmation upon pharmacy realization.</string>
+    <string name="fragment_notification_settings_notification_type_subtitle">Notification Type</string>
+    <string name="fragment_notification_settings_available_therapy_label">Available Therapy</string>
+    <string name="fragment_notification_settings_scheduled_exam_label">Scheduled Exam</string>
+    <string name="fragment_notification_settings_contact_request_label">Contact Request</string>
+    <string name="fragment_notification_settings_contact_request_accepted_rejected_label">Accepted/Rejected Contact Request</string>
+    <string name="fragment_notification_settings_new_message_label">New Message</string>
+    <string name="fragment_notification_settings_new_message_group_label">New Group Message</string>
+    <string name="fragment_notification_settings_recommendation_label">Recommendation</string>
+    <string name="fragment_notification_settings_data_sharing_label">Data/Profile Sharing</string>
+    <string name="fragment_notification_settings_date_subtitle">Date</string>
+    <string name="fragment_notification_settings_sort_ascending_label">Sort Ascending</string>
+    <string name="fragment_notification_settings_sort_descending_label">Sort Descending</string>
+
+    <!--Fragment parameters-->
+    <string name="fragment_parameters_title">Enter Your Basic Parameters</string>
+    <string name="fragment_parameters_description">This information allows integration of your characteristics into the application for easier tracking of results.</string>
+    <string name="fragment_parameters_blood_type_label">Blood Type</string>
+    <string name="fragment_parameters_select">Choose</string>
+    <string name="fragment_parameters_height_label">Height</string>
+    <string name="fragment_parameters_weight_label">Weight</string>
+    <string name="fragment_parameters_chest_circumference_label">Chest Circumference</string>
+    <string name="fragment_parameters_waist_circumference_label">Waist Circumference</string>
+    <string name="fragment_parameters_next_btn">Next</string>
+    <string name="fragment_parameters_skip_btn">Skip</string>
+
+    <!--Fragment personal activity-->
+    <string name="fragment_personal_activity_date_title">Wednesday 23.12.2023</string>
+    <string name="fragment_personal_activity_personal_activity_title">Personal Activity</string>
+    <string name="fragment_personal_activity_personal_activity_label">Personal Activity:</string>
+    <string name="fragment_personal_activity_description_label">Description:</string>
+    <string name="fragment_personal_activity_time_label">Time:</string>
+
+    <!--Fragment pin-->
+    <string name="fragment_pin_enter_pin_code_title">Enter PIN Code</string>
+    <string name="fragment_pin_enter_pin_code_save_pin">Save PIN code</string>
+    <string name="fragment_pin_enter_pin_code_continue_without_pin">Continue without PIN code</string>
+    <string name="fragment_pin_description_pin_code">Enter the PIN for full access to the data and options of the eHealth portal. If you do not have a PIN, log in via the eid.gov.rs website for full access to the data and options of the eHealth portal.</string>
+
+    <!--Fragment profile access key title-->
+    <string name="fragment_profile_access_key_title">Generating Access Credentials for the Portal</string>
+    <string name="fragment_profile_access_key_title_copy_tv">Copy</string>
+    <string name="fragment_profile_access_key_user_name_label">Username:</string>
+    <string name="fragment_profile_access_key_password_label">Password:</string>
+    <string name="fragment_profile_access_key_pin_label">PIN:</string>
+    <string name="fragment_profile_access_key_user_name_value">petarpetrović</string>
+    <string name="fragment_profile_access_key_password_value">123456#Aaaa</string>
+    <string name="fragment_profile_access_key_pin_value">12345678944</string>
+
+    <!--Fragment profile i can see-->
+    <string name="fragment_profile_i_can_see_users_title">Users</string>
+    <string name="fragment_profile_i_can_see_doctors_title">Doctors</string>
+
+    <!--Fragment profile settings-->
+    <string name="fragment_profile_settings_title">Profile Settings</string>
+    <string name="fragment_profile_settings_description">Set up your profile. Enter information in the fields below.</string>
+    <string name="fragment_profile_settings_address_label">Address:</string>
+    <string name="fragment_profile_settings_phone_number_label">Phone Number:</string>
+    <string name="fragment_profile_settings_address_hint">Enter Address</string>
+    <string name="fragment_profile_settings_enter_address">Enter</string>
+    <string name="fragment_profile_settings_enter_phone_number_btn">0XXXXXXXXXX</string>
+    <string name="fragment_profile_settings_phone_number_hint">Enter Phone Number</string>
+    <string name="fragment_profile_settings_enter_email_btn">Enter</string>
+    <string name="fragment_profile_settings_email_label">Email:</string>
+    <string name="fragment_profile_settings_enter_email_hint">Enter Email</string>
+    <string name="fragment_profile_settings_language_app_label">Application Language:</string>
+    <string name="fragment_profile_settings_choose_language_btn">Choose</string>
+    <string name="fragment_profile_settings_save_btn">Save</string>
+    <string name="fragment_profile_settings_close_btn">Close</string>
+    <string name="fragment_profile_settings_image_from_gallery">Select image from gallery</string>
+    <string name="fragment_profile_settings_make_picture">Start camera</string>
+    <string name="fragment_profile_settings_succesfully_update_profile_img">You have successfully changed your profile picture.</string>
+    <string name="fragment_profile_settings_image_size_too_large">Image size is too large. Max size is 50MB.</string>
+    <string name="fragment_profile_settings_camera_permission_denied">Camera permission denied.</string>
+    <string name="fragment_profile_settings_camera_permission_needed">Camera Permission Needed.</string>
+    <string name="fragment_profile_settings_camera_permission_notifiction">This app needs access to your camera in order to take profile photos.</string>
+    <string name="fragment_profile_settings_allow">Allow</string>
+
+
+    <!--Fragment profile who can see my data-->
+    <string name="fragment_profile_who_can_see_my_data_users_title">Users</string>
+    <string name="fragment_profile_who_can_see_my_data_doctors_title">Doctors</string>
+    <string name="fragment_profile_who_can_see_my_data_pharmacists_title">Pharmacists</string>
+
+    <!--Fragment qr code scanner-->
+    <string name="fragment_qr_code_scanner_title">Scan QR Code</string>
+    <string name="fragment_qr_code_scanner_description">Position the QR code within the frame</string>
+
+    <!--Fragment schedule call-->
+    <string name="fragment_schedule_call_network_header_title">Network</string>
+    <string name="fragment_schedule_call_appointment_tv">Schedule</string>
+    <string name="fragment_schedule_call_schedule_call_title">Schedule Call</string>
+    <string name="fragment_schedule_call_description_label">Description:</string>
+    <string name="fragment_schedule_call_call_organizer_label">Call Organizer:</string>
+    <string name="fragment_schedule_call_date_label">Date:</string>
+    <string name="fragment_schedule_call_time_from_label">Time From:</string>
+    <string name="fragment_schedule_call_time_to_label">Time To:</string>
+    <string name="fragment_schedule_call_choose_label">Choose</string>
+    <string name="fragment_schedule_call_choose_toast_msg_successfully">Successfully saved call</string>
+    <string name="fragment_schedule_call_choose_toast_msg_link_successfully">Successfully created link for call</string>
+    <string name="fragment_schedule_call_choose_description">Description</string>
+    <string name="fragment_schedule_call_choose_insert_description">Insert description</string>
+    <string name="fragment_schedule_call_add_participants">Participants:</string>
+    <string name="fragment_schedule_call_network_toast_copy_txt">Text copied.</string>
+    <string name="fragment_schedule_call_enter_call">Join the call</string>
+    <string name="fragment_schedule_call_start_call">Start call</string>
+    <string name="fragment_schedule_call_cancel_call">Cancel call</string>
+
+    <!--Fragment user info-->
+    <string name="fragment_user_info_header_title">Info Board</string>
+    <string name="fragment_user_info_profil_user_title">User Profile</string>
+    <string name="fragment_user_info_username_label">Petar Petrović</string>
+    <string name="fragment_user_info_jmbg_label">JMBG</string>
+    <string name="fragment_user_info_jmbg_value">291198760022</string>
+    <string name="fragment_user_info_insurance_number_label">Insurance Number</string>
+    <string name="fragment_user_info_insurance_number_value">291198760022</string>
+    <string name="fragment_user_info_id_card_number_label">ID Card</string>
+    <string name="fragment_user_info_id_card_number_value">29119876</string>
+    <string name="fragment_user_info_gender_label">Gender</string>
+    <string name="fragment_user_info_gender_value">Male</string>
+    <string name="fragment_user_info_phone_number_label">Phone Number:</string>
+    <string name="fragment_user_info_phone_number_value">0641234567</string>
+    <string name="fragment_user_info_address_label">Address:</string>
+    <string name="fragment_user_info_address_value">Braće Jugović 32</string>
+    <string name="fragment_user_info_email_address_label">Email:</string>
+    <string name="fragment_user_info_email_label">pp@gmail.com</string>
+    <string name="fragment_user_info_generation_access_data_tv">Generating Access Credentials for the Portal</string>
+    <string name="fragment_user_info_permanent_deletion_order_btn">Permanently Delete Account</string>
+    <string name="fragment_user_info_logout_btn">Logout</string>ž
+    <string name="fragment_user_info_logout_content_alert_dialog">Are you sure you want to log out?</string>
+    <string name="fragment_user_info_gender_male">Male</string>
+    <string name="fragment_user_info_gender_female">Female</string>
+
+    <!--Fragment waist circumference-->
+    <string name="fragment_waist_circumference_header_title">Waist Circumference</string>
+    <string name="fragment_waist_circumference_choose_btn">Choose</string>
+    <string name="fragment_waist_circumference_cancel_btn">Close</string>
+
+    <!--Fragment weight-->
+    <string name="fragment_weight_header_title">Weight</string>
+    <string name="fragment_weight_cancel_btn">Close</string>
+    <string name="fragment_weight_choose_btn">Choose</string>
+
+    <!--Activity include empty screen-->
+    <string name="activity_include_empty_screen_description">There are no data \n on the selected page.</string>
+
+    <!--Fragment item chat document-->
+    <string name="fragment_item_chat_document_extension">document.dpf</string>
+    <string name="fragment_item_chat_document_file_size">4.2 MB</string>
+    <string name="fragment_item_chat_document_time">22:56</string>
+
+    <!--Fragment item chat image-->
+    <string name="fragment_item_chat_image_extension">document.dpf</string>
+    <string name="fragment_item_chat_image_file_size">4.2 MB</string>
+    <string name="fragment_item_chat_image_time">22:56</string>
+
+    <!--Fragment item chat other-->
+    <string name="fragment_item_chat_other_file_size">4.2 MB</string>
+    <string name="fragment_item_chat_other_time">22:56</string>
+
+    <!--Fragment item chat other image-->
+    <string name="fragment_item_chat_other_image_extension">document.dpf</string>
+    <string name="fragment_item_chat_other_image_file_size">4.2 MB</string>
+    <string name="fragment_item_chat_other_image_time">22:56</string>
+
+    <!--Fragment item chat receiver-->
+    <string name="fragment_item_chat_receiver_text_area">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac neque ex. Sed mollis pharetra tempus?</string>
+
+    <!--Fragment item chat sender-->
+    <string name="item_chat_sender_time">22:56</string>
+
+    <!--Fragment item event-->
+    <string name="fragment_item_event_header_title">Available Therapy at the Pharmacy</string>
+    <string name="fragment_item_event_receive_therapy_label">Pick Up Therapy</string>
+    <string name="fragment_item_event_receive_therapy_value">All Day</string>
+
+    <!--Fragment item notification-->
+    <string name="fragment_item_notification_available_therapy_title">Available Therapy</string>
+    <string name="fragment_item_notification_e_recept_subtitle">ePrescription System</string>
+    <string name="fragment_item_notification_name_doctor_value">Dr. Mladen Đurić</string>
+    <string name="fragment_item_notification_date_value">16.5.2022.</string>
+    <string name="fragment_item_notification_description_taking_period_value">You can pick up your therapy at the pharmacy from 18.01.2023 to 25.01.2024.</string>
+
+    <!--Fragment item onboarding card-->
+    <string name="fragment_item_on_boarding_card_welcome_title">Welcome</string>
+    <string name="fragment_item_on_boarding_card_welcome_description">eHealth is a unique system of the Republic of Serbia in your pocket</string>
+
+    <!--Fragment item sub user-->
+    <string name="fragment_item_sub_user_name_label">Petar Petrović</string>
+    <string name="fragment_item_sub_user_info_text_label">Dependent Insured</string>
+
+    <!--Fragment pin chat bottom sheet-->
+    <string name="fragment_pin_chat_bottom_sheet_description_tv">Enter your PIN for full access to data and features of the eZdravlje portal. If you do not have a PIN code, please log in via the website eid.gov.rs for full access to data and features of the eZdravlje portal.</string>
+    <string name="fragment_pin_chat_bottom_sheet_enter_pin_code_header">Enter PIN code</string>
+    <string name="fragment_pin_chat_bottom_sheet_save_pin_code_btn">Save PIN code</string>
+    <string name="fragment_pin_chat_bottom_sheet_continue_without_pin_btn">Continue without PIN code</string>
+
+    <!--Network - wrapper xml-->
+    <string name="network_description">Access to medical data requires\n a high level of authorization and authentication.\n Log in via eid.gov.rs using two-factor\n authorization (Consent ID), or enter a PIN code</string>
+    <string name="network_title">Network</string>
+    <string name="network_enter_pin_btn">Enter PIN Code</string>
+    <string name="network_login_btn">Log In</string>
+
+
+    <!--Fragment way_of_life-->
+    <string name="fragmet_way_of_life_tv_description">To access medical data, a high level of authorization and authentication is required.\n Please log in via eid.gov.rs with two-factor authorization (Consent ID), or enter your PIN code.\n</string>
+    <string name="fragment_way_of_life">Way of Life</string>
+    <string name="fragment_way_of_life_mb_login">Log In</string>
+    <string name="fragment_way_of_life_mb_enter_pin_code">Enter PIN Code</string>
+
+    <!--Fragment bottom sheet pin-->
+    <string name="fragment_bottom_sheet_pin_description">Enter your PIN for full access to the data and options\n of the eHealth portal. If you do not have a PIN, please log in\n through the eid.gov.rs website for full access\n to the data and options of the eHealth portal.</string>
+    <string name="fragment_bottom_sheet_pin_mb_save_pin_code">Save PIN Code</string>
+    <string name="fragment_bottom_sheet_mb_continue_without_pin">Continue Without PIN Code</string>
+    <string name="fragment_bottom_sheet_pin_enter_pin_code_header">Enter PIN code</string>
+
+
+    <!--BottomSheet Confirm Delete Reminder Fragment-->
+    <string name="fragment_bottom_sheet_confirm_delete_reminder_description_drug_consumption">The reminder for medication consumption will be permanently deleted from the calendar. Do you want to continue?</string>
+    <string name="fragment_bottom_sheet_confirm_delete_reminder_description_personal_data_activity">The reminder for personal activity will be permanently deleted from the calendar. Do you want to continue?</string>
+    <string name="fragment_bottom_sheet_confirm_delete_reminder_description_scheduled_call">The reminder for the scheduled call will be permanently deleted from the calendar.\nDo you want to continue?</string>
+    <string name="fragment_bottom_sheet_confirm_delete_reminder_description_doctors_appointment">Are you sure you want to cancel \nthe doctor\'s appointment?</string>
+    <string name="fragment_bottom_sheet_confirm_delete_reminder_delete_medicamente">Are you sure you want \nto delete the medication?</string>
+    <string name="fragment_bottom_sheet_confirm_delete_reminder_header_title">Cancel reminder</string>
+    <string name="fragment_bottom_sheet_confirm_delete_reminder_delete_medicamente_header">Delete medicine</string>
+    <string name="fragment_bottom_sheet_confirm_delete_reminder_clear_all_reminders_in_row_radioBtn">Delete all reminders in the row</string>
+    <string name="fragment_bottom_sheet_confirm_delete_reminder_closeBtn">Close</string>
+    <string name="fragment_bottom_sheet_confirm_delete_reminder_continueBtn">Continue</string>
+
+    <!--Fragment add medicament date interval add medicament-->
+    <string name="fragment_add_medicament_date_interval_add_medicament_title">Add Medication</string>
+    <string name="fragment_add_medicament_date_interval_add_medicament_subtitle">Add repetition interval for the activity:</string>
+    <string name="fragment_add_medicament_date_interval_add_medicament_drug_consumption_interval_label">Enter the repetition interval for taking the medication:</string>
+    <string name="fragment_add_medicament_date_interval_add_medicament_time_from_label">Time from:</string>
+    <string name="fragment_add_medicament_date_interval_add_medicament_name_activity_label">Activity name:</string>
+    <string name="fragment_add_medicament_date_interval_add_medicament_period_from_label">Period from:</string>
+    <string name="fragment_add_medicament_date_interval_add_medicament_period_to_label">Period to:</string>
+    <string name="fragment_add_medicament_date_interval_add_medicament_insert">Insert</string>
+    <string name="fragment_add_medicament_date_interval_add_medicament_dosage">Dosage:</string>
+
+    <!--Fragment add time taking medicament-->
+    <string name="fragment_add_time_taking_medicament_title">Add a medication reminder</string>
+    <string name="fragment_add_time_taking_medicament_add_time_tacking_medicament_label">Add time for taking the medication:</string>
+    <string name="fragment_add_time_taking_medicament_add_time_label">Add time for taking the medication</string>
+    <string name="fragment_add_time_taking_medicament_choose_time_mtv">Choose</string>
+    <string name="fragment_add_time_taking_medicament_add_time_one_label">Add time for taking the medication</string>
+    <string name="fragment_add_time_taking_medicament_choose_one_mtv">Choose</string>
+    <string name="fragment_add_time_taking_medicament_add_time_two_label">Add time for taking the medication</string>
+    <string name="fragment_add_time_taking_medicament_choose_two_mtv">Choose</string>
+    <string name="fragment_add_time_taking_medicament_add_time_three_label">Add time for taking the medication</string>
+    <string name="fragment_add_time_taking_medicament_choose_three_mtv">Choose</string>
+    <string name="fragment_add_time_taking_medicament_medicament_label">Medication:</string>
+    <string name="fragment_add_time_taking_medicament_dosage_label">Dosage:</string>
+    <string name="fragment_add_time_taking_medicament_period_from_label">Period from:</string>
+    <string name="fragment_add_time_taking_medicament_period_to_label">Period to:</string>
+    <string name="fragment_add_time_taking_medicament_add_btn">Add</string>
+
+    <!--Fragment address bottom sheet-->
+    <string name="fragment_address_bottom_sheet_header_title">Address</string>
+    <string name="fragment_address_bottom_sheet_address_hint_edit_text">Address</string>
+    <string name="fragment_address_bottom_sheet_cancel_btn">Cancel</string>
+    <string name="fragment_address_bottom_sheet_confirm_btn">Confirm</string>
+    <string name="fragment_address_bottom_sheet_insert_value">Insert value</string>
+
+    <!--Fragment ambulant examination-->
+    <string name="fragment_ambulant_examination_header_title">Сchedule appointment with doctor</string>
+    <string name="fragment_ambulant_examination_subtitle">Choose date</string>
+    <string name="fragment_ambulant_examination_date_label">Date</string>
+    <string name="fragment_ambulant_examination_choose_mtv">Choose</string>
+    <string name="fragment_ambulant_examination_doctor_label">Doctor:</string>
+    <string name="fragment_ambulant_examination_institution_label">Institution:</string>
+    <string name="fragment_ambulant_examination_type_review_label">Examination type:</string>
+
+    <!--Fragment answer-->
+    <string name="fragment_answer_back_mtv">Back</string>
+    <string name="fragment_answer_title">Answer</string>
+    <string name="fragment_anwer_descritpion_mtv">Contrary to popular belief, Lorem Ipsum is not simply random text. It has its roots in a work of classical Latin literature from 45 BCE, making it over 2000 years old. Richard McClintock, a professor of Latin at Hampden-Sydney College in Virginia, searched for one of the rarer Latin words, consectetur, from a passage of Lorem Ipsum, and by studying its appearances in classical literature, uncovered its undeniable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of the book &quot;De Finibus Bonorum et Malorum&quot; (On the Extremes of Good and Evil) written by Cicero in 45 BCE. This book is a discussion of ethical theory, very popular during the Renaissance. The first sentence of Lorem Ipsum, &quot;Lorem ipsum dolor sit amet..&quot;, comes from section 1.10.32. The standard part of Lorem Ipsum used since the 1500s is shown below for those interested. Sections 1.10.32 and 1.10.33 from &quot;De Finibus Bonorum et Malorum&quot; are also shown in their original form, along with English versions from Rackham’s 1914 translation.</string>
+
+    <!--Fragment ask question-->
+    <string name="fragment_ask_question_header_title">Report</string>
+    <string name="fragment_ask_question_title">Ask a Question</string>
+    <string name="fragment_ask_question_choose_question_category_label">Select question category:</string>
+    <string name="fragment_ask_question_title_label">Title:</string>
+    <string name="fragment_ask_question_email_label">Email address\n(where the response will be sent)</string>
+    <string name="fragment_ask_question_question__label">Ask a question</string>
+    <string name="fragment_ask_question_choose_mtv">Choose</string>
+    <string name="fragment_ask_question_add_mtv">Add</string>
+    <string name="fragment_ask_question_description_label">Maximum input is 150 characters.</string>
+    <string name="fragment_ask_question_send_btn">Send</string>
+    <string name="fragment_ask_question_success_message">You have successfully sent the question</string>
+    <string name="fragment_ask_question_selected_category">Selected category</string>
+    <string name="fragment_ask_question_titleOne">Title</string>
+    <string name="fragment_ask_question_email">Email</string>
+
+    <!--Fragment bottom sheet activity-->
+    <string name="fragment_bottom_sheet_activity_name_header_title">Name</string>
+    <string name="fragment_bottom_sheet_activity_name_name_hint_edit_text">Name</string>
+    <string name="fragment_bottom_sheet_activity_name_cancel_btn">Cancel</string>
+    <string name="fragment_bottom_sheet_activity_name_confirm_btn">Confirm</string>
+
+    <!--Fragment bottom sheet change name-->
+    <string name="fragment_bottom_sheet_change_name_header_title">Name</string>
+    <string name="fragment_bottom_sheet_change_name_name_hint_edit_text">Name</string>
+    <string name="fragment_bottom_sheet_change_name_cancel_btn">Cancel</string>
+    <string name="fragment_bottom_sheet_change_name_confirm_btn">Confirm</string>
+
+    <!--Fragment bottom sheet confirm add medicament calendar-->
+    <string name="fragment_bottom_sheet_confirm_add_medicament_calendar_header_title">Add Medication</string>
+    <string name="fragment_bottom_sheet_confirm_add_medicament_calendar_description">Are you sure you want to add the medication to the calendar?</string>
+    <string name="fragment_bottom_sheet_confirm_add_medicament_calendar_cancel_btn">Cancel</string>
+    <string name="fragment_bottom_sheet_confirm_add_medicament_calendar_confirm_btn">Confirm</string>
+    <string name="fragment_bottom_sheet_confirm_add_medicament_calendar_add_medicine_toast_msg">Medication added! You can view it in your calendar.</string>
+
+
+    <!--Fragment bottom sheet dialog confirm-->
+    <string name="fragment_bottom_sheet_dialog_confirm_header_title">Schedule appointment with doctor</string>
+    <string name="fragment_bottom_sheet_dialog_confirm_description_mtv">Are you sure you want to schedule the examination?</string>
+    <string name="fragment_bottom_sheet_dialog_confirm_cancel_btn">No</string>
+    <string name="fragment_bottom_sheet_dialog_confirm_continue_btn">Yes</string>
+
+    <!--Fragment bottom sheet event info-->
+    <string name="fragment_bottom_sheet_event_info_header_title">Did you take the medication?</string>
+    <string name="fragment_bottom_sheet_event_info_prescribed_medicine_label">Prescribed medication:</string>
+    <string name="fragment_bottom_sheet_event_info_dosage_label">Dosage:</string>
+    <string name="fragment_bottom_sheet_event_info_prescribed_date_label">Date:</string>
+    <string name="fragment_bottom_sheet_event_info_prescribed_time_label">Time:</string>
+    <string name="fragment_bottom_sheet_event_info_prescribed_cancel_label">No</string>
+    <string name="fragment_bottom_sheet_event_info_prescribed_confirm_label">Yes</string>
+
+    <!--Fragment bottom sheet filter-->
+    <string name="fragment_bottom_sheet_filter_header">Filter</string>
+    <string name="fragment_bottom_sheet_filter_available_therapies_label">Available therapies</string>
+    <string name="fragment_bottom_sheet_filter_reminders_therapy_consumption_label">Medication consumption reminders</string>
+    <string name="fragment_bottom_sheet_filter_scheduled_doctors_appointments_label">Doctor\'s appointments</string>
+    <string name="fragment_bottom_sheet_filter_screening_examinations_label">Screening examinations</string>
+    <string name="fragment_bottom_sheet_filter_personalized_activities_label">Personalized activities</string>
+    <string name="fragment_bottom_sheet_filter_scheduled_calls_label">Scheduled calls</string>
+    <string name="fragment_bottom_sheet_filter_access_data">Data access</string>
+    <string name="fragment_bottom_sheet_filter_medication_reminder">Medication reminder</string>
+    <string name="fragment_bottom_sheet_filter_scheduled_appointment">Scheduled appointment</string>
+    <string name="fragment_bottom_sheet_filter_contact_request_status">Accepted/Declined contact request</string>
+    <string name="fragment_bottom_sheet_filter_new_msg">New message</string>
+    <string name="fragment_bottom_sheet_filter_new_msg_group">New message - Grupa</string>
+    <string name="fragment_bottom_sheet_filter_recommendation">Recommendation</string>
+    <string name="fragment_bottom_sheet_filter_profile_data_sharing">Profile data sharing</string>
+    <string name="fragment_bottom_sheet_filter_prescription_pickup_confirmation">Prescription pickup confirmation</string>
+    <string name="fragment_bottom_sheet_filter_notification_type">Notification type</string>
+    <string name="fragment_bottom_sheet_filter_show_all">Show all</string>
+    <string name="fragment_bottom_sheet_filter_system_msg">System message</string>
+    <string name="fragment_bottom_sheet_filter_close_btn">Close</string>
+    <string name="fragment_bottom_sheet_filter_save_btn">Save</string>
+
+    <!--Fragment bottom sheet free terms-->
+    <string name="fragment_bottom_sheet_free_terms_header_title">Free slots</string>
+
+    <!--Fragment bottom sheet intervals hours-->
+    <string name="fragment_bottom_sheet_interval_hours_header_title">Interval</string>
+
+    <!--Fragment bottom sheet realized unrealized activity-->
+    <string name="fragment_bottom_sheet_realized_unrealized_activity_header_title">Did you take the medication?</string>
+    <string name="fragment_bottom_sheet_realized_unrealized_activity_personal_activity_label">Personal activity:</string>
+    <string name="fragment_bottom_sheet_realized_unrealized_activity_description_label">Description:</string>
+    <string name="fragment_bottom_sheet_realized_unrealized_activity_date_label">Date:</string>
+    <string name="fragment_bottom_sheet_realized_unrealized_activity_time_label">Time:</string>
+    <string name="fragment_bottom_sheet_realized_unrealized_activity_cancel_label">No</string>
+    <string name="fragment_bottom_sheet_realized_unrealized_activity_confirm_label">Yes</string>
+
+    <!--Fragment calendar appointment schedule-->
+    <string name="fragment_calendar_appointment_schedule_header_title">Schedule appointment with doctor</string>
+    <string name="fragment_calendar_appointment_schedule_title">Select examination type:</string>
+    <string name="fragment_calendar_appointment_schedule_ambulatory_examination_label">Ambulant Examination</string>
+    <string name="fragment_calendar_appointment_schedule_telemedicine_video_call_label">Telemedicine - Video Call</string>
+    <string name="fragment_calendar_appointment_schedule_telemedicine_call_phone_label">Telemedicine - Phone Call</string>
+    <string name="fragment_calendar_appointment_schedule_doctor_label">Doctor:</string>
+    <string name="fragment_calendar_appointment_schedule_institution_label">Institution:</string>
+    <string name="fragment_calendar_appointment_schedule_examination_type_label">Examination type:</string>
+
+    <!--Fragment calendar personal activity date-->
+    <string name="fragment_calendar_personal_activity_date_header_title">Add Personal Activity</string>
+    <string name="fragment_calendar_personal_activity_date_title">Add Personal Activity</string>
+    <string name="fragment_calendar_personal_activity_date_subtitle">Choose date:</string>
+    <string name="fragment_calendar_personal_activity_date_period_from_label">Date from:</string>
+    <string name="fragment_calendar_personal_activity_date_choose_label">Choose</string>
+    <string name="fragment_calendar_personal_activity_date_period_to_label">Date to:</string>
+    <string name="fragment_calendar_personal_activity_date_name_activity_label">Activity name:</string>
+
+    <!--Fragment choose category quest bottom sheet-->
+    <string name="fragment_choose_category_quest_bottom_sheet_header_title">Choose question category</string>
+    <string name="fragment_choose_category_quest_bottom_sheet_gdpr_btn">GDPR</string>
+    <string name="fragment_choose_category_quest_bottom_sheet_helpdesk_btn">Helpdesk</string>
+    <string name="fragment_choose_category_quest_bottom_sheet_registration_btn">Registration</string>
+    <string name="fragment_choose_category_quest_bottom_sheet_close_btn">Close</string>
+    <string name="fragment_email_ask_quest_bottom_sheet_header_title">Email</string>
+    <string name="fragment_email_ask_quest_bottom_sheet_email_et">Email</string>
+    <string name="fragment_email_ask_quest_bottom_sheet_cancel_btn">Cancel</string>
+    <string name="fragment_email_ask_quest_bottom_sheet_confirm_btn">Confirm</string>
+
+    <!--Fragment email bottom sheet-->
+    <string name="fragment_email_bottom_sheet_header_title">Email</string>
+    <string name="fragment_email_bottom_sheet_email_et">Email:</string>
+    <string name="fragment_email_bottom_sheet_cancel_btn">Cancel</string>
+    <string name="fragment_email_bottom_sheet_confirm_btn">Confirm</string>
+
+    <!--Fragment frequently asked questions-->
+    <string name="fragment_frequently_asked_questions_header_title">Login</string>
+    <string name="fragment_frequently_asked_questions_title">Frequently Asked Questions</string>
+    <string name="fragment_frequently_asked_questions_why_label">Why Lorem Ipsum Si Dont Mas??</string>
+    <string name="fragment_frequently_asked_questions_how_label">How Lorem Ipsum Si Dont Mas??</string>
+
+    <!--Fragment healthcare-->
+    <string name="fragment_healthcare_header_title">Healthcare</string>
+    <string name="fragment_healthcare_medical_card_title">eCard</string>
+    <string name="fragment_healthcare_medical_card_description">Browse your consultations sorted by healthcare institutions and download doctor reports.</string>
+    <string name="fragment_healthcare_e_file_title">eFile</string>
+    <string name="fragment_healthcare_e_file_description">Comprehensive medical overview of the patient. View your medical history.</string>
+    <string name="fragment_healthcare_prescribed_list_medicines_title">Prescribed Medicines List</string>
+    <string name="fragment_healthcare_prescribed_list_medicines_description">View e-Prescriptions (Therapies) prescribed by doctors. See all medication details.</string>
+    <string name="fragment_healthcare_e_sick_leave_title">eSick Leave</string>
+    <string name="fragment_healthcare_e_sick_leave_description">View all open and closed sick leaves with detailed patient reports.</string>
+    <string name="fragment_healthcare_scrinning_examinations_title">Screening Examinations</string>
+    <string name="fragment_healthcare_scrinning_examinations_descriptions">Schedule a screening exam, choose a healthcare institution, and fill out the screening questionnaire.</string>
+    <string name="fragment_healthcare_prevention_title">Prevention</string>
+    <string name="fragment_healthcare_prevention_description">Lorem Ipsum Text</string>
+    <string name="fragment_healthcare_schedule_exam_title">Аppointment scheduling</string>
+    <string name="fragment_healthcare_prevention_description_txt">To view the content of this page, a high level of authorization and authentication is required.</string>
+
+
+    <!--Fragment help and support bottom sheet-->
+    <string name="fragment_help_and_support_bottom_sheet_instructions_for_registration_btn">Registration Instructions</string>
+    <string name="fragment_help_and_support_bottom_sheet_frequently_asked_questions_btn">Frequently Asked Questions</string>
+    <string name="fragment_help_and_support_bottom_sheet_ask_questions_btn">Ask a Question</string>
+
+    <!--Fragment medicament info bottom sheet-->
+    <string name="fragment_medicament_info_bottom_sheet_header_title">Medication Information</string>
+    <string name="fragment_medicament_info_bottom_sheet_dosage_label">Dosage:</string>
+    <string name="fragment_medicament_info_bottom_sheet_drug_strength_label">Medication Strength:</string>
+    <string name="fragment_medicament_info_bottom_sheet_date_date_accept_label">Date of Receipt:</string>
+    <string name="fragment_medicament_info_bottom_sheet_status_label">Status:</string>
+    <string name="fragment_medicament_info_bottom_sheet_type_recept_label">Prescription Type:</string>
+    <string name="fragment_medicament_info_bottom_sheet_close_btn">Close</string>
+    <string name="fragment_medicament_info_bottom_sheet_etherapy">eTherapy</string>
+
+
+    <!--Fragment medicament with out recept-->
+    <string name="fragment_medicament_with_out_recept_header_title">Add Over-the-Counter Medication</string>
+
+    <!--Fragment medicament with recept-->
+    <string name="fragment_medicament_with_recept_header_title">Add Medication</string>
+    <string name="fragment_medicament_with_recept_title">Select Medication from ePrescription:</string>
+    <string name="fragment_medicament_with_recept_title_desc">If you have not, you can add the selected drug to the prescribed list of drugs.</string>
+    <string name="fragment_medicament_with_recept_notification">No data</string>
+
+    <!--Fragment period from to-->
+    <string name="fragment_period_from_to_header_title">Add Medication</string>
+    <string name="fragment_period_from_to_title">Add a medication reminder</string>
+    <string name="fragment_period_from_to_subtitle">Choose a date:</string>
+    <string name="fragment_period_from_to_period_from_label">Period From:</string>
+    <string name="fragment_period_from_to_period_to_label">Period To:</string>
+    <string name="fragment_period_from_to_choose_label">Choose</string>
+    <string name="fragment_period_from_to_medicament_label">Medication:</string>
+    <string name="fragment_period_from_to_title_bottom_sheet">Dosage</string>
+    <string name="fragment_period_from_to_subtitle_bottom_sheet">Drug dose</string>
+    <string name="fragment_period_from_to_date_error">An error occurred while selecting dates. Please check your inputs.</string>
+
+    <!--Fragment personal activity date details-->
+    <string name="fragment_personal_activity_date_details_header_title">Add Personal Activity</string>
+    <string name="fragment_personal_activity_date_details_title">Add Activity Time:</string>
+    <string name="fragment_personal_activity_date_details_add_time_activity_label">Add Activity Time</string>
+    <string name="fragment_personal_activity_date_details_add_repetition_interval_label">Add Activity Repetition Interval</string>
+    <string name="fragment_personal_activity_date_details_activity_name_label">Activity Name:</string>
+    <string name="fragment_personal_activity_date_details_period_from_label">Period From:</string>
+    <string name="fragment_personal_activity_date_details_period_to_label">Period To:</string>
+
+    <!--Fragment personal activity date interval-->
+    <string name="fragment_personal_activity_date_interval_header_title">Add Personal Activity</string>
+    <string name="fragment_personal_activity_date_interval_title">Add Activity Time:</string>
+    <string name="fragment_personal_activity_date_interval_add_repetition_interval_label">Enter Activity \nRepetition Interval (h):</string>
+    <string name="fragment_personal_activity_date_interval_time_from_label">Time From:</string>
+    <string name="fragment_personal_activity_date_interval_activity_name_label">Activity Name:</string>
+    <string name="fragment_personal_activity_date_interval_period_from_label">Period From:</string>
+    <string name="fragment_personal_activity_date_interval_period_to_label">Period To:</string>
+
+    <!--Fragment personal activity time-->
+    <string name="fragment_personal_activity_time_header_title">Add Personal Activity</string>
+    <string name="fragment_personal_activity_time_title">Add Activity Time:</string>
+    <string name="fragment_personal_activity_time_add_time_activity">Add Activity Time</string>
+    <string name="fragment_personal_activity_time_choose">Choose</string>
+    <string name="fragment_personal_activity_time_activity_name_label">Activity Name:</string>
+    <string name="fragment_personal_activity_time_perido_from_label">Period From:</string>
+    <string name="fragment_personal_activity_time_period_to">Period To:</string>
+
+    <!--Fragment phone number bottom sheet-->
+    <string name="fragment_phone_number_bottom_sheet_header_title">Phone Number</string>
+    <string name="fragment_phone_number_bottom_sheet_phone_number_et">Phone Number:</string>
+    <string name="fragment_phone_number_bottom_sheet_cancel_btn">Cancel</string>
+    <string name="fragment_phone_number_bottom_sheet_confirm_btn">Confirm</string>
+
+    <!--Fragment review entered data-->
+    <string name="fragment_review_entered_data_header_title">Schedule appointment with doctor</string>
+    <string name="fragment_review_entered_data_title">Review Entered Data</string>
+    <string name="fragment_review_entered_data_term_label">Term:</string>
+    <string name="fragment_review_entered_data_date_label">Date:</string>
+    <string name="fragment_review_entered_data_doctor_label">Doctor:</string>
+    <string name="fragment_review_entered_data_institution_label">Institution:</string>
+    <string name="fragment_review_entered_data_type_review_label">Exam Type:</string>
+    <string name="fragment_review_entered_data_schedule_appointment_btn">Schedule appointment with doctor</string>
+
+    <!--Fragment time taking medicament-->
+    <string name="fragment_time_taking_medicament_header_title">Add a medication reminder</string>
+    <string name="fragment_time_taking_medicament_title">Add Medication Time:</string>
+    <string name="fragment_time_taking_medicament_add_time_tacking_medicament_label">Add Medication Time</string>
+    <string name="fragment_time_taking_medicament_add_repeat_interval_tacking_medicament_label">Add Medication Repetition Interval</string>
+    <string name="fragment_time_taking_medicament_medicament_label">Medication:</string>
+    <string name="fragment_time_taking_medicament_dosage_label">Dosage:</string>
+    <string name="fragment_time_taking_medicament_period_from_label">Date From:</string>
+    <string name="fragment_time_taking_medicament_period_to_label">Date To:</string>
+
+    <!--Fragment title bottom sheet-->
+    <string name="fragment_title_bottom_sheet_header_title">Title</string>
+    <string name="fragment_title_bottom_sheet_title_et">Title</string>
+    <string name="fragment_title_bottom_sheet_cancel_btn">Cancel</string>
+    <string name="fragment_title_bottom_sheet_confirm_btn">Confirm</string>
+
+    <!--Adapter Screening Examination-->
+    <string name="adapter_screening_examination_screening_invitation">Screening Examination Invitation</string>
+    <string name="adapter_screening_examination_examination_report">Screening Examination Report</string>
+    <string name="adapter_screening_examination_see_questionnaire">See Questionnaire</string>
+    <string name="adapter_screening_examination_see_invitation">See Invitation</string>
+    <string name="adapter_screening_examination_see_report">See Report</string>
+    <string name="adapter_screening_examination_choose">Choose</string>
+
+    <!--Fragment bottom sheet show pdf video-->
+    <string name="fragment_bottom_sheet_show_pdf_video_download_pdf_label">Dostor\'s report</string>
+    <string name="fragment_bottom_sheet_show_pdf_video_download_pdf_title">Doctors Report Review</string>
+    <string name="fragment_bottom_sheet_show_pdf_video_show_video_label">See Video</string>
+    <string name="fragment_bottom_sheet_show_pdf_video_x_ray_diagnostics">xRay diagnostics</string>
+    <string name="fragment_bottom_sheet_show_pdf_review_doctors_report">Review of doctor\'s report</string>
+
+    <!--Adapter Report disable for work-->
+    <string name="adapter_report_disability_for_work_remittance_title">Report on temporary work incapacity</string>
+
+    <!--Adapter eSick leave-->
+    <string name="adapter_e_sick_leave_remittance_title">Certificate of temporary work incapacity</string>
+
+    <!--Fragment recipe details  -->
+    <string name="fragment_recipe_details_characteristics_medicamente">Characteristics of the medicamente</string>
+    <string name="fragment_recipe_details_instruction_manual">Instruction manual</string>
+    <string name="fragment_recipe_details_manual_instruction">Instructions for use</string>
+
+    <!--Fragment prevention-->
+    <string name="fragment_prevention_select_institution">Select</string>
+    <string name="fragment_prevention_select_category">Select</string>
+    <string name="fragment_prevention_select_topic">Select</string>
+
+    <!--NotificationTypeEnum  -->
+    <string name="class_notification_type_enum_vaccination">Vaccination</string>
+    <string name="class_notification_type_enum_medications">Medications</string>
+    <string name="class_notification_type_enum_medical_data_denial">Denial of medical data</string>
+    <string name="class_notification_type_enum_lifestyle">Lifestyle</string>
+    <string name="class_notification_type_enum_social_media_message">Social media message</string>
+    <string name="class_notification_type_enum_social_media_comment">Social media comment</string>
+    <string name="class_notification_type_enum_inbox_message">Inbox message</string>
+    <string name="class_notification_type_enum_contact_request">Contact request</string>
+    <string name="class_notification_type_enum_new_content_medical_atlas">New content in medical atlas</string>
+    <string name="class_notification_type_enum_new_topic">New topic</string>
+    <string name="class_notification_type_enum_missed_medication">Missed medication</string>
+    <string name="class_notification_type_enum_lifestyle_note">Lifestyle note</string>
+    <string name="class_notification_type_enum_medical_data_access">Medical data access</string>
+    <string name="class_notification_type_enum_missed_vaccination">Missed vaccination</string>
+    <string name="class_notification_type_enum_exam">Examination</string>
+    <string name="class_notification_type_enum_consultations">Consultations</string>
+    <string name="class_notification_type_enum_scheduled_video_call">Scheduled video call</string>
+
+    <!--    MedicalCartonSortDialog-->
+    <string name="dialog_medical_carton_sort_ascending">Sort - ascending</string>
+    <string name="dialog_medical_carton_sort_descending">Sort - descending</string>
+
+    <!--    AccessMedicalCartonFragment-->
+    <string name="fragment_access_medical_carton_title">Access to the central eCard by a doctor from a health institution</string>
+
+    <!--    ActiveClosedSicLeaveBottomSheetFragment-->
+    <string name="fragment_active_closed_sickleave_bottomsheet_title">Filter</string>
+    <string name="fragment_active_closed_sickleave_bottomsheet_active_sickleave">Active sick leave</string>
+    <string name="fragment_active_closed_sickleave_bottomsheet_closed_sickleave">Closed sick leave</string>
+    <string name="fragment_active_closed_sickleave_bottomsheet_close_btn">Close</string>
+    <string name="fragment_active_closed_sickleave_bottomsheet_save_btn">Close</string>
+
+    <!--    AddPermissionBottomFragment-->
+    <string name="fragment_add_permisssion_botttom_title">Info</string>
+    <string name="fragment_add_permisssion_botttom_subtitle">Your data will be saved.\nDo you want to continue?</string>
+    <string name="fragment_add_permisssion_botttom_cancel">Cancel</string>
+    <string name="fragment_add_permisssion_botttom_continue">Continue</string>
+
+    <!--    AddPermissionFragment-->
+    <string name="fragment_add_permissions_save_btn">Save</string>
+    <string name="fragment_add_permissions_title">Add permissions</string>
+    <string name="fragment_add_permissions_choose_contact">Choose contact</string>
+    <string name="fragment_add_permissions_choose_btn">Choose</string>
+    <string name="fragment_add_permissions_add_btn">Add</string>
+    <string name="fragment_add_permissions_ehr">EHR</string>
+    <string name="fragment_add_permissions_medicamente">Medications</string>
+    <string name="fragment_add_permissions_medical_card">Medical record</string>
+    <string name="fragment_add_permissions_access_profile">Access profile</string>
+    <string name="fragment_add_permissions_parameters_life_style">Lifestyle parameters</string>
+    <string name="fragment_add_permissions_note">Note</string>
+    <string name="fragment_add_permissions_to">To:</string>
+    <string name="fragment_add_permissions_from">From:</string>
+
+    <!--    AddReminderFragment-->
+    <string name="fragment_add_reminder_title">Medication consumption</string>
+    <string name="fragment_add_reminder_medicamente_name">Medication consumption:</string>
+    <string name="fragment_add_reminder_dosage">Dosage:</string>
+    <string name="fragment_add_reminder_info_dosage">Dosage information:</string>
+    <string name="fragment_add_reminder_insert_value">Enter value:</string>
+    <string name="fragment_add_reminder_period_from">Date from:</string>
+    <string name="fragment_add_reminder_period_to">Date to:</string>
+    <string name="fragment_add_reminder_insert_date">Enter date:</string>
+    <string name="fragment_add_reminder_insert_term">Enter time:</string>
+    <string name="fragment_add_reminder_term_consumption">Enter time:</string>
+    <string name="fragment_add_reminder_every_hours">Every X hours:</string>
+    <string name="fragment_add_reminder_subtitle">Time of intake</string>
+    <string name="fragment_add_reminder_hours">Hours</string>
+    <string name="add_reminder_fragment_option_disabled">Option is disabled</string>
+    <string name="add_reminder_fragment_end_date_greater_than_start_date">End date must be equal to or later than the start date</string>
+    <string name="add_reminder_fragment_enter_date">Enter date</string>
+    <string name="add_reminder_fragment_data_saved_successfully">Data saved successfully</string>
+    <string name="add_reminder_fragment_data_save_failed">Failed to save data</string>
+    <string name="add_reminder_fragment_enter_value">Enter value</string>
+    <string name="add_reminder_fragment_error_saving_data">Error saving data:</string>
+
+    <!--    AmnesticInfoBottomSheetFragment-->
+    <string name="fragment_amnestic_info_bottomsheet_title">Info</string>
+    <string name="fragment_amnestic_info_bottomsheet_content">Are you sure you want\n to save the data?</string>
+    <string name="fragment_amnestic_info_bottomsheet_cancel_btn">Cancel</string>
+    <string name="fragment_amnestic_info_bottomsheet_save_btn">Save</string>
+
+    <!--    AmnesticQuestionnaireFragment-->
+    <string name="fragment_amnestic_questionnaire_title">Amnestic Data Questionnaire</string>
+    <string name="fragment_amnestic_questionnaire_save">Save</string>
+    <string name="fragment_amnestic_questionnaire_general_info">General Information</string>
+    <string name="fragment_amnestic_questionnaire_first_menstruation">First Menstruation:</string>
+    <string name="fragment_amnestic_questionnaire_enter_value">Enter value</string>
+    <string name="fragment_amnestic_questionnaire_menstrual_cycle">Menstrual Cycle:</string>
+    <string name="fragment_amnestic_questionnaire_choose">Choose</string>
+    <string name="fragment_amnestic_questionnaire_reason_cessation">Reason for Menstruation Cessation:</string>
+    <string name="fragment_amnestic_questionnaire_years_last_menstruation">Year of Last Menstruation:</string>
+    <string name="fragment_amnestic_questionnaire_first_pregnancy">First Pregnancy (Age in Years):</string>
+    <string name="fragment_amnestic_questionnaire_num_pregnancies">Number of Pregnancies</string>
+    <string name="fragment_amnestic_questionnaire_first_child">At what age did you have your first child?</string>
+    <string name="fragment_amnestic_questionnaire_first_child_value">Enter value</string>
+    <string name="fragment_amnestic_questionnaire_smoker">Smoker</string>
+    <string name="fragment_amnestic_questionnaire_years_smoking">How many years have you been smoking?</string>
+    <string name="fragment_amnestic_questionnaire_years_smoking_value">Enter value</string>
+    <string name="fragment_amnestic_questionnaire_blood_relatives_breast">Did any of your blood relatives have diagnosed breast disease? How many?</string>
+    <string name="fragment_amnestic_questionnaire_mother_breast">Mother</string>
+    <string name="fragment_amnestic_questionnaire_sisters_breast">Sisters</string>
+    <string name="fragment_amnestic_questionnaire_daughter_breast">Daughter</string>
+    <string name="fragment_amnestic_questionnaire_grandma_breast">Grandmother</string>
+    <string name="fragment_amnestic_questionnaire_aunt_breast">Aunt</string>
+    <string name="fragment_amnestic_questionnaire_rbBloodRelativesOvaries">Did any of your blood relatives have diagnosed ovarian cancer?</string>
+    <string name="fragment_amnestic_questionnaire_mtvMatherOvaries">Mother</string>
+    <string name="fragment_amnestic_questionnaire_mtvMatherOvariesValue">Choose</string>
+    <string name="fragment_amnestic_questionnaire_mtvSistersOvaries">Sisters</string>
+    <string name="fragment_amnestic_questionnaire_mtvSistersValueOvaries">Choose</string>
+    <string name="fragment_amnestic_questionnaire_mtvDaughterOvaries">Daughter</string>
+    <string name="fragment_amnestic_questionnaire_mtvDaughterOvariesValue">Choose</string>
+    <string name="fragment_amnestic_questionnaire_mtvGrandmaOvaries">Grandmother</string>
+    <string name="fragment_amnestic_questionnaire_mtvAuntOvaries">Aunt</string>
+    <string name="fragment_amnestic_questionnaire_mtvGrandmaOvariesValue">Choose</string>
+    <string name="fragment_amnestic_questionnaire_rbChormonalContraception">Hormonal Contraception</string>
+    <string name="fragment_amnestic_questionnaire_mtvYears">How many years</string>
+    <string name="fragment_amnestic_questionnaire_mtvYearsValue">Enter value</string>
+    <string name="fragment_amnestic_questionnaire_rbEstrogens">Use of Estrogens or Hormonal Therapies in Menopause or Osteoporosis Prevention</string>
+    <string name="fragment_amnestic_questionnaire_mtvHormoneTherapy">Start Year of Hormone Therapy</string>
+    <string name="fragment_amnestic_questionnaire_mtvYearsHormoneTherapy">Total Number of Years of Hormone Therapy Use</string>
+    <string name="fragment_amnestic_questionnaire_rbHormoneTherapyNow">Are you currently using Hormone Therapy?</string>
+    <string name="fragment_amnestic_questionnaire_rbDiagnosedMalignant">Have you previously been diagnosed with a malignant disease?</string>
+    <string name="fragment_amnestic_questionnaire_mtvTotalMammography">How many mammograms have you had in the last 5 years?</string>
+    <string name="fragment_amnestic_questionnaire_clDateLastMammography">Date of Last Mammogram</string>
+    <string name="fragment_amnestic_questionnaire_mtvDoctorsReport">Report</string>
+    <string name="fragment_amnestic_questionnaire_rbBreastSelfControl">Breast Self-Examination</string>
+    <string name="fragment_amnestic_questionnaire_rbBreastProblem">Do you have a problem with your breasts?</string>
+    <string name="fragment_amnestic_questionnaire_mtvPein">Pain</string>
+    <string name="fragment_amnestic_questionnaire_mtvPeinValue">Choose</string>
+    <string name="fragment_amnestic_questionnaire_mtvKnot">Lump</string>
+    <string name="fragment_amnestic_questionnaire_mtvKnotValue">Choose</string>
+    <string name="fragment_amnestic_questionnaire_mtvDischarges">Discharge</string>
+    <string name="fragment_amnestic_questionnaire_mtvTheRest">Other</string>
+    <string name="fragment_amnestic_questionnaire_rbBreastIntervention">Have you had any breast interventions?</string>
+    <string name="fragment_amnestic_questionnaire_mtvTracer">Puncture</string>
+    <string name="fragment_amnestic_questionnaire_mtvTracerValue">Choose</string>
+    <string name="fragment_amnestic_questionnaire_mtvOperation">Operation</string>
+    <string name="fragment_amnestic_questionnaire_mtvBiopsy">Biopsy</string>
+    <string name="fragment_amnestic_questionnaire_mtvImplants">Implants</string>
+    <string name="fragment_amnestic_questionnaire_mtvPreviousBreastBiopsy">Previous Breast Biopsy Results</string>
+    <string name="fragment_amnestic_questionnaire_mtvPreviousBreastBiopsyValue">Enter Data</string>
+    <string name="fragment_amnestic_questionnaire_rbBloodRelatives">Have any blood relatives been diagnosed with breast disease?</string>
+    <string name="fragment_amnestic_questionnaire_mtvMather">Mother</string>
+    <string name="fragment_amnestic_questionnaire_mtvMatherValue">Select</string>
+    <string name="fragment_amnestic_questionnaire_mtvSisters">Sisters</string>
+    <string name="fragment_amnestic_questionnaire_mtvSistersValue">Select</string>
+    <string name="fragment_amnestic_questionnaire_mtvDaughter">Daughter</string>
+    <string name="fragment_amnestic_questionnaire_mtvDaughterValue">Select</string>
+    <string name="fragment_amnestic_questionnaire_mtvGrandma">Grandmother</string>
+    <string name="fragment_amnestic_questionnaire_mtvGrandmaValue">Select</string>
+    <string name="fragment_amnestic_questionnaire_mtvAunt">Aunt</string>
+    <string name="fragment_amnestic_questionnaire_mtvAuntValue">Select</string>
+
+    <!--    BottomSheetActionsFragment-->
+    <string name="fragment_bottomsheet_actions_header">Actions</string>
+    <string name="fragment_bottomsheet_actions_like">Like</string>
+    <string name="fragment_bottomsheet_actions_follow_group">Follow group</string>
+    <string name="fragment_bottomsheet_actions_copy_link">Copy link</string>
+
+    <!--    BottomSheetCalendarFragment-->
+    <string name="fragment_bottomsheet_calendar_header">Available Dates</string>
+
+    <!--    BottomSheetInsertValue-->
+    <string name="bottomsheet_insert_value_insert_value">Enter Value</string>
+    <string name="bottomsheet_insert_value_cancel_btn">Cancel</string>
+    <string name="bottomsheet_insert_value_confirm_btn">Confirm</string>
+
+    <!--    BottomSheetLegendFragment-->
+    <string name="fragment_bottomsheet_legend_header">Legend</string>
+    <string name="fragment_bottomsheet_legend_info">Info:</string>
+    <string name="fragment_bottomsheet_legend_tag_color">Tag/Color</string>
+    <string name="fragment_bottomsheet_legend_close_btn">Close</string>
+    <string name="fragment_bottomsheet_legend_info1">Medication manually entered by the patient on the portal</string>
+    <string name="fragment_bottomsheet_legend_info2">ePrescription, therapy available in the future</string>
+    <string name="fragment_bottomsheet_legend_info3">ePrescription, canceled</string>
+    <string name="fragment_bottomsheet_legend_info4">ePrescription, medication available for pickup at the pharmacy</string>
+    <string name="fragment_bottomsheet_legend_info5">ePrescription, medication picked up at the pharmacy</string>
+    <string name="fragment_bottomsheet_legend_info6">ePrescription, deadline for implementation has expired</string>
+
+    <!--    BreastBottomSheetFragment-->
+    <string name="fragment_breast_bottomsheet_header">Breasts</string>
+    <string name="fragment_breast_bottomsheet_rbleft">Left</string>
+    <string name="fragment_breast_bottomsheet_rbright">Right</string>
+
+    <!--    ChangeProfileBottomSheetFragment-->
+    <string name="fragment_change_profile_bottomsheet_header">Profile Change</string>
+    <string name="fragment_change_profile_bottomsheet_content">Are you sure\nyou want to change your profile?</string>
+    <string name="fragment_change_profile_bottomsheet_cancel_btn">Cancel</string>
+    <string name="fragment_change_profile_bottomsheet_continue_btn">Continue</string>
+
+    <!--    ChatInCallFragment-->
+    <string name="fragment_chat_in_call_header">Back to Call</string>
+
+    <!--    CommonsThemesFragment-->
+    <string name="fragment_commons_themes_header">Prevention</string>
+    <string name="fragment_commons_themes_title">Common Themes</string>
+    <string name="fragment_commons_themes_subtitle">Select Group and Theme:</string>
+
+    <!--    DoctorsAppointmentFragment-->
+    <string name="fragment_doctors_appointment_title">Doctor\'s Appointment</string>
+    <string name="fragment_doctors_appointment_name_doctor">Doctor\'s Name</string>
+    <string name="fragment_doctors_appointment_institution">Institution</string>
+    <string name="fragment_doctors_appointment_time">Time</string>
+
+    <string name="fragment_doctors_appointment_type">Type of examination</string>
+    <string name="fragment_doctors_appointment_value">Scheduled examination</string>
+
+    <string name="fragment_doctors_appointment_type2">Examination type</string>
+    <string name="fragment_doctors_appointment_value2">Outpatient examination</string>
+
+    <!--    DoctorsReportBottomSheetFragment-->
+    <string name="fragment_doctors_report_bottomsheet_header">Report</string>
+    <string name="fragment_doctors_report_bottomsheet_doctors_name">Report</string>
+
+    <!--    DownloadPdfFileFragment-->
+    <string name="fragment_download_pdf_file_download_btn">Save</string>
+    <string name="fragment_download_pdf_file_downloaded_successfully">Pdf downloaded successfully</string>
+    <string name="fragment_download_pdf_file_error_while_downloading">Еrror while downloading</string>
+    <string name="fragment_download_pdf_file_error_open_doc">The document cannot be opened!</string>
+
+    <!--    ESickLeaveFragment-->
+    <string name="fragment_esick_leave_header">Healthcare</string>
+    <string name="fragment_esick_leave_title">eSick Leave</string>
+
+    <!--    EnterValueBottomSheetFragment-->
+    <string name="fragment_enter_value_bottomsheet_header">Enter values</string>
+    <string name="fragment_enter_value_bottomsheet_cancel_btn">Cancel</string>
+    <string name="fragment_enter_value_bottomsheet_save_btn">Save</string>
+    <string name="fragment_enter_value_bottomsheet_title">Enter the participant\'s email address</string>
+    <string name="fragment_enter_value_bottomsheet_mbclose">Close</string>
+    <string name="fragment_enter_value_bottomsheet_mbadd">Add</string>
+
+    <!--    InfoBottomSheetFragment-->
+    <string name="fragment_info_bottomsheet_header">Info</string>
+    <string name="fragment_info_bottomsheet_title">Available therapy</string>
+    <string name="fragment_info_bottomsheet_content">You can collect your therapy at the pharmacy from 03.10.2024. The pickup deadline for antibiotics is 3 days. The pickup deadline for other medications is 15 days from the prescription date for the first month of therapy, and for all subsequent months (2-6 months), the pickup window is 7 days before and 7 days after the prescription date.</string>
+    <string name="fragment_info_bottomsheet_close_btn">Close</string>
+
+    <!--    InstitutionCategoryTopicFragment-->
+    <string name="fragment_institution_category_topic_choose_btn">Select</string>
+    <string name="fragment_institution_category_topic_title">Institutions</string>
+    <string name="fragment_institution_category_topic_search">Search</string>
+
+    <!--    InstitutionsFragment-->
+    <string name="fragment_institutions_search">Search</string>
+    <string name="fragment_institutions_title">Institutions</string>
+    <string name="fragment_institutions_num_institution_relathionship">Number of connected and available institutions:</string>
+    <string name="fragment_institutions_new_institutions">Newly added institutions in the last 24 hours:</string>
+
+    <!--    InstitutionsArrayFragment-->
+    <string name="fragment_institutions_array_save_btn">Save</string>
+    <string name="fragment_institutions_array_search">Search</string>
+    <string name="fragment_institutions_array_title">Institutions</string>
+    <string name="fragment_institutions_array_all_institutions">All institutions</string>
+
+    <!--    LimitationsFragment-->
+    <string name="fragment_limitations_title">Prescription details</string>
+    <string name="fragment_limitations_desription_diagnoses">Diagnosis description:</string>
+    <string name="fragment_limitations_participation">Participation:</string>
+    <string name="fragment_limitations_years_from">Years from:</string>
+    <string name="fragment_limitations_years_to">Years to:</string>
+    <string name="fragment_limitations_max_quantity">Maximum quantity:</string>
+
+    <!--    MKB10Fragment-->
+    <string name="fragment_mkb10_header">Prevention</string>
+    <string name="fragment_mkb10_search">Search</string>
+    <string name="fragment_mkb10_title">International Classification of Diseases (ICD-10) 10th revision</string>
+
+    <!--    MammographyScreeningFragment-->
+    <string name="fragment_mamografia_screening_appointments_btn">Schedule</string>
+    <string name="fragment_mamografia_screening_title">Screening registration</string>
+    <string name="fragment_mamografia_screening_name">Name:</string>
+    <string name="fragment_mamografia_screening_type">Type:</string>
+    <string name="fragment_mamografia_screening_rgm">RGM:</string>
+    <string name="fragment_mamografia_screening_location">Location:</string>
+    <string name="fragment_mamografia_screening_date">Date:</string>
+    <string name="fragment_mamografia_screening_free_terms">Available slots (h):</string>
+    <string name="fragment_mamografia_screening_choose">Select</string>
+    <string name="fragment_mamografia_screening_add">Add</string>
+
+    <!--    MedicalCartonFragment-->
+    <string name="fragment_medical_carton_header">Healthcare</string>
+    <string name="fragment_medical_carton_title">eCard</string>
+
+    <!--    MedicalCartonOptionsFragment-->
+    <string name="fragment_medical_carton_options_institutions">Institutions</string>
+    <string name="fragment_medical_carton_options_access_to_medical_records">Doctor\'s access to eRecord</string>
+
+    <!--    MedicamentDetailsFragment-->
+    <string name="fragment_medicament_details_title">limitations</string>
+    <string name="fragment_medicament_details_name">Name:</string>
+    <string name="fragment_medicament_details_package">Package:</string>
+    <string name="fragment_medicament_details_maker">Manufacturer:</string>
+    <string name="fragment_medicament_details_primary_package">Primary package:</string>
+    <string name="fragment_medicament_details_dosage">Dosage:</string>
+
+    <!--    MedicamentDetailsInfoFragment-->
+    <string name="fagment_medicament_details_info_title">Medicament Details</string>
+    <string name="fagment_medicament_details_info_protected_name">Protected Name:</string>
+    <string name="fagment_medicament_details_info_inn">INN</string>
+    <string name="fagment_medicament_details_info_maker">Manufacturer</string>
+    <string name="fagment_medicament_details_info_date_ecpiried">Expiration Date of Decision</string>
+    <string name="fagment_medicament_details_info_licence_holder">License Holder</string>
+    <string name="fagment_medicament_details_info_atc">ATC:</string>
+    <string name="fagment_medicament_details_info_jkl">JKL:</string>
+    <string name="fagment_medicament_details_info_type_medicamente">Type of Medicine:</string>
+    <string name="fagment_medicament_details_info_relase_mode">Release Mode:</string>
+    <string name="fagment_medicament_details_info_list_name">List Name:</string>
+    <string name="fagment_medicament_details_info_price_medicine">Price of Medicine:</string>
+    <string name="fagment_medicament_details_info_restricition">Restrictions</string>
+    <string name="fagment_medicament_details_info_diagnosis_description">Diagnosis Description:</string>
+    <string name="fagment_medicament_details_info_participation">Participation:</string>
+    <string name="fagment_medicament_details_info_age_from">Age From:</string>
+    <string name="fagment_medicament_details_info_age_to">Age To:</string>
+    <string name="fagment_medicament_details_info_max_quantity">Maximum Quantity:</string>
+
+    <!--    MedicamentsFragment-->
+    <string name="fragment_medicaments_header">Prevention</string>
+    <string name="fragment_medicaments_title">Medicaments</string>
+
+    <!--    MenstrualCycleBottomSheetFragment-->
+    <string name="fragment_menstrual_cycle_bottomsheet_header">Menstrual Cycle</string>
+    <string name="fragment_menstrual_cycle_bottomsheet_rbregular">Regular</string>
+    <string name="fragment_menstrual_cycle_bottomsheet_rbiregular">Irregular</string>
+    <string name="fragment_menstrual_cycle_bottomsheet_none">None</string>
+
+    <!--    NotificationFragment-->
+    <string name="fragment_notification_header">Back</string>
+    <string name="fragment_notification_mtvtitle">Notifications</string>
+
+    <!--    PrescribedListBottomSheetFilterFragment-->
+    <string name="fragment_prescribed_list_bottomsheet_filter_title">Select Status:</string>
+    <string name="fragment_prescribed_list_bottomsheet_filter_manual_input">Manual Input:</string>
+    <string name="fragment_prescribed_list_bottomsheet_filter_request_rejected">Request Rejected</string>
+    <string name="fragment_prescribed_list_bottomsheet_filter_dead_line">Expired Deadline for Realization</string>
+    <string name="fragment_prescribed_list_bottomsheet_filter_canceled">Request canceled</string>
+    <string name="fragment_prescribed_list_bottomsheet_filter_realized">Request realized</string>
+    <string name="fragment_prescribed_list_bottomsheet_filter_request_approved">Request Approved</string>
+    <string name="fragment_prescribed_list_bottomsheet_filter_show_all">Show All</string>
+    <string name="fragment_prescribed_list_bottomsheet_filter_subtitle">Recipe Type:</string>
+    <string name="fragment_prescribed_list_bottomsheet_filter_e_therapy">eTherapy</string>
+    <string name="fragment_prescribed_list_bottomsheet_filter_e_recipe">ePrescription</string>
+    <string name="fragment_prescribed_list_bottomsheet_filter_e_aids">eAids</string>
+    <string name="fragment_prescribed_list_bottomsheet_filter_no_prescription">No prescription</string>
+    <string name="fragment_prescribed_list_bottomsheet_filter_show_all_type_recipe">Show All</string>
+
+    <!--    PrescribedListMedicamentsFragment-->
+    <string name="fragment_prescribed_list_medicaments_header">Healthcare</string>
+    <string name="fragment_prescribed_list_medicaments_title">Prescribed Medicament List</string>
+    <string name="fragment_prescribed_list_medicaments_header_adapter">Prescribed list</string>
+
+    <!--    PrescribedListMedicamentsAdapter-->
+    <string name="fragment_prescribed_list_medicaments_manual_entry">Manual entry</string>
+    <string name="fragment_prescribed_list_medicaments_requests_canceled">Requests canceled</string>
+    <string name="fragment_prescribed_list_medicaments_request_approved">Request approved</string>
+    <string name="fragment_prescribed_list_medicaments_request_completed">Request completed</string>
+    <string name="fragment_prescribed_list_medicaments_expired">Expiration date exceeded</string>
+    <string name="fragment_prescribed_list_medicaments_prescription_type_e_therapy">eTherapy</string>
+    <string name="fragment_prescribed_list_medicaments_prescription_type_e_prescription">ePrescription</string>
+    <string name="fragment_prescribed_list_medicaments_prescription_type_no_prescription">No prescription</string>
+    <string name="fragment_prescribed_list_medicaments_prescription_type_unknown">Unknown type</string>
+    <string name="fragment_prescribed_list_medicaments_prescription_status_unknown">Unknown status</string>
+
+    <!--    PrescribedMedicamentOptionsFragment-->
+    <string name="fragment_prescribed_medicament_options_details_recipe">Recipe Details</string>
+    <string name="fragment_prescribed_medicament_options_medicamente_details">Medicament Details</string>
+    <string name="fragment_prescribed_medicament_options_limitations">Limitations</string>
+    <string name="fragment_prescribed_medicament_options_add_reminder">Add Reminder</string>
+
+    <!--    PreventionFragment-->
+    <string name="fragment_prevention_header">Healthcare</string>
+    <string name="fragment_prevention_title">Prevention</string>
+    <string name="fragment_prevention_chommon_themes">Common Themes</string>
+    <string name="fragment_prevention_questions_answers">Questions and Answers</string>
+    <string name="fragment_prevention_recomendations">Recommendations</string>
+    <string name="fragment_prevention_medicments">Medicaments</string>
+    <string name="fragment_prevention_mkb10">ICD-10</string>
+    <string name="fragment_prevention_interactions">Interactions</string>
+
+
+    <!--    PreventionInfoFragment-->
+    <string name="fragment_prevention_info_header">Prevention</string>
+    <string name="fragment_prevention_info_title">Additional Diagnostic Procedures in Organized Breast Cancer Screening</string>
+
+    <!--    PreventionInfoDetailsFragment-->
+    <string name="fragment_prevention_info_details_header">Prevention</string>
+
+    <!--    QuestionsAnswersFragment-->
+    <string name="fragment_questions_answers_header">Prevention</string>
+    <string name="fragment_questions_answers_title">Questions and Answers</string>
+    <string name="fragment_questions_answers_choose_institution">Select an institution:</string>
+    <string name="fragment_questions_answers_choose_category">Select a category:</string>
+    <string name="fragment_questions_answers_choose_topic">Select a topic:</string>
+    <string name="fragment_questions_answers_choose_btn">Select</string>
+
+    <!--    QuestionsDetailsFragment-->
+    <string name="fragment_questions_details_header">Prevention</string>
+    <string name="fragment_questions_details_title">Question Details</string>
+    <string name="fragment_questions_details_choose_institution">Select an institution:</string>
+    <string name="fragment_questions_details_institution_description">Center for Accommodation and Day Care for Children and Youth with Developmental Disabilities Zemun</string>
+    <string name="fragment_questions_details_category">Category:</string>
+    <string name="fragment_questions_details_category_description">Lorem Ipsum Si donet mas</string>
+    <string name="fragment_questions_details_question">Question:</string>
+    <string name="fragment_questions_details_question_description">xxccvxcvxcvxcvcvxcvxcvxcvxcvxc</string>
+    <string name="fragment_questions_details_answer">Answer:</string>
+    <string name="fragment_questions_details_answer_description">dxaxaxaxaxaxaxaxaxxaxaxaxax</string>
+
+    <!--    RecipeDeatilsFragment-->
+    <string name="fragment_recipe_deatils_title">Medicamente Details</string>
+    <string name="fragment_recipe_deatils_protected_name">Protected name:</string>
+    <string name="fragment_recipe_deatils_inn">INN:</string>
+    <string name="fragment_recipe_deatils_maker">Manufacturer:</string>
+    <string name="fragment_recipe_deatils_validity_date_decision">Decision Validity Date:</string>
+    <string name="fragment_recipe_deatils_licence_holder">License Holder:</string>
+    <string name="fragment_recipe_deatils_atc">ATC:</string>
+    <string name="fragment_recipe_deatils_jkl">JKL:</string>
+    <string name="fragment_recipe_deatils_type_medicamente">Type of Medication:</string>
+    <string name="fragment_recipe_deatils_regime_dispensing">Dispensing Regime:</string>
+    <string name="fragment_recipe_deatils_list_name">List Name:</string>
+    <string name="fragment_recipe_deatils_price_medicamente">Medication Price:</string>
+    <string name="fragment_recipe_deatils_characteristics_medicamente">Medication Characteristics</string>
+    <string name="fragment_recipe_deatils_instruction_manual">Instruction Manual</string>
+    <string name="fragment_recipe_deatils_regime_dispensing_r">The medicine can only be dispensed with a doctor\'s prescription</string>
+    <string name="fragment_recipe_deatils_regime_dispensing_br">Over the counter</string>
+
+    <!--    RecommendationsFragment-->
+    <string name="fragment_recommendations_header">Prevention</string>
+    <string name="fragment_recommendations_title">Recommendations</string>
+    <string name="fragment_recommendations_choose_year">Select a year:</string>
+    <string name="fragment_recommendations_open">Open</string>
+
+    <!--    ReportDisabilityForWorkFragment-->
+    <string name="fragment_report_disability_for_work_header">Healthcare</string>
+    <string name="fragment_report_disability_for_work_title">Work Disability Report</string>
+
+    <!--    ScreeningExaminationBottomSheetFragment-->
+    <string name="fragment_screening_examination_bottomsheet_header">Screening Examination</string>
+    <string name="fragment_screening_examination_bottomsheet_content">You must fill in all fields to schedule a screening\nexamination.</string>
+    <string name="fragment_screening_examination_bottomsheet_cancel_btn">Cancel</string>
+    <string name="fragment_screening_examination_bottomsheet_continue_btn">Continue</string>
+
+    <!--    ScreeningExaminationsFragment-->
+    <string name="fragment_screening_examinations_header">Healthcare</string>
+    <string name="fragment_screening_examinations_title">Screening Examinations</string>
+
+    <!--    ScreeningExaminationsLocationBottomSheetFragment-->
+    <string name="fragment_screening_examinations_location_bottomsheet_header">Select a Location</string>
+    <string name="fragment_screening_examinations_location_bottomsheet_institutionOne">Clinical Center Voždovac</string>
+    <string name="fragment_screening_examinations_location_bottomsheet_institution_two">Health Center Karaburma</string>
+    <string name="fragment_screening_examinations_location_bottomsheet_institution_three">Clinical Center Zvezdara</string>
+
+    <!--    SelectValueBottomSheetFragment-->
+    <string name="fragment_select_value_bottomsheet_3_or_more">3 or more</string>
+    <string name="fragment_select_value_bottomsheet_dont_now">I don\'t know</string>
+    <string name="fragment_select_value_bottomsheet_header">Select value</string>
+
+    <!--    StopMenstruationBottomSheetFragment-->
+    <string name="fragment_stop_menstruation_bottomsheet_header">Reason for menstruation cessation</string>
+    <string name="fragment_stop_menstruation_bottomsheet_natural">Natural</string>
+    <string name="fragment_stop_menstruation_bottomsheet_other">Other</string>
+    <string name="fragment_stop_menstruation_bottomsheet_surgical_intervention">Surgical intervention</string>
+
+    <!--    item_access_doctor_medical_carton-->
+    <string name="item_access_doctor_medical_carton_reg_num_institution">Institution registration number:</string>
+    <string name="item_access_doctor_medical_carton_institution_name">Institution name:</string>
+    <string name="item_access_doctor_medical_carton_doctor">Doctor:</string>
+    <string name="item_access_doctor_medical_carton_date">Date:</string>
+    <string name="item_access_doctor_medical_carton_time">Time:</string>
+
+    <!--    item_e_sick_leave-->
+    <string name="item_e_sick_leave_status">Sick leave status:</string>
+    <string name="item_e_sick_leave_start_date">Start date:</string>
+    <string name="item_e_sick_leave_end_date">End date:</string>
+    <string name="item_e_sick_leave_number_of_days">Number of days:</string>
+    <string name="item_e_sick_leave_reason">Reason for sick leave:</string>
+    <string name="item_e_sick_leave_diagnosis_and_description">Diagnosis code and description:</string>
+    <string name="item_e_sick_leave_temporary_work_incapacity_certificate">Certificate of temporary\nwork incapacity:</string>
+    <string name="item_e_sick_leave_temporary_work_incapacity_report">Decision of the \nmedical commission:</string>
+    <string name="item_e_sick_leave_open">Open</string>
+    <string name="item_e_sick_leave_documents">Documents for the employer:</string>
+
+    <!--    item_institution-->
+    <string name="item_institution_num_relationship_available_institutions">Number of related and available institutions:</string>
+
+    <!--    item_institution_arr-->
+    <string name="item_institution_arr_empty_data">No data</string>
+
+    <!--    item_medicine_carton-->
+    <string name="item_medicine_carton_title">Pediatrics for school children</string>
+    <string name="item_medicine_carton_date">Date:</string>
+    <string name="item_medicine_carton_time">Time:</string>
+    <string name="item_medicine_carton_organizational_unit">Organizational unit:</string>
+    <string name="item_medicine_carton_doctor">Doctor:</string>
+    <string name="item_medicine_carton_type_referrale">Referral type:</string>
+
+    <!--    item_prescribed_list_medicament-->
+    <string name="item_prescribed_list_medicament_strength_medicamente">Medication strength:</string>
+    <string name="item_prescribed_list_medicament_dosage">Dosage:</string>
+    <string name="item_prescribed_list_medicament_quantity">Quantity:</string>
+    <string name="item_prescribed_list_medicament_expiry_date">Expiration date:</string>
+    <string name="item_prescribed_list_medicament_status">Status:</string>
+    <string name="item_prescribed_list_medicament_type_recipe">Prescription type:</string>
+
+    <!--    item_profile_user-->
+    <string name="item_profile_user_shared_profile">Shared profile</string>
+
+    <!--    item_recommendation-->
+    <string name="item_recommendation_recommendation">Recommendation</string>
+    <string name="item_recommendation_recommendation_description">Based on your step count, you should…</string>
+
+    <!--    item_report_disability_work-->
+    <string name="item_report_disability_work_start_date">Date OLK</string>
+    <string name="item_report_disability_work_end_date">Number OLK:</string>
+    <string name="item_report_disability_work_remittance">Remittance:</string>
+    <string name="item_report_disability_work_open">Open</string>
+
+    <!--    item_screening_examinations-->
+    <string name="item_screening_examinations_title">National preventive program\nfor early breast cancer detection</string>
+    <string name="item_screening_examinations_date">Date:</string>
+    <string name="item_screening_examinations_time">Time:</string>
+    <string name="item_screening_examinations_location">Location:</string>
+    <string name="item_screening_examinations_status">Status:</string>
+    <string name="item_screening_examinations_amnesty_questionnare">Anamnesis questionnaire</string>
+    <string name="item_screening_examinations_invitation">Invitation:</string>
+    <string name="item_screening_examinations_report">Report:</string>
+    <string name="item_screening_examinations_action">Action:</string>
+    <string name="item_screening_examinations_see_questionnaire">View questionnaire</string>
+    <string name="item_screening_examinations_see_invitation">View invitation</string>
+    <string name="item_screening_examinations_see_report">View report</string>
+    <string name="item_screening_examinations_choose_action">Select</string>
+
+    <!--    item_social_group_arr-->
+    <string name="item_social_group_arr_content">Additional diagnostic procedures in organized breast cancer screening</string>
+
+    <!--    layout_under_construction-->
+    <string name="layout_under_construction_description">Page under construction</string>
+
+    <!--    WayOfLifeFragment-->
+    <string name="fragment_way_of_life_header">Lifestyle</string>
+    <string name="fragment_way_of_life_title">Parameters</string>
+    <string name="fragment_way_of_life_height">Height</string>
+    <string name="fragment_way_of_life_weight">Weight</string>
+    <string name="fragment_way_of_life_blood_group">Blood type</string>
+    <string name="fragment_way_of_life_body_mass">Body Mass Index</string>
+    <string name="fragment_way_of_life_subtitle">Tracking parameters</string>
+    <string name="fragment_way_of_life_body_temperature">Body temperature</string>
+    <string name="fragment_way_of_life_blood_pressure">Blood pressure</string>
+    <string name="fragment_way_of_life_blood_glucose">Blood glucose</string>
+    <string name="fragment_way_of_life_oxygen_saturation">Oxygen saturation</string>
+    <string name="fragment_way_of_life_sleep_analysis">Sleep analysis</string>
+    <string name="fragment_way_of_life_body_fat">Body fat</string>
+    <string name="fragment_way_of_life_step_counting">Step count</string>
+    <string name="fragment_way_of_life_weight_value">Weight</string>
+    <string name="fragment_way_of_life_body_mass_value">Body Mass Index (BMI)</string>
+    <string name="fragment_way_of_life_height_value">Height</string>
+    <string name="fragment_way_of_life_chest_circumference">Chest circumference</string>
+    <string name="fragment_way_of_life_waist_circumference">Waist circumference</string>
+
+    <!--    CalendarActivityAdapter-->
+    <string name="calendar_activity_adapter_doctors_appointment">Doctor\'s appointment</string>
+    <string name="calendar_activity_adapter_consumption_medicamente">Medication consumption</string>
+    <string name="calendar_activity_adapter_available_therapy_pharmacy">Available therapy in pharmacy</string>
+    <string name="calendar_activity_adapter_realized_e_recipe">Realized ePrescription</string>
+    <string name="calendar_activity_adapter_personal_activity">Personal activity</string>
+    <string name="calendar_activity_adapter_appointment_screening_examination">Screening examination appointment</string>
+    <string name="calendar_activity_adapter_completed_doctor_visit">Completed doctor visit</string>
+    <string name="calendar_activity_adapter_scheduled_call">Scheduled call</string>
+    <string name="calendar_activity_adapter_all_day">All day</string>
+
+    <!--    ChatInboxAdapter-->
+    <string name="chat_inbox_adapter_send_request">Request sent</string>
+    <string name="chat_inbox_adapter_request_in_progress">Request in progress</string>
+    <string name="chat_inbox_adapter_new_contact">New contact</string>
+    <string name="chat_inbox_adapter_yesterday">Yesterday</string>
+    <string name="chat_inbox_delete_contact">Contact deleted</string>
+
+
+    <!--    ESickLeaveAdapter-->
+    <string name="esick_leave_adapter_url_toast">URL is not available</string>
+    <string name="esick_leave_adapter_certificate_temporary_incapacity_for_work">Certificate of temporary incapacity for work</string>
+
+    <!--    InstitutionsAdapter-->
+    <string name="institutions_adapter_msg_one">The institution has not recorded any entries.</string>
+    <string name="institutions_adapter_msg_two">You have successfully refreshed data from the institution.</string>
+
+    <!--    ReportDisabilityForWorkAdapter-->
+    <string name="report_disability_for_work_adapter_id_toast">ID is not available.</string>
+    <string name="report_disability_for_work_adapter_report_temporary_incapacity_for_work">Report on temporary incapacity for work.</string>
+    <string name="report_disability_for_work_adapter_pdf_open">Opening PDF:</string>
+    <string name="report_disability_for_work_adapter_download_rejected">Download failed:</string>
+    <string name="report_disability_for_work_adapter_unknown_error">Unknown error</string>
+    <string name="report_disability_for_work_adapter_error_save_pdf">Error saving PDF:</string>
+
+    <!--    ActivityAdapter-->
+    <string name="activity_adapter_drug_consumption">Drug consumption</string>
+    <string name="activity_adapter_doctors_appointment">Doctor appointment</string>
+    <string name="activity_adapter_available_therapy_pharmacy">Available therapy in the pharmacy</string>
+    <string name="activity_adapter_realized_e_recipe">Realized ePrescription</string>
+    <string name="activity_adapter_personal_activity">Personal activity</string>
+    <string name="activity_adapter_appointment_screening_examination">Screening examination appointment</string>
+    <string name="activity_adapter_completed_doctor_visit">Completed doctor visit</string>
+    <string name="activity_adapter_all_day">All day</string>
+
+    <!--    NotificationAdapter-->
+    <string name="notification_adapter_data_available">No data available</string>
+    <string name="notification_adapter_msg_read">Message marked as read</string>
+    <string name="notification_adapter_available_therapy_pharmacy">Available therapy in the pharmacy</string>
+    <string name="notification_adapter_available_questions_therapy">Have you picked up your therapy from the pharmacy?</string>
+    <string name="notification_adapter_available_therapy">Therapy:</string>
+    <string name="notification_adapter_personal_activity">Personal activity</string>
+    <string name="notification_adapter_available_questions_personal_activity">Have you completed your personalized activity?</string>
+    <string name="notification_adapter_appointment_completed">Completed appointment</string>
+    <string name="notification_adapter_questions_appointment_completed">Have you completed the appointment?</string>
+    <string name="notification_adapter_doctor_exam">Doctor\'s examination</string>
+    <string name="notification_adapter_sender_type_no_event">No tracking event</string>
+    <string name="notification_adapter_sender_type_eRecept">ePrescription system</string>
+    <string name="notification_adapter_sender_type_eKarton">eHealth record system</string>
+    <string name="notification_adapter_sender_type_eDosije">eFile system</string>
+    <string name="notification_adapter_sender_type_eHealth">eHealth system</string>
+    <string name="notification_adapter_sender_type_all">all</string>
+    <string name="notification_adapter_sender_type_unknown">Unknown type</string>
+
+    <!--    SharedProfileAdapter-->
+    <string name="shared_profile_adapter_who_can_see_data">My permissions</string>
+    <string name="shared_profile_adapter_who_can_see_my_data">Permissions given</string>
+
+    <!--    AmbulantExaminationFragment-->
+    <string name="fragment_ambulant_examination_toast_no_available_appointments">No available appointments for the selected doctor</string>
+    <string name="fragment_ambulant_examination_toast_no_available_appointments_for_date">No available appointments for the selected doctor for the date:</string>
+    <string name="fragment_ambulant_examination_toast_invalid_appointment_times">Invalid appointment time</string>
+
+    <!--    BottomSheetDialogConfirmFragment-->
+    <string name="fragment_bottomsheet_dialog_confirm_toast_select_date">Please select a date</string>
+
+    <!--    CalendarAppointmentExaminationFragment-->
+    <string name="fragment_calendar_appointment_eaxamination_patient_not_found_rfzo">Patient not found in RFZO database</string>
+
+    <!--    CalendarAppointmentScheduleFragment-->
+    <string name="fragment_calendar_appointment_schedule_appointment_type_ambulatory">Ambulatory examination</string>
+    <string name="fragment_calendar_appointment_schedule_appointment_type_telemedicine_audio">Telemedicine - audio call</string>
+    <string name="fragment_calendar_appointment_schedule_appointment_type_telemedicine_video">Telemedicine - video call</string>
+    <string name="fragment_calendar_appointment_schedule_choose_date">Choose date:</string>
+    <string name="fragment_calendar_appointment_schedule_unknown_name">Unknown name</string>
+    <string name="fragment_calendar_appointment_schedule_unknown_institution">Unknown institution</string>
+    <string name="fragment_calendar_appointment_schedule_unknown_type">Unknown type</string>
+    <string name="fragment_calendar_appointment_schedule_unauthorized_request">Unauthorized request</string>
+    <string name="fragment_calendar_appointment_schedule_no_available_appointments">No available appointments for the selected doctor</string>
+
+    <!--    ChatAddContactFragment-->
+    <string name="fragment_chat_add_contact_no_contacts_found">No contacts found with the given criteria!</string>
+    <string name="fragment_chat_add_contact_user_add_error">Friend request has already been sent.</string>
+
+    <!--    ChatMessagesGroupCreated-->
+    <string name="fragment_chat_messages_group_created_participant">Participant</string>
+
+    <!--    ScheduleCallFragment-->
+    <string name="fragment_schedule_call_start_time">Call start</string>
+    <string name="fragment_schedule_call_end_time">Call end</string>
+
+    <!--    PinChatBottomSheetFragment-->
+    <string name="fragment_pin_chat_bottom_sheet_pin_cannot_be_empty">PIN cannot be empty</string>
+    <string name="fragment_pin_chat_bottom_sheet_wrong_pin_try_again">Wrong PIN code, try again</string>
+
+    <!--    AudioVideoCallFragment-->
+    <string name="fragment_audio_video_call_send_message">Send message</string>
+    <string name="fragment_audio_video_call_send">Send</string>
+    <string name="fragment_audio_video_call_cancel">Cancel</string>
+    <string name="fragment_audio_video_call_connected">Connected</string>
+    <string name="fragment_audio_video_call_connecting">Connecting</string>
+    <string name="fragment_audio_video_call_data_received">Data received</string>
+
+    <!--    ChatInCallFragment-->
+    <string name="fragment_chat_in_call_message_cannot_be_empty">Message cannot be empty</string>
+
+    <!--    ActiveClosedSicLeaveBottomSheetFragment-->
+    <string name="fragment_active_closed_sic_leave_bottom_sheet_active">Active</string>
+    <string name="fragment_active_closed_sic_leave_bottom_sheet_closed">Closed</string>
+    <string name="fragment_active_closed_sic_leave_bottom_sheet_filtered">Filtered</string>
+    <string name="fragment_active_closed_sic_leave_bottom_sheet_records">records</string>
+
+    <!--    ESickLeaveFragment-->
+    <string name="fragment_e_sick_leave_filtered_from">Filtered from</string>
+    <string name="fragment_e_sick_leave_error_selecting_date">Error selecting date</string>
+    <string name="fragment_e_sick_leave_error_processing_date">Error processing date</string>
+
+    <!--    OpenPdfFileUri2Fragment-->
+    <string name="fragment_open_pdf_file_uri2_error_downloading_pdf">Error downloading PDF</string>
+    <string name="fragment_open_pdf_file_uri2_pdf_content_not_available">PDF content not available for download</string>
+    <string name="fragment_open_pdf_file_uri2_pdf_saved_in_downloads">PDF saved in Downloads folder as</string>
+    <string name="fragment_open_pdf_file_uri2_invalid_pdf_file">File is not a valid</string>
+    <string name="fragment_open_pdf_file_uri2_error_displaying_pdf">Error displaying PDF</string>
+    <string name="fragment_open_pdf_file_uri2_error_saving_pdf">Error saving PDF</string>
+
+    <!--    OpenPdfFileUriFragment-->
+    <string name="fragment_open_pdf_file_uri_error_loading_pdf">PDF file not loaded</string>
+    <string name="fragment_open_pdf_file_uri_pdf_file_not_found">Error: PDF file not found</string>
+    <string name="fragment_open_pdf_file_uri_error_displaying_pdf">Error displaying PDF</string>
+    <string name="fragment_open_pdf_file_uri_pdf_saved_in_downloads">PDF saved in Downloads folder as</string>
+    <string name="fragment_open_pdf_file_uri_error_saving_pdf">Error saving PDF</string>
+
+    <!--    BottomSheetShowPdfVideoFragment-->
+    <string name="fragment_bottom_sheet_show_pdf_video_error_opening_pdf">Error opening PDF</string>
+
+    <!--    BottomSheetDosageFragment-->
+    <string name="bottom_sheet_dosage_fragment_successful_value_entered">Successfully entered value</string>
+
+    <!--    RecipeDetailsFragment-->
+    <string name="recipe_details_fragment_file_is_empty">File is empty</string>
+
+    <!--    PrescribedListBottomSheetFilterFragment-->
+    <string name="prescribed_list_bottom_sheet_filter_fragment_status">Status</string>
+    <string name="prescribed_list_bottom_sheet_filter_fragment_recipe_type">Recipe type</string>
+
+    <!--    BottomSheetActionsFragment-->
+    <string name="bottom_sheet_actions_fragment_message_marked_as_liked">Message successfully marked as "Liked"</string>
+    <string name="bottom_sheet_actions_fragment_message_removed_from_likes">Message removed from "Likes"</string>
+    <string name="bottom_sheet_actions_fragment_confirm_follow_group">Are you sure you want to follow this group?</string>
+    <string name="bottom_sheet_actions_fragment_confirm_unfollow_group">Are you sure you want to unfollow this group?</string>
+    <string name="bottom_sheet_actions_fragment_confirmation">Confirmation</string>
+    <string name="bottom_sheet_actions_fragment_user_followed_group">User has followed the group</string>
+    <string name="bottom_sheet_actions_fragment_user_unfollowed_group">User has successfully unfollowed the group</string>
+    <string name="bottom_sheet_actions_fragment_yes">Yes</string>
+    <string name="bottom_sheet_actions_fragment_no">No</string>
+    <string name="bottom_sheet_actions_fragment_likes">likes</string>
+    <string name="bottom_sheet_actions_fragment_like">Like</string>
+    <string name="bottom_sheet_actions_fragment_followers">Followers</string>
+    <string name="bottom_sheet_actions_fragment_follow_group">Follow group</string>
+
+    <!--    InstitutionCategoryTopicFragment-->
+    <string name="fragment_institution_category_topic_category">Category</string>
+    <string name="fragment_institution_category_topic_topic">Topic</string>
+
+    <!--    RecommendationsFragment-->
+    <string name="fragment_recommendations_no_data_for_this_year">No data for this year</string>
+    <string name="fragment_recommendations_selected_year">Selected year</string>
+
+    <!--    AmnesticInfoBottomSheetFragment-->
+    <string name="fragment_amnestic_info_bottom_sheet_data_saved_successfully">Data saved successfully</string>
+
+    <!--    DoctorsReportBottomSheetFragment-->
+    <string name="fragment_doctors_report_bottom_sheet_enter_data">Enter data</string>
+
+    <!--    EnterValueBottomSheetFragment-->
+    <string name="fragment_enter_value_bottom_sheet_select">Select</string>
+
+    <!--    ScreeningExaminationBottomSheetFragment-->
+    <string name="fragment_screening_examination_bottom_sheet_scheduled_screening_examination">Scheduled screening examination</string>
+
+    <!--    ScreeningProgramFragment-->
+    <string name="fragment_screening_program_national_preventive_breast_cancer_detection_program">National preventive breast cancer early detection program</string>
+    <string name="fragment_screening_program_national_preventive_cervical_cancer_detection_program">National preventive cervical cancer early detection program</string>
+    <string name="fragment_screening_program_mamo">MAMO</string>
+    <string name="fragment_screening_program_rgm">RGM</string>
+
+    <!--    DownloadPdfFileFragment-->
+    <string name="fragment_download_pdf_file_pdf_cached_successfully">PDF successfully cached and displayed!</string>
+    <string name="fragment_download_pdf_file_cache_open_error">Error caching and opening PDF</string>
+    <string name="fragment_download_pdf_file_display_error">Error displaying PDF</string>
+    <string name="fragment_download_pdf_file_success_download">PDF successfully downloaded to the Downloads folder</string>
+    <string name="fragment_download_pdf_file_error_download">Error downloading PDF</string>
+    <string name="fragment_download_pdf_file_error_start_download">Error starting download</string>
+
+    <!--    HealthcareFragment-->
+    <string name="healthcare_fragment_no_prescriptions_found">No prescriptions found</string>
+    <string name="healthcare_fragment_no_data_found">No eSick Leave data found</string>
+
+    <!--    HealthcareViewModel-->
+    <string name="healthcare_view_model_error">Error in HealthcareViewModel</string>
+
+    <!--    AvaliableTherapyInPharmacyActivity-->
+    <string name="activity_available_therapy_in_pharmacy_message">You can pick up your therapy in the next 5 days</string>
+    <string name="activity_available_therapy_all_day">All day</string>
+
+    <!--    DrugConsumptionActivity-->
+    <string name="activity_drug_consumption_activity_completed">Activity marked as completed</string>
+    <string name="activity_drug_consumption_invalid_date_format">Please enter a valid date in the format: YYYY-MM-DD HH:mm.</string>
+    <string name="activity_drug_consumption_invalid_time">Please enter valid times.</string>
+    <string name="activity_drug_consumption_enter_consumption_time">Please enter consumption time.</string>
+    <string name="activity_drug_consumption_enter_consumption_content_bottom_sheet">Subsequent reminders for the consumption of the given medicine will be deleted, and then new ones will be created based on the defined details.</string>
+    <string name="activity_drug_consumption_enter_consumption_header_bottom_sheet">Edit all in the series</string>
+
+    <!--    PersonalDataActivity-->
+    <string name="activity_personal_data_activity_completed">Activity marked as completed</string>
+    <string name="tivity_personal_data_invalid_time">Please enter valid times.</string>
+
+    <!--    RealisedTherapyInPharmacyActivity-->
+    <string name="activity_realised_therapy_in_pharmacy_erecept">ePrescription</string>
+
+    <!--    ActivitiesFragment-->
+    <string name="fragment_activity_next_scheduled">Next scheduled</string>
+    <string name="fragment_activity_calendar_in_progress">Calendar in progress</string>
+
+    <!--    HomeFragment-->
+    <string name="fragment_home_display_unrealized_event_in_progress">Displaying unrealized event in progress</string>
+    <string name="fragment_home_personal_activity">Personal activity</string>
+    <string name="fragment_home_personal_activity_question">Have you completed the personalized activity?</string>
+
+    <!--    ChooseCategoryQuestBottomSheetFragment-->
+    <string name="fragment_choose_category_quest_bottom_sheet_gdpr">GDPR</string>
+    <string name="fragment_choose_category_quest_bottom_sheet_helpdesk">Helpdesk</string>
+    <string name="fragment_choose_category_quest_bottom_sheet_registration">Registration</string>
+
+    <!--    EmailAskQuestBottomSheetFragment-->
+    <string name="fragment_email_ask_quest_bottom_sheet_successful_email_entry">Email address successfully entered</string>
+
+    <!--    ParametersFragment-->
+    <string name="fragment_parameters_your_field_of_expertise">Your field of expertise</string>
+    <string name="fragment_parameters_your_blood_type">Your blood type</string>
+    <string name="fragment_parameters_your_chest_circumference">Your chest circumference</string>
+    <string name="fragment_parameters_your_height">Your height</string>
+    <string name="fragment_parameters_your_weight">Your weight</string>
+
+    <!--    LoginEmailPasswordFragment-->
+    <string name="fragment_login_email_password_username_empty">UserName cannot be empty</string>
+    <string name="fragment_login_email_password_password_empty">Password cannot be empty</string>
+    <string name="fragment_login_email_password_invalid_credentials">Incorrect username or password</string>
+
+    <!--    PinBottomSheetFragment-->
+    <string name="fragment_pin_bottom_sheet_empty_pin">PIN cannot be empty.</string>
+    <string name="fragment_pin_bottom_sheet_incorrect_pin">Incorrect PIN, please try again.</string>
+
+    <!--    NotificationFilterFragment-->
+    <string name="fragment_notification_filter_data_saved_successfully">Data successfully saved</string>
+    <string name="fragment_notification_filter_select">Select</string>
+
+    <!--    NotificationFragment-->
+    <string name="fragment_notification_all_marked_as_read">All notifications marked as read.</string>
+    <string name="fragment_notification_data_for_period">Data for the period</string>
+    <string name="fragment_notification_to">to</string>
+    <string name="fragment_notification_loaded">Loaded</string>
+    <string name="fragment_notification_records">records</string>
+
+    <!--    NotificationSettingsFragment-->
+    <string name="fragment_notification_settings_data_saved_successfully">Data successfully saved</string>
+
+    <!--    NotificationViewModel-->
+    <string name="notification_view_model_error">Error in NotificationViewModel</string>
+
+    <!--    OnBoardingActivity-->
+    <string name="onboarding_welcome_message">Welcome</string>
+    <string name="onboarding_parameters">Parameters</string>
+    <string name="onboarding_healthcare">Healthcare</string>
+    <string name="onboarding_network">Network</string>
+    <string name="onboarding_profile_sharing">Profile sharing</string>
+    <string name="onboarding_notifications">Notifications</string>
+    <string name="onboarding_ezdravlje_description">eZdravlje is your unique application that offers you fast and secure access to all health data in the Republic of Serbia.</string>
+    <string name="onboarding_biometric_data_sync">Enjoy the simple synchronization of biometric data with your devices, so that your data is always up-to-date.</string>
+    <string name="onboarding_stay_up_to_date">View prescriptions and therapies, access the electronic medical record, information on sick leave and schedule appointments with your chosen doctor - all in one place!</string>
+    <string name="onboarding_contact_doctors_and_access_dependents_data">Connect with doctors and other users via audio, video and chat communication, and always stay up to date.</string>
+    <string name="onboarding_sharing_profile_desc">Share and access the data of other users of the application, building a community of trust and information exchange.</string>
+    <string name="onboarding_notifications_desc">Regardless of whether you visit a doctor, use therapy or enjoy events on the platform, our system of reminders and notifications will always inform you about the next step in a timely manner.</string>
+    <string name="onboarding_version_info">V 2.0\nEmail: helpdesk@e-zdravlje.gov.rs</string>
+
+    <!--    AddPermissionsFragment-->
+    <string name="fragment_add_permissions_data_permission">Data permission:</string>
+    <string name="fragment_add_permissions_select_option">Select</string>
+    <string name="fragment_add_permissions_no_contact_person_selected">No contact person selected.</string>
+    <string name="fragment_add_permissions_set_dates_in_profile_access">Please set the dates in Profile Access.</string>
+    <string name="fragment_add_permissions_set_dates_in_ehr">Please set the dates in EHR.</string>
+    <string name="fragment_add_permissions_edit">Edit</string>
+    <string name="fragment_add_permissions_add_date">Add date</string>
+
+    <!--    BottomSheetPasswordSettings-->
+    <string name="fragment_bottom_sheet_password_settings_data_saved_successfully">Data successfully saved!</string>
+    <string name="fragment_bottom_sheet_password_settings_passwords_do_not_match">Passwords do not match!</string>
+
+    <!--    ProfileAccessKeyFragment-->
+    <string name="fragment_profile_access_key_copied">Copied</string>
+
+    <!--    CalendarFragment-->
+    <string name="fragment_calendar_display_unrealized_event_in_progress">Displaying unrealized event in progress</string>
+
+    <!--    BottomSheetFilterFragment-->
+    <string name="fragment_bottom_sheet_filter_must_select_something">You have not selected any options.</string>
+
+    <!--    ScheduledCallInfoFragment-->
+    <string name="fragment_scheduled_call_info_creator_call">No creator</string>
+
+    <!--    Schedule call participant fragment-->
+    <string name="fragment_schedule_call_participant_add_btn">Add</string>
+    <string name="fragment_schedule_call_participant_added_participants">Added participants:</string>
+
+    <!--    NoDataFragment-->
+    <string name="fragment_no_data_title">There is no data \on the selected page.</string>
+
+    <!--    MedicalCartonDateFragment-->
+    <string name="fragment_medical_carton_date_title">Select a search period</string>
+    <string name="fragment_medical_carton_date_search_btn">Search</string>
+    <string name="fragment_medical_carton_date_clear_search_btn">Cancel search</string>
+    <string name="fragment_medical_carton_date_error_processing_date">Error processing date</string>
+    <string name="fragment_medical_carton_date_dates_toast">Dates</string>
+    <string name="fragment_medical_carton_date_toast_msg">not set correctly, try again</string>
+
+    <!--    Calendar day item-->
+    <string name="calendar_day_item_available_therapy">Available therapy</string>
+    <string name="calendar_day_item_drug_consumption">Drug consumption</string>
+    <string name="calendar_day_item_doctors_appointment">Soctor\'s appointment</string>
+    <string name="calendar_day_item_personal_activity">Personal activity</string>
+    <string name="calendar_day_item_scheduled_meeting">Scheduled meeting</string>
+
+    <!--    ScheduledAppointmentsFragment-->
+    <string name="fragment_scheduled_appointments_toast_delete_msg">Term successfully deleted.</string>
+
+    <!--    AppointmentSchedulingFragment-->
+    <string name="fragment_appointments_scheduling_tab_scheduled_appointments">Scheduled appointments</string>
+    <string name="fragment_appointments_scheduling_tab_appointment_history">Appointment history</string>
+
+    <!--    ESickDocumentsFragment-->
+    <string name="fragment_e_sick_documents_title">eSick - Documents</string>
+    <string name="fragment_e_sick_documents_employee">Employee</string>
+    <string name="fragment_e_sick_documents_employes">Employees</string>
+    <string name="fragment_e_sick_document">Documents</string>
+    <string name="fragment_e_sick_documents_select_employer_label">Select employer</string>
+    <string name="fragment_e_sick_documents_certificate_label">Certificate of temporary incapacity for work</string>
+    <string name="fragment_e_sick_documents_confirmation_label">Confirmation</string>
+    <string name="fragment_e_sick_documents_report_label">Report of temporary incapacity for work</string>
+    <string name="fragment_e_sick_documents_no_data_label">There are no data - reports \non temporary inability to work</string>
+
+    <!--    MedicamentDetailsFragment-->
+    <string name="fragment_medicament_details_title_lbl">Prescription Details</string>
+    <string name="fragment_medicament_details_medicine_lbl">Name:</string>
+    <string name="fragment_medicament_details_package_lbl">Package:</string>
+    <string name="fragment_medicament_details_manufacturer_lbl">Manufacturer:</string>
+    <string name="fragment_medicament_details_primary_package_lbl">Primary Package:</string>
+    <string name="fragment_medicament_details_dosage_lbl">Dosage:</string>
+    <string name="fragment_medicament_details_quantity_lbl">Quantity:</string>
+    <string name="fragment_medicament_details_status_lbl">Status:</string>
+    <string name="fragment_medicament_details_diagnosis_lbl">Diagnosis:</string>
+    <string name="fragment_medicament_details_jkl_lbl">JKL:</string>
+    <string name="fragment_medicament_details_prescription_type_lbl">Prescription Type:</string>
+    <string name="fragment_medicament_details_date_prescribed_lbl">Date Prescribed:</string>
+    <string name="fragment_medicament_details_date_due_lbl">Date Due:</string>
+    <string name="fragment_medicament_details_prescribed_by_lbl">Prescribed By:</string>
+
+
+    <!--    AppointmentSchedulingFragment-->
+    <string name="fragment_appointment_scheduling_title">Appointment scheduling</string>
+    <string name="fragment_appointment_schedulimg_an_appointments">Appointment Scheduling</string>
+    <string name="fragment_appointment_description">To schedule an appointment, a high level of authorization and authentication is required.Log in via eid.gov.rs using two-factor authorization (Consent ID), or enter your PIN code.</string>
+
+    <!--    GroupParticipantsFragment-->
+    <string name="fragment_group_participants_title">Participant of group</string>
+
+    <!--    ProfileSinkFragment-->
+    <string name="fragment_sink_profile_synchronization_started">Synchronization has been started. Please check the status again in a few minutes.</string>
+    <string name="fragment_sink_profile_last_2_hours">In the last 2 hours</string>
+    <string name="fragment_sink_profile_last_24_hours">In the last 24 hours</string>
+    <string name="fragment_sink_profile_more_than_24_hours">More than 24 hours</string>
+
+    <!--    PrescribedListLimitationsAdapter-->
+    <string name="adapter_list_limitations_header_title">Diagnosis description</string>
+    <string name="adapter_list_limitations_participation">Participation (%):</string>
+    <string name="adapter_list_limitations_year_from">Year from:</string>
+    <string name="adapter_list_limitations_year_to">Year to:</string>
+    <string name="adapter_list_limitations_max_quantity">Maximum quantity:</string>
+
+    <!--    SyncStatusAdapter-->
+    <string name="adapter_sync_status_header_title">Status</string>
+    <string name="adapter_sync_status_external_system">External system:</string>
+    <string name="adapter_sync_status_synhronization">Synhronized:</string>
+    <string name="adapter_sync_status_date_synhronization">Synchronization date:</string>
+    <string name="adapter_sync_status_time_synhronization">Synchronization time:</string>
+    <string name="adapter_sync_status_erecipe_data">eRecipe data</string>
+    <string name="adapter_sync_status_ecard_data">еCard data</string>
+    <string name="adapter_sync_status_ereferral_data">eReferral data</string>
+    <string name="adapter_sync_status_life_style">Life style</string>
+    <string name="adapter_sync_status_underinsured_persons">Data on underinsured persons</string>
+
+    <!--    AddMedicmentPrescribedListFragment-->
+    <string name="fragment_add_medicamente_prescibed_list_title">Add Medicine</string>
+    <string name="fragment_add_medicamente_prescibed_list_medicine_name">Medicine Name:</string>
+    <string name="fragment_add_medicamente_prescibed_list_input">Enter:</string>
+    <string name="fragment_add_medicamente_prescibed_list_dosage">Dosage:</string>
+    <string name="fragment_add_medicamente_prescibed_list_quantity">Quantity:</string>
+    <string name="fragment_add_medicamente_prescibed_list_diagnosis">Diagnosis:</string>
+    <string name="fragment_add_medicamente_prescibed_list_issuing_doctor">Prescribed by:</string>
+    <string name="fragment_add_medicamente_prescibed_list_realized_pharmacy">Dispensed at pharmacy:</string>
+    <string name="fragment_add_medicamente_prescibed_list_pharmacist">Pharmacist:</string>
+    <string name="fragment_add_medicamente_prescibed_list_create_date">Date of prescription:</string>
+    <string name="fragment_add_medicamente_prescibed_list_arrival_date">Date of pickup:</string>
+    <string name="fragment_add_medicamente_prescibed_list_time_of_intake">Time of intake</string>
+    <string name="fragment_add_medicamente_prescibed_list_enter_dosage">Enter dosage</string>
+    <string name="fragment_add_medicamente_prescibed_list_enter_quantity">Enter quantity</string>
+    <string name="fragment_add_medicamente_prescibed_list_enter_diagnosis">Enter diagnosis</string>
+    <string name="fragment_add_medicamente_prescibed_list_prescribed_by_doctor">Prescribed by doctor</string>
+    <string name="fragment_add_medicamente_prescibed_list_dispensed_pharmacy">Dispensed at pharmacy</string>
+    <string name="fragment_add_medicamente_prescibed_list_date_prescribed">Date prescribed</string>
+    <string name="fragment_add_medicamente_prescibed_list_edit_medicine">Edit medicine</string>
+
+    <!--    InteractionsDescriptionFragment-->
+    <string name="fragment_interactions_description_header">Drug Interaction</string>
+    <string name="fragment_interactions_description_level_interaction">Interaction level:</string>
+    <string name="fragment_interactions_description_no_interaction">No interactions</string>
+    <string name="fragment_interactions_description_moderate_interaction">Moderate interaction</string>
+    <string name="fragment_interactions_description_severe_interaction">Severe interaction</string>
+    <string name="fragment_interactions_description_types_interactions">Types interactions</string>
+
+    <!--    BottomSheetLikesInteractionsFragment-->
+    <string name="fragment_bottom_sheet_likes_interactions_like">Like</string>
+    <string name="fragment_bottom_sheet_likes_interactions_unlike">Dislike</string>
+    <string name="fragment_bottom_sheet_likes_interactions_edit">Edit</string>
+    <string name="fragment_bottom_sheet_likes_interactions_copy">Copy</string>
+    <string name="fragment_bottom_sheet_likes_interactions_title">Interactions</string>
+    <string name="fragment_bottom_sheet_likes_interactions_copy_txt_msg">Text copied.</string>
+
+    <!--    InteractionFragment-->
+    <string name="fragment_interaction_title">Drug Interaction</string>
+    <string name="fragment_interaction_header_title">Prevention</string>
+    <string name="fragment_interaction_tab_first">Drug Interaction</string>
+    <string name="fragment_interaction_tab_second">Previous Checks</string>
+
+    <!--    InteractionsCheckFragment -->
+    <string name="fragment_interacrions_check_title">Interaction Check</string>
+    <string name="fragment_interacrions_check_header_title">Drug Interaction</string>
+    <string name="fragment_interacrions_check_btn_check">Check Interaction</string>
+    <string name="fragment_interacrions_check_btn_clear">Clear List</string>
+
+    <!--    MedicamenteInteractionFragment-->
+    <string name="fragment_medicamente_interactions_search_description">Enter at least 3 characters as a search criterion. Use the filter to select the search category (Drug and INN, Drug, INN)</string>
+    <string name="fragment_medicamente_interactions_search_hint">Drug i INN</string>
+
+    <!--    BottomSheetFilterInteractionsFragment-->
+    <string name="fragment_bottom_sheet_filter_interactions_drug">Drug</string>
+    <string name="fragment_bottom_sheet_filter_interactions_inn">INN</string>
+
+
+
+</resources>

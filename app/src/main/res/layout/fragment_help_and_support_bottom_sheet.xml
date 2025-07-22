@@ -1,0 +1,70 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white_bg"
+    tools:context="com.example.zdravlje.ui.login.info.HelpAndSupportBottomSheetFragment">
+
+    <ImageView
+        android:id="@+id/ivLine"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_line"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/mbRegInstr"
+        style="@style/whiteButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="53dp"
+        android:text="@string/fragment_help_and_support_bottom_sheet_instructions_for_registration_btn"
+        app:icon="@drawable/ic_reg_instruction"
+        app:iconPadding="15dp"
+        app:iconTint="@color/base_blue_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivLine"
+        app:strokeColor="@color/base_blue_color"
+        app:strokeWidth="1dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/mbFreqAskQuest"
+        style="@style/whiteButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/fragment_help_and_support_bottom_sheet_frequently_asked_questions_btn"
+        app:icon="@drawable/ic_msg_question"
+        app:iconPadding="15dp"
+        app:iconTint="@color/base_blue_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mbRegInstr"
+        app:strokeColor="@color/base_blue_color"
+        app:strokeWidth="1dp" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/mbAskQuest"
+        style="@style/whiteButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/fragment_help_and_support_bottom_sheet_ask_questions_btn"
+        app:icon="@drawable/ic_ask_quest"
+        app:iconPadding="15dp"
+        app:iconTint="@color/base_blue_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mbFreqAskQuest"
+        app:strokeColor="@color/base_blue_color"
+        app:strokeWidth="1dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

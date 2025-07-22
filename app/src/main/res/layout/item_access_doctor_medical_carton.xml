@@ -1,0 +1,162 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/bg_white_radius_10">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/mcvContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        app:cardCornerRadius="10dp"
+        app:strokeWidth="0dp"
+        app:strokeColor="@android:color/transparent"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clContentItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mtvRegNumInstitutionItem"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_regular_400"
+                android:text="@string/item_access_doctor_medical_carton_reg_num_institution"
+                android:textColor="@color/black"
+                android:textSize="@dimen/size_14sp"
+                app:layout_constraintEnd_toStartOf="@+id/mtvRegNumInstitutionItemValue"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mtvRegNumInstitutionItemValue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_medium_500"
+                android:text="8888"
+                android:textAlignment="viewEnd"
+                android:textColor="@color/text_color_8A8A8D"
+                android:textSize="@dimen/size_14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/mtvRegNumInstitutionItem"
+                app:layout_constraintTop_toTopOf="@id/mtvRegNumInstitutionItem" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mtvInstitutionNameItem"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/roboto_regular_400"
+                android:text="@string/item_access_doctor_medical_carton_institution_name"
+                android:textColor="@color/black"
+                android:textSize="@dimen/size_14sp"
+                app:layout_constraintEnd_toStartOf="@+id/mtvTimeItemValue"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/mtvRegNumInstitutionItem" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mtvInstitutionNameItemValue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_medium_500"
+                android:text="8888"
+                android:textAlignment="viewEnd"
+                android:textColor="@color/text_color_8A8A8D"
+                android:textSize="@dimen/size_14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/mtvInstitutionNameItem"
+                app:layout_constraintTop_toTopOf="@id/mtvInstitutionNameItem" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mtvDoctorItem"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/roboto_regular_400"
+                android:text="@string/item_access_doctor_medical_carton_doctor"
+                android:textColor="@color/black"
+                android:textSize="@dimen/size_14sp"
+                app:layout_constraintEnd_toStartOf="@+id/mtvDoctorItemValue"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/mtvInstitutionNameItemValue" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mtvDoctorItemValue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_medium_500"
+                android:text="8888"
+                android:textAlignment="viewEnd"
+                android:textColor="@color/text_color_8A8A8D"
+                android:textSize="@dimen/size_14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/mtvDoctorItem"
+                app:layout_constraintTop_toTopOf="@id/mtvDoctorItem" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mtvDateItem"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/roboto_regular_400"
+                android:text="@string/item_access_doctor_medical_carton_date"
+                android:textColor="@color/black"
+                android:textSize="@dimen/size_14sp"
+                app:layout_constraintEnd_toStartOf="@+id/mtvDateItemValue"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/mtvDoctorItemValue" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mtvDateItemValue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_medium_500"
+                android:text="8888"
+                android:textAlignment="viewEnd"
+                android:textColor="@color/text_color_8A8A8D"
+                android:textSize="@dimen/size_14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/mtvDateItem"
+                app:layout_constraintTop_toTopOf="@id/mtvDateItem" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mtvTimeItem"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/roboto_regular_400"
+                android:text="@string/item_access_doctor_medical_carton_time"
+                android:textColor="@color/black"
+                android:textSize="@dimen/size_14sp"
+                app:layout_constraintEnd_toStartOf="@+id/mtvTimeItemValue"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/mtvDateItem" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mtvTimeItemValue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_medium_500"
+                android:text="8888"
+                android:textAlignment="viewEnd"
+                android:textColor="@color/text_color_8A8A8D"
+                android:textSize="@dimen/size_14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/mtvTimeItem"
+                app:layout_constraintTop_toTopOf="@id/mtvTimeItem" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_close_black"
+        android:translationZ="10dp"
+        app:layout_constraintEnd_toEndOf="@id/clUserInfo"
+        app:layout_constraintTop_toTopOf="@id/clUserInfo" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/clUserInfo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:backgroundTint="@color/transparent"
+        app:cardCornerRadius="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeColor="@color/transparent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/seelcted_group_item_background">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mtvUserInicials"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size_20sp"
+                android:textStyle="bold" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/mtvSgcoName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/text_color_3E5764"
+        android:textSize="@dimen/size_10sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/clUserInfo"
+        app:layout_constraintStart_toStartOf="@id/clUserInfo"
+        app:layout_constraintTop_toBottomOf="@id/clUserInfo" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

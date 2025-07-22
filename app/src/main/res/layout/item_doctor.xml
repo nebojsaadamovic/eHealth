@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/clDrOne"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_stroke_white_rounded_all_10"
+    android:padding="15dp"
+    android:layout_marginBottom="20dp"
+    app:layout_constraintStart_toStartOf="parent">
+
+    <ImageView
+        android:id="@+id/ivDrAvatar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_dr_avatar"
+        app:layout_constraintBottom_toBottomOf="@+id/clDrOne"
+        app:layout_constraintEnd_toStartOf="@id/tvNameDr"
+        app:layout_constraintStart_toStartOf="@id/clDrOne"
+        app:layout_constraintTop_toTopOf="@id/clDrOne" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvNameDr"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_regular_400"
+        android:paddingStart="15dp"
+        android:text="@string/fragment_calendar_appointment_examination_doctor_name_tv"
+        android:textColor="@color/base_blue_color"
+        android:textSize="@dimen/size_16sp"
+        app:layout_constraintEnd_toEndOf="@id/clDrOne"
+        app:layout_constraintStart_toEndOf="@+id/ivDrAvatar"
+        app:layout_constraintTop_toTopOf="@+id/clDrOne" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/mtvSpeciality"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingStart="15dp"
+        android:textSize="@dimen/size_13sp"
+        android:fontFamily="@font/roboto_regular_400"
+        android:textColor="@color/text_color_8A8A8D"
+        app:layout_constraintEnd_toEndOf="@id/clDrOne"
+        app:layout_constraintStart_toEndOf="@+id/ivDrAvatar"
+        app:layout_constraintTop_toBottomOf="@+id/tvNameDr"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvInstitution"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_regular_400"
+        android:paddingStart="15dp"
+        android:textColor="@color/text_color_8A8A8D"
+        android:textSize="@dimen/size_13sp"
+        app:layout_constraintEnd_toEndOf="@id/clDrOne"
+        app:layout_constraintStart_toEndOf="@+id/ivDrAvatar"
+        app:layout_constraintTop_toBottomOf="@+id/mtvSpeciality" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

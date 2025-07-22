@@ -1,0 +1,61 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_bg"
+    tools:context="com.example.zdravlje.ui.chat.singleAndGroupMessages.AddMemberFragment">
+
+    <EditText
+        android:id="@+id/etSearch"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:drawableStart="@drawable/ic_back"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/roboto_regular_400"
+        android:hint="@string/fragment_add_member_search_hint"
+        android:inputType="text"
+        android:paddingStart="20dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="50dp"
+        android:paddingBottom="20dp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/size_16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/mvSearch"
+        android:layout_width="74dp"
+        android:layout_height="25dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/btn_blue_rounded_background"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:padding="0dp"
+        android:text="@string/fragment_add_member_search_button"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/size_10sp"
+        android:visibility="gone"
+        app:backgroundTint="@color/blue_0270BB"
+        app:layout_constraintBottom_toBottomOf="@+id/etSearch"
+        app:layout_constraintEnd_toEndOf="@+id/etSearch"
+        app:layout_constraintTop_toTopOf="@+id/etSearch"
+        app:layout_goneMarginEnd="20dp" />
+
+    <TextView
+        android:id="@+id/tvDescription"
+        android:layout_width="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_medium_500"
+        android:text="@string/fragment_add_member_description"
+        android:textColor="@color/text_color_8A8A8D"
+        android:textSize="@dimen/size_10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etSearch" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

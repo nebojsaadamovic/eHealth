@@ -1,0 +1,134 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/clItemTimeSlot"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/bg_white_radius_10">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clHeaderItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvHeaderItem"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@color/background_shimmer_gray"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/ivAtachment"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@color/background_shimmer_gray"
+            app:layout_constraintBottom_toBottomOf="@id/mtvHeaderItem"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/mtvHeaderItem" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clContentItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/clHeaderItem">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvDateItem"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="@color/background_shimmer_gray"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/clContentItem" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvDateItemValue"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:background="@color/background_shimmer_gray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/mtvDateItem" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvTimeItem"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@color/background_shimmer_gray"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mtvDateItemValue" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvTimeItemValue"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@color/background_shimmer_gray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/mtvTimeItem" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvOrganizationalUnitItem"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@color/background_shimmer_gray"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mtvTimeItemValue" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvOrganizationalUnitItemValue"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:background="@color/background_shimmer_gray"
+            android:fontFamily="@font/roboto_medium_500"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/mtvOrganizationalUnitItem" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvDoctorItem"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@color/background_shimmer_gray"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mtvOrganizationalUnitItemValue" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvDoctorItemValue"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:background="@color/background_shimmer_gray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/mtvDoctorItem" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvTypeReferraleItem"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@color/background_shimmer_gray"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mtvDoctorItemValue" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvTypeReferraleItemValue"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:background="@color/background_shimmer_gray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/mtvTypeReferraleItem" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

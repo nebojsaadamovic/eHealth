@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/ic_login_initial_heart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clContent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivLogo">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@drawable/ic_heart_line"
+            app:layout_constraintBottom_toBottomOf="@id/clContent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/clContent"
+            app:layout_constraintTop_toTopOf="@id/clContent"
+            app:layout_constraintVertical_bias="1.0" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/mbEId"
+            style="@style/blueButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:text="@string/fragment_login_initial_application_gov_eid_btn"
+            android:textSize="@dimen/size_16sp"
+            app:icon="@drawable/ic_eid_gov_rs"
+            app:iconGravity="textStart"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.488"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvGovEId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/roboto_regular_400"
+            android:padding="15dp"
+            android:text="@string/fragment_login_initial_register_gov_eid"
+            android:textColor="@color/black"
+            android:textSize="@dimen/size_19sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mbEId" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/mtvLoginRegister"
+            style="@style/whiteButton"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/fragment_login_initial_login_rfzo_card"
+            app:icon="@drawable/ic_rfzo"
+            app:iconGravity="textStart"
+            app:iconTint="@color/base_blue_color"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mtvGovEId" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/mbLoginEZdravlje"
+            style="@style/whiteButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/fragment_login_initial_application_portal_e_zdravlje_btn"
+            app:icon="@drawable/ic_logo_heart"
+            app:iconGravity="textStart"
+            android:textColor="@color/black"
+            app:iconTint="@color/base_blue_color"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mtvLoginRegister" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/mcvHelpSupport"
+            style="@style/whiteButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginTop="20dp"
+            android:text="@string/fragment_login_initial_help_support_btn"
+            app:icon="@drawable/ic_question"
+            app:iconGravity="textStart"
+            app:iconTint="@color/base_blue_color"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mbLoginEZdravlje" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

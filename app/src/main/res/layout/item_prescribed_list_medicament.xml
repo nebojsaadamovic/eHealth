@@ -1,0 +1,207 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/clItemTimeSlot"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/bg_white_radius_10">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clMedicamentNameItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_gray_top_radis_10"
+        android:padding="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/clMedicamentNameItemValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/roboto_medium_500"
+            android:textColor="@color/black"
+            android:textSize="@dimen/size_14sp"
+            app:layout_constraintEnd_toStartOf="@+id/ivAtachment"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/ivAtachment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_atachment"
+            app:layout_constraintBottom_toBottomOf="@id/clMedicamentNameItemValue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/clMedicamentNameItemValue" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clContentItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/clMedicamentNameItem">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvStrengthItem"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/roboto_regular_400"
+            android:text="@string/item_prescribed_list_medicament_strength_medicamente"
+            android:textColor="@color/black"
+            android:textSize="@dimen/size_14sp"
+            app:layout_constraintEnd_toStartOf="@+id/mtvStrengthItemValue"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/clContentItem" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvStrengthItemValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_medium_500"
+            android:gravity="center_vertical|end"
+            android:textColor="@color/text_color_8A8A8D"
+            android:textSize="@dimen/size_14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/mtvStrengthItem"
+            app:layout_constraintTop_toTopOf="@id/mtvStrengthItem" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvDosageItem"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/roboto_regular_400"
+            android:text="@string/item_prescribed_list_medicament_dosage"
+            android:textColor="@color/black"
+            android:textSize="@dimen/size_14sp"
+            app:layout_constraintEnd_toStartOf="@+id/mtvDosageItemValue"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mtvStrengthItemValue" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvDosageItemValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_medium_500"
+            android:textAlignment="viewEnd"
+            android:textColor="@color/text_color_8A8A8D"
+            android:textSize="@dimen/size_14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/mtvDosageItem"
+            app:layout_constraintTop_toTopOf="@id/mtvDosageItem" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvQuantityItem"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/roboto_regular_400"
+            android:text="@string/item_prescribed_list_medicament_quantity"
+            android:textColor="@color/black"
+            android:textSize="@dimen/size_14sp"
+            app:layout_constraintEnd_toStartOf="@+id/mtvQuantityItemValue"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mtvDosageItemValue" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvQuantityItemValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_medium_500"
+            android:gravity="center_vertical|end"
+            android:textColor="@color/text_color_8A8A8D"
+            android:textSize="@dimen/size_14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/mtvQuantityItem"
+            app:layout_constraintTop_toTopOf="@id/mtvQuantityItem" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvExpiryDateItem"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/roboto_regular_400"
+            android:text="@string/item_prescribed_list_medicament_expiry_date"
+            android:textColor="@color/black"
+            android:textSize="@dimen/size_14sp"
+            app:layout_constraintEnd_toStartOf="@+id/mtvExpiryDateItemValue"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mtvQuantityItemValue" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvExpiryDateItemValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_medium_500"
+            android:gravity="center_vertical|end"
+            android:textColor="@color/text_color_8A8A8D"
+            android:textSize="@dimen/size_14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/mtvExpiryDateItem"
+            app:layout_constraintTop_toTopOf="@id/mtvExpiryDateItem" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvStatusItem"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/roboto_regular_400"
+            android:text="@string/item_prescribed_list_medicament_status"
+            android:textColor="@color/black"
+            android:textSize="@dimen/size_14sp"
+            app:layout_constraintEnd_toStartOf="@+id/mtvStatusItemValue"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mtvExpiryDateItemValue" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvStatusItemValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_medium_500"
+            android:gravity="center_vertical|end"
+            android:textColor="@color/text_color_8A8A8D"
+            android:textSize="@dimen/size_14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/mtvStatusItem"
+            app:layout_constraintTop_toTopOf="@id/mtvStatusItem" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvPrescriptionTypeItem"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:fontFamily="@font/roboto_regular_400"
+            android:text="@string/item_prescribed_list_medicament_type_recipe"
+            android:textColor="@color/black"
+            android:textSize="@dimen/size_14sp"
+            app:layout_constraintEnd_toStartOf="@+id/mtvPrescriptionTypeItemValue"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mtvStatusItemValue" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvPrescriptionTypeItemValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:fontFamily="@font/roboto_medium_500"
+            android:gravity="center_vertical|end"
+            android:textColor="@color/text_color_8A8A8D"
+            android:textSize="@dimen/size_14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/mtvPrescriptionTypeItem"
+            app:layout_constraintTop_toTopOf="@id/mtvPrescriptionTypeItem" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

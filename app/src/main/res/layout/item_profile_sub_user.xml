@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp">
+
+    <ImageView
+        android:id="@+id/ivUserImage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_contact_avatar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/userFullName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="@string/fragment_item_sub_user_name_label"
+        android:textColor="@color/black"
+        android:textSize="@dimen/size_17sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/ivUserImage"
+        app:layout_constraintTop_toTopOf="@id/ivUserImage" />
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/infoText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fragment_item_sub_user_info_text_label"
+        android:textColor="@color/base_blue_color"
+        android:textSize="@dimen/size_10sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="@id/userFullName"
+        app:layout_constraintTop_toBottomOf="@id/userFullName" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/gray_B9B9BB"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/userFullName"
+        app:layout_constraintTop_toBottomOf="@id/infoText" />
+
+    <ImageView
+        android:id="@+id/ivPermit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:src="@drawable/ic_arrow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

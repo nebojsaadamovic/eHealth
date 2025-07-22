@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <CheckBox
+        android:id="@+id/cbParticipiantValue"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:button="@drawable/checkbox_selector"
+        android:fontFamily="@font/roboto_regular_400"
+        android:layoutDirection="rtl"
+        android:text="@string/item_institution_arr_empty_data"
+        android:textColor="@color/black"
+        android:textSize="@dimen/size_14sp"
+        app:buttonTint="@color/blue_0270BB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/mtvParticipiantEmailValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="email@gmail.com"
+        android:textColor="@color/text_color_8A8A8D"
+        android:textSize="@dimen/size_12sp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@+id/cbParticipiantValue"
+        app:layout_constraintTop_toBottomOf="@+id/cbParticipiantValue" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

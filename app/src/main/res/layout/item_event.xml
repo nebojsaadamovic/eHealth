@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:paddingBottom="10dp"
+    android:background="@color/transparent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/itemWrapper"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        app:strokeColor="@color/transparent"
+        android:backgroundTint="@color/white"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingStart="15dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="15dp"
+            android:paddingBottom="10dp">
+
+            <ImageView
+                android:id="@+id/ivEventIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_message"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mtvEventTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxWidth="260dp"
+                android:ellipsize="end"
+                android:fontFamily="@font/roboto_bold_700"
+                android:maxLines="1"
+                android:layout_marginStart="10dp"
+                android:text="@string/fragment_item_event_header_title"
+                android:textColor="@color/base_color"
+                android:textSize="@dimen/size_14sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/ivEventIcon"
+                app:layout_constraintStart_toEndOf="@id/ivEventIcon"
+                app:layout_constraintTop_toTopOf="@id/ivEventIcon" />
+
+            <ImageView
+                android:id="@+id/ivIconRight"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingStart="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_right_blue"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="@id/mtvEventTitle"
+                app:layout_constraintTop_toTopOf="@id/mtvEventTitle"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mtvEventDesc"
+                android:layout_width="0dp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:paddingEnd="10dp"
+                android:fontFamily="@font/roboto_bold_700"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="@string/fragment_item_event_receive_therapy_label"
+                android:textColor="@color/black"
+                android:textSize="@dimen/size_18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/mtvEventTime"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mtvEventTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="@string/fragment_item_event_receive_therapy_value"
+                android:fontFamily="@font/roboto_bold_700"
+                android:textColor="@color/text_color_3E5764"
+                android:textSize="@dimen/size_15sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

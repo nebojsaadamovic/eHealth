@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/menu_item_health"
+        android:icon="@drawable/ic_helath_selector"
+        android:title="Zdravstvo"/>
+
+    <item android:id="@+id/menu_item_web"
+        android:icon="@drawable/ic_web_selector"
+        android:title="Mreža"/>
+
+    <item android:id="@+id/menu_item_notification"
+        android:checked="true"
+        android:title=""/>
+
+    <item android:id="@+id/menu_item_life_way"
+        android:icon="@drawable/ic_life_way_selector"
+        android:title="Način Zivota"/>
+
+    <item android:id="@+id/menu_item_calendar"
+        android:icon="@drawable/ic_bnm_calendar_selector"
+        android:title="Kalendar"/>
+
+</menu>

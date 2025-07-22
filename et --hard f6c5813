@@ -1,0 +1,52 @@
+[33mf6c5813[m[33m ([m[1;36mHEAD -> [m[1;32mbugfix/add_medicament_e-recipe[m[33m, [m[1;31morigin/bugfix/add_medicament_e-recipe[m[33m)[m HEAD@{0}: checkout: moving from main to bugfix/add_medicament_e-recipe
+[33m10eb253[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m HEAD@{1}: checkout: moving from bugfix/add_medicament_e-recipe to main
+[33mf6c5813[m[33m ([m[1;36mHEAD -> [m[1;32mbugfix/add_medicament_e-recipe[m[33m, [m[1;31morigin/bugfix/add_medicament_e-recipe[m[33m)[m HEAD@{2}: checkout: moving from main to bugfix/add_medicament_e-recipe
+[33m430d5e6[m HEAD@{3}: checkout: moving from jira-3806 to main
+[33m84000cd[m[33m ([m[1;31morigin/jira-3806[m[33m, [m[1;32mjira-3806[m[33m)[m HEAD@{4}: commit: Implement doctor appointment scheduling: Added fragment & XML, logic for unfulfilled appointments to show a dialog for confirmation, and a details fragment for completed appointments.
+[33m09cf2cf[m[33m ([m[1;31morigin/jira-3804[m[33m, [m[1;32mjira-3806+++[m[33m, [m[1;32mjira-3804[m[33m)[m HEAD@{5}: checkout: moving from main to jira-3806
+[33m430d5e6[m HEAD@{6}: checkout: moving from jira-3806 to main
+[33m09cf2cf[m[33m ([m[1;31morigin/jira-3804[m[33m, [m[1;32mjira-3806+++[m[33m, [m[1;32mjira-3804[m[33m)[m HEAD@{7}: checkout: moving from main to jira-3806
+[33m430d5e6[m HEAD@{8}: checkout: moving from jira-3806 to main
+[33m09cf2cf[m[33m ([m[1;31morigin/jira-3804[m[33m, [m[1;32mjira-3806+++[m[33m, [m[1;32mjira-3804[m[33m)[m HEAD@{9}: checkout: moving from jira-3804 to jira-3806
+[33m09cf2cf[m[33m ([m[1;31morigin/jira-3804[m[33m, [m[1;32mjira-3806+++[m[33m, [m[1;32mjira-3804[m[33m)[m HEAD@{10}: checkout: moving from bugfix/add_medicament_e-recipe to jira-3804
+[33mf6c5813[m[33m ([m[1;36mHEAD -> [m[1;32mbugfix/add_medicament_e-recipe[m[33m, [m[1;31morigin/bugfix/add_medicament_e-recipe[m[33m)[m HEAD@{11}: commit: Implemented "Add a medicament from eRcipe" option in Calendar Fragment
+[33mb3cd022[m[33m ([m[1;31morigin/bugfix/jira-4089-4086-4085-4084-4058[m[33m, [m[1;32mbugfix/jira-4089-4086-4085-4084-4058[m[33m)[m HEAD@{12}: Branch: renamed refs/heads/bugfix/jira-3806 to refs/heads/bugfix/add_medicament_e-recipe
+[33mb3cd022[m[33m ([m[1;31morigin/bugfix/jira-4089-4086-4085-4084-4058[m[33m, [m[1;32mbugfix/jira-4089-4086-4085-4084-4058[m[33m)[m HEAD@{14}: Branch: renamed refs/heads/bugfix/jira-3086 to refs/heads/bugfix/jira-3806
+[33mb3cd022[m[33m ([m[1;31morigin/bugfix/jira-4089-4086-4085-4084-4058[m[33m, [m[1;32mbugfix/jira-4089-4086-4085-4084-4058[m[33m)[m HEAD@{16}: checkout: moving from bugfix/jira-4089-4086-4085-4084-4058 to bugfix/jira-3086
+[33mb3cd022[m[33m ([m[1;31morigin/bugfix/jira-4089-4086-4085-4084-4058[m[33m, [m[1;32mbugfix/jira-4089-4086-4085-4084-4058[m[33m)[m HEAD@{17}: checkout: moving from jira-3806 to bugfix/jira-4089-4086-4085-4084-4058
+[33m09cf2cf[m[33m ([m[1;31morigin/jira-3804[m[33m, [m[1;32mjira-3806+++[m[33m, [m[1;32mjira-3804[m[33m)[m HEAD@{18}: checkout: moving from bugfix/jira-4089-4086-4085-4084-4058 to jira-3806
+[33mb3cd022[m[33m ([m[1;31morigin/bugfix/jira-4089-4086-4085-4084-4058[m[33m, [m[1;32mbugfix/jira-4089-4086-4085-4084-4058[m[33m)[m HEAD@{19}: checkout: moving from jira-3806 to bugfix/jira-4089-4086-4085-4084-4058
+[33m09cf2cf[m[33m ([m[1;31morigin/jira-3804[m[33m, [m[1;32mjira-3806+++[m[33m, [m[1;32mjira-3804[m[33m)[m HEAD@{20}: checkout: moving from jira-3804 to jira-3806
+[33m09cf2cf[m[33m ([m[1;31morigin/jira-3804[m[33m, [m[1;32mjira-3806+++[m[33m, [m[1;32mjira-3804[m[33m)[m HEAD@{21}: checkout: moving from main to jira-3804
+[33m430d5e6[m HEAD@{22}: checkout: moving from jira-3804 to main
+[33m09cf2cf[m[33m ([m[1;31morigin/jira-3804[m[33m, [m[1;32mjira-3806+++[m[33m, [m[1;32mjira-3804[m[33m)[m HEAD@{23}: commit: Fixed image loading to update dynamically across all screens when changed. Improved Base64 decoding and UI refresh logic.
+[33m430d5e6[m HEAD@{24}: checkout: moving from jira-3799 to jira-3804
+[33m3f945d9[m[33m ([m[1;31morigin/jira-3799[m[33m, [m[1;32mjira-3799[m[33m)[m HEAD@{25}: checkout: moving from jira-3804 to jira-3799
+[33m430d5e6[m HEAD@{26}: checkout: moving from main to jira-3804
+[33m430d5e6[m HEAD@{27}: checkout: moving from jira-3799 to main
+[33m3f945d9[m[33m ([m[1;31morigin/jira-3799[m[33m, [m[1;32mjira-3799[m[33m)[m HEAD@{28}: commit: Fixed image loading to update dynamically across all screens when changed. Improved Base64 decoding and UI refresh logic.
+[33m764279e[m[33m ([m[1;31morigin/jira-3798[m[33m, [m[1;32mjira-3798[m[33m)[m HEAD@{29}: checkout: moving from jira-3798 to jira-3799
+[33m764279e[m[33m ([m[1;31morigin/jira-3798[m[33m, [m[1;32mjira-3798[m[33m)[m HEAD@{30}: commit: Fix: Handle language change and retain updated profile data
+[33mc937f64[m HEAD@{31}: commit: Fix: Populate profile settings fields with user data on entry
+[33m430d5e6[m HEAD@{32}: checkout: moving from bugfix/jira-3830 to jira-3798
+[33m3cf24be[m[33m ([m[1;31morigin/bugfix/jira-3830[m[33m, [m[1;32mbugfix/jira-3830[m[33m)[m HEAD@{33}: checkout: moving from jira-3798 to bugfix/jira-3830
+[33m430d5e6[m HEAD@{34}: checkout: moving from bugfix/jira-3830 to jira-3798
+[33m3cf24be[m[33m ([m[1;31morigin/bugfix/jira-3830[m[33m, [m[1;32mbugfix/jira-3830[m[33m)[m HEAD@{35}: checkout: moving from jira-3798 to bugfix/jira-3830
+[33m430d5e6[m HEAD@{36}: checkout: moving from bugfix/jira-3830 to jira-3798
+[33m3cf24be[m[33m ([m[1;31morigin/bugfix/jira-3830[m[33m, [m[1;32mbugfix/jira-3830[m[33m)[m HEAD@{37}: checkout: moving from jira-3798 to bugfix/jira-3830
+[33m430d5e6[m HEAD@{38}: checkout: moving from main to jira-3798
+[33m430d5e6[m HEAD@{39}: checkout: moving from bugfix/jira-3830 to main
+[33m3cf24be[m[33m ([m[1;31morigin/bugfix/jira-3830[m[33m, [m[1;32mbugfix/jira-3830[m[33m)[m HEAD@{40}: commit: Updated personal activities functionality, fixed issues with the back button, and refactored some code for better maintainability.
+[33mb3cd022[m[33m ([m[1;31morigin/bugfix/jira-4089-4086-4085-4084-4058[m[33m, [m[1;32mbugfix/jira-4089-4086-4085-4084-4058[m[33m)[m HEAD@{41}: checkout: moving from bugfix/jira-4089-4086-4085-4084-4058 to bugfix/jira-3830
+[33mb3cd022[m[33m ([m[1;31morigin/bugfix/jira-4089-4086-4085-4084-4058[m[33m, [m[1;32mbugfix/jira-4089-4086-4085-4084-4058[m[33m)[m HEAD@{42}: commit: Implemented notifications for Heatcare Calendar, sick leave, and ChatInbox. Also, made visual improvements for better readability and user experience.
+[33m20cf2aa[m HEAD@{43}: commit: JIRA Tasks: 4089, 4086, 4085, 4084, 4058
+[33m430d5e6[m HEAD@{44}: checkout: moving from main to bugfix/jira-4089-4086-4085-4084-4058
+[33m430d5e6[m HEAD@{45}: pull --no-stat -v --progress origin main: Fast-forward
+[33m0fd4ddb[m HEAD@{46}: checkout: moving from integration-api-prevention-card to main
+[33mec05022[m[33m ([m[1;31morigin/integration-api-prevention-card[m[33m, [m[1;32mintegration-api-prevention-card[m[33m)[m HEAD@{47}: checkout: moving from add-medicament to integration-api-prevention-card
+[33m0e7dfad[m[33m ([m[1;31morigin/add-medicament[m[33m, [m[1;32madd-medicament[m[33m)[m HEAD@{48}: checkout: moving from integration-api-prevention-card to add-medicament
+[33mec05022[m[33m ([m[1;31morigin/integration-api-prevention-card[m[33m, [m[1;32mintegration-api-prevention-card[m[33m)[m HEAD@{49}: commit: feat: Implemented e-sick leave feature
+[33mbca1e88[m HEAD@{50}: commit: Completed medication functionality in Prevention
+[33maf5c0b4[m HEAD@{51}: commit: API integration in RecommendationsFragment
+[33m63922fc[m HEAD@{52}: checkout: moving from notifications-api-integration to integration-api-prevention-card
+[33mb69dea2[m[33m ([m[1;31morigin/notifications-api-integration[m[33m, [m[1;32mnotifications-api-integration[m[33m)[m HEAD@{53}: commit: - Implemented notification settings:

@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_white_top_radius"
+    tools:context="com.example.zdravlje.ui.calendar.BottomSheetEventInfoFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clHeader"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/rounded_header_red"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mvHeaderTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:fontFamily="@font/roboto_bold_700"
+            android:text="@string/fragment_bottom_sheet_event_info_header_title"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/clHeader"
+            app:layout_constraintStart_toStartOf="@id/clHeader"
+            app:layout_constraintTop_toTopOf="@id/clHeader"
+            app:layout_constraintVertical_bias="0.538" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clMedicine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clHeader">
+
+        <TextView
+            android:id="@+id/tvMedicine"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/roboto_medium_500"
+            android:gravity="center_vertical|start"
+            android:text="@string/fragment_bottom_sheet_event_info_prescribed_medicine_label"
+            android:textColor="@color/black"
+            android:textSize="@dimen/size_14sp"
+            app:layout_constraintEnd_toStartOf="@+id/tvMedicineName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvMedicineName"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/roboto_regular_400"
+            android:gravity="center_vertical|end"
+            android:text="@string/fragment_bottom_sheet_contact_information_name_value"
+            android:textColor="@color/text_color_8A8A8D"
+            android:textSize="@dimen/size_14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tvMedicine"
+            app:layout_constraintTop_toTopOf="@id/tvMedicine" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/vLine"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/white_bg"
+        app:layout_constraintTop_toBottomOf="@id/clMedicine" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clDose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vLine">
+
+        <TextView
+            android:id="@+id/tvDose"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/roboto_medium_500"
+            android:gravity="start"
+            android:text="@string/fragment_bottom_sheet_event_info_dosage_label"
+            android:textColor="#000000"
+            android:textSize="@dimen/size_14sp"
+            app:layout_constraintEnd_toStartOf="@+id/tvDoseName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvDoseName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_regular_400"
+            android:gravity="center_vertical|end"
+            android:text="@string/fragment_bottom_sheet_contact_information_email_value"
+            android:textAlignment="gravity"
+            android:textColor="@color/text_color_8A8A8D"
+            android:textSize="@dimen/size_14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tvDose"
+            app:layout_constraintTop_toTopOf="@id/tvDose" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/vLine2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/white_bg"
+        app:layout_constraintTop_toBottomOf="@id/clDose" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vLine2">
+
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/roboto_medium_500"
+            android:gravity="center_vertical|start"
+            android:text="@string/fragment_bottom_sheet_event_info_prescribed_date_label"
+            android:textColor="#000000"
+            android:textSize="@dimen/size_14sp"
+            app:layout_constraintEnd_toStartOf="@+id/tvDateName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvDateName"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/roboto_regular_400"
+            android:gravity="end"
+            android:text="@string/fragment_bottom_sheet_contact_information_email_value"
+            android:textColor="@color/text_color_8A8A8D"
+            android:textSize="@dimen/size_14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tvDate"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/vLine3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/white_bg"
+        app:layout_constraintTop_toBottomOf="@id/clDate" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vLine3">
+
+        <TextView
+            android:id="@+id/tvTime"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/roboto_medium_500"
+            android:gravity="start"
+            android:text="@string/fragment_bottom_sheet_event_info_prescribed_time_label"
+            android:textColor="#000000"
+            android:textSize="@dimen/size_14sp"
+            app:layout_constraintEnd_toStartOf="@+id/tvTimeName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvTimeName"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/roboto_regular_400"
+            android:gravity="center_vertical|end"
+            android:text="@string/fragment_bottom_sheet_contact_information_email_value"
+            android:textColor="@color/text_color_8A8A8D"
+            android:textSize="@dimen/size_14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tvTime"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <View
+        android:id="@+id/vLine4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/white_bg"
+        app:layout_constraintTop_toBottomOf="@id/clTime" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clContentSecond"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vLine4">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/mbYesBtn"
+            style="@style/blueButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/yes"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/mbNoBtn"
+            style="@style/whiteButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/no"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mbYesBtn"
+            app:strokeColor="@color/base_blue_color"
+            app:strokeWidth="1dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/mbCancelBtn"
+            style="@style/whiteButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/cancel"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mbNoBtn"
+            app:strokeColor="@color/base_blue_color"
+            app:strokeWidth="1dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

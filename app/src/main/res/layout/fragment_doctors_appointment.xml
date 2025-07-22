@@ -1,0 +1,255 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_bg"
+    android:padding="15dp"
+    tools:context="com.example.zdravlje.ui.home.dashboard.event_details.DoctorsAppointmentFragment">
+
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:paddingTop="15dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="15dp"
+        android:src="@drawable/ic_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivDelete"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:padding="5dp"
+        android:src="@drawable/ic_delete_history"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/ivBack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ivBack"
+        app:tint="@color/red_CF242A" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/mtvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/roboto_medium_500"
+        android:text="@string/activity_avaliable_therapy_in_pharmacy_title_date"
+        android:textColor="@color/text_color_3E5764"
+        android:textSize="@dimen/size_18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivBack" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="@color/white"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mtvDate"
+        app:strokeColor="@color/transparent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="15dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="15dp"
+            android:paddingBottom="10dp">
+
+            <ImageView
+                android:id="@+id/ivEventIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_doctors_appointment"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mtvEventTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:ellipsize="end"
+                android:fontFamily="@font/roboto_medium_500"
+                android:maxWidth="260dp"
+                android:maxLines="1"
+                android:text="@string/fragment_doctors_appointment_title"
+                android:textColor="@color/black"
+                android:textSize="@dimen/size_14sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/ivEventIcon"
+                app:layout_constraintStart_toEndOf="@id/ivEventIcon"
+                app:layout_constraintTop_toTopOf="@id/ivEventIcon" />
+
+            <View
+                android:id="@+id/line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white_bg"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ivEventIcon" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mtvDoctor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:ellipsize="end"
+                android:fontFamily="@font/roboto_regular_400"
+                android:maxLines="1"
+                android:paddingEnd="@dimen/size_10sp"
+                android:text="@string/fragment_doctors_appointment_name_doctor"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/line" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mtvDoctorValue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="ttt"
+                android:textAlignment="textEnd"
+                android:textColor="@color/text_color_8A8A8D"
+                android:textSize="@dimen/size_14sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/mtvDoctor"
+                app:layout_constraintTop_toTopOf="@id/mtvDoctor" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mtvInstitution"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:ellipsize="end"
+                android:fontFamily="@font/roboto_regular_400"
+                android:maxLines="1"
+                android:paddingEnd="10dp"
+                android:text="@string/fragment_doctors_appointment_institution"
+                android:textColor="@color/black"
+                android:textSize="@dimen/size_14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/mtvDoctorValue" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mtvInstitutionValue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_medium_500"
+                android:text="yyyyy"
+                android:textAlignment="textEnd"
+                android:textColor="@color/text_color_8A8A8D"
+                android:textSize="@dimen/size_14sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/mtvInstitution"
+                app:layout_constraintTop_toTopOf="@id/mtvInstitution" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mtvType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:ellipsize="end"
+                android:fontFamily="@font/roboto_regular_400"
+                android:maxLines="1"
+                android:text="@string/fragment_doctors_appointment_type"
+                android:textColor="@color/black"
+                android:textSize="@dimen/size_14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/mtvInstitutionValue" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mtvTypeValue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_medium_500"
+                android:text="@string/fragment_doctors_appointment_value"
+                android:textAlignment="textEnd"
+                android:textColor="@color/text_color_8A8A8D"
+                android:textSize="@dimen/size_14sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/mtvType"
+                app:layout_constraintTop_toTopOf="@id/mtvType" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mtvType2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:ellipsize="end"
+                android:fontFamily="@font/roboto_regular_400"
+                android:maxLines="1"
+                android:paddingEnd="10dp"
+                android:text="@string/fragment_doctors_appointment_type2"
+                android:textColor="@color/black"
+                android:textSize="@dimen/size_14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/mtvTypeValue" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mtvType2Value"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_medium_500"
+                android:text="@string/fragment_doctors_appointment_value2"
+                android:textAlignment="textEnd"
+                android:textColor="@color/text_color_8A8A8D"
+                android:textSize="@dimen/size_14sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/mtvType2"
+                app:layout_constraintTop_toTopOf="@id/mtvType2" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mtvTime"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:ellipsize="end"
+                android:fontFamily="@font/roboto_regular_400"
+                android:maxLines="1"
+                android:paddingEnd="10dp"
+                android:text="@string/fragment_doctors_appointment_time"
+                android:textColor="@color/black"
+                android:textSize="@dimen/size_14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/mtvType2Value" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mtvTimeValue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_medium_500"
+                android:text="xxxx"
+                android:textAlignment="textEnd"
+                android:textColor="@color/text_color_8A8A8D"
+                android:textSize="@dimen/size_14sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/mtvTime"
+                app:layout_constraintTop_toTopOf="@id/mtvTime" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

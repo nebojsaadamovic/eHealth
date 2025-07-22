@@ -1,0 +1,104 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_background"
+    android:paddingBottom="100dp"
+    tools:context="com.example.zdravlje.ui.chat.singleAndGroupMessages.BottomSheetContactInformation">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clHeader"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/rounded_header_blue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mvHeaderTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:fontFamily="@font/roboto_bold_700"
+            android:text="@string/fragment_bottom_sheet_contact_information_header_title"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/clHeader"
+            app:layout_constraintStart_toStartOf="@id/clHeader"
+            app:layout_constraintTop_toTopOf="@id/clHeader" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clName"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:paddingHorizontal="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clHeader">
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/roboto_regular_400"
+            android:gravity="center"
+            android:text="@string/fragment_bottom_sheet_contact_information_name_label"
+            android:textColor="#000000"
+            android:textSize="@dimen/size_14sp"
+            app:layout_constraintStart_toStartOf="@id/clName"
+            app:layout_constraintTop_toTopOf="@id/clName" />
+
+        <TextView
+            android:id="@+id/tvNameValue"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/roboto_regular_400"
+            android:gravity="center"
+            android:text="@string/fragment_bottom_sheet_contact_information_name_value"
+            android:textColor="@color/text_color_8A8A8D"
+            android:textSize="@dimen/size_14sp"
+            app:layout_constraintEnd_toEndOf="@id/clName"
+            app:layout_constraintTop_toTopOf="@id/clName" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clEmail"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:paddingHorizontal="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clName">
+
+        <TextView
+            android:id="@+id/tvEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/roboto_regular_400"
+            android:gravity="center"
+            android:text="@string/fragment_bottom_sheet_contact_information_email_label"
+            android:textColor="#000000"
+            android:textSize="@dimen/size_14sp"
+            app:layout_constraintStart_toStartOf="@id/clEmail"
+            app:layout_constraintTop_toTopOf="@id/clEmail" />
+
+        <TextView
+            android:id="@+id/tvEmailValue"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/fragment_bottom_sheet_contact_information_email_value"
+            android:textColor="@color/text_color_8A8A8D"
+            android:textSize="@dimen/size_14sp"
+            app:layout_constraintEnd_toEndOf="@id/clEmail"
+            app:layout_constraintTop_toTopOf="@id/clEmail" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

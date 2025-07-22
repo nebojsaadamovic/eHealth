@@ -1,0 +1,88 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_white_top_radius"
+    tools:context="com.example.zdravlje.ui.login.info.EmailAskQuestBottomSheetFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_header_blue"
+        android:paddingVertical="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvTitleHeader"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:fontFamily="@font/roboto_bold_700"
+            android:text="@string/fragment_email_ask_quest_bottom_sheet_header_title"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_20sp"
+            app:layout_constraintEnd_toEndOf="@+id/clHeader"
+            app:layout_constraintStart_toStartOf="@id/clHeader"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilEmail"
+        style="@style/DefaultTextInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clHeader">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tietEmail"
+            style="@style/DefaultTextInputEditText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/roboto_medium_500"
+            android:hint="@string/fragment_email_ask_quest_bottom_sheet_email_et"
+            android:paddingStart="0dp"
+            android:paddingEnd="0dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/errorAddress"
+        style="@style/errorText"
+        app:layout_constraintEnd_toEndOf="@id/tilEmail"
+        app:layout_constraintTop_toBottomOf="@+id/tilEmail" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/mbCancel"
+        style="@style/whiteButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="50dp"
+        android:text="@string/fragment_email_ask_quest_bottom_sheet_cancel_btn"
+        app:layout_constraintEnd_toStartOf="@+id/mbConfirm"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tilEmail" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/mbConfirm"
+        style="@style/blueButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="50dp"
+        android:alpha="0.2"
+        android:enabled="false"
+        android:text="@string/fragment_email_ask_quest_bottom_sheet_confirm_btn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/mbCancel"
+        app:layout_constraintTop_toBottomOf="@+id/tilEmail" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

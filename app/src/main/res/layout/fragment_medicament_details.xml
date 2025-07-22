@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_bg"
+    android:padding="15dp"
+    tools:context="com.example.zdravlje.ui.healthcare.prescribedlistmedicaments.medicamentoptions.MedicamentDetailsFragment">
+
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:paddingVertical="10dp"
+        android:paddingRight="15dp"
+        android:src="@drawable/ic_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivBack"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_medium_500"
+                android:text="@string/fragment_medicament_details_title_lbl"
+                android:textColor="@color/blackColor_333333"
+                android:textSize="@dimen/size_18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/mcvRecipeDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:backgroundTint="@color/white"
+                app:cardCornerRadius="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvTitle"
+                app:strokeColor="@color/transparent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:padding="15dp">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/mtvMedicineName"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/fragment_medicament_details_medicine_lbl"
+                        android:textColor="@color/black"
+                        app:layout_constraintEnd_toStartOf="@id/mtvMedicineNameValue"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/mtvMedicineNameValue"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="viewEnd"
+                        android:textColor="@color/text_color_8A8A8D"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/mtvMedicineName"
+                        app:layout_constraintTop_toTopOf="@id/mtvMedicineName" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/mtvPackageName"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/fragment_medicament_details_package_lbl"
+                        android:textColor="@color/black"
+                        app:layout_constraintEnd_toStartOf="@id/mtvPackageValue"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/mtvMedicineNameValue" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/mtvPackageValue"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="viewEnd"
+                        android:textColor="@color/text_color_8A8A8D"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/mtvPackageName"
+                        app:layout_constraintTop_toTopOf="@id/mtvPackageName" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/mtvManufacturer"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/fragment_medicament_details_manufacturer_lbl"
+                        android:textColor="@color/black"
+                        app:layout_constraintEnd_toStartOf="@id/mtvManufacturerValue"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/mtvPackageValue" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/mtvManufacturerValue"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="viewEnd"
+                        android:textColor="@color/text_color_8A8A8D"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/mtvManufacturer"
+                        app:layout_constraintTop_toTopOf="@id/mtvManufacturer" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/mtvPrimaryPackage"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/fragment_medicament_details_primary_package_lbl"
+                        android:textColor="@color/black"
+                        app:layout_constraintEnd_toStartOf="@id/mtvPrimaryPackageValue"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/mtvManufacturerValue" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/mtvPrimaryPackageValue"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="viewEnd"
+                        android:textColor="@color/text_color_8A8A8D"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/mtvPrimaryPackage"
+                        app:layout_constraintTop_toTopOf="@id/mtvPrimaryPackage" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/mtvDosage"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/fragment_medicament_details_dosage_lbl"
+                        android:textColor="@color/black"
+                        app:layout_constraintEnd_toStartOf="@id/mtvDosageValue"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/mtvPrimaryPackageValue" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/mtvDosageValue"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="viewEnd"
+                        android:textColor="@color/text_color_8A8A8D"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/mtvDosage"
+                        app:layout_constraintTop_toTopOf="@id/mtvDosage" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/mtvQuantity"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/fragment_medicament_details_quantity_lbl"
+                        android:textColor="@color/black"
+                        app:layout_constraintEnd_toStartOf="@id/mtvQuantityValue"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/mtvDosageValue" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/mtvQuantityValue"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="viewEnd"
+                        android:textColor="@color/text_color_8A8A8D"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/mtvQuantity"
+                        app:layout_constraintTop_toTopOf="@id/mtvQuantity" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/mtvStatus"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/fragment_medicament_details_status_lbl"
+                        android:textColor="@color/black"
+                        app:layout_constraintEnd_toStartOf="@id/mtvStatusValue"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/mtvQuantityValue" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/mtvStatusValue"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="viewEnd"
+                        android:textColor="@color/text_color_8A8A8D"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/mtvStatus"
+                        app:layout_constraintTop_toTopOf="@id/mtvStatus" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/mtvDiagnosis"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/fragment_medicament_details_diagnosis_lbl"
+                        android:textColor="@color/black"
+                        app:layout_constraintEnd_toStartOf="@id/mtvDiagnosisValue"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/mtvStatusValue" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/mtvDiagnosisValue"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="viewEnd"
+                        android:textColor="@color/text_color_8A8A8D"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/mtvDiagnosis"
+                        app:layout_constraintTop_toTopOf="@id/mtvDiagnosis" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/mtvJKL"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/fragment_medicament_details_jkl_lbl"
+                        android:textColor="@color/black"
+                        app:layout_constraintEnd_toStartOf="@id/mtvJKLValue"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/mtvDiagnosisValue" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/mtvJKLValue"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="viewEnd"
+                        android:textColor="@color/text_color_8A8A8D"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/mtvJKL"
+                        app:layout_constraintTop_toTopOf="@id/mtvJKL" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/mtvPrescriptionType"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/fragment_medicament_details_prescription_type_lbl"
+                        android:textColor="@color/black"
+                        app:layout_constraintEnd_toStartOf="@id/mtvPrescriptionTypeValue"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/mtvJKLValue" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/mtvPrescriptionTypeValue"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="viewEnd"
+                        android:textColor="@color/text_color_8A8A8D"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/mtvPrescriptionType"
+                        app:layout_constraintTop_toTopOf="@id/mtvPrescriptionType" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/mtvDatePrescribed"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/fragment_medicament_details_date_prescribed_lbl"
+                        android:textColor="@color/black"
+                        app:layout_constraintEnd_toStartOf="@id/mtvDatePrescribedValue"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/mtvPrescriptionTypeValue" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/mtvDatePrescribedValue"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="viewEnd"
+                        android:textColor="@color/text_color_8A8A8D"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/mtvDatePrescribed"
+                        app:layout_constraintTop_toTopOf="@id/mtvDatePrescribed" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/mtvDateDue"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/fragment_medicament_details_date_due_lbl"
+                        android:textColor="@color/black"
+                        app:layout_constraintEnd_toStartOf="@id/mtvDateDueValue"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/mtvDatePrescribedValue" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/mtvDateDueValue"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="viewEnd"
+                        android:textColor="@color/text_color_8A8A8D"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/mtvDateDue"
+                        app:layout_constraintTop_toTopOf="@id/mtvDateDue" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/mtvPrescribedBy"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/fragment_medicament_details_prescribed_by_lbl"
+                        android:textColor="@color/black"
+                        app:layout_constraintEnd_toStartOf="@id/mtvPrescribedByValue"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/mtvDateDueValue" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/mtvPrescribedByValue"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="viewEnd"
+                        android:textColor="@color/text_color_8A8A8D"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/mtvPrescribedBy"
+                        app:layout_constraintTop_toTopOf="@id/mtvPrescribedBy" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

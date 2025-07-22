@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:src="@drawable/ic_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/mtvNetwork"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/roboto_bold_700"
+        android:gravity="center"
+        android:text="@string/network_title"
+        android:textColor="@color/blue_0270BB"
+        android:textSize="@dimen/size_30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivBack" />
+
+    <ImageView
+        android:id="@+id/ivMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:src="@drawable/ic_msg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mtvNetwork" />
+
+    <TextView
+        android:id="@+id/mtvDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/roboto_regular_400"
+        android:paddingHorizontal="20dp"
+        android:paddingBottom="30dp"
+        android:text="@string/network_description"
+        android:textAlignment="center"
+        android:textColor="@color/text_color_3E5764"
+        android:textSize="@dimen/size_15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.589"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivMsg" />
+
+
+    <ImageView
+        android:id="@+id/ivLogoSrb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_logo"
+        app:layout_constraintBottom_toBottomOf="@+id/mtvDescImg"
+        app:layout_constraintEnd_toStartOf="@+id/mtvDescImg"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mtvDescription" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/mtvDescImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:fontFamily="@font/roboto_bold_700"
+        android:text="e"
+        android:textColor="@color/base_blue_color"
+        android:textSize="@dimen/size_22sp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivLogoSrb"
+        app:layout_constraintEnd_toEndOf="@+id/mtvDescImgTwo"
+        app:layout_constraintStart_toEndOf="@+id/ivLogoSrb"
+        app:layout_constraintTop_toTopOf="@+id/ivLogoSrb" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/mtvDescImgTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_bold_700"
+        android:text="@string/health"
+        android:textColor="@color/black"
+        android:textSize="@dimen/size_22sp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivLogoSrb"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/mtvDescImg"
+        app:layout_constraintTop_toTopOf="@+id/ivLogoSrb" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/mbLogIn"
+        style="@style/blueButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/network_login_btn"
+        app:icon="@drawable/ic_login"
+        app:iconGravity="textStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivLogoSrb" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/mbEnterPinCode"
+        style="@style/whiteButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/network_enter_pin_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mbLogIn"
+        app:strokeColor="@color/base_blue_color"
+        app:strokeWidth="1dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

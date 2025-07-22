@@ -1,0 +1,123 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_white_radius_10"
+    android:paddingBottom="50dp"
+    tools:context="com.example.zdravlje.ui.healthcare.prevention.interactions.BottomSheetLikesInteractionsFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_header_blue"
+        android:paddingVertical="10dp"
+        android:paddingStart="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/profileText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_bold_700"
+            android:text="@string/fragment_bottom_sheet_likes_interactions_title"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/ivLike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:src="@drawable/ic_like"
+        app:layout_constraintEnd_toStartOf="@+id/ivNotLike"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/clHeader" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/fragment_bottom_sheet_likes_interactions_like"
+        app:layout_constraintEnd_toEndOf="@+id/ivLike"
+        app:layout_constraintStart_toStartOf="@+id/ivLike"
+        app:layout_constraintTop_toBottomOf="@+id/ivLike" />
+
+
+    <ImageView
+        android:id="@+id/ivNotLike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:src="@drawable/ic_not_like"
+        app:layout_constraintEnd_toStartOf="@+id/ivEdit"
+        app:layout_constraintStart_toEndOf="@+id/ivLike"
+        app:layout_constraintTop_toTopOf="@+id/ivLike" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/fragment_bottom_sheet_likes_interactions_unlike"
+        app:layout_constraintEnd_toEndOf="@+id/ivNotLike"
+        app:layout_constraintStart_toStartOf="@+id/ivNotLike"
+        app:layout_constraintTop_toBottomOf="@+id/ivNotLike" />
+
+    <ImageView
+        android:id="@+id/ivEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:src="@drawable/ic_edit_1"
+        app:layout_constraintEnd_toStartOf="@+id/ivCopy"
+        app:layout_constraintStart_toEndOf="@+id/ivNotLike"
+        app:layout_constraintTop_toTopOf="@+id/ivNotLike" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/fragment_bottom_sheet_likes_interactions_edit"
+        app:layout_constraintEnd_toEndOf="@+id/ivEdit"
+        app:layout_constraintStart_toStartOf="@+id/ivEdit"
+        app:layout_constraintTop_toBottomOf="@+id/ivEdit" />
+
+    <ImageView
+        android:id="@+id/ivCopy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:src="@drawable/ic_copy_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ivEdit"
+        app:layout_constraintTop_toTopOf="@+id/ivEdit" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/fragment_bottom_sheet_likes_interactions_copy"
+        app:layout_constraintEnd_toEndOf="@+id/ivCopy"
+        app:layout_constraintStart_toStartOf="@+id/ivCopy"
+        app:layout_constraintTop_toBottomOf="@+id/ivCopy" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/mbClose"
+        style="@style/blueButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="@string/close"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivLike" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

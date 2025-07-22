@@ -1,0 +1,410 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_bg"
+    android:padding="15dp"
+    tools:context="com.example.zdravlje.ui.healthcare.prescribedlistmedicaments.medicamentoptions.RecipeDeatilsFragment">
+
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:paddingVertical="15dp"
+        android:paddingRight="15dp"
+        android:src="@drawable/ic_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/roboto_medium_500"
+        android:text="@string/fragment_recipe_deatils_title"
+        android:textColor="@color/blackColor_333333"
+        android:textSize="@dimen/size_18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivBack" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/mcvRecipeDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:backgroundTint="@color/white"
+                app:cardCornerRadius="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/clScrollView"
+                app:layout_goneMarginTop="20dp"
+                app:strokeColor="@color/transparent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/clRecipeDetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:padding="15dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/mtvProtectedName"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_regular_400"
+                        android:text="@string/fragment_recipe_deatils_protected_name"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/size_14sp"
+                        app:layout_constraintEnd_toStartOf="@+id/mtvProtectedNameValue"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/mtvProtectedNameValue"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_medium_500"
+                        android:text=""
+                        android:textAlignment="viewEnd"
+                        android:textColor="@color/text_color_8A8A8D"
+                        android:textSize="@dimen/size_14sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/mtvProtectedName"
+                        app:layout_constraintTop_toTopOf="@+id/mtvProtectedName" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/mtvINN"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/roboto_regular_400"
+                        android:text="@string/fragment_recipe_deatils_inn"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/size_14sp"
+                        app:layout_constraintEnd_toStartOf="@+id/mtvINNValue"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/mtvProtectedNameValue" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/mtvINNValue"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_medium_500"
+                        android:text=""
+                        android:textAlignment="viewEnd"
+                        android:textColor="@color/text_color_8A8A8D"
+                        android:textSize="@dimen/size_14sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/mtvINN"
+                        app:layout_constraintTop_toTopOf="@+id/mtvINN" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/mtvMaker"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/roboto_regular_400"
+                        android:text="@string/fragment_recipe_deatils_maker"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/size_14sp"
+                        app:layout_constraintEnd_toStartOf="@+id/mtvMakerValue"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/mtvINNValue" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/mtvMakerValue"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_medium_500"
+                        android:text=""
+                        android:textAlignment="viewEnd"
+                        android:textColor="@color/text_color_8A8A8D"
+                        android:textSize="@dimen/size_14sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/mtvMaker"
+                        app:layout_constraintTop_toTopOf="@+id/mtvMaker" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/mtvValidityDateDecision"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/roboto_regular_400"
+                        android:text="@string/fragment_recipe_deatils_validity_date_decision"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/size_14sp"
+                        app:layout_constraintEnd_toStartOf="@+id/mtvValidityDateDecisionValue"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/mtvMakerValue" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/mtvValidityDateDecisionValue"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_medium_500"
+                        android:text=""
+                        android:textAlignment="viewEnd"
+                        android:textColor="@color/text_color_8A8A8D"
+                        android:textSize="@dimen/size_14sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/mtvValidityDateDecision"
+                        app:layout_constraintTop_toTopOf="@+id/mtvValidityDateDecision" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/mtvLicenseHolder"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/roboto_regular_400"
+                        android:text="@string/fragment_recipe_deatils_licence_holder"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/size_14sp"
+                        app:layout_constraintEnd_toStartOf="@+id/mtvLicenseHolderValue"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/mtvValidityDateDecisionValue" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/mtvLicenseHolderValue"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_medium_500"
+                        android:text=""
+                        android:textAlignment="viewEnd"
+                        android:textColor="@color/text_color_8A8A8D"
+                        android:textSize="@dimen/size_14sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/mtvLicenseHolder"
+                        app:layout_constraintTop_toTopOf="@+id/mtvLicenseHolder" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/mtvATC"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/roboto_regular_400"
+                        android:text="@string/fragment_recipe_deatils_atc"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/size_14sp"
+                        app:layout_constraintEnd_toStartOf="@+id/mtvATCValue"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/mtvLicenseHolderValue" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/mtvATCValue"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_medium_500"
+                        android:text=""
+                        android:textAlignment="viewEnd"
+                        android:textColor="@color/text_color_8A8A8D"
+                        android:textSize="@dimen/size_14sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/mtvATC"
+                        app:layout_constraintTop_toTopOf="@+id/mtvATC" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/mtvJKL"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/roboto_regular_400"
+                        android:text="@string/fragment_recipe_deatils_jkl"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/size_14sp"
+                        app:layout_constraintEnd_toStartOf="@+id/mtvJKLValue"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/mtvATCValue" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/mtvJKLValue"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_medium_500"
+                        android:text=""
+                        android:textAlignment="viewEnd"
+                        android:textColor="@color/text_color_8A8A8D"
+                        android:textSize="@dimen/size_14sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/mtvJKL"
+                        app:layout_constraintTop_toTopOf="@+id/mtvJKL" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/mtvTypeMedicamente"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/roboto_regular_400"
+                        android:text="@string/fragment_recipe_deatils_type_medicamente"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/size_14sp"
+                        app:layout_constraintEnd_toStartOf="@+id/mtvTypeMedicamenteValue"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/mtvJKLValue" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/mtvTypeMedicamenteValue"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_medium_500"
+                        android:text=""
+                        android:textAlignment="viewEnd"
+                        android:textColor="@color/text_color_8A8A8D"
+                        android:textSize="@dimen/size_14sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/mtvTypeMedicamente"
+                        app:layout_constraintTop_toTopOf="@+id/mtvTypeMedicamente" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/mtvRegimeDispensing"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/roboto_regular_400"
+                        android:text="@string/fragment_recipe_deatils_regime_dispensing"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/size_14sp"
+                        app:layout_constraintEnd_toStartOf="@+id/mtvRegimeDispensingValue"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/mtvTypeMedicamenteValue" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/mtvRegimeDispensingValue"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_medium_500"
+                        android:text=""
+                        android:textAlignment="viewEnd"
+                        android:textColor="@color/text_color_8A8A8D"
+                        android:textSize="@dimen/size_14sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/mtvRegimeDispensing"
+                        app:layout_constraintTop_toTopOf="@+id/mtvRegimeDispensing" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/mtvListName"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/roboto_regular_400"
+                        android:text="@string/fragment_recipe_deatils_list_name"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/size_14sp"
+                        app:layout_constraintEnd_toStartOf="@+id/mtvListNameValue"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/mtvRegimeDispensingValue" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/mtvListNameValue"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_medium_500"
+                        android:text=""
+                        android:textAlignment="viewEnd"
+                        android:textColor="@color/text_color_8A8A8D"
+                        android:textSize="@dimen/size_14sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/mtvListName"
+                        app:layout_constraintTop_toTopOf="@+id/mtvListName" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/mtvPriceMendicamente"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/roboto_regular_400"
+                        android:text="@string/fragment_recipe_deatils_price_medicamente"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/size_14sp"
+                        app:layout_constraintEnd_toStartOf="@+id/mtvPriceMendicamenteValue"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/mtvListNameValue" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/mtvPriceMendicamenteValue"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_medium_500"
+                        android:text=""
+                        android:textAlignment="viewEnd"
+                        android:textColor="@color/text_color_8A8A8D"
+                        android:textSize="@dimen/size_14sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/mtvPriceMendicamente"
+                        app:layout_constraintTop_toTopOf="@+id/mtvPriceMendicamente" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/mtvParticipiant"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/roboto_regular_400"
+                        android:text="Učešće(%):"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/size_14sp"
+                        app:layout_constraintEnd_toStartOf="@+id/mtvParticipiantValue"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/mtvPriceMendicamenteValue" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/mtvParticipiantValue"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_medium_500"
+                        android:text=""
+                        android:textAlignment="viewEnd"
+                        android:textColor="@color/text_color_8A8A8D"
+                        android:textSize="@dimen/size_14sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/mtvParticipiant"
+                        app:layout_constraintTop_toTopOf="@+id/mtvParticipiant" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/mbCharacteristicsMedicamente"
+                style="@style/blueButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="@string/fragment_recipe_deatils_characteristics_medicamente"
+                app:icon="@drawable/ic_download"
+                app:iconGravity="textStart"
+                app:layout_constraintTop_toBottomOf="@+id/mcvRecipeDetails" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/mbInstructionManual"
+                style="@style/blueButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/fragment_recipe_deatils_instruction_manual"
+                app:icon="@drawable/ic_download"
+                app:iconGravity="textStart"
+                app:layout_constraintTop_toBottomOf="@+id/mbCharacteristicsMedicamente" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

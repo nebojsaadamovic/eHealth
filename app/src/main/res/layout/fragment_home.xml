@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_bg">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clAvatars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/imageWrapperThree"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="97dp"
+            android:layout_marginTop="28dp"
+            android:backgroundTint="@color/transparent"
+            android:padding="10dp"
+            android:visibility="gone"
+            app:cardCornerRadius="100dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:strokeColor="@color/green_5CB85C"
+            app:strokeWidth="2dp">
+
+            <ImageView
+                android:id="@+id/ivUserImageThree"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_contact_avatar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvAvatarInitialsThree"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_circle_avatar_no_profile_img"
+                android:fontFamily="@font/roboto_bold_700"
+                android:gravity="center"
+                android:text="N3"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:visibility="gone" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/mcvImageWrapperSecond"
+            android:layout_width="50dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="25dp"
+            android:backgroundTint="@color/transparent"
+            android:padding="10dp"
+            android:visibility="gone"
+            app:cardCornerRadius="100dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:strokeColor="@color/orange_light_FDCEAB"
+            app:strokeWidth="2dp">
+
+            <ImageView
+                android:id="@+id/ivUserImageSecond"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_contact_avatar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvAvatarInitialsSecond"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_circle_avatar_no_profile_img"
+                android:fontFamily="@font/roboto_bold_700"
+                android:gravity="center"
+                android:text="N2"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:visibility="gone" />
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/imageWrapper"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="@color/transparent"
+            android:padding="10dp"
+            app:cardCornerRadius="100dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:strokeColor="@color/base_blue_color"
+            app:strokeWidth="2dp">
+
+            <ImageView
+                android:id="@+id/ivUserImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_contact_avatar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvAvatarInitials"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_circle_avatar_no_profile_img"
+                android:fontFamily="@font/roboto_bold_700"
+                android:gravity="center"
+                android:text="N1"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/size_20sp"
+                android:visibility="gone" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <ImageView
+            android:id="@+id/ivThreeDots"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="125dp"
+            android:layout_marginTop="55dp"
+            android:background="@color/white"
+            android:elevation="10dp"
+            android:src="@drawable/ic_three_dots"
+            android:translationZ="10dp"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/mtvUserNameValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/roboto_bold_700"
+        android:text="Ime P."
+        android:textColor="@color/black"
+        android:textSize="@dimen/size_18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/clAvatars"
+        app:layout_constraintStart_toEndOf="@id/clAvatars"
+        app:layout_constraintTop_toTopOf="@id/clAvatars" />
+
+    <ImageView
+        android:id="@+id/ivNotification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:padding="5dp"
+        android:src="@drawable/ic_notification"
+        app:layout_constraintBottom_toBottomOf="@id/clAvatars"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/clAvatars" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/mtvNotificationCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="21dp"
+        android:layout_marginBottom="15.5dp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/size_8sp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivNotification"
+        app:layout_constraintStart_toStartOf="@id/ivNotification"
+        app:layout_constraintTop_toTopOf="@id/ivNotification" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/clUserInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:backgroundTint="@color/white"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/clAvatars"
+        app:strokeColor="@color/transparent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clSwitchPage"
+            android:layout_width="match_parent"
+            android:layout_height="84dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/ivEvent"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginStart="40dp"
+                android:src="@drawable/ic_events_selected"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/ivWayOfLife"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_life_way_default"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/ivActivity"
+                app:layout_constraintStart_toEndOf="@id/ivEvent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/ivActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginEnd="40dp"
+                android:src="@drawable/ic_activities_default"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <FrameLayout
+        android:id="@+id/home_fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/clUserInfo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

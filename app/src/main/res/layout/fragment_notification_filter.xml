@@ -1,0 +1,408 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_bg"
+    android:paddingStart="15dp"
+    android:paddingTop="20dp"
+    android:paddingEnd="15dp"
+    android:paddingBottom="20dp"
+    tools:context="com.example.zdravlje.ui.notification.NotificationFilterFragment">
+
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/mtvSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fragment_notification_settings_save"
+        android:textColor="@color/base_blue_color"
+        android:textSize="@dimen/size_16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/ivBack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/ivBack" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/infoText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:text="@string/fragment_notification_settings_filter_title"
+        android:textColor="@color/black"
+        android:textSize="@dimen/size_18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivBack" />
+
+    <ScrollView
+        android:id="@+id/ScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/infoText">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/scroll_view_layout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:paddingBottom="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/clUserBaseInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/white"
+                app:cardCornerRadius="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:strokeColor="@color/transparent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/clContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/mtvSubtitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/roboto_medium_500"
+                        android:text="@string/fragment_bottom_sheet_filter_notification_type"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/size_14sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/clContent" />
+
+                    <View
+                        android:id="@+id/lineSubtitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginHorizontal="15dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/gray_E9E9E9"
+                        app:layout_constraintTop_toBottomOf="@id/mtvSubtitle" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="15dp"
+                        app:layout_constraintTop_toBottomOf="@+id/lineSubtitle">
+
+                        <CheckBox
+                            android:id="@+id/availableTherapyCheckBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/checkbox_selector"
+                            android:fontFamily="@font/roboto_regular_400"
+                            android:gravity="center_vertical"
+                            android:layoutDirection="rtl"
+                            android:tag="3"
+                            android:text="@string/fragment_bottom_sheet_filter_available_therapies_label"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/size_14sp"
+                            app:buttonTint="@color/blue_0270BB"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <CheckBox
+                            android:id="@+id/dataAccessCheckBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/checkbox_selector"
+                            android:fontFamily="@font/roboto_regular_400"
+                            android:gravity="center_vertical"
+                            android:layoutDirection="rtl"
+                            android:tag="38"
+                            android:text="@string/fragment_bottom_sheet_filter_access_data"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/size_14sp"
+                            app:buttonTint="@color/blue_0270BB"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/availableTherapyCheckBox" />
+
+                        <CheckBox
+                            android:id="@+id/cbMedicamentReminderCheckBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/checkbox_selector"
+                            android:drawablePadding="8dp"
+                            android:fontFamily="@font/roboto_regular_400"
+                            android:gravity="center_vertical"
+                            android:layoutDirection="rtl"
+                            android:tag="1"
+                            android:text="@string/fragment_bottom_sheet_filter_medication_reminder"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/size_14sp"
+                            app:buttonTint="@color/blue_0270BB"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/dataAccessCheckBox" />
+
+                        <CheckBox
+                            android:id="@+id/cbAppointmentCheckBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/checkbox_selector"
+                            android:fontFamily="@font/roboto_regular_400"
+                            android:gravity="center_vertical"
+                            android:layoutDirection="rtl"
+                            android:tag="2"
+                            android:text="@string/fragment_bottom_sheet_filter_scheduled_appointment"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/size_14sp"
+                            app:buttonTint="@color/blue_0270BB"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/cbMedicamentReminderCheckBox" />
+
+                        <CheckBox
+                            android:id="@+id/cbAcceptRejectedRequest"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/checkbox_selector"
+                            android:fontFamily="@font/roboto_regular_400"
+                            android:gravity="center_vertical"
+                            android:layoutDirection="rtl"
+                            android:tag="23"
+                            android:text="@string/fragment_bottom_sheet_filter_contact_request_status"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/size_14sp"
+                            app:buttonTint="@color/blue_0270BB"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/cbAppointmentCheckBox" />
+
+                        <CheckBox
+                            android:id="@+id/cbNewMsg"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/checkbox_selector"
+                            android:fontFamily="@font/roboto_regular_400"
+                            android:gravity="center_vertical"
+                            android:layoutDirection="rtl"
+                            android:tag="23"
+                            android:text="@string/fragment_bottom_sheet_filter_new_msg"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/size_14sp"
+                            app:buttonTint="@color/blue_0270BB"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/cbAcceptRejectedRequest" />
+
+                        <CheckBox
+                            android:id="@+id/cbSystemMsg"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/checkbox_selector"
+                            android:fontFamily="@font/roboto_regular_400"
+                            android:gravity="center_vertical"
+                            android:layoutDirection="rtl"
+                            android:tag="23"
+                            android:text="@string/fragment_bottom_sheet_filter_system_msg"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/size_14sp"
+                            app:buttonTint="@color/blue_0270BB"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/cbNewMsg" />
+
+                        <CheckBox
+                            android:id="@+id/newMessageGroupCheckBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/checkbox_selector"
+                            android:fontFamily="@font/roboto_regular_400"
+                            android:gravity="center_vertical"
+                            android:layoutDirection="rtl"
+                            android:tag="23"
+                            android:text="@string/fragment_bottom_sheet_filter_new_msg_group"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/size_14sp"
+                            app:buttonTint="@color/blue_0270BB"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/cbSystemMsg" />
+
+                        <CheckBox
+                            android:id="@+id/recommendationCheckBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/checkbox_selector"
+                            android:fontFamily="@font/roboto_regular_400"
+                            android:gravity="center_vertical"
+                            android:layoutDirection="rtl"
+                            android:text="@string/fragment_bottom_sheet_filter_recommendation"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/size_14sp"
+                            app:buttonTint="@color/blue_0270BB"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/newMessageGroupCheckBox" />
+
+                        <CheckBox
+                            android:id="@+id/sharedDataProfileCheckBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/checkbox_selector"
+                            android:fontFamily="@font/roboto_regular_400"
+                            android:gravity="center_vertical"
+                            android:layoutDirection="rtl"
+                            android:text="@string/fragment_bottom_sheet_filter_profile_data_sharing"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/size_14sp"
+                            app:buttonTint="@color/blue_0270BB"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/recommendationCheckBox" />
+
+                        <CheckBox
+                            android:id="@+id/cbConfirmReceiptPrescriptionsCheckBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/checkbox_selector"
+                            android:fontFamily="@font/roboto_regular_400"
+                            android:gravity="center_vertical"
+                            android:layoutDirection="rtl"
+                            android:tag="62"
+                            android:text="@string/fragment_bottom_sheet_filter_prescription_pickup_confirmation"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/size_14sp"
+                            app:buttonTint="@color/blue_0270BB"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/sharedDataProfileCheckBox" />
+
+                        <CheckBox
+                            android:id="@+id/showAllCheckBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/checkbox_selector"
+                            android:fontFamily="@font/roboto_regular_400"
+                            android:gravity="center_vertical"
+                            android:layoutDirection="rtl"
+                            android:tag="32"
+                            android:text="@string/fragment_bottom_sheet_filter_show_all"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/size_14sp"
+                            app:buttonTint="@color/blue_0270BB"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/cbConfirmReceiptPrescriptionsCheckBox" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/mcvSortDates"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/white"
+                app:cardCornerRadius="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/clUserBaseInfo"
+                app:strokeColor="@color/transparent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:visibility="gone">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/mtvTitleDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/roboto_medium_500"
+                        android:text="Sortiranje datuma"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/size_14sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <View
+                        android:id="@+id/lineTitleDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/gray_E9E9E9"
+                        app:layout_constraintTop_toBottomOf="@id/mtvTitleDate" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/mtwDateFrom"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="Datum od:"
+                        android:textColor="@color/black"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/lineTitleDate" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/mtwDateFromValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_regular_400"
+                        android:text="Izaberi"
+                        android:textColor="@color/base_blue_color"
+                        android:textSize="@dimen/size_14sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/mtwDateFrom"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/mtwDateFrom" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/mtwDateTo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="Datum do:"
+                        android:textColor="@color/black"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/mtwDateFrom" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/mtwDateToValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_regular_400"
+                        android:text="Izaberi"
+                        android:textColor="@color/base_blue_color"
+                        android:textSize="@dimen/size_14sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/mtwDateTo"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/mtwDateTo" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

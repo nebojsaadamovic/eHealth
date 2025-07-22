@@ -1,0 +1,153 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_bg"
+    tools:context="com.example.zdravlje.ui.profile.ProfileInitialFragment">
+
+    <ImageView
+        android:id="@+id/blurBackground"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_blure_base"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clUserProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/clUserSharedProfile"
+        app:layout_constraintStart_toStartOf="@+id/clUserSharedProfile">
+
+        <ImageView
+            android:id="@+id/ivUserProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="30dp"
+            android:padding="10dp"
+            android:src="@drawable/ic_profile"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvUserProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/roboto_regular_400"
+            android:text="@string/fragment_bottom_sheet_profile_initial_user_profile_label_btn"
+            android:textColor="@color/text_color_3E5764"
+            android:textSize="@dimen/size_20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/ivUserProfile"
+            app:layout_constraintStart_toEndOf="@+id/ivUserProfile"
+            app:layout_constraintTop_toTopOf="@id/ivUserProfile" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clUserSharedProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/clUserSettings"
+        app:layout_constraintStart_toStartOf="@+id/clUserSettings">
+
+        <ImageView
+            android:id="@+id/ivUserSharedProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="30dp"
+            android:padding="10dp"
+            android:src="@drawable/ic_shared_user_profile"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvUserSharedProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/roboto_regular_400"
+            android:text="@string/fragment_bottom_sheet_profile_initial_shared_profile_label_btn"
+            android:textColor="@color/text_color_3E5764"
+            android:textSize="@dimen/size_20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/ivUserSharedProfile"
+            app:layout_constraintStart_toEndOf="@+id/ivUserSharedProfile"
+            app:layout_constraintTop_toTopOf="@id/ivUserSharedProfile" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clUserSettings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/clSink"
+        app:layout_constraintStart_toStartOf="@+id/clSink">
+
+        <ImageView
+            android:id="@+id/ivUserSettings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="30dp"
+            android:padding="10dp"
+            android:src="@drawable/ic_settings_profile"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvUserSettings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/roboto_regular_400"
+            android:text="@string/fragment_bottom_sheet_profile_settings_label_btn"
+            android:textColor="@color/text_color_3E5764"
+            android:textSize="@dimen/size_20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/ivUserSettings"
+            app:layout_constraintStart_toEndOf="@+id/ivUserSettings"
+            app:layout_constraintTop_toTopOf="@id/ivUserSettings" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clSink"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/ivSink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="30dp"
+            android:padding="10dp"
+            android:src="@drawable/ic_sink"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mtvSink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/roboto_regular_400"
+            android:text="@string/fragment_bottom_sheet_profile_settings_sink"
+            android:textColor="@color/text_color_3E5764"
+            android:textSize="@dimen/size_20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/ivSink"
+            app:layout_constraintStart_toEndOf="@+id/ivSink"
+            app:layout_constraintTop_toTopOf="@id/ivSink" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

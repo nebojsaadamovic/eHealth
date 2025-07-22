@@ -1,0 +1,140 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bottom_sheet_white_bg"
+    android:paddingBottom="50dp"
+    tools:context="com.example.zdravlje.ui.profile.settings.BottomSheetChooseLanguage">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bottom_sheet_blue_bg"
+        android:paddingStart="15dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/profileText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_bold_700"
+            android:text="@string/fragment_bottom_sheet_choose_header_title"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <RadioGroup
+        android:id="@+id/languageRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/header">
+
+        <RadioButton
+            android:id="@+id/srpskiLatinicaRadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="15dp"
+            android:buttonTint="@color/blue_0270BB"
+            android:drawableEnd="@drawable/ic_flag_rs"
+            android:drawablePadding="8dp"
+            android:fontFamily="@font/roboto_medium_500"
+            android:gravity="center_vertical"
+            android:layoutDirection="rtl"
+            android:paddingStart="15sp"
+            android:tag="2"
+            android:text="@string/fragment_bottom_sheet_choose_language_srpski_latinica_radio_btn"
+            android:textSize="@dimen/size_14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_E9E9E9"
+            app:layout_constraintBottom_toBottomOf="@id/srpskiLatinicaRadioButton" />
+
+
+        <RadioButton
+            android:id="@+id/srpskiCirilicaRadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="15dp"
+            android:buttonTint="@color/blue_0270BB"
+            android:drawableEnd="@drawable/ic_flag_rs"
+            android:drawablePadding="8dp"
+            android:fontFamily="@font/roboto_medium_500"
+            android:gravity="center_vertical"
+            android:layoutDirection="rtl"
+            android:tag="1"
+            android:text="@string/fragment_bottom_sheet_choose_language_srpski_cirilica_radio_btn"
+            android:textSize="@dimen/size_14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_E9E9E9"
+            app:layout_constraintBottom_toBottomOf="@id/srpskiCirilicaRadioButton" />
+
+        <RadioButton
+            android:id="@+id/engleskiRadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="15dp"
+            android:buttonTint="@color/blue_0270BB"
+            android:drawableEnd="@drawable/ic_flag_rs"
+            android:drawablePadding="8dp"
+            android:fontFamily="@font/roboto_medium_500"
+            android:gravity="center_vertical"
+            android:layoutDirection="rtl"
+            android:tag="3"
+            android:text="@string/fragment_bottom_sheet_choose_language_engleski_radio_btn"
+            android:textSize="@dimen/size_14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_E9E9E9"
+            app:layout_constraintBottom_toBottomOf="@id/engleskiRadioButton" />
+
+    </RadioGroup>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/mbClose"
+        style="@style/whiteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:padding="0dp"
+        android:text="@string/fragment_bottom_sheet_choose_language_close_btn"
+        android:textSize="@dimen/size_15sp"
+        app:layout_constraintBottom_toBottomOf="@id/mbConfirm"
+        app:layout_constraintEnd_toStartOf="@+id/mbConfirm"
+        app:layout_constraintTop_toTopOf="@id/mbConfirm" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/mbConfirm"
+        style="@style/blueButton"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:padding="0dp"
+        android:text="@string/fragment_bottom_sheet_choose_language_save_btn"
+        android:textSize="@dimen/size_15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/languageRadioGroup"
+        app:strokeColor="@color/base_blue_color"
+        app:strokeWidth="1dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
